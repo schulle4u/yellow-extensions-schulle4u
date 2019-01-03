@@ -8,8 +8,8 @@ Privacy-friendly social sharing buttons.
 
 1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
 2. [Download and install Fontawesome plugin](https://github.com/datenstrom/yellow-plugins/tree/master/fontawesome).   
-3. [Download plugin](https://github.com/schulle4u/yellow-plugin-shariff/archive/master.zip). If you are using Safari, right click and select 'Download file as'.
-4. Copy `master.zip` into your `system/plugins` folder.
+3. [Download plugin](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/shariff.zip). If you are using Safari, right click and select 'Download file as'.
+4. Copy `shariff.zip` into your `system/plugins` folder.
 
 To uninstall delete the [plugin files](update.ini).
 

@@ -6,8 +6,8 @@ This plugin uses a combination of two techniques for email protection [ROT13](ht
 ## How to install plugin
 
 1. Download and install [Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download plugin](https://github.com/schulle4u/yellow-plugin-antispam/archive/master.zip). If you are using Safari, right click and select 'Download file as'.
-3. Copy `master.zip` into your `system/plugins` folder.
+2. [Download plugin](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/antispam.zip). If you are using Safari, right click and select 'Download file as'.
+3. Copy `antispam.zip` into your `system/plugins` folder.
 
 To uninstall delete the [plugin files](update.ini).
 
