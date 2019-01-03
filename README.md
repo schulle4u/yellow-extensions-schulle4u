@@ -40,5 +40,5 @@ Plugins created by @schulle4u:
   Feed parser using SimpleXML or SimplePie.
 * [TuneIn](https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/tunein): 
   Embed radio stations from TuneIn.
-  
-We have a developer kit and an API for developers. [Learn more](https://developers.datenstrom.se/help/).
+
+A developer kit and an API for developers is available. [Learn more](https://developers.datenstrom.se/help/).
