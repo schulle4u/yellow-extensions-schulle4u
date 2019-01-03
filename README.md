@@ -16,8 +16,6 @@ Plugins created by @schulle4u:
   Email address obfuscator using ROT13 and CSS.
 * [Audio](https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/audio): 
   HTML5 audio player.
-* [Example](https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/example): 
-  Example plugin for developers.
 * [Global](https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/global): 
   Include page content into another page.
 * [MOTD](https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/motd): 
