@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowShariff {
-    const VERSION = "0.7.2";
+    const VERSION = "0.7.3";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -13,10 +13,10 @@ class YellowShariff {
         $this->yellow->config->setDefault("shariffServices", "twitter, facebook, googleplus, info");
     }
     
-    // Handle page content of custom block
-    public function onParseContentBlock($page, $name, $text, $shortcut) {
+    // Handle page content of shortcut
+    public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
-        if ($name=="shariff" && $shortcut) {
+        if ($name=="shariff" && ($type=="block" || $type=="inline")) {
             list($services) = $this->yellow->toolbox->getTextArgs($text);
             if (empty($services)) $services = $this->yellow->config->get("shariffServices");
             $language = $page->get("language");
@@ -38,7 +38,7 @@ class YellowShariff {
             $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$pluginLocation}shariff-complete.min.js\"></script>\n";
         }
         if ($name=="links") {
-            $output = $this->onParseContentBlock($page, "shariff", "", true);
+            $output = $this->onParseContentShortcut($page, "shariff", "", "block");
         }
         return $output;
     }

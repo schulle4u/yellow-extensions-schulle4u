@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowAntispam {
-    const VERSION = "0.7.5";
+    const VERSION = "0.7.6";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -12,10 +12,10 @@ class YellowAntispam {
         $this->yellow = $yellow;
     }
     
-    // Handle page content parsing of custom block
-    public function onParseContentBlock($page, $name, $text, $shortcut) {
+    // Handle page content of shortcut
+    public function onParseContentShortcut($page, $name, $text, $type) {
         $output = NULL;
-        if ($name=="email" && $shortcut) {
+        if ($name=="email" && ($type=="block" || $type=="inline")) {
             list($address, $displaytext) = $this->yellow->toolbox->getTextArgs($text);
             if (empty($displaytext)) $displaytext = null;
             $output = $this->email($address, $displaytext);

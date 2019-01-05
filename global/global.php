@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowGlobal {
-    const VERSION = "0.7.5";
+    const VERSION = "0.7.6";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -13,10 +13,10 @@ class YellowGlobal {
         $this->yellow->config->setDefault("globalLocation", "/global/sidebar");
     }
 
-    // Handle page content parsing of custom block
-    public function onParseContentBlock($page, $name, $text, $shortcut) {
+    // Handle page content of shortcut
+    public function onParseContentShortcut($page, $name, $text, $type) {
         $output = NULL;
-        if ($name=="global" && $shortcut) {
+        if ($name=="global" && ($type=="block" || $type=="inline")) {
             list($location, $mode) = $this->yellow->toolbox->getTextArgs($text);
             if (empty($location)) $location = $this->yellow->config->get("globalLocation");
             if (strempty($mode)) $mode = "0";

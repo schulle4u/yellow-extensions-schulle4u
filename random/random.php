@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowRandom {
-    const VERSION = "0.7.1";
+    const VERSION = "0.7.2";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -15,10 +15,10 @@ class YellowRandom {
         $this->yellow->config->setDefault("randomMode", "1");
     }
 
-    // Handle page content parsing of custom block
-    public function onParseContentBlock($page, $name, $text, $shortcut) {
+    // Handle page content of shortcut
+    public function onParseContentShortcut($page, $name, $text, $type) {
         $output = NULL;
-        if ($name=="random" && $shortcut) {
+        if ($name=="random" && ($type=="block" || $type=="inline"))) {
             list($location, $pagesMax, $mode) = $this->yellow->toolbox->getTextArgs($text);
             if (empty($location)) $location = $this->yellow->config->get("randomLocation");
             if (strempty($pagesMax)) $pagesMax = $this->yellow->config->get("randomPagesMax");

@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowAudio {
-    const VERSION = "0.7.1";
+    const VERSION = "0.7.2";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -15,10 +15,10 @@ class YellowAudio {
         $this->yellow->config->setDefault("audioStyle", "audio");
     }
     
-    // Handle page content parsing of custom block
-    public function onParseContentBlock($page, $name, $text, $shortcut) {
+    // Handle page content of shortcut
+    public function onParseContentShortcut($page, $name, $text, $type) {
         $output = NULL;
-        if ($name=="audio" && $shortcut) {
+        if ($name=="audio" && ($type=="block" || $type=="inline")) {
             list($url, $download, $style) = $this->yellow->toolbox->getTextArgs($text);
             $url = $this->yellow->config->get("audioUrlPrefix").$url;
             if (!preg_match("/^\w+:/", $url)) {

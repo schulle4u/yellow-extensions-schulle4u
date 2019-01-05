@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowTunein {
-    const VERSION = "0.7.2";
+    const VERSION = "0.7.3";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -13,10 +13,10 @@ class YellowTunein {
         $this->yellow->config->setDefault("tuneinStyle", "tunein");
     }
     
-    // Handle page content parsing of custom block
-    public function onParseContentBlock($page, $name, $text, $shortcut) {
+    // Handle page content of shortcut
+    public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
-        if ($name=="tunein" && $shortcut) {
+        if ($name=="tunein" && ($type=="block" || $type=="inline")) {
             list($id, $style, $width, $height, $autoplay) = $this->yellow->toolbox->getTextArgs($text);
             if (empty($style)) $style = $this->yellow->config->get("tuneinStyle");
             if (empty($width)) $width = "100%";

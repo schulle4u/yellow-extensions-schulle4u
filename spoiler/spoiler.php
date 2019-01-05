@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowSpoiler {
-    const VERSION = "0.7.2";
+    const VERSION = "0.7.3";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -12,10 +12,10 @@ class YellowSpoiler {
         $this->yellow = $yellow;
     }
     
-    // Handle page content parsing of custom block
-    public function onParseContentBlock($page, $name, $text, $shortcut) {
+    // Handle page content of shortcut
+    public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
-        if ($name=="spoilerstart" && $shortcut) {
+        if ($name=="spoilerstart" && ($type=="block" || $type=="inline")) {
             list($id, $label, $display) = $this->yellow->toolbox->getTextArgs($text);
             if (empty($id)) $id = "spoiler";
             if (empty($label)) $label = "…";
@@ -23,7 +23,7 @@ class YellowSpoiler {
             $output = "<a onclick=\"toggle_hidden()\">".htmlspecialchars($label)."</a><br />\n";
             $output .= "<div id=\"".htmlspecialchars($id)."\" style=\"display:".htmlspecialchars($display)."\">\n";
         }
-        if ($name=="spoilerstop" && $shortcut) {
+        if ($name=="spoilerstop" && ($type=="block" || $type=="inline")) {
             list($id) = $this->yellow->toolbox->getTextArgs($text);
             if (empty($id)) $id = "spoiler";
             $output .= "</div>\n";

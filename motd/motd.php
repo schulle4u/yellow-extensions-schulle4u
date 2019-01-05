@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowMotd {
-    const VERSION = "0.7.2";
+    const VERSION = "0.7.3";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -12,10 +12,10 @@ class YellowMotd {
         $this->yellow = $yellow;
     }
 
-    // Handle page content parsing of custom block
-    public function onParseContentBlock($page, $name, $text, $shortcut) {
+    // Handle page content of shortcut
+    public function onParseContentShortcut($page, $name, $text, $type) {
         $output = NULL;
-        if ($name=="motd" && $shortcut) {
+        if ($name=="motd" && ($type=="block" || $type=="inline")) {
             $this->yellow->page->setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
             $output .= "<div class=\"".htmlspecialchars($name)."\">\n";
             

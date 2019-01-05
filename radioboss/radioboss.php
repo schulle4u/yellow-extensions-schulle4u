@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowRadioboss {
-    const VERSION = "0.7.2";
+    const VERSION = "0.7.3";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -19,10 +19,10 @@ class YellowRadioboss {
         $this->yellow->config->setDefault("radiobossStyle", "radioboss");
     }
 
-    // Handle page content parsing of custom block
-    public function onParseContentBlock($page, $name, $text, $shortcut) {
+    // Handle page content of shortcut
+    public function onParseContentShortcut($page, $name, $text, $type) {
         $output = NULL;
-        if ($name=="radioboss" && $shortcut) {
+        if ($name=="radioboss" && ($type=="block" || $type=="inline")) {
             list($type, $style, $server, $port, $port2, $id, $mount) = $this->yellow->toolbox->getTextArgs($text);
             if (empty($type)) $type = "page";
             if (empty($style)) $style = $this->yellow->config->get("radiobossStyle");

@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowAbout {
-    const VERSION = "0.7.9";
+    const VERSION = "0.7.10";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -14,10 +14,10 @@ class YellowAbout {
         $this->yellow->config->setDefault("aboutStyle", "about");
     }
 
-    // Handle page content parsing of custom block
-    public function onParseContentBlock($page, $name, $text, $shortcut) {
+    // Handle page content of shortcut
+    public function onParseContentShortcut($page, $name, $text, $type) {
         $output = NULL;
-        if ($name=="about" && $shortcut) {
+        if ($name=="about" && ($type=="block" || $type=="inline")) {
             list($author, $style) = $this->yellow->toolbox->getTextArgs($text);
             if(empty($style)) $style  = $this->yellow->config->get("aboutStyle");
             $output .= "<div class=\"".htmlspecialchars($style)."\">\n";
@@ -42,7 +42,7 @@ class YellowAbout {
     public function onExtra($name) {
         $output = null;
         if ($name=="links") {
-            $output = $this->onParseContentBlock($page, "about", "", true);
+            $output = $this->onParseContentShortcut($page, "about", "", "block");
         }
         return $output;
     }
