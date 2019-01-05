@@ -1,5 +1,5 @@
-About plugin 0.7.9
-==================
+About plugin 0.7.10
+===================
 Author profile for blog pages. 
 
 <p align="center"><img src="about-screenshot.png?raw=true" alt="Screenshot"></p>

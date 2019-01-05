@@ -1,4 +1,4 @@
-Random plugin 0.7.1
+Random plugin 0.7.2
 ===================
 Displays random pages from a specific location. 
 

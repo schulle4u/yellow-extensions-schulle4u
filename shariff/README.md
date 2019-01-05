@@ -1,4 +1,4 @@
-Shariff plugin 0.7.2
+Shariff plugin 0.7.3
 ====================
 Privacy-friendly social sharing buttons.
 

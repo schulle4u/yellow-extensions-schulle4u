@@ -1,4 +1,4 @@
-Radioboss plugin 0.7.2
+Radioboss plugin 0.7.3
 ======================
 Shortcut plugin to integrate the widgets for [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/), a cloud-based radio automation service developed by [DJSoft.net](https://www.djsoft.net). 
 

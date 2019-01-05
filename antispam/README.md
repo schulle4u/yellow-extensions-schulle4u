@@ -1,4 +1,4 @@
-Antispam plugin 0.7.5
+Antispam plugin 0.7.6
 =====================
 Alternative email obfuscator for Datenstrom Yellow. Uses [antispam class by Roman Ozana (Sphido)](https://github.com/sphido/antispam), available under the terms of the BSD 3-Clause License.  
 This plugin uses a combination of two techniques for email protection [ROT13](http://en.wikipedia.org/wiki/ROT13) and CSS rtl. Works with or without javascript, but requires a css-capable browser. 

@@ -1,4 +1,4 @@
-TuneIn plugin 0.7.2
+TuneIn plugin 0.7.3
 ===================
 Embed TuneIn Radio player
 

@@ -1,4 +1,4 @@
-Audio plugin 0.7.1
+Audio plugin 0.7.2
 ==================
 HTML5 audio player.
 

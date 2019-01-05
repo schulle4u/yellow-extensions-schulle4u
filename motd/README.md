@@ -1,4 +1,4 @@
-Message of the day plugin 0.7.2
+Message of the day plugin 0.7.3
 ===============================
 A "message of the day" shortcode for your website. 
 

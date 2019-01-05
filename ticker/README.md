@@ -1,4 +1,4 @@
-Ticker plugin 0.7.2
+Ticker plugin 0.7.3
 ===================
 Ticker is a RSS parser plugin for Datenstrom Yellow.
 

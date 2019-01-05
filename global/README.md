@@ -1,4 +1,4 @@
-Global plugin 0.7.5
+Global plugin 0.7.6
 ===================
 Includes page content into other pages. 
 

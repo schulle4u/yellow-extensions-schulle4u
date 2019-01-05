@@ -1,4 +1,4 @@
-Spoiler plugin 0.7.2
+Spoiler plugin 0.7.3
 ====================
 A plugin to show/hide certain elements of your website. 
 
