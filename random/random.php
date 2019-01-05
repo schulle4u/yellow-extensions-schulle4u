@@ -18,7 +18,7 @@ class YellowRandom {
     // Handle page content of shortcut
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = NULL;
-        if ($name=="random" && ($type=="block" || $type=="inline"))) {
+        if ($name=="random" && ($type=="block" || $type=="inline")) {
             list($location, $pagesMax, $mode) = $this->yellow->toolbox->getTextArgs($text);
             if (empty($location)) $location = $this->yellow->config->get("randomLocation");
             if (strempty($pagesMax)) $pagesMax = $this->yellow->config->get("randomPagesMax");
