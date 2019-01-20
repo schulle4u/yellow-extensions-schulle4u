@@ -22,7 +22,7 @@ Use `password: your password` and `template: private` in your page settings.
 
 The following settings can be configured in file `system/config/config.ini`:
 
-`PrivateVisible` = Show private pages in navigation and search results (default: 0)  
+`PrivateVisible` = Show private pages in navigation and search plugin results (default: 0)  
 
 ## Example
 
