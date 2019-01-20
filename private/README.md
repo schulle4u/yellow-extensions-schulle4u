@@ -1,5 +1,5 @@
-Private plugin 0.7.9
-====================
+Private plugin 0.7.10
+=====================
 Create password-protected pages.
 
 <p align="center"><img src="private-screenshot.png?raw=true" alt="Screenshot"></p>
@@ -17,6 +17,12 @@ To uninstall delete the [plugin files](update.ini).
 Use `password: your password` and `template: private` in your page settings. 
 
 **Note**: Please use this plugin with caution. It doesn't protect any page data from being parsed by other plugins, it just hides the content behind a very basic password form in the output template. You can use some page settings to minimize data leaks, see example below. For real secrets you should consider a more secure solution. 
+
+## How to configure private plugin
+
+The following settings can be configured in file `system/config/config.ini`:
+
+`PrivateVisible` = Show private pages in navigation and search results (default: 0)  
 
 ## Example
 
