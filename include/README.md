@@ -50,7 +50,7 @@ We work hard, but we love it. Read full stories of our team members below!
 [include /about/john 1]
 
 [include /about/somebody-else 1]
-``
+```
 
 ## Developer
 
