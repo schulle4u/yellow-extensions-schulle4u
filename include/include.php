@@ -1,24 +1,24 @@
 <?php
-// Global plugin, http://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/global
-// Copyright (c) 2013-2017 Datenstrom, http://datenstrom.se
+// Include plugin, https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/include
+// Copyright (c) 2019 Steffen Schultz
 // This file may be used and distributed under the terms of the public license.
 
-class YellowGlobal {
-    const VERSION = "0.7.6";
+class YellowInclude {
+    const VERSION = "0.7.7";
     public $yellow;            //access to API
     
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
-        $this->yellow->config->setDefault("globalLocation", "/global/sidebar");
+        $this->yellow->config->setDefault("includeLocation", "/shared/sidebar");
     }
 
     // Handle page content of shortcut
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = NULL;
-        if ($name=="global" && ($type=="block" || $type=="inline")) {
+        if ($name=="include" || $name=="global" && ($type=="block" || $type=="inline")) {
             list($location, $mode) = $this->yellow->toolbox->getTextArgs($text);
-            if (empty($location)) $location = $this->yellow->config->get("globalLocation");
+            if (empty($location)) $location = $this->yellow->config->get("includeLocation");
             if (strempty($mode)) $mode = "0";
             $output .= "<div class=\"".$name."\">\n";
             $page = $this->yellow->pages->find($location);
