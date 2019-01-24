@@ -14,12 +14,12 @@ To uninstall delete the [plugin files](update.ini).
 
 Create a `[include]` shortcut. 
 
-The following arguments are available, all arguments are optional:
+The following arguments are available, all but the first arguments are optional:
 
-`location` = The location for included page content (default: `/shared/sidebar`).  
-`mode` = page display mode, 0 = include full page content, 1 = Include page as a teaser.  
+`location` = The location for included page content (example: `/shared/sidebar`).  
+`mode` = page display mode (full or teaser, default: full)
 
-This plugin is useful to e.g. create a global sidebar or teasers for certain pages. The teaser mode looks for a `[--more--]` tag as page break. 
+This plugin is useful to e.g. create a global sidebar or teasers for page overviews. The teaser mode looks for a `[--more--]` tag as page break. 
 
 ## Example
 
@@ -30,7 +30,7 @@ To create a global sidebar, edit or create the file `content/shared/sidebar.md`.
 Title: Sidebar
 Status: hidden
 ---
-[include]
+[include /shared/sidebar]
 
 Some individual content for every sub page is still possible.
 ```
@@ -45,11 +45,11 @@ Title: Our team
 ---
 We work hard, but we love it. Read full stories of our team members below! 
 
-[include /about/steffen 1]
+[include /about/steffen teaser]
 
-[include /about/john 1]
+[include /about/john teaser]
 
-[include /about/somebody-else 1]
+[include /about/somebody-else teaser]
 ```
 
 ## Developer
