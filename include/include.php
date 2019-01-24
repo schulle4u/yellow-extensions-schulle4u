@@ -10,7 +10,6 @@ class YellowInclude {
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
-        $this->yellow->config->setDefault("globalLocation", "/global/sidebar"); // TODO: Remove later
     }
 
     // Handle page content of shortcut
@@ -38,7 +37,7 @@ class YellowInclude {
         // TODO: Remove later
         if ($name=="global" && ($type=="block" || $type=="inline")) {
             list($location, $mode) = $this->yellow->toolbox->getTextArgs($text);
-            if (empty($location)) $location = $this->yellow->config->get("includeLocation");
+            if (empty($location)) $location = "/global/sidebar";
             if (strempty($mode)) $mode = "0";
             $output .= "<div class=\"".$name."\">\n";
             $page = $this->yellow->pages->find($location);
