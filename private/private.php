@@ -22,12 +22,12 @@ class YellowPrivate {
     public function onParsePageTemplate($page, $name) {
         if ($this->yellow->page->get("status")=="private" && $this->yellow->getRequestHandler()=="core") {
             if (trim($_REQUEST["password"])!==$this->yellow->page->get("password")) {
-                $output = "<p class=\"private-message\">".$this->yellow->page->getHtml("description")."</p>\n";
-                $output .= "<form class=\"private-form\" action=\"".$this->yellow->page->getLocation(true)."\" method=\"post\">\n";
-                $output .= "<p class=\"private-password\"><label for=\"password\">".$this->yellow->text->getHtml("editLoginPassword")."</label><br /><input type=\"password\" class=\"form-control\" name=\"password\" id=\"password\" value=\"".htmlspecialchars($_REQUEST["password"])."\" /></p>\n";
-                $output .= "<input type=\"submit\" value=\"".$this->yellow->text->getHtml("EditLoginButton")."\" class=\"btn login-btn\" />\n";
-                $output .= "</form>\n";
-                $this->yellow->page->setOutput($output);
+                $pageError = "<p class=\"private-message\">".$this->yellow->page->getHtml("description")."</p>\n";
+                $pageError .= "<form class=\"private-form\" action=\"".$this->yellow->page->getLocation(true)."\" method=\"post\">\n";
+                $pageError .= "<p class=\"private-password\"><label for=\"password\">".$this->yellow->text->getHtml("editLoginPassword")."</label><br /><input type=\"password\" class=\"form-control\" name=\"password\" id=\"password\" value=\"".htmlspecialchars($_REQUEST["password"])."\" /></p>\n";
+                $pageError .= "<input type=\"submit\" value=\"".$this->yellow->text->getHtml("EditLoginButton")."\" class=\"btn login-btn\" />\n";
+                $pageError .= "</form>\n";
+                $this->yellow->page->error("401", $pageError);
             } else {
                 $this->yellow->page->set("status", "none");
             }
