@@ -1,0 +1,13 @@
+# Datenstrom Yellow language
+
+Language: en
+Error401Title: Unauthorized
+Error401Text: This page is private, please enter the password. [yellow error]
+
+Language: de
+Error401Title: Nicht autorisiert
+Error401Text: Diese Seite ist privat, bitte gib das Passwort ein. [yellow error]
+
+Language: fr
+Error401Title: Non autorisé
+Error401Text: Cette page est privée, veuillez entrer le mot de passe. [yellow error]
