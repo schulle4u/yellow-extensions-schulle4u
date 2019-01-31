@@ -14,9 +14,9 @@ To uninstall delete the [plugin files](update.ini).
 
 ## How to create protected pages
 
-Use `status: private`and `password: your password` in your page settings. 
+Use `status: private` and `password: your password` in your page settings. 
 
-**Note**: Please use this plugin with caution. It doesn't protect any page data from being parsed by other plugins, it just hides the content behind a very basic password form in the output template. You can use some page settings to minimize data leaks, see example below. For real secrets you should consider a more secure solution. 
+**Note**: Please use this plugin with caution. It doesn't apply data encryption or protects page content from being parsed by other plugins, the plugin only hides the content behind a very basic password form. You can use some page settings to minimize possible data leaks, see example below. 
 
 ## How to configure private plugin
 
