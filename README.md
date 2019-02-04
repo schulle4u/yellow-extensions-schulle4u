@@ -5,7 +5,7 @@ Datenstrom Yellow plugins by schulle4u
 Datenstrom Yellow is for people who make websites. [See demo](https://developers.datenstrom.se/plugins/).
 
 1. [Download all plugins and unzip them](https://github.com/schulle4u/yellow-plugins-schulle4u/archive/master.zip).  
-2. Copy relevant files to your web hosting.  
+2. Copy relevant files to your web server.  
 3. Open your website in a web browser.
 
 Plugins created by @schulle4u:
