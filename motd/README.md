@@ -1,6 +1,6 @@
 Message of the day plugin 0.7.3
 ===============================
-A "message of the day" shortcode for your website. 
+Displays a message of the day.
 
 ## How to install plugin
 

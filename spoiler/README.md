@@ -1,6 +1,6 @@
 Spoiler plugin 0.7.3
 ====================
-A plugin to show/hide certain elements of your website. 
+Hide certain page elements.
 
 ## How to install plugin
 
