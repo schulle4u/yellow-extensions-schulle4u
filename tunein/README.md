@@ -1,14 +1,14 @@
-TuneIn plugin 0.7.3
-===================
+TuneIn extension 0.8.3
+======================
 Embed TuneIn Radio player
 
-## How to install plugin
+## How to install extension
 
 1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download plugin](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/tunein.zip). If you are using Safari, right click and select 'Download file as'.
-3. Copy `tunein.zip` into your `system/plugins` folder.
+2. [Download extension](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/tunein.zip). If you are using Safari, right click and select 'Download file as'.
+3. Copy `tunein.zip` into your `system/extensions` folder.
 
-To uninstall delete the [plugin files](update.ini).
+To uninstall delete the [extension files](extension.ini).
 
 ## How to use the TuneIn radio player
 

@@ -1,16 +1,17 @@
 <?php
-// TuneIn plugin, https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/tunein
+// TuneIn extension, https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/tunein
 // Copyright (c) 2013-2018 Datenstrom, https://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
 
 class YellowTunein {
-    const VERSION = "0.7.3";
+    const VERSION = "0.8.3";
+    const TYPE = "feature";
     public $yellow;            //access to API
     
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
-        $this->yellow->config->setDefault("tuneinStyle", "tunein");
+        $this->yellow->system->setDefault("tuneinStyle", "tunein");
     }
     
     // Handle page content of shortcut
@@ -18,7 +19,7 @@ class YellowTunein {
         $output = null;
         if ($name=="tunein" && ($type=="block" || $type=="inline")) {
             list($id, $style, $width, $height, $autoplay) = $this->yellow->toolbox->getTextArgs($text);
-            if (empty($style)) $style = $this->yellow->config->get("tuneinStyle");
+            if (empty($style)) $style = $this->yellow->system->get("tuneinStyle");
             if (empty($width)) $width = "100%";
             if (empty($height)) $height = "100px";
             if (empty($autoplay)) $autoplay = "false";

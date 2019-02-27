@@ -1,14 +1,14 @@
-Spoiler plugin 0.7.3
-====================
+Spoiler extension 0.8.3
+=======================
 Hide certain page elements.
 
-## How to install plugin
+## How to install extension
 
 1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download plugin](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/spoiler.zip). If you are using Safari, right click and select 'Download file as'.
-3. Copy `spoiler.zip` into your `system/plugins` folder.
+2. [Download extension](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/spoiler.zip). If you are using Safari, right click and select 'Download file as'.
+3. Copy `spoiler.zip` into your `system/extensions` folder.
 
-To uninstall delete the [plugin files](update.ini).
+To uninstall delete the [extension files](extension.ini).
 
 ## How to use the spoiler
 
@@ -30,11 +30,11 @@ Hiding a block of text.
 ---
 Title: Spoiler example
 ---
-Here is some text which is hidden by default. Click on the symbol to show the content. 
+Below is some text which is hidden by default. Click on the symbol to show the content. 
 
 [spoilerstart text1]  
 
-This text is hidden by default. If you can read this, you successfully clicked the right symbol. You can put whatever you like here; text, links, images, even plugin shortcuts are possible. 
+This text is hidden by default. If you can read this, you successfully clicked the right symbol. You can put whatever you like here; text, links, images, even extension shortcuts are possible. 
 
 [spoilerstop text1]
 

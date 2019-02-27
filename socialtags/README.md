@@ -1,27 +1,27 @@
-Socialtags plugin 0.7.6
-=======================
+Socialtags extension 0.8.3
+==========================
 Adds Twitter and Open Graph meta tags.
 
-## How to install plugin
+## How to install extension
 
 1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download plugin](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/socialtags.zip). If you are using Safari, right click and select 'Download file as'.
-3. Copy `socialtags.zip` into your `system/plugins` folder.
+2. [Download extension](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/socialtags.zip). If you are using Safari, right click and select 'Download file as'.
+3. Copy `socialtags.zip` into your `system/extensions` folder.
 
-To uninstall delete the [plugin files](update.ini).
+To uninstall delete the [extension files](extension.ini).
 
 ## How to use social meta tags
 
-The plugin uses data from your page settings and converts them to appropriate meta tags for [Twitter cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards) as well as for the [Open Graph protocol](http://ogp.me/) which is used by Facebook. 
+The extension uses data from your page settings and converts them to appropriate meta tags for [Twitter cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards) as well as for the [Open Graph protocol](http://ogp.me/) which is used by Facebook. 
 
-*Note*: For correct page validation the Open Graph protocol requires some additional namespace elements in the opening `<html` element. Replace the first line of your `system/themes/snippets/header.php` with the following line: 
+*Note*: For correct page validation the Open Graph protocol requires some additional namespace elements in the opening `<html` element. Replace the first line of your `system/layouts/header.html` with the following line: 
 
-    <!DOCTYPE html><html <?php if ($yellow->plugins->isExisting("socialtags")): ?>prefix="og: http://ogp.me/ns# <?php if ($yellow->page->getHtml("template") == "blog"): ?>article: http://ogp.me/ns/article#<?php endif ?>" <?php endif ?>lang="<?php echo $yellow->page->getHtml("language") ?>">
+    <!DOCTYPE html><html <?php if ($yellow->extensions->isExisting("socialtags")): ?>prefix="og: http://ogp.me/ns# <?php if ($yellow->page->getHtml("layout") == "blog"): ?>article: http://ogp.me/ns/article#<?php endif ?>" <?php endif ?>lang="<?php echo $yellow->page->getHtml("language") ?>">
 
 
 ## How to configure socialtags
 
-The following settings can be configured in file `system/config/config.ini`:
+The following settings can be configured in file `system/settings/system.ini`:
 
 `SocialtagsTwitterUser` = Your site's Twitter `@username`, mandatory for Twitter cards display. 
 

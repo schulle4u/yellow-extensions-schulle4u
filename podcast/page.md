@@ -1,6 +1,6 @@
 ---
 Title: Podcast
 Description: Podcast
-Template: podcast
+Layout: podcast
 ---
 This page is automatically generated.

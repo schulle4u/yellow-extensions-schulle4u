@@ -1,14 +1,14 @@
-Message of the day plugin 0.7.3
-===============================
+Message of the day 0.8.3
+========================
 Displays a message of the day.
 
-## How to install plugin
+## How to install extension
 
 1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download plugin](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/motd.zip). If you are using Safari, right click and select 'Download file as'.
-3. Copy `motd.zip` into your `system/plugins` folder.
+2. [Download extension](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/motd.zip). If you are using Safari, right click and select 'Download file as'.
+3. Copy `motd.zip` into your `system/extensions` folder.
 
-To uninstall delete the [plugin files](update.ini).
+To uninstall delete the [extension files](extension.ini).
 
 ## How to use the message of the day
 

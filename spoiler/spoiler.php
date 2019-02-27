@@ -1,10 +1,11 @@
 <?php
-// Spoiler plugin, https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/spoiler
+// Spoiler extension, https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/spoiler
 // Copyright (c) 2013-2018 Datenstrom, https://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
 
 class YellowSpoiler {
-    const VERSION = "0.7.3";
+    const VERSION = "0.8.3";
+    const TYPE = "feature";
     public $yellow;            //access to API
     
     // Handle initialisation

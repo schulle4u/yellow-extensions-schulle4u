@@ -1,10 +1,11 @@
 <?php
-// Message of the day plugin, https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/motd
+// Message of the day extension, https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/motd
 // Copyright (c) 2013-2017 Datenstrom, https://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
 
 class YellowMotd {
-    const VERSION = "0.7.3";
+    const VERSION = "0.8.3";
+    const TYPE = "feature";
     public $yellow;            //access to API
     
     // Handle initialisation

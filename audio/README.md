@@ -1,16 +1,16 @@
-Audio plugin 0.7.2
-==================
+Audio 0.7.2
+===========
 HTML5 audio player.
 
 <p align="center"><img src="audio-screenshot.png?raw=true" alt="Screenshot"></p>
 
-## How to install plugin
+## How to install extension
 
 1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download plugin](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/audio.zip). If you are using Safari, right click and select 'Download file as'.
-3. Copy `audio.zip` into your `system/plugins` folder.
+2. [Download extension](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/audio.zip). If you are using Safari, right click and select 'Download file as'.
+3. Copy `audio.zip` into your `system/extensions` folder.
 
-To uninstall delete the [plugin files](update.ini).
+To uninstall delete the [extension files](update.ini).
 
 ## How to use the player
 
@@ -22,11 +22,11 @@ The following arguments are available, all but the first argument are optional:
 `download` = show download link for audio file, 1 or 0  
 `style` = CSS class to use for the player 
 
-This plugin embeds a basic audio player using the HTML5 `<audio>` tag, which is supported by most web browsers. 
+This extension embeds a basic audio player using the HTML5 `<audio>` tag, which is supported by most web browsers. 
 
 ## How to configure the player
 
-The following settings can be configured in file `system/config/config.ini`: 
+The following settings can be configured in file `system/settings/system.ini`: 
 
 `AudioDownload` = show download link for audio files, 1 or 0  
 `AudioUrlPrefix` = URL prefix for audio files  

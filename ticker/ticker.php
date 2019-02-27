@@ -1,20 +1,21 @@
 <?php
-// Ticker plugin, https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/ticker
+// Ticker extension, https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/ticker
 // Copyright (c) 2013-2017 Datenstrom, https://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
 
 class YellowTicker {
-    const VERSION = "0.7.3";
+    const VERSION = "0.8.3";
+    const TYPE = "feature";
     public $yellow;            //access to API
     
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
-        $this->yellow->config->setDefault("tickerShowDate", 1);
-        $this->yellow->config->setDefault("tickerShowDescription", 1);
-        $this->yellow->config->setDefault("tickerAdvancedParser", 0);
-        $this->yellow->config->setDefault("tickerStyle", "ticker");
-        $this->yellow->config->setDefault("tickerNumentries", 5);
+        $this->yellow->system->setDefault("tickerShowDate", 1);
+        $this->yellow->system->setDefault("tickerShowDescription", 1);
+        $this->yellow->system->setDefault("tickerAdvancedParser", 0);
+        $this->yellow->system->setDefault("tickerStyle", "ticker");
+        $this->yellow->system->setDefault("tickerNumentries", 5);
     }
     
     
@@ -23,15 +24,15 @@ class YellowTicker {
         $output = NULL;
         if ($name=="ticker" && ($type=="block" || $type=="inline")) {
             list($rssurl,$numentries,$style) = $this->yellow->toolbox->getTextArgs($text);
-            if (empty($style)) $style = $this->yellow->config->get("tickerStyle");
-            if (strempty($numentries)) $numentries = $this->yellow->config->get("tickerNumentries");
+            if (empty($style)) $style = $this->yellow->system->get("tickerStyle");
+            if (strempty($numentries)) $numentries = $this->yellow->system->get("tickerNumentries");
             $n=1;
-            $show_date = $this->yellow->config->get("tickerShowDate");
-            $show_description = $this->yellow->config->get("tickerShowDescription");
+            $show_date = $this->yellow->system->get("tickerShowDate");
+            $show_description = $this->yellow->system->get("tickerShowDescription");
             $output .= "<div class=\"".htmlspecialchars($style)."\">\n";
             $output .= "<ul>\n";
-            if ($this->yellow->config->get("tickerAdvancedParser") && file_exists($this->yellow->config->get("pluginDir")."SimplePie.compiled.php")) {
-                require_once($this->yellow->config->get("pluginDir")."SimplePie.compiled.php");
+            if ($this->yellow->system->get("tickerAdvancedParser") && file_exists($this->yellow->system->get("extensionDir")."SimplePie.compiled.php")) {
+                require_once($this->yellow->system->get("extensionDir")."SimplePie.compiled.php");
                 
                 // We'll process this feed with all of the default options.
                 $feed = new SimplePie();
@@ -40,7 +41,7 @@ class YellowTicker {
                 $feed->set_feed_url($rssurl);
                 
                 // Cache location
-                $feed->set_cache_location($this->yellow->config->get("pluginDir")."cache");
+                $feed->set_cache_location($this->yellow->system->get("extensionDir")."cache");
                 
                 // Run SimplePie.
                 $feed->init();

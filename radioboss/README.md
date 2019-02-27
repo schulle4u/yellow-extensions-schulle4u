@@ -1,16 +1,16 @@
-Radioboss plugin 0.7.3
-======================
+Radioboss extension 0.8.3
+=========================
 Shortcut plugin to integrate the widgets for [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/), a cloud-based radio automation service developed by [DJSoft.net](https://www.djsoft.net). 
 
-## How to install plugin
+## How to install extension
 
 1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download plugin](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/radioboss.zip). If you are using Safari, right click and select 'Download file as'.
-3. Copy `radioboss.zip` into your `system/plugins` folder.
+2. [Download extension](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/radioboss.zip). If you are using Safari, right click and select 'Download file as'.
+3. Copy `radioboss.zip` into your `system/extensions` folder.
 
-To uninstall delete the [plugin files](update.ini).
+To uninstall delete the [extension files](extension.ini).
 
-## How to use the RadioBoss plugin
+## How to use the RadioBoss extension
 
 Create a `[radioboss]` shortcut. 
 
@@ -33,11 +33,11 @@ The following widgets are available:
 `links` = Show a list of streaming links.  
 `page` = Displays a link to the auto-generated stream page of RadioBoss Cloud. 
 
-*Note*: RadioBoss Cloud is still under development, therefore things may change also in this plugin. Some of the widgets are not compatible with all browsers, and most likely never will be. Especially IE is known to have issues with the involved JS. Currently some widgets may not work if used twice for different streams on the same page. 
+*Note*: RadioBoss Cloud is still under development, therefore things may change also in this extension. Some of the widgets are not compatible with all browsers, and most likely never will be. Especially IE is known to have issues with the involved JS. Currently some widgets may not work if used twice for different streams on the same page. 
 
-## How to configure the RadioBoss plugin
+## How to configure the RadioBoss extension
 
-The following settings must be configured in file `system/config/config.ini`: 
+The following settings must be configured in file `system/settings/system.ini`: 
 
 `RadiobossServer` = The hostname of used cloud instance without leading `https://` (example: `c2.radioboss.fm`).  
 `RadiobossPort` = Streaming port (example: `8010`).  
@@ -89,4 +89,4 @@ Author: Steffen
 
 ## Developer
 
-Steffen Schultz
+Steffen Schultz featuring DJSoft.net

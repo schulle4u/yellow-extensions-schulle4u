@@ -1,15 +1,15 @@
-Podcast plugin 0.7.5
-==============
-A fork of the [original Yellow feed plugin](https://github.com/datenstrom/yellow-extensions/tree/master/features/feed) optimized for podcast publishing. 
+Podcast 0.8.3
+=============
+A fork of the [original Yellow feed extension](https://github.com/datenstrom/yellow-extensions/tree/master/features/feed) optimized for podcast publishing. 
 
-## How to install plugin
+## How to install extension
 
 1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download plugin](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/podcast.zip). If you are using Safari, right click and select 'Download file as'.
-3. Copy `podcast.zip` into your `system/plugins` folder.
-4. Optional: download and install the [Audio plugin](https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/audio). 
+2. [Download extension](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/podcast.zip). If you are using Safari, right click and select 'Download file as'.
+3. Copy `podcast.zip` into your `system/extensions` folder.
+4. Optional: download and install the [Audio extension](https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/audio). 
 
-To uninstall delete the [plugin files](update.ini).
+To uninstall delete the [extension files](extension.ini).
 
 ## How to use the podcast
 
@@ -17,7 +17,7 @@ The podcast feed is available on your website as `http://website/podcast/` and `
 
 ## How to configure the podcast
 
-The following settings can be configured in file `system/config/config.ini`:
+The following settings can be configured in file `system/settings/system.ini`:
 
 `PodcastLocation` = podcast location  
 `PodcastFileXml` = feed file name for RSS podcast feed  
@@ -48,7 +48,7 @@ Title: A new podcast episode
 Published: 2018-01-01 12:45:00
 Author: Steffen
 Tag: cool, stuff
-Template: blog
+Layout: blog
 Mediafile: http://cdn.yourdomain.tld/podcast/files/episode1.mp3
 Duration: 00:10:00
 ---
