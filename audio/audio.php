@@ -1,5 +1,5 @@
 <?php
-// Audio extension, https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/audio
+// Audio extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/audio
 // Copyright (c) 2013-2015 Datenstrom, https://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
 

@@ -1,5 +1,5 @@
 <?php
-// Spoiler extension, https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/spoiler
+// Spoiler extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler
 // Copyright (c) 2013-2018 Datenstrom, https://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
 

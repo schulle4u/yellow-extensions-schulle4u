@@ -5,7 +5,7 @@ Ticker is a RSS parser plugin for Datenstrom Yellow.
 ## How to install plugin
 
 1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download plugin](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/ticker.zip). If you are using Safari, right click and select 'Download file as'.
+2. [Download plugin](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/master/zip/ticker.zip). If you are using Safari, right click and select 'Download file as'.
 3. Copy `ticker.zip` into your `system/plugins` folder.
 
 To uninstall delete the [plugin files](update.ini).

@@ -8,7 +8,7 @@ Privacy-friendly social sharing buttons.
 
 1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
 2. [Download and install Fontawesome extension](https://github.com/datenstrom/yellow-extensions/tree/master/features/fontawesome).   
-3. [Download extension](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/shariff.zip). If you are using Safari, right click and select 'Download file as'.
+3. [Download extension](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/master/zip/shariff.zip). If you are using Safari, right click and select 'Download file as'.
 4. Copy `shariff.zip` into your `system/extensions` folder.
 
 To uninstall delete the [extension files](extension.ini).

@@ -1,5 +1,5 @@
 <?php
-// Podcast extension, https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/podcast
+// Podcast extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast
 // Based on the yellow Feed extension, https://github.com/datenstrom/yellow-plugins/tree/master/feed
 // Copyright (c) 2013-2018 Datenstrom, https://datenstrom.se
 // This file may be used and distributed under the terms of the public license.

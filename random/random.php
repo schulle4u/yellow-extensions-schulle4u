@@ -1,5 +1,5 @@
 <?php
-// Random extension, https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/random
+// Random extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/random
 // Copyright (c) 2019 Steffen Schultz
 // This file may be used and distributed under the terms of the public license.
 

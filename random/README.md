@@ -5,7 +5,7 @@ Display random pages from specified location.
 ## How to install extension
 
 1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download extension](https://github.com/schulle4u/yellow-plugins-schulle4u/raw/master/zip/random.zip). If you are using Safari, right click and select 'Download file as'.
+2. [Download extension](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/master/zip/random.zip). If you are using Safari, right click and select 'Download file as'.
 3. Copy `random.zip` into your `system/extensions` folder.
 
 To uninstall delete the [extension files](extension.ini).

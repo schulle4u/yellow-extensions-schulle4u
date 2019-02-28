@@ -1,5 +1,5 @@
 <?php
-// Socialtags extension, https://github.com/schulle4u/yellow-plugins-schulle4u/tree/master/socialtags
+// Socialtags extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/socialtags
 // Copyright (c) 2013-2018 Steffen Schultz, https://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
 
