@@ -1,14 +1,14 @@
-Datenstrom Yellow plugins by schulle4u
+Datenstrom Yellow extensions by schulle4u
 ======================================
 [![Datenstrom Yellow](https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/datenstrom-yellow-en.jpg)](https://datenstrom.se/yellow/)
 
-Datenstrom Yellow is for people who make websites. [See demo](https://developers.datenstrom.se/plugins/).
+Datenstrom Yellow is for people who make websites. [See demo](https://developers.datenstrom.se/extensions/).
 
-1. [Download all plugins and unzip them](https://github.com/schulle4u/yellow-extensions-schulle4u/archive/master.zip).  
+1. [Download all extensions and unzip them](https://github.com/schulle4u/yellow-extensions-schulle4u/archive/master.zip).  
 2. Copy relevant files to your web server.  
 3. Open your website in a web browser.
 
-Plugins created by @schulle4u:
+Extensions created by @schulle4u:
 
 * [About](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/about): 
   Author profile for blog pages.
@@ -21,7 +21,7 @@ Plugins created by @schulle4u:
 * [MOTD](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/motd): 
   Message of the day.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast): 
-  A fork of the original feed plugin optimized for podcast publishing.
+  A fork of the original feed extension optimized for podcast publishing.
 * [Private](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/private): 
   Create password-protected pages.
 * [RadioBoss](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/radioboss): 
