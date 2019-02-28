@@ -1,4 +1,4 @@
-TuneIn extension 0.8.3
+Tunein 0.8.3
 ======================
 Embed TuneIn Radio player
 

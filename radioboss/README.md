@@ -1,4 +1,4 @@
-Radioboss extension 0.8.3
+Radioboss 0.8.3
 =========================
 Shortcut plugin to integrate the widgets for [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/), a cloud-based radio automation service developed by [DJSoft.net](https://www.djsoft.net). 
 

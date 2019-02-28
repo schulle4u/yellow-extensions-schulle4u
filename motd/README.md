@@ -1,4 +1,4 @@
-Message of the day 0.8.3
+Motd 0.8.3
 ========================
 Displays a message of the day.
 

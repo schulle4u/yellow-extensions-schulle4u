@@ -14,7 +14,7 @@ class YellowPrivate {
         $this->yellow->system->setDefault("privateVisible", "");
     }
 
-        // Handle page meta data
+    // Handle page meta data
     public function onParseMeta($page) {
         if (!$this->yellow->system->get("privateVisible") && $page->get("status")=="private") $page->visible = false;
     }

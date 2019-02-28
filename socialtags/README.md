@@ -1,4 +1,4 @@
-Socialtags extension 0.8.3
+Socialtags 0.8.3
 ==========================
 Adds Twitter and Open Graph meta tags.
 

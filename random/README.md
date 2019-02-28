@@ -1,4 +1,4 @@
-Random extension 0.8.3
+Random 0.8.3
 ======================
 Display random pages from specified location.
 

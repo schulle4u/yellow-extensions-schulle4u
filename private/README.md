@@ -1,4 +1,4 @@
-Private extension 0.8.3
+Private 0.8.3
 =======================
 Create password-protected pages.
 

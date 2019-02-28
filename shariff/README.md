@@ -1,4 +1,4 @@
-Shariff extension 0.8.3
+Shariff 0.8.3
 =======================
 Privacy-friendly social sharing buttons.
 

@@ -30,7 +30,7 @@ class YellowPodcast {
     // Handle page parsing
     public function onParsePageLayout($page, $name) {
         if ($name=="podcast") {
-            $pages = $this->yellow->pages->index(false, false);
+            $pages = $this->yellow->content->index(false, false);
             $pagesFilter = array();
             if ($_REQUEST["tag"]) {
                 $pages->filter("tag", $_REQUEST["tag"]);
