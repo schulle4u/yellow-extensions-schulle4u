@@ -21,11 +21,11 @@ Extensions created by @schulle4u:
 * [MOTD](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/motd): 
   Message of the day.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast): 
-  A fork of the original feed extension optimized for podcast publishing.
+  Web feed optimized for podcast publishing.
 * [Private](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/private): 
   Create password-protected pages.
-* [RadioBoss](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/radioboss): 
-  Widgets for the RadioBoss Cloud service by DJSoft.
+* [Radioboss](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/radioboss): 
+  Widgets for RadioBoss Cloud.
 * [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/random): 
   Display random pages from specified location.
 * [Shariff](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/shariff): 
@@ -35,7 +35,7 @@ Extensions created by @schulle4u:
 * [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler): 
   Hide certain page elements.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker): 
-  Feed parser using SimpleXML or SimplePie.
+  RSS feed parser using SimpleXML or SimplePie.
 * [TuneIn](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/tunein): 
   Embed radio stations from TuneIn.
 

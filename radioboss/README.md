@@ -1,6 +1,6 @@
 Radioboss 0.8.3
-=========================
-Shortcut plugin to integrate the widgets for [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/), a cloud-based radio automation service developed by [DJSoft.net](https://www.djsoft.net). 
+===============
+Widgets for RadioBoss Cloud.
 
 ## How to install extension
 
@@ -32,6 +32,8 @@ The following widgets are available:
 `recent` = Show the last 10 recently played tracks.  
 `links` = Show a list of streaming links.  
 `page` = Displays a link to the auto-generated stream page of RadioBoss Cloud. 
+
+The extension uses [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/), a cloud-based radio automation service developed by [DJSoft.net](https://www.djsoft.net). 
 
 *Note*: RadioBoss Cloud is still under development, therefore things may change also in this extension. Some of the widgets are not compatible with all browsers, and most likely never will be. Especially IE is known to have issues with the involved JS. Currently some widgets may not work if used twice for different streams on the same page. 
 
