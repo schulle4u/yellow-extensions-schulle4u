@@ -13,7 +13,7 @@ To uninstall delete the [extension files](extension.ini).
 
 ## How to use the podcast
 
-The podcast feed is available on your website as `http://website/podcast/` and `http://website/podcast/page:podcast.xml`. It's a feed for the entire website, only visible pages are included. To make a blog podcast feed open file `system/config/config.ini` and change `PodcastFilter: blog`. It is also possible to filter podcasts by tag or author, use an URL like `http://website/podcast/tag:series1/page:podcast.xml` You can add a link to the podcast somewhere on your website. 
+The podcast feed is available on your website as `http://website/podcast/` and `http://website/podcast/page:podcast.xml`. It's a feed for the entire website, only visible pages are included. To make a blog podcast feed open file `system/settings/system.ini` and change `PodcastFilter: blog`. It is also possible to filter podcasts by tag or author, use an URL like `http://website/podcast/tag:series1/page:podcast.xml` You can add a link to the podcast somewhere on your website. 
 
 Based on the original [feed extension](https://github.com/datenstrom/yellow-extensions/tree/master/features/feed).
 
