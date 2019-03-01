@@ -25,7 +25,7 @@ class YellowShariff {
             $output = "<div class=\"shariff\" data-services=\"".htmlspecialchars(json_encode(preg_split("/\s*,\s*/", $services)))."\"";
             $output .= " data-lang=\"$language\" data-title=\"".htmlspecialchars($titleBugfix)."\"";
             $output .= "></div>";
-            if (!$this->yellow->extensions->isExisting("fontawesome")) $page->error(500, "Shariff requires 'fontawesome' plugin!");
+            if (!$this->yellow->extensions->isExisting("fontawesome")) $page->error(500, "Shariff requires 'fontawesome' extension!");
         }
         return $output;
     }

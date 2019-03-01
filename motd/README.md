@@ -1,6 +1,6 @@
 Motd 0.8.3
 ========================
-Displays a message of the day.
+Message of the day.
 
 ## How to install extension
 
@@ -24,7 +24,9 @@ Title: Page title
 motd1: Today is monday
 motd2: Tuesday, the week is still way to long
 Motd3: Wednesday, theres light on the horizon!
-...
+motd4: Thursday, also called the little friday
+Motd5: Friday, the weekend is finally here!
+Motd6: What are your plans for saturday night?
 motd7: Sunday, lazy sunday
 ---
 Page text goes here as usual. 

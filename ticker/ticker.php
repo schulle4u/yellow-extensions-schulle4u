@@ -31,8 +31,6 @@ class YellowTicker {
             $show_description = $this->yellow->system->get("tickerShowDescription");
             $output .= "<div class=\"".htmlspecialchars($style)."\">\n";
             $output .= "<ul>\n";
-            if ($this->yellow->system->get("tickerAdvancedParser") && file_exists($this->yellow->system->get("extensionDir")."SimplePie.compiled.php")) {
-                require_once($this->yellow->system->get("extensionDir")."SimplePie.compiled.php");
                 
                 // We'll process this feed with all of the default options.
                 $feed = new SimplePie();

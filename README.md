@@ -17,7 +17,7 @@ Extensions created by @schulle4u:
 * [Audio](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/audio): 
   HTML5 audio player.
 * [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/include): 
-  Include page content into another page.
+  Includes page content from other pages.
 * [MOTD](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/motd): 
   Message of the day.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast): 
@@ -37,6 +37,6 @@ Extensions created by @schulle4u:
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker): 
   RSS feed parser using SimpleXML or SimplePie.
 * [TuneIn](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/tunein): 
-  Embed radio stations from TuneIn.
+  Embed TuneIn Radio player.
 
 A developer kit and an API for developers is available. [Learn more](https://developers.datenstrom.se/help/).

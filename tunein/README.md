@@ -1,6 +1,6 @@
 Tunein 0.8.3
 ======================
-Embed TuneIn Radio player
+Embed TuneIn Radio player. 
 
 ## How to install extension
 
