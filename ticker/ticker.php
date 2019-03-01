@@ -31,6 +31,7 @@ class YellowTicker {
             $show_description = $this->yellow->system->get("tickerShowDescription");
             $output .= "<div class=\"".htmlspecialchars($style)."\">\n";
             $output .= "<ul>\n";
+            if ($this->yellow->system->get("tickerAdvancedParser")) {
                 
                 // We'll process this feed with all of the default options.
                 $feed = new SimplePie();
@@ -39,7 +40,8 @@ class YellowTicker {
                 $feed->set_feed_url($rssurl);
                 
                 // Cache location
-                $feed->set_cache_location($this->yellow->system->get("extensionDir")."cache");
+                if (!is_dir($this->yellow->system->get("cacheDir"))) @mkdir($this->yellow->system->get("cacheDir"), 0777, true);
+                $feed->set_cache_location($this->yellow->system->get("cacheDir"));
                 
                 // Run SimplePie.
                 $feed->init();
@@ -51,13 +53,8 @@ class YellowTicker {
                 foreach ($feed->get_items() as $item) {
                     $output .= "<li>";
                     $output .= "<a href = \"".$item->get_permalink()."\">".$item->get_title()."</a>";
-                    if ($show_date) {
-                        $output .= " - ".$item->get_date($this->yellow->text->getHtml("DateFormatLong"));
-                    }
-                    if ($show_description) {
-                        $output .= "<br />".$item->get_description();
-                        $output .= "<a href=\"".$item->get_permalink()."\">".$this->yellow->text->getHtml("blogMore")."</a>";
-                    }
+                    if ($show_date) $output .= " - ".$item->get_date($this->yellow->text->getHtml("DateFormatLong"));
+                    if ($show_description) $output .= "<br />".$item->get_description()." <a href=\"".$item->get_permalink()."\">".$this->yellow->text->getHtml("blogMore")."</a>";
                     $output .= "</li>\n";
                     if ($n>=$numentries) { break; }
                     $n++;
@@ -67,13 +64,8 @@ class YellowTicker {
                     foreach ($rss->channel->item as $item) {
                         $output .= "<li>";
                         $output .= "<a href = \"".$item->link."\">".$item->title."</a>";
-                        if ($show_date) {
-                            $output .= " - ".date($this->yellow->text->getHtml("DateFormatLong"),strtotime($item->pubDate));
-                        }
-                        if ($show_description) {
-                            $output .= "<br />".$item->description;
-                            $output .= "<a href=\"{$item->link}\">".$this->yellow->text->getHtml("blogMore")."</a>";
-                        }
+                        if ($show_date) $output .= " - ".date($this->yellow->text->getHtml("DateFormatLong"),strtotime($item->pubDate));
+                        if ($show_description) $output .= "<br />".$item->description." <a href=\"{$item->link}\">".$this->yellow->text->getHtml("blogMore")."</a>";
                         $output .= "</li>\n";
                         if ($n>=$numentries) { break; }
                         $n++;
