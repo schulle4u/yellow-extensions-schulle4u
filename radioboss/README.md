@@ -35,7 +35,7 @@ The following widgets are available:
 
 The extension uses [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/), a cloud-based radio automation service developed by [DJSoft.net](https://www.djsoft.net). 
 
-*Note*: RadioBoss Cloud is still under development, therefore things may change also in this extension. Some of the widgets are not compatible with all browsers, and most likely never will be. Especially IE is known to have issues with the involved JS. Currently some widgets may not work if used twice for different streams on the same page. 
+*Note*: RadioBoss Cloud is still under development, therefore things may change also in this extension. Some of the widgets are not compatible with all browsers, and most likely never will be. Especially IE is known to have issues with the involved JS.  
 
 ## How to configure the RadioBoss extension
 
