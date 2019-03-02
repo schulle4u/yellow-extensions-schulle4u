@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowRadioboss {
-    const VERSION = "0.8.3";
+    const VERSION = "0.8.4";
     const TYPE = "feature";
     public $yellow;            //access to API
     
@@ -33,33 +33,44 @@ class YellowRadioboss {
             if (empty($id)) $id = $this->yellow->system->get("radiobossId");
             if (empty($mount)) $mount = $this->yellow->system->get("radiobossMount");
             $listeners = $this->yellow->system->get("radiobossListeners");
+            $wid = mt_rand(100, 9999);
             
             $output .= "<div class=\"".htmlspecialchars($style)."\">\n";
             
             // Widget code
             if ($type == "player") {
-                $output .= "<div id=\"rbcloud_player\"></div>\n";
-                $output .= "<script src=\"https://".htmlspecialchars($server)."/w/player.js?u=https%3A%2F%2F".htmlspecialchars($server)."%3A".htmlspecialchars($port2)."%2F".htmlspecialchars($mount)."\"></script>\n";
+                $output .= "<!-- RadioBOSS Cloud Player Widget (Start) -->\n";
+                $output .= "<div id=\"rbcloud_player".htmlspecialchars($wid)."\"></div>\n";
+                $output .= "<script src=\"https://".htmlspecialchars($server)."/w/player.js?u=https%3A%2F%2F".htmlspecialchars($server)."%3A".htmlspecialchars($port2)."%2F".htmlspecialchars($mount)."&amp;wid=".htmlspecialchars($wid)."\"></script>\n";
+                $output .= "<!-- RadioBOSS Cloud Player Widget (End) -->\n";
             }
             if ($type == "nowplaying") {
-                $output .= "<div id=\"rbcloud_nowplaying\"></div>\n";
-                if ($listeners) $output .= "<div>Listeners: <span id=\"rbcloud_listeners\">...</span></div>\n";
-                $output .= "<script src=\"https://".htmlspecialchars($server)."/w/nowplaying.js?u=".htmlspecialchars($id)."\"></script>\n";
+                $output .= "<!-- RadioBOSS Cloud NowPlaying Widget (Start) -->\n";
+                $output .= "<div id=\"rbcloud_nowplaying".htmlspecialchars($wid)."\"></div>\n";
+                if ($listeners) $output .= "<div>Listeners: <span id=\"rbcloud_listeners".htmlspecialchars($wid)."\">...</span></div>\n";
+                $output .= "<script src=\"https://".htmlspecialchars($server)."/w/nowplaying.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid)."\"></script>\n";
+                $output .= "<!-- RadioBOSS Cloud NowPlaying Widget (End) -->\n";
             } 
             if ($type == "cover") {
-                $output .= "<img id=\"rbcloud_cover\" src=\"https://".htmlspecialchars($server)."/w/artwork/".htmlspecialchars($id).".png\" width=\"150\" height=\"150\">\n";
-                $output .= "<script src=\"https://".htmlspecialchars($server)."/w/cover.js?u=".htmlspecialchars($id)."\"></script>\n";
+                $output .= "<!-- RadioBOSS Cloud Artwork Widget (Start) -->\n";
+                $output .= "<img id=\"rbcloud_cover".htmlspecialchars($wid)."\" src=\"https://".htmlspecialchars($server)."/w/artwork/".htmlspecialchars($id).".png\" width=\"150\" height=\"150\">\n";
+                $output .= "<script src=\"https://".htmlspecialchars($server)."/w/cover.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid)."\"></script>\n";
+                $output .= "<!-- RadioBOSS Cloud Artwork Widget (End) -->\n";
             } 
             if ($type == "recent") {
-                $output .= "<div id=\"rbcloud_recent\"></div>\n";
-                $output .= "<script src=\"https://".htmlspecialchars($server)."/w/recent.js?u=".htmlspecialchars($id)."\"></script>\n";
+                $output .= "<!-- RadioBOSS Cloud Recent Tracks Widget (Start) -->\n";
+                $output .= "<div id=\"rbcloud_recent".htmlspecialchars($wid)."\"></div>\n";
+                $output .= "<script src=\"https://".htmlspecialchars($server)."/w/recent.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid)."\"></script>\n";
+                $output .= "<!-- RadioBOSS Cloud Recent Tracks Widget (End) -->\n";
             } 
             if ($type == "links") {
+                $output .= "<!-- RadioBOSS Cloud TuneIn Links Widget (Start) -->\n";
                 $output .= "<ul id=\"rbcloud_tuneinlinks\">\n";
                 $output .= "<li><a href=\"http://".htmlspecialchars($server).":".htmlspecialchars($port)."/".htmlspecialchars($mount).".m3u\">M3U Playlist</a></li>\n";
                 $output .= "<li><a href=\"https://".htmlspecialchars($server).":".htmlspecialchars($port2)."/".htmlspecialchars($mount)."\">Direct stream link</a></li>\n";
                 $output .= "<li><a href=\"https://".htmlspecialchars($server)."/".htmlspecialchars($mount)."/".htmlspecialchars($id)."\">Web port link</a></li>\n";
                 $output .= "</ul>\n";
+                $output .= "<!-- RadioBOSS Cloud TuneIn Links Widget (End) -->\n";
             }
             if ($type == "page") {
                 $output .= "<a href=\"https://".htmlspecialchars($server)."/u/".htmlspecialchars($id)."\">Stream page</a>\n";

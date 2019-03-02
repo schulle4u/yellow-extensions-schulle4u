@@ -1,4 +1,4 @@
-Radioboss 0.8.3
+Radioboss 0.8.4
 ===============
 Widgets for RadioBoss Cloud.
 
