@@ -1,5 +1,5 @@
-Datenstrom Yellow extensions by schulle4u
-======================================
+Datenstrom Yellow extensions by Steffen Schultz
+===============================================
 [![Datenstrom Yellow](https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/datenstrom-yellow-en.jpg)](https://datenstrom.se/yellow/)
 
 Datenstrom Yellow is for people who make websites. [See demo](https://developers.datenstrom.se/extensions/).
@@ -8,7 +8,7 @@ Datenstrom Yellow is for people who make websites. [See demo](https://developers
 2. Copy relevant files to your web server.  
 3. Open your website in a web browser.
 
-Extensions created by @schulle4u:
+Extensions created by Steffen Schultz:
 
 * [About](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/about): 
   Author profile for blog pages.
