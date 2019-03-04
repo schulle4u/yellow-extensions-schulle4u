@@ -1,6 +1,6 @@
 Ticker 0.8.3
 ============
-RSS feed parser using SimpleXML or SimplePie.
+RSS feed parser.
 
 ## How to install extension
 

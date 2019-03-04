@@ -1,6 +1,6 @@
 Antispam 0.8.3
 ==============
-Email address obfuscator using ROT13 and CSS. 
+Alternative email address obfuscator. 
 
 ## How to install extension
 
@@ -19,7 +19,7 @@ The following arguments are available, all but the first argument are optional:
 `address` = email address to obfuscate, e.g. `example@yourdomain.com`  
 `displaytext` = an optional text for the email link, otherwise address will be used. 
 
-This extension uses a combination of two techniques for email protection [ROT13](http://en.wikipedia.org/wiki/ROT13) and CSS rtl. Works with or without javascript, but requires a css-capable browser. If your browser doesn't support javascript or you have blocked it, a pure css method is used to show the obfuscated email address. Text browsers or screen-reader text views therefore cannot correctly display the address. In terms of accessibility and usability you should consider another method to provide a proper email address. Please note that all common obfuscation method have their advantages and disadvantages. 
+This extension provides a more effective alternative to the built-in email protection from Markdown. It uses a combination of two techniques for email protection [ROT13](http://en.wikipedia.org/wiki/ROT13) and CSS rtl. Works with or without javascript, but requires a css-capable browser. If your browser doesn't support javascript or you have blocked it, a pure css method is used to show the obfuscated email address. Text browsers or screen-reader text views therefore cannot correctly display the address. 
 
 ## Developer
 
