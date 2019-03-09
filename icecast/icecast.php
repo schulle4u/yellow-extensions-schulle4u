@@ -23,7 +23,7 @@ class YellowIcecast {
             list($info, $server, $port, $mount) = $this->yellow->toolbox->getTextArgs($text);
             if(empty($info)) $info = "title";
             if(empty($server)) $server = $this->yellow->system->get("icecastServer");
-            if(empty($port)) $mount = $this->yellow->system->get("icecastPort");
+            if(empty($port)) $port = $this->yellow->system->get("icecastPort");
             if(empty($mount)) $mount = $this->yellow->system->get("icecastMount");
             
             // Turn of caching
