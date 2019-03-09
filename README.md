@@ -14,6 +14,8 @@ Extensions created by Steffen Schultz:
   Alternative email address obfuscator.
 * [Audio](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/audio): 
   HTML5 audio player.
+* [Icecast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/icecast): 
+  Icecast statistics.
 * [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/include): 
   Includes page content from other pages.
 * [MOTD](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/motd): 
