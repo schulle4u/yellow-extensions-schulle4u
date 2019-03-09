@@ -30,7 +30,7 @@ class YellowIcecast {
             $this->yellow->page->setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
             
             // Curl setup
-            $url = $this->yellow->system->get("icecastServer").":".$this->yellow->system->get("icecastPort")."/status-json.xsl?mount=".$this->yellow->system->get("icecastMount");
+            $url = $server.":".$port."/status-json.xsl?mount=".$mount;
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
