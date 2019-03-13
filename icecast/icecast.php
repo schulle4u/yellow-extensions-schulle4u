@@ -32,8 +32,10 @@ class YellowIcecast {
             // Curl setup
             $url = $server.":".$port."/status-json.xsl?mount=".$mount;
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+            curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (compatible; DatenstromYellow/".YellowCore::VERSION."; Icecast Extension)");
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
             curl_setopt($ch, CURLOPT_URL,$url);
             $result = curl_exec($ch);
             curl_close($ch);
