@@ -25,7 +25,7 @@ class YellowCsv {
             $delimiter = strreplaceu("\\t", "\t", $delimiter);
             if (empty($class)) $class = htmlspecialchars($name);
             $firstRowHeader = $this->yellow->system->get("csvFirstRowHeader");
-            $output = "<div id=\"".htmlspecialchars($name)."\">";
+            $output = "<div id=\"".htmlspecialchars($name)."\">\n";
             
             // get CSV
             $row = 0;
@@ -49,9 +49,9 @@ class YellowCsv {
                             $value = $data[$c];
                         }
                         if (($row == 0) && $firstRowHeader) {
-                            $output .= "<th>".$value."</th>\n";
+                            $output .= "<th>".htmlspecialchars($value)."</th>\n";
                         } else {
-                            $output .= "<td>".$value."</td>\n";
+                            $output .= "<td>".htmlspecialchars($value)."</td>\n";
                         }
                     }
                     if (($row == 0) && $firstRowHeader) {
