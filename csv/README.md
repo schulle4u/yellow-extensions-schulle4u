@@ -28,7 +28,8 @@ The following settings can be configured in file `system/settings/system.ini`:
 
 `CsvDir` = Directory for CSV files (default: `media/downloads/`).  
 `CsvDelimiter` = Default column delimiter.   
-`CsvFirstRowHeader` = Use first line of CSV file as table header (Default: true).
+`CsvFirstRowHeader` = Use first line of CSV file as table header (Default: true).  
+`CsvFilter` = Displays a search box to filter table rows (default: true).
 
 ## Example
 

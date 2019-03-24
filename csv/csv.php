@@ -14,6 +14,7 @@ class YellowCsv {
         $this->yellow->system->setDefault("csvDir", "media/downloads/");
         $this->yellow->system->setDefault("csvDelimiter", ";");
         $this->yellow->system->setDefault("csvFirstRowHeader", "1");
+        $this->yellow->system->setDefault("csvFilter", "1");
     }
     
     // Handle page content of shortcut
@@ -32,6 +33,8 @@ class YellowCsv {
             $dir = $this->yellow->system->get("csvDir");
             if ($handle = @fopen($dir.$file, "r")) {
                 // Prepare Table
+                if ($this->yellow->system->get("csvFilter")) $output .= "<p><input type=\"search\" class=\"light-table-filter\" data-table=\"".htmlspecialchars($class)."\" placeholder=\"Filter\"></p>\n";
+            
                 $output .= "<table class=\"".htmlspecialchars($class)."\">\n";
                 
                 // loop
@@ -68,6 +71,15 @@ class YellowCsv {
                 $this->yellow->page->error(500, "File '$file' does not exist!");
             }
             $output .= "</div>\n";
+        }
+        return $output;
+    }
+    // Handle page extra data
+    public function onParsePageExtra($page, $name) {
+        $output = null;
+        if ($name=="header") {
+            $extensionLocation = $this->yellow->system->get("serverBase").$this->yellow->system->get("extensionLocation");
+            if ($this->yellow->system->get("csvFilter")) $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}csv.js\"></script>\n";
         }
         return $output;
     }
