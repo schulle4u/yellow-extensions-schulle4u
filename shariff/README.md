@@ -19,7 +19,7 @@ The extension adds social sharing buttons, while protecting the privacy of your 
 
 The extension uses [Shariff v2.1.3](https://github.com/heiseonline/shariff) by Heise. It's licensed under [MIT license](https://opensource.org/licenses/MIT).
 
-## How to configure sharing buttons
+## Settings
 
 The following settings can be configured in file `system/settings/system.ini`:
 

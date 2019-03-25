@@ -23,7 +23,7 @@ The following arguments are available, all arguments are optional:
 
 If the [blog extension](https://github.com/datenstrom/yellow-extensions/tree/master/features/blog) is installed, author notes will automatically be inserted after each article. Use `Profile: author` in your page settings to specify a different profile. 
 
-## How to configure about extension
+## Settings
 
 The following settings can be configured in file `system/settings/system.ini`:
 

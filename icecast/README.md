@@ -23,7 +23,7 @@ The following arguments are available, all arguments are optional:
 
 This extension provides a basic statistic module for Icecast. It uses the information from `status-json.xsl`, therefore Icecast => version 2.4.0 is required. Since this plugin doesn't use Javascript, no realtime statistics are possible. 
 
-## How to configure icecast data
+## Settings
 
 The following settings can be configured in file `system/settings/system.ini`:
 

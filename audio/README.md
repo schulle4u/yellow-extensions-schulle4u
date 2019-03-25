@@ -24,7 +24,7 @@ The following arguments are available, all but the first argument are optional:
 
 This extension embeds a basic audio player using the HTML5 `<audio>` tag, which is supported by most web browsers. 
 
-## How to configure the player
+## Settings
 
 The following settings can be configured in file `system/settings/system.ini`: 
 

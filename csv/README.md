@@ -22,7 +22,7 @@ The following arguments are available, all but the first argument are optional:
 
 This extension loads a CSV file and outputs a HTML table. 
 
-## How to configure the CSV extension
+## Settings
 
 The following settings can be configured in file `system/settings/system.ini`:
 

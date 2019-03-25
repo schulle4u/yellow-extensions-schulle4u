@@ -20,7 +20,7 @@ The following arguments are available, all but the first argument are optional:
 `NumEntries` = number of entries to display  
 `Style` = CSS class to use  
 
-## How to configure the ticker
+## Settings
 
 The following settings can be configured in file `system/settings/system.ini`: 
 

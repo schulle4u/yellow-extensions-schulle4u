@@ -18,7 +18,7 @@ Use `status: private` and `password: your password` in your page settings.
 
 **Note**: Please use this extension with caution. It doesn't apply data encryption or protects page content from being parsed by other extensions, the extension only hides the content behind a very basic password form. You can use some page settings to minimize possible data leaks, see example below. 
 
-## How to configure private extension
+## Settings
 
 The following settings can be configured in file `system/settings/system.ini`:
 

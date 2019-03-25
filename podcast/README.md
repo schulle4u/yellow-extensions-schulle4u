@@ -17,7 +17,7 @@ The podcast feed is available on your website as `http://website/podcast/` and `
 
 Based on the original [feed extension](https://github.com/datenstrom/yellow-extensions/tree/master/features/feed).
 
-## How to configure the podcast
+## Settings
 
 The following settings can be configured in file `system/settings/system.ini`:
 

@@ -19,7 +19,7 @@ The extension uses data from your page settings and converts them to appropriate
     <!DOCTYPE html><html <?php if ($yellow->extensions->isExisting("socialtags")): ?>prefix="og: http://ogp.me/ns# <?php if ($yellow->page->getHtml("layout") == "blog"): ?>article: http://ogp.me/ns/article#<?php endif ?>" <?php endif ?>lang="<?php echo $yellow->page->getHtml("language") ?>">
 
 
-## How to configure socialtags
+## Settings
 
 The following settings can be configured in file `system/settings/system.ini`:
 
