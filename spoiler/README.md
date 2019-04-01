@@ -1,5 +1,5 @@
-Spoiler 0.8.3
-=======================
+Spoiler 0.8.4
+=============
 Hide certain page elements.
 
 ## How to install extension
