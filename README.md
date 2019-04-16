@@ -45,11 +45,11 @@ Extensions created by Steffen Schultz:
 
 See my extensions in action:
 
-* [Powerradio4u](https://powerradio4u.de):  
+* [Powerradio4u](https://powerradio4u.de): 
   An internet radio station dedicated to creative commons culture.
 * [Robbenradio](https://robbenradio.de): 
   My personal website.
-* [Robbenradio Podcasts](https://podcast.robbenradio.de):
+* [Robbenradio Podcasts](https://podcast.robbenradio.de): 
   Podcast episodes containing tech reviews, tutorials, and radio sounds.
 
 A developer kit and an API for developers is available. [Learn more](https://developers.datenstrom.se/help/).
