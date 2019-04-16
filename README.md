@@ -3,7 +3,7 @@ Datenstrom Yellow extensions by Steffen Schultz
 [![Datenstrom Yellow](https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/datenstrom-yellow-en.jpg)](https://datenstrom.se/yellow/)
 
 1. [Download all extensions and unzip them](https://github.com/schulle4u/yellow-extensions-schulle4u/archive/master.zip).  
-2. Copy relevant files to your web server.  
+2. Copy individual zip files to your web server.  
 3. Open your website in a web browser.
 
 Extensions created by Steffen Schultz:
@@ -40,5 +40,16 @@ Extensions created by Steffen Schultz:
   RSS feed parser.
 * [TuneIn](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/tunein): 
   Embed TuneIn Radio player.
+
+## Made with Datenstrom Yellow
+
+See my extensions in action:
+
+* [Powerradio4u](https://powerradio4u.de):  
+  An internet radio station dedicated to creative commons culture.
+* [Robbenradio](https://robbenradio.de): 
+  My personal website.
+* [Robbenradio Podcasts](https://podcast.robbenradio.de):
+  Podcast episodes containing tech reviews, tutorials, and radio sounds.
 
 A developer kit and an API for developers is available. [Learn more](https://developers.datenstrom.se/help/).
