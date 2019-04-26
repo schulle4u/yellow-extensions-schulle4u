@@ -1,4 +1,4 @@
-Csv 0.8.3
+Csv 0.8.4
 =========
 CSV file parser.
 

@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowCsv {
-    const VERSION = "0.8.3";
+    const VERSION = "0.8.4";
     const TYPE = "feature";
     public $yellow;         //access to API
     
@@ -46,8 +46,8 @@ class YellowCsv {
                         $output .= "<tr>\n";
                     }
                     for ($c=0; $c < $num; $c++) {
-                        if (empty($data[$c])) {
-                            $value = "&nbsp;";
+                        if (strempty($data[$c])) {
+                            $value = "";
                         } else {
                             $value = $data[$c];
                         }
