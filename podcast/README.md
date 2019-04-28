@@ -1,4 +1,4 @@
-Podcast 0.8.3
+Podcast 0.8.4
 =============
 Web feed optimized for podcast publishing.
 

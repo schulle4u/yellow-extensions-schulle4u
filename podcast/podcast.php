@@ -5,7 +5,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowPodcast {
-    const VERSION = "0.8.3";
+    const VERSION = "0.8.4";
     const TYPE = "feature";
     public $yellow;            //access to API
     
@@ -14,13 +14,12 @@ class YellowPodcast {
         $this->yellow = $yellow;
         $this->yellow->system->setDefault("podcastLocation", "/podcast/");
         $this->yellow->system->setDefault("podcastFileXml", "podcast.xml");
-        $this->yellow->system->setDefault("podcastFilter", "blog");
+        $this->yellow->system->setDefault("podcastFilterLayout", "blog");
         $this->yellow->system->setDefault("podcastPaginationLimit", "30");
         $this->yellow->system->setDefault("podcastMimeType", "audio/mpeg");
         $this->yellow->system->setDefault("podcastImageUrl", "");
         $this->yellow->system->setDefault("podcastImageWidth", "144");
         $this->yellow->system->setDefault("podcastImageHeight", "144");
-        $this->yellow->system->setDefault("podcastKeywords", "");
         $this->yellow->system->setDefault("podcastExplicit", "no");
         $this->yellow->system->setDefault("podcastItunesBlock", "no");
         $this->yellow->system->setDefault("podcastCategory", "Music");
@@ -40,9 +39,9 @@ class YellowPodcast {
                 $pages->filter("author", $_REQUEST["author"]);
                 array_push($pagesFilter, $pages->getFilter());
             }
-            $podcastFilter = $this->yellow->system->get("podcastFilter");
+            $podcastFilter = $this->yellow->system->get("podcastFilterLayout");
             if (!empty($podcastFilter)) $pages->filter("layout", $podcastFilter);
-            $chronologicalOrder = ($this->yellow->system->get("podcastFilter")!="blog");
+            $chronologicalOrder = ($this->yellow->system->get("podcastFilterLayout")!="blog");
             if ($this->isRequestXml()) {
                 $pages->sort($chronologicalOrder ? "modified" : "published", false);
                 $pages->limit($this->yellow->system->get("podcastPaginationLimit"));
@@ -54,7 +53,7 @@ class YellowPodcast {
                 $output .= "<channel>\r\n";
                 $output .= "<title>".htmlspecialchars($title)."</title>\r\n";
                 $output .= "<link>".$this->yellow->page->scheme."://".$this->yellow->page->address.$this->yellow->page->base."/"."</link>\r\n";
-                $output .= "<description>".$this->yellow->page->getHtml("tagline")."</description>\r\n";
+                $output .= "<description>".$this->yellow->page->getHtml("description")."</description>\r\n";
                 $output .= "<atom:link rel=\"self\" type=\"application/rss+xml\" title=\"".htmlspecialchars($title)."\" href=\"".$this->yellow->page->scheme."://".$this->yellow->page->address.$this->yellow->page->base."/"."\" />\r\n";
                 if ($this->yellow->system->get("podcastImageUrl")) {
                     $output .= "<image>\r\n";
@@ -66,10 +65,10 @@ class YellowPodcast {
                     $output .= "</image>\r\n";
                 }
                 $output .= "<itunes:author>".$this->yellow->page->getHtml("author")."</itunes:author>\r\n";
-                $output .= "<itunes:summary>".$this->yellow->page->getHtml("tagline")."</itunes:summary>\r\n";
+                $output .= "<itunes:summary>".$this->yellow->page->getHtml("description")."</itunes:summary>\r\n";
                 if ($this->yellow->system->get("podcastImageUrl")) $output .= "<itunes:image href=\"".$this->yellow->system->get("podcastImageUrl")."\" />\r\n";
-                $output .= "<itunes:subtitle>".$this->yellow->page->getHtml("tagline")."</itunes:subtitle>\r\n";
-                $output .= "<itunes:keywords>".$this->yellow->system->get("podcastKeywords")."</itunes:keywords>\r\n";
+                $output .= "<itunes:subtitle>".$this->yellow->page->getHtml("description")."</itunes:subtitle>\r\n";
+                $output .= "<itunes:keywords>".$this->yellow->page->getHtml("tag")."</itunes:keywords>\r\n";
                 $output .= "<itunes:explicit>".$this->yellow->system->get("podcastExplicit")."</itunes:explicit>\r\n";
                 $output .= "<itunes:block>".$this->yellow->system->get("podcastItunesBlock")."</itunes:block>\r\n";
                 $output .= "<itunes:owner>\r\n";
