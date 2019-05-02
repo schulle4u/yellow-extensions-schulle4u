@@ -39,6 +39,13 @@ Extensions created by Steffen Schultz:
 * [TuneIn](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/tunein): 
   Embed TuneIn Radio player.
 
+Contributions to [the official extension repository](https://github.com/datenstrom/yellow-extensions):
+
+* [Meta](https://github.com/datenstrom/yellow-extensions/tree/master/features/meta): 
+  Meta data for social media sites.
+* [Twitter](https://github.com/datenstrom/yellow-extensions/tree/master/features/twitter): 
+  Embed Twitter messages.
+
 ## Made with Datenstrom Yellow
 
 See my extensions in action:
