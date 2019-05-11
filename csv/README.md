@@ -39,11 +39,11 @@ Basic usage:
 
     [csv tapes.csv]
 
-Use a custom style: 
+Use custom delimiter and style: 
 
-    [csv tapes.csv , MyTapes]
+    [csv tapes.csv \t MyTapes]
 
-Enable colunn sorting: 
+Enable column sorting: 
 
     [csv tapes.csv , "MyTapes js-table-sort"]
 
