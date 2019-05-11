@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowCsv {
-    const VERSION = "0.8.4";
+    const VERSION = "0.8.5";
     const TYPE = "feature";
     public $yellow;         //access to API
     
@@ -79,7 +79,7 @@ class YellowCsv {
         $output = null;
         if ($name=="header") {
             $extensionLocation = $this->yellow->system->get("serverBase").$this->yellow->system->get("extensionLocation");
-            if ($this->yellow->system->get("csvFilter")) $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}csv.js\"></script>\n";
+            $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}csv.js\"></script>\n";
         }
         return $output;
     }

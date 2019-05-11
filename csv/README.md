@@ -1,4 +1,4 @@
-Csv 0.8.4
+Csv 0.8.5
 =========
 CSV file parser.
 
@@ -20,7 +20,9 @@ The following arguments are available, all but the first argument are optional:
 `Delimiter` = The column delimiter for the CSV file (Default: semicolon `;`).   
 `Class` = HTML table class
 
-This extension loads a CSV file and outputs a HTML table. 
+This extension loads a CSV file and outputs a HTML table. For large tables you can enable a row filter and column sorting. 
+
+Javascript component includes Light-table-filter by [Chris Coyier](https://codepen.io/chriscoyier/pen/tIuBL), and [Sort-table class by Tyler Uebele](https://github.com/stationer/SortTable) released under the terms of the MIT license. 
 
 ## Settings
 
@@ -33,10 +35,17 @@ The following settings can be configured in file `system/settings/system.ini`:
 
 ## Example
 
-Embedding a CSV file:
+Basic usage:
 
     [csv tapes.csv]
+
+Use a custom style: 
+
     [csv tapes.csv , MyTapes]
+
+Enable colunn sorting: 
+
+    [csv tapes.csv , "MyTapes js-table-sort"]
 
 ## Developer
 
