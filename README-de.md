@@ -1,63 +1,63 @@
-Datenstrom Yellow extensions by Steffen Schultz
-===============================================
-[![Datenstrom Yellow](https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/datenstrom-yellow-en.jpg)](https://datenstrom.se/yellow/)
+Datenstrom Yellow - Erweiterungen von Steffen Schultz
+=====================================================
+[![Datenstrom Yellow](https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/datenstrom-yellow-de.jpg)](https://datenstrom.se/de/yellow/)
 
-1. [Download all extensions and unzip them](https://github.com/schulle4u/yellow-extensions-schulle4u/archive/master.zip).  
-2. Copy individual zip files to your web server.  
-3. Open your website in a web browser.
+1. [Lade alle Erweiterungen herunter und entpacke sie](https://github.com/schulle4u/yellow-extensions-schulle4u/archive/master.zip).  
+2. Kopiere individuelle Zip-Dateien auf deinen Server.  
+3. Öffne deine Website in einem Browser.
 
-Extensions created by Steffen Schultz:
+Erweiterungen von Steffen Schultz:
 
 * [About](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/about): 
-  Author profile for blog pages.
+  Autorenprofil für Blogseiten.
 * [Antispam](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/antispam): 
-  Alternative email address obfuscator.
+  Alternative Verschleierung von E-Mail-Adressen.
 * [Audio](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/audio): 
-  HTML5 audio player.
+  HTML5-Audio-Wiedergabe.
 * [Csv](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/csv): 
-  CSV file parser.
+  CSV-Dateileser.
 * [Icecast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/icecast): 
-  Icecast statistics.
+  Icecast-Statistiken.
 * [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/include): 
-  Includes page content from other pages.
+  Bindet den Inhalt anderer Seiten in die aktuelle Seite ein.
 * [MOTD](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/motd): 
-  Message of the day.
+  Nachricht des Tages.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast): 
-  Web feed optimized for podcast publishing.
+  Web-Feed optimiert für die Podcast-Veröffentlichung.
 * [Private](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/private): 
-  Create password-protected pages.
+  Erstelle passwortgeschützte Seiten.
 * [Radioboss](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/radioboss): 
-  Widgets for RadioBoss Cloud.
+  Widgets für RadioBoss Cloud.
 * [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/random): 
-  Display random pages from specified location.
+  Zeigt zufällige Seiten eines bestimmten Ortes an.
 * [Shariff](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/shariff): 
-  Privacy-friendly social sharing buttons.
+  Datenschutzfreundliche Teilen-Schaltflächen.
 * [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler): 
-  Hide certain page elements.
+  Verstecke bestimmte Seitenelemente.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker): 
-  RSS feed parser.
+  RSS-Feed-Leser.
 * [TuneIn](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/tunein): 
-  Embed TuneIn Radio player.
+  TuneIn-Radio-Player einbetten.
 
-Contributions to [the official extension repository](https://github.com/datenstrom/yellow-extensions):
+Beiträge zum [offiziellen Erweiterungsverzeichnis](https://github.com/datenstrom/yellow-extensions):
 
 * [Meta](https://github.com/datenstrom/yellow-extensions/tree/master/features/meta): 
-  Meta data for social media sites.
+  Metadaten für Social-Media-Netzwerke.
 * [Twitter](https://github.com/datenstrom/yellow-extensions/tree/master/features/twitter): 
-  Embed Twitter messages.
+  Twitter-Nachrichten einbetten.
 
-## Made with Datenstrom Yellow
+## Erstellt mit Datenstrom Yellow
 
-See my extensions in action:
+Auf folgenden Projekten kannst du meine Erweiterungen in Aktion erleben:
 
 * [Powerradio4u](https://powerradio4u.de): 
-  An internet radio station dedicated to creative commons culture.
+  Ein Webradio mit Fokus auf Creative-Commons-Kultur.
 * [Robbenradio](https://robbenradio.de): 
-  My personal website.
+  Meine persönliche Website.
 * [Robbenradio Podcasts](https://podcast.robbenradio.de): 
-  Podcast episodes containing tech reviews, tutorials, and radio sounds.
+  Podcast-Episoden zu den Themen Technik, Radio und Geräusche.
 
-A developer kit and an API for developers is available. [Learn more](https://developers.datenstrom.se/help/).
+Ein Developer-Kit und eine Entwickler-API sind verfügbar. [Lies mehr](https://developers.datenstrom.se/de/help/).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
