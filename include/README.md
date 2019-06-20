@@ -10,11 +10,11 @@ Includes page content from other pages.
 
 To uninstall delete the [extension files](extension.ini).
 
-## How to use the include extension
+## How to include page content
 
 Create a `[include]` shortcut. 
 
-The following arguments are available, all but the first arguments are optional:
+The following arguments are available, all but the first argument are optional:
 
 `location` = The location for included page content (example: `/about/`).  
 `mode` = page display mode (full or teaser, default: full)
@@ -41,3 +41,8 @@ We work hard, but we love it. Read full stories of our team members below!
 ## Developer
 
 Steffen Schultz
+
+<p>
+<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
+<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
+</p>

@@ -23,7 +23,7 @@ The extension uses [Shariff v2.1.3](https://github.com/heiseonline/shariff) by H
 
 The following settings can be configured in file `system/settings/system.ini`:
 
-`ShariffServices` = social sharing services,  e.g. `twitter, facebook, googleplus, info`  
+`ShariffServices` = social sharing services,  e.g. `twitter, facebook, info`  
 
 ## Example
 
@@ -38,3 +38,8 @@ For [advanced options](https://github.com/heiseonline/shariff#options-data-attri
 ## Developer
 
 Steffen Schultz featuring Heise Online
+
+<p>
+<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
+<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
+</p>

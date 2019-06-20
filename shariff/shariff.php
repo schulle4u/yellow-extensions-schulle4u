@@ -11,7 +11,7 @@ class YellowShariff {
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
-        $this->yellow->system->setDefault("shariffServices", "twitter, facebook, googleplus, info");
+        $this->yellow->system->setDefault("shariffServices", "twitter, facebook, info");
     }
     
     // Handle page content of shortcut

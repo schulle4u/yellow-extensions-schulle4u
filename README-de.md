@@ -8,35 +8,35 @@ Datenstrom Yellow - Erweiterungen von Steffen Schultz
 
 Erweiterungen von Steffen Schultz:
 
-* [About](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/about): 
+* [About](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/about/README-de.md): 
   Autorenprofil für Blogseiten.
-* [Antispam](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/antispam): 
+* [Antispam](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/antispam/README-de.md): 
   Alternative Verschleierung von E-Mail-Adressen.
-* [Audio](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/audio): 
-  HTML5-Audio-Wiedergabe.
-* [Csv](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/csv): 
+* [Audio](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/audio/README-de.md): 
+  HTML5-Audio-Player.
+* [Csv](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/csv/README-de.md): 
   CSV-Dateileser.
-* [Icecast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/icecast): 
+* [Icecast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/icecast/README-de.md): 
   Icecast-Statistiken.
-* [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/include): 
+* [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/include/README-de.md): 
   Bindet den Inhalt anderer Seiten in die aktuelle Seite ein.
-* [MOTD](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/motd): 
+* [MOTD](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/motd/README-de.md): 
   Nachricht des Tages.
-* [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast): 
+* [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast/README-de.md): 
   Web-Feed optimiert für die Podcast-Veröffentlichung.
-* [Private](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/private): 
+* [Private](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/private/README-de.md): 
   Erstelle passwortgeschützte Seiten.
-* [Radioboss](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/radioboss): 
+* [Radioboss](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/radioboss/README-de.md): 
   Widgets für RadioBoss Cloud.
-* [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/random): 
-  Zeigt zufällige Seiten eines bestimmten Ortes an.
-* [Shariff](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/shariff): 
+* [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/random/README-de.md): 
+  Zufällige Seiten eines bestimmten Ortes anzeigen.
+* [Shariff](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/shariff/README-de.md): 
   Datenschutzfreundliche Teilen-Schaltflächen.
-* [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler): 
-  Verstecke bestimmte Seitenelemente.
-* [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker): 
+* [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler/README-de.md): 
+  Bestimmte Seitenelemente verstecken.
+* [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker/README-de.md): 
   RSS-Feed-Leser.
-* [TuneIn](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/tunein): 
+* [TuneIn](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/tunein/README-de.md): 
   TuneIn-Radio-Player einbetten.
 
 Beiträge zum [offiziellen Erweiterungsverzeichnis](https://github.com/datenstrom/yellow-extensions):

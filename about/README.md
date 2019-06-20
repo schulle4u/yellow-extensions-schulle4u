@@ -12,7 +12,7 @@ Author profile for blog pages.
 
 To uninstall delete the [extension files](extension.ini).
 
-## How to use the about extension
+## How to create author profiles
 
 Create a `[about]` shortcut. 
 
@@ -44,3 +44,8 @@ Hello, I'm Datenstrom Yellow, the engine running this site. I help people to mak
 ## Developer
 
 Steffen Schultz
+
+<p>
+<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
+<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
+</p>

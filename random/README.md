@@ -10,7 +10,7 @@ Display random pages from specified location.
 
 To uninstall delete the [extension files](extension.ini).
 
-## How to use the random extension
+## How to display random pages
 
 Create a `[random]` shortcut. 
 
@@ -36,3 +36,8 @@ Lists 5 randomly selected blog posts.
 ## Developer
 
 Steffen Schultz
+
+<p>
+<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
+<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
+</p>
