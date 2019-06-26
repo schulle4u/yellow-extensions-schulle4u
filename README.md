@@ -57,7 +57,7 @@ See my extensions in action:
 * [Robbenradio Podcasts](https://podcast.robbenradio.de): 
   Podcast episodes containing tech reviews, tutorials, and radio sounds.
 
-A developer kit and an API for developers is available. [Learn more](https://developers.datenstrom.se/help/).
+More extensions and an API for developers is available. [Learn more](https://extensions.datenstrom.se/help/).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/website/media/images/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
