@@ -28,6 +28,6 @@ Steffen Schultz
 [Antispam-Klasse von Roman Ozana (Sphido)](https://github.com/sphido/antispam), verfügbar unter den Bedingungen der BSD-3-Clause-Lizenz. 
 
 <p>
-<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
-<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-developers/master/media/images/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
+<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/website/media/images/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
+<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/website/media/images/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
 </p>
