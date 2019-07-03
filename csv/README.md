@@ -45,7 +45,7 @@ Use custom delimiter and style:
 
 Enable column sorting: 
 
-    [csv tapes.csv , "MyTapes js-table-sort"]
+    [csv tapes.csv , "MyTapes js-sort-table"]
 
 ## Developer
 

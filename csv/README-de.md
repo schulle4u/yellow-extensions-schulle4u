@@ -45,7 +45,7 @@ Benutzerdefinierter Spaltentrenner und Stil:
 
 Spaltensortierung einschalten: 
 
-    [csv tapes.csv , "MyTapes js-table-sort"]
+    [csv tapes.csv , "MyTapes js-sort-table"]
 
 ## Entwickler
 
