@@ -38,6 +38,16 @@ class YellowRadioboss {
             $output .= "<div class=\"".htmlspecialchars($style)."\">\n";
             
             // Widget code
+            if ($type == "miniplayer") {
+                list($width, $activecolor, $greycolor) = $this->yellow->toolbox->getTextArgs($text);
+                if (strempty($width)) $width = "82";
+                if (empty($activecolor)) $activecolor = "#111111";
+                if (empty($greycolor)) $greycolor = "#b3b3b3";
+                $output .= "<!-- RadioBOSS Cloud Player Widget (Start) -->\n";
+                $output .= "<div id=\"rbcloud_mplayer".htmlspecialchars($wid)."\"></div>\n";
+                $output .= "<script src=\"https://".htmlspecialchars($server)."/w/mplayer.js?u=https%3A%2F%2F".htmlspecialchars($server)."%3A".htmlspecialchars($port2)."%2F".htmlspecialchars($mount)."&amp;wid=".htmlspecialchars($wid)."&amp;pw=".htmlspecialchars($width)."&amp;ca=".rawurlencode($activecolor)."&amp;cg=".rawurlencode($greycolor)."\"></script>\n";
+                $output .= "<!-- RadioBOSS Cloud Player Widget (End) -->\n";
+            }
             if ($type == "player") {
                 $output .= "<!-- RadioBOSS Cloud Player Widget (Start) -->\n";
                 $output .= "<div id=\"rbcloud_player".htmlspecialchars($wid)."\"></div>\n";
