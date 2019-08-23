@@ -1,4 +1,4 @@
-Radioboss 0.8.4
+Radioboss 0.8.5
 ===============
 Widgets für RadioBoss Cloud.
 
@@ -16,7 +16,8 @@ Erstelle eine `[radioboss]`-Abkürzung.
 
 Die folgenden Argumente sind verfügbar, bis auf das erste Argument sind alle Angaben optional: 
 
-`type` = Widget-Typ (siehe unten für eine Liste verfügbarer Widgets).  
+`widget` = Widget-Typ (siehe unten für eine Liste verfügbarer Widgets).  
+`arguments` = Eine durch Leerzeichen getrennte liste optionaler Widget-Argumente, sofern verfügbar.   
 `style` = Zu verwendende CSS-Klasse, z. B. left, center, right.  
 `server` = Hostname der Cloud-Instanz ohne einleitendes `https://` (Beispiel: `c2.radioboss.fm`).  
 `port` = Streaming-Port (Beispiel: `8010`).  
@@ -26,6 +27,7 @@ Die folgenden Argumente sind verfügbar, bis auf das erste Argument sind alle An
 
 Die folgenden Widgets stehen zur Verfügung: 
 
+`miniplayer` = Ein konfigurierbarer Miniplayer. Die zusätzliche Konfiguration erfolgt über den Arguments-Parameter, siehe Beispiel unten.   
 `player` = Ein Web-Player für deinen Stream.  
 `nowplaying` = Zeigt den gerade gespielten Titel an.  
 `cover` = Album-Cover für den aktuellen Titel.  
@@ -46,12 +48,10 @@ Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vo
 `RadiobossPort2` = Zweiter Streaming-Port, wird für sichere Verbindungen verwendet. Wenn nicht angegeben, setzt er sich aus Streaming-Port mit einer führenden 1 zusammen (Beispiel: `18010`).  
 `RadiobossId` = Momentan sind dies die beiden letzten Ziffern des Streaming-Ports (Beispiel: `10`).  
 `RadiobossMount` = Einhängepunkt deines Streams ohne führenden Schrägstrich (Beispiel: `stream`). 
-
-Die Server-Konfiguration erhältst du im Reiter Information, nachdem du dich bei deiner RadioBoss Cloud angemeldet hast. 
-
-Optionale Einstellungen:  
 `RadiobossListeners` = Zeige Höreranzahl im Nowplaying-Widget (Standard: `0`).  
 `RadioBossStyle` = Zu verwendende CSS-Klasse, z. B. left, center, right. 
+
+Die Server-Konfiguration erhältst du im Reiter Information, nachdem du dich bei deiner RadioBoss Cloud angemeldet hast. 
 
 ## Beispiel
 
@@ -64,6 +64,13 @@ Author: Steffen
 ---
 ## Live hören
 
+Miniplayer mit Standardkonfiguration:   
+[radioboss miniplayer]
+
+Miniplayer mit benutzerdefinierter Konfiguration (Breite in Pixel, Farbe des aktiven Buttons, Farbe für ausgegrauten Button):   
+[radioboss miniplayer "86 #111111 #b3b3b3"]
+
+Normaler Web-Player:  
 [radioboss player]
 
 ## Aktueller Titel

@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowRadioboss {
-    const VERSION = "0.8.4";
+    const VERSION = "0.8.5";
     const TYPE = "feature";
     public $yellow;            //access to API
     
@@ -24,8 +24,8 @@ class YellowRadioboss {
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = NULL;
         if ($name=="radioboss" && ($type=="block" || $type=="inline")) {
-            list($type, $style, $server, $port, $port2, $id, $mount) = $this->yellow->toolbox->getTextArgs($text);
-            if (empty($type)) $type = "page";
+            list($widget, $arguments, $style, $server, $port, $port2, $id, $mount) = $this->yellow->toolbox->getTextArgs($text);
+            if (empty($widget)) $widget = "page";
             if (empty($style)) $style = $this->yellow->system->get("radiobossStyle");
             if (empty($server)) $server = $this->yellow->system->get("radiobossServer");
             if (empty($port)) $port = $this->yellow->system->get("radiobossPort");
@@ -38,42 +38,42 @@ class YellowRadioboss {
             $output .= "<div class=\"".htmlspecialchars($style)."\">\n";
             
             // Widget code
-            if ($type == "miniplayer") {
-                list($width, $activecolor, $greycolor) = $this->yellow->toolbox->getTextArgs($text);
-                if (strempty($width)) $width = "82";
-                if (empty($activecolor)) $activecolor = "#111111";
-                if (empty($greycolor)) $greycolor = "#b3b3b3";
+            if ($widget == "miniplayer") {
+                $argumentData = explode(" ", $arguments);
+                if (strempty($argumentData[0])) $argumentData[0] = "86";
+                if (empty($argumentData[1])) $argumentData[1] = "#111111";
+                if (empty($argumentData[2])) $argumentData[2] = "#b3b3b3";
                 $output .= "<!-- RadioBOSS Cloud Player Widget (Start) -->\n";
                 $output .= "<div id=\"rbcloud_mplayer".htmlspecialchars($wid)."\"></div>\n";
-                $output .= "<script src=\"https://".htmlspecialchars($server)."/w/mplayer.js?u=https%3A%2F%2F".htmlspecialchars($server)."%3A".htmlspecialchars($port2)."%2F".htmlspecialchars($mount)."&amp;wid=".htmlspecialchars($wid)."&amp;pw=".htmlspecialchars($width)."&amp;ca=".rawurlencode($activecolor)."&amp;cg=".rawurlencode($greycolor)."\"></script>\n";
+                $output .= "<script src=\"https://".htmlspecialchars($server)."/w/mplayer.js?u=https%3A%2F%2F".htmlspecialchars($server)."%3A".htmlspecialchars($port2)."%2F".htmlspecialchars($mount)."&amp;wid=".htmlspecialchars($wid)."&amp;pw=".htmlspecialchars($argumentData[0])."&amp;ca=".rawurlencode($argumentData[1])."&amp;cg=".rawurlencode($argumentData[2])."\"></script>\n";
                 $output .= "<!-- RadioBOSS Cloud Player Widget (End) -->\n";
             }
-            if ($type == "player") {
+            if ($widget == "player") {
                 $output .= "<!-- RadioBOSS Cloud Player Widget (Start) -->\n";
                 $output .= "<div id=\"rbcloud_player".htmlspecialchars($wid)."\"></div>\n";
                 $output .= "<script src=\"https://".htmlspecialchars($server)."/w/player.js?u=https%3A%2F%2F".htmlspecialchars($server)."%3A".htmlspecialchars($port2)."%2F".htmlspecialchars($mount)."&amp;wid=".htmlspecialchars($wid)."\"></script>\n";
                 $output .= "<!-- RadioBOSS Cloud Player Widget (End) -->\n";
             }
-            if ($type == "nowplaying") {
+            if ($widget == "nowplaying") {
                 $output .= "<!-- RadioBOSS Cloud NowPlaying Widget (Start) -->\n";
                 $output .= "<div id=\"rbcloud_nowplaying".htmlspecialchars($wid)."\"></div>\n";
                 if ($listeners) $output .= "<div>Listeners: <span id=\"rbcloud_listeners".htmlspecialchars($wid)."\">...</span></div>\n";
                 $output .= "<script src=\"https://".htmlspecialchars($server)."/w/nowplaying.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid)."\"></script>\n";
                 $output .= "<!-- RadioBOSS Cloud NowPlaying Widget (End) -->\n";
             } 
-            if ($type == "cover") {
+            if ($widget == "cover") {
                 $output .= "<!-- RadioBOSS Cloud Artwork Widget (Start) -->\n";
                 $output .= "<img id=\"rbcloud_cover".htmlspecialchars($wid)."\" src=\"https://".htmlspecialchars($server)."/w/artwork/".htmlspecialchars($id).".png\" width=\"150\" height=\"150\">\n";
                 $output .= "<script src=\"https://".htmlspecialchars($server)."/w/cover.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid)."\"></script>\n";
                 $output .= "<!-- RadioBOSS Cloud Artwork Widget (End) -->\n";
             } 
-            if ($type == "recent") {
+            if ($widget == "recent") {
                 $output .= "<!-- RadioBOSS Cloud Recent Tracks Widget (Start) -->\n";
                 $output .= "<div id=\"rbcloud_recent".htmlspecialchars($wid)."\"></div>\n";
                 $output .= "<script src=\"https://".htmlspecialchars($server)."/w/recent.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid)."\"></script>\n";
                 $output .= "<!-- RadioBOSS Cloud Recent Tracks Widget (End) -->\n";
             } 
-            if ($type == "links") {
+            if ($widget == "links") {
                 $output .= "<!-- RadioBOSS Cloud TuneIn Links Widget (Start) -->\n";
                 $output .= "<ul id=\"rbcloud_tuneinlinks\">\n";
                 $output .= "<li><a href=\"http://".htmlspecialchars($server).":".htmlspecialchars($port)."/".htmlspecialchars($mount).".m3u\">M3U Playlist</a></li>\n";
@@ -82,7 +82,7 @@ class YellowRadioboss {
                 $output .= "</ul>\n";
                 $output .= "<!-- RadioBOSS Cloud TuneIn Links Widget (End) -->\n";
             }
-            if ($type == "page") {
+            if ($widget == "page") {
                 $output .= "<a href=\"https://".htmlspecialchars($server)."/u/".htmlspecialchars($id)."\">Stream page</a>\n";
             }
             
