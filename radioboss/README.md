@@ -93,7 +93,7 @@ Normal web player:
 
 ## An additional widget for second stream
 
-[radioboss nowplaying - c2.radioboss.fm 8017 18017 17 stream]
+[radioboss nowplaying - - c2.radioboss.fm 8017 18017 17 stream]
 ```
 
 ## Developer
