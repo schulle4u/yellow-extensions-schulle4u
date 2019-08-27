@@ -1,6 +1,6 @@
 Datenstrom Yellow - Erweiterungen von Steffen Schultz
 =====================================================
-[![Datenstrom Yellow](https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/website/media/images/datenstrom-yellow-de.jpg)](https://datenstrom.se/de/yellow/)
+[![Datenstrom Yellow](https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/datenstrom-yellow-de.jpg)](https://datenstrom.se/de/yellow/)
 
 1. [Lade alle Erweiterungen herunter und entpacke sie](https://github.com/schulle4u/yellow-extensions-schulle4u/archive/master.zip).  
 2. Kopiere individuelle Zip-Dateien auf deinen Server.  
@@ -60,6 +60,6 @@ Auf folgenden Projekten kannst du meine Erweiterungen in Aktion erleben:
 Mehr Erweiterungen und eine Entwickler-API sind verfügbar. [Lies mehr](https://extensions.datenstrom.se/de/help/).
 
 <p>
-<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/website/media/images/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
-<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/website/media/images/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
+<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
+<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
 </p>
