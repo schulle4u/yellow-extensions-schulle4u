@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowCsv {
-    const VERSION = "0.8.5";
+    const VERSION = "0.8.6";
     const TYPE = "feature";
     public $yellow;         //access to API
     
@@ -54,7 +54,7 @@ class YellowCsv {
                         if (($row == 0) && $firstRowHeader) {
                             $output .= "<th>".htmlspecialchars($value)."</th>\n";
                         } else {
-                            $output .= "<td>".htmlspecialchars($value)."</td>\n";
+                            $output .= "<td>".($this->yellow->system->get("safeMode") ? htmlspecialchars($value) : $value)."</td>\n";
                         }
                     }
                     if (($row == 0) && $firstRowHeader) {
