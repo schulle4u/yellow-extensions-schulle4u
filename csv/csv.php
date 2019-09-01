@@ -26,7 +26,7 @@ class YellowCsv {
             $delimiter = strreplaceu("\\t", "\t", $delimiter);
             if (empty($class)) $class = htmlspecialchars($name);
             $firstRowHeader = $this->yellow->system->get("csvFirstRowHeader");
-            $output = "<div id=\"".htmlspecialchars($name)."\">\n";
+            $output = "<div id=\"".htmlspecialchars($name)."\" style=\"overflow-x:auto;\">\n";
             
             // get CSV
             $row = 0;
