@@ -14,7 +14,7 @@ Zum Deinstallieren lösche einfach die [Erweiterungsdateien](extension.ini).
 
 Erstelle eine `[pagesource]`-Abkürzung. 
 
-Mit dieser Erweiterung kann man jeder beliebigen Seite einen Quelltext-Button hinzufügen, welcher den Seiteninhalt als Markdown-Quelltext anzeigt. Die Seiten-Einstellungen werden vom Quelltext ausgeschlossen. 
+Mit dieser Erweiterung kann man jeder beliebigen Seite einen Quelltext-Button hinzufügen, welcher den Seiteninhalt als Markdown-Quelltext anzeigt. Die Seiten-Einstellungen werden vom Quelltext ausgeschlossen. Du kannst diese Erweiterung beispielsweise verwenden, um eine vereinfachte Druckansicht anzubieten, das Exportieren von Inhalten für Plaintext-Umgebungen zu erlauben, oder um allen zu zeigen, wie einfach das Erstellen schöner Webseiten mit Markdown sein kann. 
 
 ## Beispiel
 
