@@ -33,12 +33,12 @@ class YellowPagesource {
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
         if ($name=="pagesource" && ($type=="block" || $type=="inline")) {
-            $output = "<div class=\"".htmlspecialchars($name)."\">";
-            $output .= "<form class=\"pagesource-form\" action=\"".$this->yellow->page->getLocation(true)."\" method=\"post\">\n";
+            $output = "<div class=\"".htmlspecialchars($name)."\">\n";
+            $output .= "<form class=\"pagesource-form\" action=\"".$this->yellow->page->getLocation(false)."\" method=\"post\">\n";
             $output .= "<input type=\"hidden\" name=\"status\" value=\"source\" />\n";
             $output .= "<input type=\"submit\" value=\"".$this->yellow->text->getHtml("EditToolbarPre")."\" class=\"btn source-btn\" />\n";
             $output .= "</form>\n";
-            $output .= "</div>";
+            $output .= "</div>\n";
         }
         return $output;
     }
