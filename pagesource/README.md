@@ -14,13 +14,24 @@ To uninstall delete the [extension files](extension.ini).
 
 Create a `[pagesource]` shortcut. 
 
-This extension adds a "Source code" button to each page you would like to allow viewing the page source. The page will be rendered as markdown page, excluding page settings. You can use this extension to provide website visitors a simplified printing view, a content export for plaintext environments, or just to show how easy it is to write beautiful web pages in markdown. 
+The following arguments are available, all arguments are optional:
+
+`Style` = pagesource style, e.g. left, center, right
+
+This extension adds a "Source code" button to each page you would like to allow viewing the page source. The page will be rendered in raw markdown format, excluding page settings. Therefore other extension shortcuts within a page will not be parsed. You can use this extension to provide website visitors a simplified printing view, a content export for plaintext environments, or just to show how easy it is to write beautiful web pages in markdown. 
+
+## Settings
+
+The following settings can be configured in file `system/settings/system.ini`:
+
+`PagesourceStyle` = default pagesource style
 
 ## Example
 
 Embedding a "Source code" button:
 
     [pagesource]
+    [pagesource right]
 
 ## Developer
 
