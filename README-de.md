@@ -22,6 +22,8 @@ Erweiterungen von Steffen Schultz:
   Bindet den Inhalt anderer Seiten in die aktuelle Seite ein.
 * [MOTD](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/motd/README-de.md): 
   Nachricht des Tages.
+* [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/pagesource): 
+  Markdown-Quelltext einer Seite ansehen.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast/README-de.md): 
   Web-Feed optimiert für die Podcast-Veröffentlichung.
 * [Private](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/private/README-de.md): 

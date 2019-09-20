@@ -22,6 +22,8 @@ Extensions created by Steffen Schultz:
   Includes page content from other pages.
 * [MOTD](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/motd): 
   Message of the day.
+* [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/pagesource): 
+  View the markdown source of a page.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast): 
   Web feed optimized for podcast publishing.
 * [Private](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/private): 
