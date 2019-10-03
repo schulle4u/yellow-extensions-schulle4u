@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowPagesource {
-    const VERSION = "0.8.2";
+    const VERSION = "0.8.3";
     const TYPE = "feature";
     public $yellow;         //access to API
     
@@ -16,7 +16,7 @@ class YellowPagesource {
     
     // Handle page layout
     public function onParsePageLayout($page, $name) {
-        if ($_REQUEST["status"]=="source" && $this->yellow->getRequestHandler()=="core") {
+        if ($_POST["status"]=="source" && $this->yellow->getRequestHandler()=="core") {
             $this->yellow->page->setHeader("Content-Type", "text/plain; charset=utf-8");
             $this->yellow->page->set("status", "source");
             $title = $this->yellow->page->get("title");
