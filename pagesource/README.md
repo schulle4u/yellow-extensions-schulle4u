@@ -1,4 +1,4 @@
-Pagesource 0.8.2
+Pagesource 0.8.3
 ================
 Display page as markdown source.
 
