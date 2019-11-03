@@ -25,7 +25,7 @@ This extension provides a more effective alternative to the built-in email prote
 
 Steffen Schultz
 
-[Antispam class developed by Roman Ozana (Sphido)](https://github.com/sphido/antispam), available under the terms of the BSD 3-Clause License. 
+Antispam class originally developed by Roman Ozana (Sphido), released under the terms of the BSD 3-Clause License. The code is no longer available. 
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;

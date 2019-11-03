@@ -25,7 +25,7 @@ Diese Erweiterung ermöglicht einen effektiveren Schutz von E-Mail-Adressen als 
 
 Steffen Schultz
 
-[Antispam-Klasse von Roman Ozana (Sphido)](https://github.com/sphido/antispam), verfügbar unter den Bedingungen der BSD-3-Clause-Lizenz. 
+Antispam-Klasse von Roman Ozana (Sphido), ursprünglich veröffentlicht unter den Bedingungen der BSD-3-Clause-Lizenz. Der Code ist jedoch nicht mehr verfügbar. 
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
