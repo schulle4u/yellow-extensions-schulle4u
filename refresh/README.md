@@ -1,56 +1,48 @@
-Example 0.8.2
+Refresh 0.8.1
 =============
-Example extension for developers.
-
-**TODO:** *Use this extension to make a new feature. It provides an `example.php` with code, an `extension.ini` with information and a `README.md` with documentation. Start your documentation with the name of your extension, followed by one line of description. Put more text into the sections below. Add a screenshot whenever possible.* 
-
-<p align="center"><img src="example-screenshot.png?raw=true" alt="Screenshot"></p>
+Redirect to another URL using meta refresh.
 
 ## How to install extension
 
 1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download extension](https://github.com/schulle4u/yellow-extension-example/archive/master.zip). If you are using Safari, right click and select 'Download file as'.
-3. Copy `master.zip` into your `system/extensions` folder.
+2. [Download extension](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/master/zip/refresh.zip). If you are using Safari, right click and select 'Download file as'.
+3. Copy `refresh.zip` into your `system/extensions` folder.
 
 To uninstall delete the [extension files](extension.ini).
 
-**TODO:** *Change the second link to your own repository.*
+## How to redirect to another URL
 
-## How to do something
+Use the following page settings to redirect your visitors:
 
-Create an `[example]` shortcut. 
+`Refresh` = target URL (example: `https://datenstrom.se`)  
+`RefreshTime` = How many seconds to wait before redirecting (default: 5).
 
-The following arguments are available, all but the first argument are optional:
+To optionally show a countdown for visitors, create a `[refresh]` shortcut. 
 
-`Something` = example argument, unused in this extension    
-`Style` = example style, unused in this extension
-
-**TODO:** *Change the heading to match your extension. Describe what the user can do with your extension. Most of the time you can describe everything in one section. However if your extension has lot of functionality you can also break it down into multiple sections. Mention third party libraries and web services that you use.*
+This extension provides an alternative page redirection using a meta refresh. Yellow already has a `Redirect` page setting, but this only allows immediate redirection. Using this extension you can inform your visitors where they are going to be redirected. 
 
 ## Settings
 
 The following settings can be configured in file `system/settings/system.ini`:
 
-`ExampleSomething` = example setting, unused in this extension  
-`ExampleStyle` = example style, unused in this extension  
-
-**TODO:** *Show how your extension can be configured. Describe settings and files that the user can adjust.*
+`RefreshTime` = How many seconds to wait before redirecting (default: 5).
 
 ## Examples
 
-Embedding an example text:
+Here is an example content file with page redirection: 
 
-    [example]
-    [example abc]
-    [example abc 123]
-
-**TODO:** *Show how your extension can be used. Give multiple examples that can be copy/pasted.*
+```
+---
+Title: Redirecting...
+Refresh: https://datenstrom.se
+RefreshTime: 10
+---
+Redirecting in [refresh] seconds. If you are not being redirected automatically, [click here to go to the page](https://datenstrom.se).
+```
 
 ## Developer
 
-Example Name.
-
-**TODO:** *Add your name. Give credits to other people whenever possible. Test everything in the [latest version of Datenstrom Yellow](https://github.com/datenstrom/yellow).*
+Steffen Schultz
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
