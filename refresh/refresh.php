@@ -28,7 +28,7 @@ class YellowRefresh {
     // Handle page extra data
     public function onParsePageExtra($page, $name) {
         $output = null;
-        if ($name == "header" && $page->getHtml("refresh")) {
+        if ($name == "header" && $page->getHtml("refresh") && $this->yellow->getRequestHandler()=="core") {
             $refreshTime = $page->getHtml("refreshTime");
             if (strempty($refreshTime)) $refreshTime = $this->yellow->system->get("refreshTime");
             $output = "<meta http-equiv=\"refresh\" content=\"".$refreshTime."; URL=".$page->getHtml("refresh")."\">\n";
