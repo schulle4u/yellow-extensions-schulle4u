@@ -31,7 +31,13 @@ class YellowRedirect {
         if ($name == "header" && $page->getHtml("redirectLocation") && $this->yellow->getRequestHandler()=="core") {
             $redirectTime = $page->getHtml("redirectTime");
             if (strempty($redirectTime)) $redirectTime = $this->yellow->system->get("redirectTime");
-            $output = "<meta http-equiv=\"refresh\" content=\"".$redirectTime."; URL=".$page->getHtml("redirectLocation")."\">\n";
+            $redirectLocation = $page->getHtml("redirectLocation");
+            if (!preg_match("/^\w+:/", $redirectLocation)) {
+                $redirectLocation = $this->yellow->system->get("serverBase").$redirectLocation;
+            } else {
+                $redirectLocation = $this->yellow->lookup->normaliseUrl("", "", "", $redirectLocation);
+            }
+            $output = "<meta http-equiv=\"refresh\" content=\"".$redirectTime."; URL=".$redirectLocation."\">\n";
         }
         if ($name == "footer" && $page->getHtml("redirectLocation")) {
             $output = "<script type=\"text/javascript\">\n";
