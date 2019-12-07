@@ -1,9 +1,9 @@
 <?php
-// Refresh extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/refresh
+// Redirect extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/redirect
 // Copyright (c) 2019 Steffen Schultz
 // This file may be used and distributed under the terms of the public license.
 
-class YellowRefresh {
+class YellowRedirect {
     const VERSION = "0.8.1";
     const TYPE = "feature";
     public $yellow;         //access to API
@@ -11,16 +11,16 @@ class YellowRefresh {
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
-        $this->yellow->system->setDefault("refreshTime", "5");
+        $this->yellow->system->setDefault("redirectTime", "5");
     }
     
     // Handle page content of shortcut
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
-        if ($name=="refresh" && ($type=="inline")) {
-            $refreshTime = $page->getHtml("refreshTime");
-            if (strempty($refreshTime)) $refreshTime = $this->yellow->system->get("refreshTime");
-            $output = "<span id=\"countdown\">".$refreshTime."</span>";
+        if ($name=="redirect" && ($type=="inline")) {
+            $redirectTime = $page->getHtml("redirectTime");
+            if (strempty($redirectTime)) $redirectTime = $this->yellow->system->get("redirectTime");
+            $output = "<span id=\"countdown\">".$redirectTime."</span>";
         }
         return $output;
     }
@@ -28,12 +28,12 @@ class YellowRefresh {
     // Handle page extra data
     public function onParsePageExtra($page, $name) {
         $output = null;
-        if ($name == "header" && $page->getHtml("refresh") && $this->yellow->getRequestHandler()=="core") {
-            $refreshTime = $page->getHtml("refreshTime");
-            if (strempty($refreshTime)) $refreshTime = $this->yellow->system->get("refreshTime");
-            $output = "<meta http-equiv=\"refresh\" content=\"".$refreshTime."; URL=".$page->getHtml("refresh")."\">\n";
+        if ($name == "header" && $page->getHtml("redirectLocation") && $this->yellow->getRequestHandler()=="core") {
+            $redirectTime = $page->getHtml("redirectTime");
+            if (strempty($redirectTime)) $redirectTime = $this->yellow->system->get("redirectTime");
+            $output = "<meta http-equiv=\"refresh\" content=\"".$redirectTime."; URL=".$page->getHtml("redirectLocation")."\">\n";
         }
-        if ($name == "footer" && $page->getHtml("refresh")) {
+        if ($name == "footer" && $page->getHtml("redirectLocation")) {
             $output = "<script type=\"text/javascript\">\n";
             $output .= "var seconds=document.getElementById(\"countdown\").textContent;var countdown=setInterval(function(){seconds--;document.getElementById(\"countdown\").textContent=seconds;if(seconds<=0)clearInterval(countdown);},1000);\n";
             $output .= "</script>\n";
