@@ -32,8 +32,8 @@ Extensions created by Steffen Schultz:
   Widgets for RadioBoss Cloud.
 * [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/random): 
   Display random pages from specified location.
-* [Refresh](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/refresh): 
-  Redirect to another URL using meta refresh.
+* [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/redirect): 
+  Configurable page redirection.
 * [Shariff](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/shariff): 
   Privacy-friendly social sharing buttons.
 * [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler): 

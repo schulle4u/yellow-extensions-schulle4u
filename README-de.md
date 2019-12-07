@@ -32,8 +32,8 @@ Erweiterungen von Steffen Schultz:
   Widgets für RadioBoss Cloud.
 * [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/random/README-de.md): 
   Zufällige Seiten eines bestimmten Ortes anzeigen.
-* [Refresh](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/refresh): 
-  URL-Weiterleitung mittels Meta-Refresh.
+* [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/redirect): 
+  Konfigurierbare Seitenweiterleitung.
 * [Shariff](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/shariff/README-de.md): 
   Datenschutzfreundliche Teilen-Schaltflächen.
 * [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler/README-de.md): 
