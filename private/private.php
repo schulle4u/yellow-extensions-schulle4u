@@ -4,19 +4,18 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowPrivate {
-    const VERSION = "0.8.3";
+    const VERSION = "0.8.4";
     const TYPE = "feature";
     public $yellow;         //access to API
     
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
-        $this->yellow->system->setDefault("privateVisible", "");
     }
 
     // Handle page meta data
     public function onParseMeta($page) {
-        if (!$this->yellow->system->get("privateVisible") && $page->get("status")=="private") $page->visible = false;
+        if ($page->get("status")=="private") $page->visible = false;
     }
     
     // Handle page layout
