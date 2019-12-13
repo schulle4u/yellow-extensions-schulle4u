@@ -1,6 +1,6 @@
 Private 0.8.3
-=======================
-Erstelle passwortgeschützte Seiten.
+=============
+Unterstützung für passwortgeschützte Seiten.
 
 <p align="center"><img src="private-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
@@ -12,32 +12,38 @@ Erstelle passwortgeschützte Seiten.
 
 Zum Deinstallieren lösche einfach die [Erweiterungsdateien](extension.ini).
 
-## Wie man geschützte Seiten erstellt
+## Wie man private Seiten erstellt
 
-Setze `status: private` und `password: Dein Passwort` in deinen Seiteneinstellungen. 
+Setze `Status: private` und `Password` in den [Einstellungen](https://github.com/datenstrom/yellow-extensions/tree/master/features/core#settings) ganz oben auf der Seite. Die Seite ist dann nicht mehr sichtbar und man muss das Kennwort eingeben um auf den Inhalt zuzugreifen. Man kann die Seite weiterhin im [Webbrowser](https://github.com/datenstrom/yellow-extensions/tree/master/features/edit) um im Dateisystem bearbeiten.
 
-**Hinweis**: Bitte verwende diese Erweiterung mit Vorsicht. Sie verschlüsselt keine Daten oder verhindert, dass die Seiten von anderen Erweiterungen ausgelesen werden können. Den Seiten wird lediglich eine einfache Passwortabfrage hinzugefügt. Mittels weiterer Einstellungen kannst du Datenlecks minimieren, siehe hierzu das Beispiel unten. 
+## Wie man private Seiten findet
 
-## Einstellungen
+Du kannst die [Search-Erweiterung](https://github.com/datenstrom/yellow-extensions/tree/master/features/search) verwenden. Sobald du mit deinem Benutzerkonto eingeloggt bist, kannst du nach `status:private` suchen. Das ermöglicht dir alle private Seiten zu finden.
 
-Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vorgenommen werden:
+## Beispiele
 
-`PrivateVisible` = Zeige private Seiten in der Navigation und in Suchergebnissen (Standard: 0)  
-
-## Beispiel
-
-Hier ist eine Beispielseite: 
+Inhaltsdatei with privatem Status: 
 
 ```
 ---
-Title: Geschützte Seite
-Description: Diese Seite ist geschützt. Bitte gib das korrekte Passwort ein, um auf den inhalt zuzugreifen.
+Title: Private Seite
 Status: private
-Password: protected
+Password: password
 ---
-Dies ist eine geschützte Seite. [--more--]
+Diese Seite ist privat. Füge hier weitere Informationen hinzu.
+```
 
-Ein Seitenumbruch wird verwendet, damit Erweiterungen zur Seitenauflistung keine der geschützten Informationen preisgeben können. Die `Description`-Einstellung entfernt ungewollte Informationen aus den Metadaten und kann verwendet werden, um für Besucher eine Meldung anzuzeigen. 
+Inhaltsdatei with privatem Status im Wiki: 
+
+```
+---
+Title: Wiki-Seite
+Layout: wiki
+Tag: Beispiel
+Status: private
+Password: password
+---
+Diese Seite ist privat. Füge hier weitere Informationen hinzu.
 ```
 
 ## Entwickler
