@@ -14,15 +14,15 @@ Zum Deinstallieren lösche einfach die [Erweiterungsdateien](extension.ini).
 
 ## Wie man private Seiten erstellt
 
-Setze `Status: private` und `Password` in den [Einstellungen](https://github.com/datenstrom/yellow-extensions/tree/master/features/core#settings) ganz oben auf der Seite. Die Seite ist dann nicht mehr sichtbar und man muss das Kennwort eingeben um auf den Inhalt zuzugreifen. Man kann die Seite weiterhin im [Webbrowser](https://github.com/datenstrom/yellow-extensions/tree/master/features/edit) um im Dateisystem bearbeiten.
+Setze `Status: private` und `Password` in den [Einstellungen](https://github.com/datenstrom/yellow-extensions/tree/master/features/core#settings) ganz oben auf der Seite. Die Seite ist dann nicht mehr sichtbar und man muss das Kennwort eingeben um auf den Inhalt zuzugreifen. Man kann die Seite weiterhin im [Webbrowser](https://github.com/datenstrom/yellow-extensions/tree/master/features/edit) und im Dateisystem bearbeiten.
 
 ## Wie man private Seiten findet
 
-Du kannst die [Search-Erweiterung](https://github.com/datenstrom/yellow-extensions/tree/master/features/search) verwenden. Sobald du mit deinem Benutzerkonto eingeloggt bist, kannst du nach `status:private` suchen. Das ermöglicht dir alle private Seiten zu finden.
+Du kannst die [Search-Erweiterung](https://github.com/datenstrom/yellow-extensions/tree/master/features/search) verwenden. Sobald du mit deinem Benutzerkonto eingeloggt bist, kannst du nach `status:private` suchen. Das ermöglicht dir alle privaten Seiten zu finden.
 
 ## Beispiele
 
-Inhaltsdatei with privatem Status: 
+Inhaltsdatei mit privatem Status: 
 
 ```
 ---
@@ -33,7 +33,7 @@ Password: password
 Diese Seite ist privat. Füge hier weitere Informationen hinzu.
 ```
 
-Inhaltsdatei with privatem Status im Wiki: 
+Inhaltsdatei mit privatem Status im Wiki: 
 
 ```
 ---
