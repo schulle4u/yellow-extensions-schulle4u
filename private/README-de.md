@@ -37,9 +37,9 @@ Inhaltsdatei with privatem Status im Wiki:
 
 ```
 ---
-Title: Wiki page
+Title: Wiki-Seite
 Layout: wiki
-Tag: Example
+Tag: Beispiel
 Status: private
 Password: password
 ---
