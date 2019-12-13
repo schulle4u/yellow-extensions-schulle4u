@@ -14,7 +14,7 @@ Zum Deinstallieren lösche einfach die [Erweiterungsdateien](extension.ini).
 
 ## Wie man private Seiten erstellt
 
-Setze `Status: private` und `Password` in den [Einstellungen](https://github.com/datenstrom/yellow-extensions/tree/master/features/core#settings) ganz oben auf der Seite. Die Seite ist dann nicht mehr sichtbar und man muss das Kennwort eingeben um auf den Inhalt zuzugreifen. Man kann eine private Seite weiterhin im [Webbrowser](https://github.com/datenstrom/yellow-extensions/tree/master/features/edit) um im Dateisystem bearbeiten.
+Setze `Status: private` und `Password` in den [Einstellungen](https://github.com/datenstrom/yellow-extensions/tree/master/features/core#settings) ganz oben auf der Seite. Die Seite ist dann nicht mehr sichtbar und man muss das Kennwort eingeben um auf den Inhalt zuzugreifen. Man kann die Seite weiterhin im [Webbrowser](https://github.com/datenstrom/yellow-extensions/tree/master/features/edit) um im Dateisystem bearbeiten.
 
 ## Wie man private Seiten findet
 

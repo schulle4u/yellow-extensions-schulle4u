@@ -14,7 +14,7 @@ To uninstall delete the [extension files](extension.ini).
 
 ## How to make a private page
 
-Set `Status: private` and `Password` in the [settings](https://github.com/datenstrom/yellow-extensions/tree/master/features/core#settings) at the top of a page. The page will no longer be visible and you need enter the password to access the content. You can continue to edit a private page in the [web browser](https://github.com/datenstrom/yellow-extensions/tree/master/features/edit) and the file system.
+Set `Status: private` and `Password` in the [settings](https://github.com/datenstrom/yellow-extensions/tree/master/features/core#settings) at the top of a page. The page will no longer be visible and you need to enter the password to access the content. You can continue to edit the page in the [web browser](https://github.com/datenstrom/yellow-extensions/tree/master/features/edit) and the file system.
 
 ## How to find private pages
 
