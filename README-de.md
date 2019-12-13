@@ -27,7 +27,7 @@ Erweiterungen von Steffen Schultz:
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast/README-de.md): 
   Web-Feed optimiert für die Podcast-Veröffentlichung.
 * [Private](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/private/README-de.md): 
-  Erstelle passwortgeschützte Seiten.
+  Unterstützung für passwortgeschützte Seiten.
 * [Radioboss](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/radioboss/README-de.md): 
   Widgets für RadioBoss Cloud.
 * [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/random/README-de.md): 
