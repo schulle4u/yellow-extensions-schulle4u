@@ -1,5 +1,5 @@
-Shariff 0.8.3
-=======================
+Shariff 0.8.4
+=============
 Privacy-friendly social sharing buttons.
 
 ![Screenshot](shariff-screenshot.png?raw=true)

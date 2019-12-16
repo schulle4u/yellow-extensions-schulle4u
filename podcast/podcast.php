@@ -5,7 +5,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowPodcast {
-    const VERSION = "0.8.4";
+    const VERSION = "0.8.5";
     const TYPE = "feature";
     public $yellow;            //access to API
     
@@ -124,9 +124,9 @@ class YellowPodcast {
     public function onParsePageExtra($page, $name) {
         $output = NULL;
         if ($name=="header") {
-            $pagination = $this->yellow->system->get("contentPagination");            
+            $pagination = "page";            
             $tag = $_REQUEST["tag"];
-            $locationPodcast = $this->yellow->system->get("serverBase").$this->yellow->system->get("podcastLocation");
+            $locationPodcast = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("podcastLocation");
             if ($tag) $locationPodcast .= $this->yellow->toolbox->normaliseArgs("tag:$tag", true);
             $locationPodcast .= $this->yellow->toolbox->normaliseArgs("$pagination:".$this->yellow->system->get("podcastFileXml"), false);
             $output = "<link rel=\"alternate\" type=\"application/rss+xml\" href=\"$locationPodcast\" />\n";
@@ -136,7 +136,7 @@ class YellowPodcast {
     
     // Check if XML requested
     public function isRequestXml() {
-        $pagination = $this->yellow->system->get("contentPagination");
+        $pagination = "page";
         return $_REQUEST[$pagination]==$this->yellow->system->get("podcastFileXml");
     }
     
@@ -144,7 +144,7 @@ class YellowPodcast {
     public function parseUrl($url) {
         if ($this->yellow->system->isExisting("audioUrlPrefix")) $url = $this->yellow->system->get("audioUrlPrefix").$url;
         if (!preg_match("/^\w+:/", $url)) {
-            $url = $this->yellow->system->get("serverBase").$url;
+            $url = $this->yellow->system->get("coreServerBase").$url;
         } else {
             $url = $this->yellow->lookup->normaliseUrl("", "", "", $url);
         }

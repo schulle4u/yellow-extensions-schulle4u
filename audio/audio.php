@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowAudio {
-    const VERSION = "0.8.3";
+    const VERSION = "0.8.4";
     const TYPE = "feature";
     public $yellow;            //access to API
     
@@ -23,7 +23,7 @@ class YellowAudio {
             list($url, $download, $style) = $this->yellow->toolbox->getTextArgs($text);
             $url = $this->yellow->system->get("audioUrlPrefix").$url;
             if (!preg_match("/^\w+:/", $url)) {
-                $url = $this->yellow->system->get("serverBase").$url;
+                $url = $this->yellow->system->get("coreServerBase").$url;
             } else {
                 $url = $this->yellow->lookup->normaliseUrl("", "", "", $url);
             }

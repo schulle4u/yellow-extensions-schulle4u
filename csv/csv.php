@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowCsv {
-    const VERSION = "0.8.6";
+    const VERSION = "0.8.7";
     const TYPE = "feature";
     public $yellow;         //access to API
     
@@ -54,7 +54,7 @@ class YellowCsv {
                         if (($row == 0) && $firstRowHeader) {
                             $output .= "<th>".htmlspecialchars($value)."</th>\n";
                         } else {
-                            $output .= "<td>".($this->yellow->system->get("safeMode") ? htmlspecialchars($value) : $value)."</td>\n";
+                            $output .= "<td>".($this->yellow->system->get("coreSafeMode") ? htmlspecialchars($value) : $value)."</td>\n";
                         }
                     }
                     if (($row == 0) && $firstRowHeader) {
@@ -78,7 +78,7 @@ class YellowCsv {
     public function onParsePageExtra($page, $name) {
         $output = null;
         if ($name=="header") {
-            $extensionLocation = $this->yellow->system->get("serverBase").$this->yellow->system->get("extensionLocation");
+            $extensionLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreExtensionLocation");
             $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}csv.js\"></script>\n";
         }
         return $output;

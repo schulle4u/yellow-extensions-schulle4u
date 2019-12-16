@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowRedirect {
-    const VERSION = "0.8.1";
+    const VERSION = "0.8.2";
     const TYPE = "feature";
     public $yellow;         //access to API
     
@@ -33,7 +33,7 @@ class YellowRedirect {
             if (strempty($redirectTime)) $redirectTime = $this->yellow->system->get("redirectTime");
             $redirectLocation = $page->getHtml("redirectLocation");
             if (!preg_match("/^\w+:/", $redirectLocation)) {
-                $redirectLocation = $this->yellow->system->get("serverBase").$redirectLocation;
+                $redirectLocation = $this->yellow->system->get("coreServerBase").$redirectLocation;
             } else {
                 $redirectLocation = $this->yellow->lookup->normaliseUrl("", "", "", $redirectLocation);
             }

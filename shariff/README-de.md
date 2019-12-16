@@ -1,5 +1,5 @@
-Shariff 0.8.3
-=======================
+Shariff 0.8.4
+=============
 Datenschutzfreundliche Teilen-Schaltflächen.
 
 ![Bildschirmfoto](shariff-screenshot.png?raw=true)

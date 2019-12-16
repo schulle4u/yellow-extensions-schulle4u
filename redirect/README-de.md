@@ -1,4 +1,4 @@
-Redirect 0.8.1
+Redirect 0.8.2
 ==============
 Konfigurierbare Seitenweiterleitung.
 
