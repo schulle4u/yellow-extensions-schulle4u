@@ -1,12 +1,10 @@
-Datenstrom Yellow - Erweiterungen von Steffen Schultz
-=====================================================
-[![Datenstrom Yellow](https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/datenstrom-yellow-de.jpg)](https://datenstrom.se/de/yellow/)
+# Datenstrom Yellow - Erweiterungen von Steffen Schultz
 
 1. [Lade alle Erweiterungen herunter und entpacke sie](https://github.com/schulle4u/yellow-extensions-schulle4u/archive/master.zip).  
 2. Kopiere individuelle Zip-Dateien auf deinen Server.  
 3. Öffne deine Website in einem Browser.
 
-Erweiterungen von Steffen Schultz:
+Die folgenden Erweiterungen sind verfügbar:
 
 * [About](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/about/README-de.md): 
   Autorenprofil für Blogseiten.
@@ -33,7 +31,7 @@ Erweiterungen von Steffen Schultz:
 * [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/random/README-de.md): 
   Zufällige Seiten eines bestimmten Ortes anzeigen.
 * [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/redirect): 
-  Konfigurierbare Seitenweiterleitung.
+  Alternative Seitenweiterleitung.
 * [Shariff](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/shariff/README-de.md): 
   Datenschutzfreundliche Teilen-Schaltflächen.
 * [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler/README-de.md): 

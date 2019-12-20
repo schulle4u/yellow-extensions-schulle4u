@@ -1,6 +1,6 @@
 Redirect 0.8.2
 ==============
-Configurable page redirection.
+Alternative page redirection.
 
 ## How to install extension
 

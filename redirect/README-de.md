@@ -1,6 +1,6 @@
 Redirect 0.8.2
 ==============
-Konfigurierbare Seitenweiterleitung.
+Alternative Seitenweiterleitung.
 
 ## Wie man diese Erweiterung installiert
 
