@@ -1,4 +1,4 @@
-Podcast 0.8.5
+Podcast 0.8.6
 =============
 Web-Feed optimiert für die Podcast-Veröffentlichung.
 
