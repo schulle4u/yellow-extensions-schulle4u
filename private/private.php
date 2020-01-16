@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowPrivate {
-    const VERSION = "0.8.5";
+    const VERSION = "0.8.6";
     const TYPE = "feature";
     public $yellow;         //access to API
     
