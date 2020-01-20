@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowRadioboss {
-    const VERSION = "0.8.5";
+    const VERSION = "0.8.6";
     const TYPE = "feature";
     public $yellow;            //access to API
     
@@ -88,6 +88,39 @@ class YellowRadioboss {
             
             $output .= "</div>\n";
         }
+        if ($name=="radiobossinfo" && ($type=="inline")) {
+            list($info, $server, $id) = $this->yellow->toolbox->getTextArgs($text);
+            if (empty($server)) $server = $this->yellow->system->get("radiobossServer");
+            if (empty($id)) $id = $this->yellow->system->get("radiobossId");
+            
+            // Turn of caching
+            $this->yellow->page->setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
+            
+            // Curl setup
+            $url = "https://".htmlspecialchars($server)."/api/info/".htmlspecialchars($id);
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+            curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (compatible; DatenstromYellow/".YellowCore::VERSION."; RadioBoss Extension)");
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
+            curl_setopt($ch, CURLOPT_URL,$url);
+            $result = curl_exec($ch);
+            curl_close($ch);
+            
+            // Format the JSON output
+            $result = json_decode( $result, true );
+            
+            if($info == "nowplaying") $output .= $result['nowplaying'];
+            if($info == "listeners") $output .= $result['listeners'];
+            if($info == "status") {
+                if($result['autodj'] == false) {
+                    $output .= "Live";
+                } else {
+                    $output .= "Auto DJ";
+                }
+            }
+        }
+
         return $output;
     }
 }
