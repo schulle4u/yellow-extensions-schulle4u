@@ -112,13 +112,6 @@ class YellowRadioboss {
             
             if($info == "nowplaying") $output .= $result['nowplaying'];
             if($info == "listeners") $output .= $result['listeners'];
-            if($info == "status") {
-                if($result['autodj'] == false) {
-                    $output .= "Live";
-                } else {
-                    $output .= "Auto DJ";
-                }
-            }
         }
 
         return $output;
