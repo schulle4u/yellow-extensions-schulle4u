@@ -17,6 +17,7 @@ class YellowRadioboss {
         $this->yellow->system->setDefault("radiobossMount", "stream"); // file name Without slash
         $this->yellow->system->setDefault("radiobossId", ""); // Currently this are the last two digits of the port number
         $this->yellow->system->setDefault("radiobossListeners", "0");
+        $this->yellow->system->setDefault("radiobossTrackCount", "10");
         $this->yellow->system->setDefault("radiobossStyle", "radioboss");
     }
 
@@ -69,7 +70,7 @@ class YellowRadioboss {
             } 
             if ($widget == "recent") {
                 $output .= "<!-- RadioBOSS Cloud Recent Tracks Widget (Start) -->\n";
-                $output .= "<div id=\"rbcloud_recent".htmlspecialchars($wid)."\"></div>\n";
+                $output .= "<div id=\"rbcloud_recent".htmlspecialchars($wid)."\"> data-cnt=\"".$this->yellow->system->get("radiobossTrackCount")."\"</div>\n";
                 $output .= "<script src=\"https://".htmlspecialchars($server)."/w/recent.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid)."\"></script>\n";
                 $output .= "<!-- RadioBOSS Cloud Recent Tracks Widget (End) -->\n";
             } 
