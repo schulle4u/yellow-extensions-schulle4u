@@ -69,8 +69,9 @@ class YellowRadioboss {
                 $output .= "<!-- RadioBOSS Cloud Artwork Widget (End) -->\n";
             } 
             if ($widget == "recent") {
+                if (empty($arguments)) $arguments = $this->yellow->system->get("radiobossTrackCount");
                 $output .= "<!-- RadioBOSS Cloud Recent Tracks Widget (Start) -->\n";
-                $output .= "<div id=\"rbcloud_recent".htmlspecialchars($wid)."\"> data-cnt=\"".$this->yellow->system->get("radiobossTrackCount")."\"</div>\n";
+                $output .= "<div id=\"rbcloud_recent".htmlspecialchars($wid)."\" data-cnt=\"".htmlspecialchars($arguments)."\"></div>\n";
                 $output .= "<script src=\"https://".htmlspecialchars($server)."/w/recent.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid)."\"></script>\n";
                 $output .= "<!-- RadioBOSS Cloud Recent Tracks Widget (End) -->\n";
             } 
@@ -88,31 +89,6 @@ class YellowRadioboss {
             }
             
             $output .= "</div>\n";
-        }
-        if ($name=="radiobossinfo" && ($type=="inline")) {
-            list($info, $server, $id) = $this->yellow->toolbox->getTextArgs($text);
-            if (empty($server)) $server = $this->yellow->system->get("radiobossServer");
-            if (empty($id)) $id = $this->yellow->system->get("radiobossId");
-            
-            // Turn of caching
-            $this->yellow->page->setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
-            
-            // Curl setup
-            $url = "https://".htmlspecialchars($server)."/api/info/".htmlspecialchars($id);
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-            curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (compatible; DatenstromYellow/".YellowCore::VERSION."; RadioBoss Extension)");
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
-            curl_setopt($ch, CURLOPT_URL,$url);
-            $result = curl_exec($ch);
-            curl_close($ch);
-            
-            // Format the JSON output
-            $result = json_decode( $result, true );
-            
-            if($info == "nowplaying") $output .= $result['nowplaying'];
-            if($info == "listeners") $output .= $result['listeners'];
         }
 
         return $output;

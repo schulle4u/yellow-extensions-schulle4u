@@ -17,7 +17,7 @@ Create a `[radioboss]` shortcut.
 The following arguments are available, all but the first argument are optional: 
 
 `widget` = type of widget (see below for a list of available widgets).  
-`arguments` = A space-separated list of optional widget arguments if available.   
+`arguments` = A space-separated list of optional widget arguments if available, enclose multiple aguments in quotes.   
 `style` = CSS class to use, e.g. left, center, right.  
 `server` = The hostname of used cloud instance without leading `https://` (example: `c2.radioboss.fm`).  
 `port` = Streaming port (example: `8010`).  
@@ -31,7 +31,7 @@ The following widgets are available:
 `player` = A web player for your stream.  
 `nowplaying` = Show currently playing track.  
 `cover` = Display album cover for current track.  
-`recent` = Show the last 10 recently played tracks.  
+`recent` = Show recently played tracks.  
 `links` = Show a list of streaming links.  
 `page` = Displays a link to the auto-generated stream page of RadioBoss Cloud. 
 
@@ -49,7 +49,8 @@ The following settings can be configured in file `system/settings/system.ini`:
 `RadiobossId` = Currently this are the last two digits of your port number (example: `10`).  
 `RadiobossMount` = The mountpoint of your stream without leading slash (example: `stream`).  
 `RadiobossListeners` = Show listener count in nowplaying widget (default: `0`).  
-`RadioBossStyle` = Default CSS class to use, e.g. left, center, right. 
+`RadiobossTrackCount` = Number of recently played songs (10 - 20, default: 10).  
+`RadiobossStyle` = Default CSS class to use, e.g. left, center, right. 
 
 To obtain your server configuration, log into your RadioBoss cloud account and click on the information tab. 
 
@@ -81,7 +82,7 @@ Normal web player:
 
 ## Recently played
 
-[radioboss recent]
+[radioboss recent 20]
 
 ## How to listen
 

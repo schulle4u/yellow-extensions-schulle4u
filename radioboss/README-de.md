@@ -17,7 +17,7 @@ Erstelle eine `[radioboss]`-Abkürzung.
 Die folgenden Argumente sind verfügbar, bis auf das erste Argument sind alle Angaben optional: 
 
 `widget` = Widget-Typ (siehe unten für eine Liste verfügbarer Widgets).  
-`arguments` = Eine durch Leerzeichen getrennte liste optionaler Widget-Argumente, sofern verfügbar.   
+`arguments` = Eine durch Leerzeichen getrennte liste optionaler Widget-Argumente, sofern verfügbar. Umschließe mehrere Argumente mittels Anführungszeichen.  
 `style` = Zu verwendende CSS-Klasse, z. B. left, center, right.  
 `server` = Hostname der Cloud-Instanz ohne einleitendes `https://` (Beispiel: `c2.radioboss.fm`).  
 `port` = Streaming-Port (Beispiel: `8010`).  
@@ -31,7 +31,7 @@ Die folgenden Widgets stehen zur Verfügung:
 `player` = Ein Web-Player für deinen Stream.  
 `nowplaying` = Zeigt den gerade gespielten Titel an.  
 `cover` = Album-Cover für den aktuellen Titel.  
-`recent` = Listet die 10 zuletzt gespielten Titel auf.  
+`recent` = Zeigt die zuletzt gespielten Titel an.  
 `links` = Zeigt eine Liste der Streaming-Links.  
 `page` = Zeigt einen Link zur automatisch erstellten Stream-Seite von RadioBoss Cloud an. 
 
@@ -49,7 +49,8 @@ Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vo
 `RadiobossId` = Momentan sind dies die beiden letzten Ziffern des Streaming-Ports (Beispiel: `10`).  
 `RadiobossMount` = Einhängepunkt deines Streams ohne führenden Schrägstrich (Beispiel: `stream`). 
 `RadiobossListeners` = Zeige Höreranzahl im Nowplaying-Widget (Standard: `0`).  
-`RadioBossStyle` = Zu verwendende CSS-Klasse, z. B. left, center, right. 
+`RadiobossTrackCount` = Anzahl zuletzt gespielter Titel (10 - 20, Standard: 10).  
+`RadiobossStyle` = Zu verwendende CSS-Klasse, z. B. left, center, right. 
 
 Die Server-Konfiguration erhältst du im Reiter Information, nachdem du dich bei deiner RadioBoss Cloud angemeldet hast. 
 
@@ -81,7 +82,7 @@ Normaler Web-Player:
 
 ## Zuletzt gespielt
 
-[radioboss recent]
+[radioboss recent 20]
 
 ## Wie man uns hören kann
 
