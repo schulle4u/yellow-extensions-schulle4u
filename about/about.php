@@ -4,14 +4,14 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowAbout {
-    const VERSION = "0.8.3";
+    const VERSION = "0.8.4";
     const TYPE = "feature";
     public $yellow;            //access to API
     
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
-        $this->yellow->system->setDefault("aboutLocation", "/profile/");
+        $this->yellow->system->setDefault("aboutLocation", "/about/");
         $this->yellow->system->setDefault("aboutStyle", "about");
     }
 

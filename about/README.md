@@ -27,18 +27,20 @@ If the [blog extension](https://github.com/datenstrom/yellow-extensions/tree/mas
 
 The following settings can be configured in file `system/settings/system.ini`:
 
-`AboutLocation` = The location for author profiles (default: `/profile/`).   
+`AboutLocation` = The location for author profiles (default: `/about/`).   
 `AboutStyle` = Default profile style. 
 
 ## Example
 
-Edit the file `content/profile/page.md` like you would do with a normal page. Write down a few notes about you. If you want an extended profile page, it is recommended to use a page break. You can create profile pages for every site author in the same directory. 
+Edit the file `content/about/page.md` like you would do with a normal page. Write down a few notes about you. If you want an extended profile page, it is recommended to use a page break. You can create profile pages for every site author in the same directory. 
 
 ```
 ---
-Title: About Yellow
+Title: About Datenstrom Yellow
 ---
-Hello, I'm Datenstrom Yellow, the engine running this site. I help people to make websites. 
+For people who make websites. [--more--]
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna pizza. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ```
 
 ## Developer

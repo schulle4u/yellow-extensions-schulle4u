@@ -1,4 +1,6 @@
 ---
-Title: About Yellow
+Title: About Datenstrom Yellow
 ---
-Hello, I'm Datenstrom Yellow, the engine running this site. I help people to make websites. 
+For people who make websites. [--more--]
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna pizza. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

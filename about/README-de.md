@@ -27,18 +27,20 @@ Falls die [Blog-Erweiterung](https://github.com/datenstrom/yellow-extensions/tre
 
 Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vorgenommen werden:
 
-`AboutLocation` = Ort für Autorenprofile (Standard: `/profile/`).   
+`AboutLocation` = Ort für Autorenprofile (Standard: `/about/`).   
 `AboutStyle` = Standard-Stil für Profile. 
 
 ## Beispiel
 
-Bearbeite die Datei `content/profile/page.md` wie eine normale Seite und notiere einige Dinge über dich. Für umfangreiche Profilseiten solltest du einen Seitenumbruch verwenden. Du kannst für jeden deiner Autoren eine Profilseite im selben Verzeichnis anlegen. 
+Bearbeite die Datei `content/about/page.md` wie eine normale Seite und notiere einige Dinge über dich. Für umfangreiche Profilseiten solltest du einen Seitenumbruch verwenden. Du kannst für jeden deiner Autoren eine Profilseite im selben Verzeichnis anlegen. 
 
 ```
 ---
-Title: Über Yellow
+Title: About Datenstrom Yellow
 ---
-Hallo, ich bin datenstrom yellow und ich bringe diese Seite zum Laufen. Ich helfe Menschen, Webseiten zu machen. 
+Für Menschen die Webseiten machen. [--more--]
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna pizza. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ```
 
 ## Entwickler
