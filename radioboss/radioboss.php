@@ -59,12 +59,14 @@ class YellowRadioboss {
                 $output .= "<!-- RadioBOSS Cloud NowPlaying Widget (Start) -->\n";
                 $output .= "<div id=\"rbcloud_nowplaying".htmlspecialchars($wid)."\"></div>\n";
                 if ($listeners) $output .= "<div>Listeners: <span id=\"rbcloud_listeners".htmlspecialchars($wid)."\">...</span></div>\n";
-                $output .= "<script src=\"https://".htmlspecialchars($server)."/w/nowplaying.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid)."\"></script>\n";
+                $output .= "<script src=\"https://".htmlspecialchars($server)."/w/nowplaying.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid);
+                if (empty($listeners)) $output .= "&amp;nl=1";
+                $output .= "\"></script>\n";
                 $output .= "<!-- RadioBOSS Cloud NowPlaying Widget (End) -->\n";
             } 
             if ($widget == "cover") {
                 $output .= "<!-- RadioBOSS Cloud Artwork Widget (Start) -->\n";
-                $output .= "<img id=\"rbcloud_cover".htmlspecialchars($wid)."\" src=\"https://".htmlspecialchars($server)."/w/artwork/".htmlspecialchars($id).".png\" width=\"150\" height=\"150\">\n";
+                $output .= "<img id=\"rbcloud_cover".htmlspecialchars($wid)."\" src=\"https://".htmlspecialchars($server)."/w/artwork/".htmlspecialchars($id).".png\" width=\"150\" height=\"150\" alt=\"Cover Art\">\n";
                 $output .= "<script src=\"https://".htmlspecialchars($server)."/w/cover.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid)."\"></script>\n";
                 $output .= "<!-- RadioBOSS Cloud Artwork Widget (End) -->\n";
             } 

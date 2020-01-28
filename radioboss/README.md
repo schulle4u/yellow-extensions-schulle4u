@@ -49,7 +49,7 @@ The following settings can be configured in file `system/settings/system.ini`:
 `RadiobossId` = Currently this are the last two digits of your port number (example: `10`).  
 `RadiobossMount` = The mountpoint of your stream without leading slash (example: `stream`).  
 `RadiobossListeners` = Show listener count in nowplaying widget (default: `0`).  
-`RadiobossTrackCount` = Number of recently played songs (10 - 20, default: 10).  
+`RadiobossTrackCount` = Number of recently played songs (1 - 20, default: 10).  
 `RadiobossStyle` = Default CSS class to use, e.g. left, center, right. 
 
 To obtain your server configuration, log into your RadioBoss cloud account and click on the information tab. 

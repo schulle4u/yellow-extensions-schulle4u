@@ -49,7 +49,7 @@ Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vo
 `RadiobossId` = Momentan sind dies die beiden letzten Ziffern des Streaming-Ports (Beispiel: `10`).  
 `RadiobossMount` = Einhängepunkt deines Streams ohne führenden Schrägstrich (Beispiel: `stream`). 
 `RadiobossListeners` = Zeige Höreranzahl im Nowplaying-Widget (Standard: `0`).  
-`RadiobossTrackCount` = Anzahl zuletzt gespielter Titel (10 - 20, Standard: 10).  
+`RadiobossTrackCount` = Anzahl zuletzt gespielter Titel (1 - 20, Standard: 10).  
 `RadiobossStyle` = Zu verwendende CSS-Klasse, z. B. left, center, right. 
 
 Die Server-Konfiguration erhältst du im Reiter Information, nachdem du dich bei deiner RadioBoss Cloud angemeldet hast. 
