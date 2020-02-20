@@ -53,7 +53,7 @@ class YellowTicker {
                 foreach ($feed->get_items() as $item) {
                     $output .= "<li>";
                     $output .= "<a href = \"".$item->get_permalink()."\">".$item->get_title()."</a>";
-                    if ($show_date) $output .= " - ".$item->get_date($this->yellow->text->getHtml("DateFormatLong"));
+                    if ($show_date) $output .= " - ".$item->get_date($this->yellow->text->getHtml("CoreDateFormatLong"));
                     if ($show_description) $output .= "<br />".$item->get_description()." <a href=\"".$item->get_permalink()."\">".$this->yellow->text->getHtml("blogMore")."</a>";
                     $output .= "</li>\n";
                     if ($n>=$numentries) { break; }
@@ -64,7 +64,7 @@ class YellowTicker {
                     foreach ($rss->channel->item as $item) {
                         $output .= "<li>";
                         $output .= "<a href = \"".$item->link."\">".$item->title."</a>";
-                        if ($show_date) $output .= " - ".date($this->yellow->text->getHtml("DateFormatLong"),strtotime($item->pubDate));
+                        if ($show_date) $output .= " - ".date($this->yellow->text->getHtml("CoreDateFormatLong"),strtotime($item->pubDate));
                         if ($show_description) $output .= "<br />".$item->description." <a href=\"{$item->link}\">".$this->yellow->text->getHtml("blogMore")."</a>";
                         $output .= "</li>\n";
                         if ($n>=$numentries) { break; }
