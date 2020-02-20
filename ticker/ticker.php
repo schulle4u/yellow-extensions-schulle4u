@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowTicker {
-    const VERSION = "0.8.4";
+    const VERSION = "0.8.5";
     const TYPE = "feature";
     public $yellow;            //access to API
     
@@ -16,6 +16,7 @@ class YellowTicker {
         $this->yellow->system->setDefault("tickerAdvancedParser", 0);
         $this->yellow->system->setDefault("tickerStyle", "ticker");
         $this->yellow->system->setDefault("tickerNumentries", 5);
+        extension_loaded("xml") || die("Datenstrom Yellow requires PHP XML extension!");
     }
     
     
