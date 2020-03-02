@@ -59,7 +59,7 @@ Auf folgenden Projekten kannst du meine Erweiterungen in Aktion erleben:
 * [Robbenradio Podcasts](https://podcast.robbenradio.de): 
   Podcast-Episoden zu den Themen Technik, Radio und Geräusche.
 
-Mehr Erweiterungen und eine Entwickler-API sind verfügbar. [Lies mehr](https://extensions.datenstrom.se/de/help/).
+Mehr Erweiterungen und eine Entwickler-API sind verfügbar. [Lies mehr](https://datenstrom.se/de/yellow/help/).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;

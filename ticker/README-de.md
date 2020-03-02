@@ -42,7 +42,7 @@ Zeigt die neuesten Einträge eines RSS-Feeds:
 
 ## Entwickler
 
-Steffen Schultz
+Steffen Schultz. [Support finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;

@@ -50,7 +50,7 @@ Title: Twitter
 This is our twitter feed. Klick on the link to hide it. 
 
 [spoilerstart twitterfeed "Show or hide Twitter feed" block]  
-[twitter datenstromse]  
+[twitter datendesigner]  
 [spoilerstop twitterfeed]
 
 Here is some more text. 
@@ -60,7 +60,7 @@ Please remember to always provide the right element ID also in the spoilerstop s
 
 ## Developer
 
-Steffen Schultz
+Steffen Schultz. [Get spport](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;

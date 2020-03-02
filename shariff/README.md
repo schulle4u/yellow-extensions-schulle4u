@@ -37,7 +37,7 @@ For [advanced options](https://github.com/heiseonline/shariff#options-data-attri
 
 ## Developer
 
-Steffen Schultz featuring Heise Online
+Steffen Schultz featuring Heise Online. [Get support](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
