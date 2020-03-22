@@ -36,11 +36,18 @@ class YellowSpoiler {
             if (empty($id)) $id = "spoiler";
             $button = $id."-btn";
             $output .= "</div>\n";
-            $output .= "<script type=\"text/javascript\">\n";
-            $output .= "function toggle_hidden(id, button){var x=document.getElementById(id);if(x.style.display===\"none\"){x.style.display=\"block\";document.getElementById(button).setAttribute(\"aria-expanded\",\"true\");}else{x.style.display=\"none\";document.getElementById(button).setAttribute(\"aria-expanded\",\"false\");}}\n";
-            $output .= "</script>\n";
         }
         
         return $output;
     }
+    // Handle page extra data
+    public function onParsePageExtra($page, $name) {
+        $output = null;
+        if ($name=="header") {
+            $extensionLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreExtensionLocation");
+            $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}spoiler.js\"></script>\n";
+        }
+        return $output;
+    }
+
 }
