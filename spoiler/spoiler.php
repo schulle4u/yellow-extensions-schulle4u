@@ -33,9 +33,9 @@ class YellowSpoiler {
         if ($name=="spoilerstop" && ($type=="block" || $type=="inline")) {
             $output .= "</div>\n";
         }
-        
         return $output;
     }
+    
     // Handle page extra data
     public function onParsePageExtra($page, $name) {
         $output = null;
