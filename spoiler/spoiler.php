@@ -21,25 +21,21 @@ class YellowSpoiler {
             if (empty($id)) $id = "spoiler";
             if (empty($label)) $label = "…";
             if (empty($display)) $display = "none";
-            $button = $id."-btn";
-            $output .= "<a id=\"".htmlspecialchars($button)."\" href=\"#\" onclick=\"toggle_hidden('".htmlspecialchars($id)."', '".htmlspecialchars($button)."')\"";
+            $output .= "<a href=\"#\" class=\"spoiler-link\" data-spoiler-id=\"".htmlspecialchars($id)."\"";
             if ($display == "none") {
                 $output .= " aria-expanded=\"false\"";
             } else {
                 $output .= " aria-expanded=\"true\"";
             }
             $output .= ">".htmlspecialchars($label)."</a><br />\n";
-            $output .= "<div id=\"".htmlspecialchars($id)."\" style=\"display:".htmlspecialchars($display)."\">\n";
+            $output .= "<div class=\"spoiler-text\" id=\"".htmlspecialchars($id)."\" style=\"display:".htmlspecialchars($display)."\">\n";
         }
         if ($name=="spoilerstop" && ($type=="block" || $type=="inline")) {
-            list($id) = $this->yellow->toolbox->getTextArgs($text);
-            if (empty($id)) $id = "spoiler";
-            $button = $id."-btn";
             $output .= "</div>\n";
         }
-        
         return $output;
     }
+    
     // Handle page extra data
     public function onParsePageExtra($page, $name) {
         $output = null;
