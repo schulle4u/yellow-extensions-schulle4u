@@ -1,10 +1,10 @@
 <?php
 // Spoiler extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler
-// Copyright (c) 2018-2019 Steffen Schultz
+// Copyright (c) 2018-2020 Steffen Schultz
 // This file may be used and distributed under the terms of the public license.
 
 class YellowSpoiler {
-    const VERSION = "0.8.4";
+    const VERSION = "0.8.5";
     const TYPE = "feature";
     public $yellow;            //access to API
     

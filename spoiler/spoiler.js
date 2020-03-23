@@ -1,3 +1,7 @@
+// Spoiler extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler
+// Copyright (c) 2018-2020 Steffen Schultz
+// This file may be used and distributed under the terms of the public license.
+
 var initSpoilerFromDOM = function() {
     
     // Toggle spoiler between hidden and visible
