@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowRadioboss {
-    const VERSION = "0.8.6";
+    const VERSION = "0.8.7";
     const TYPE = "feature";
     public $yellow;            //access to API
     public $outputFooter;      //generated output for footer
