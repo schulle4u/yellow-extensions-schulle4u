@@ -1,6 +1,6 @@
 <?php
 // Antispam extension, http://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/antispam
-// Copyright (c) 2013-2018 Datenstrom, http://datenstrom.se
+// Copyright (c) 2013-2020 Datenstrom, http://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
 
 class YellowAntispam {
@@ -17,42 +17,21 @@ class YellowAntispam {
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = NULL;
         if ($name=="email" && ($type=="block" || $type=="inline")) {
-            list($address, $displaytext) = $this->yellow->toolbox->getTextArgs($text);
-            if (empty($displaytext)) $displaytext = null;
-            $output = $this->email($address, $displaytext);
+            list($address, $text) = $this->yellow->toolbox->getTextArgs($text);
+            if (empty($text)) $text = $address;
+            $output = "<span class=\"antispam\" data-address=\"".htmlspecialchars(str_rot13($address))."\" data-text=\"".htmlspecialchars(str_rot13($text))."\"></span>";
+            $output .= "<noscript><span style=\"unicode-bidi:bidi-override; direction:rtl;\">".strrev($address)."</span></noscript>";
         }
         return $output;
     }
     
-    /** @author Roman Ozana <ozana@omdesign.cz> */
-    /**
-     * Obfuscate email addresses and protect them against SPAM bots.
-     *
-     * @see http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/
-     * @see https://perishablepress.com/best-method-for-email-obfuscation/
-     *
-     * @param string $email
-     * @param string $text
-     * @param string $format
-     * @return string
-     */
-    public function email($email, $text = null, $format = "<a href=\"mailto:%s\" rel=\"nofollow\">%s</a>") {
-        return $this->html(
-            sprintf($format, htmlspecialchars($email, ENT_QUOTES), $text ? htmlspecialchars($text, ENT_QUOTES) : $email)
-        ) .
-        "<noscript><span style=\"unicode-bidi: bidi-override; direction: rtl;\">" . strrev($email) . "</span></noscript>";
-    }
-    
-    /**
-     * Protect HTML code with rot13 then transform code back with Javascript.
-     *
-     * @param string $html
-     * @return string
-     */
-    public function html($html) {
-        return "<script type=\"text/javascript\">/* <![CDATA[ */document.write(\"" .
-        addslashes(
-            str_rot13($html)
-        ) . "\".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<=\"Z\"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));/* ]]> */</script>";
+    // Handle page extra data
+    public function onParsePageExtra($page, $name) {
+        $output = null;
+        if ($name=="header") {
+            $extensionLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreExtensionLocation");
+            $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}antispam.js\"></script>\n";
+        }
+        return $output;
     }
 }
