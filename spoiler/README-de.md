@@ -1,4 +1,4 @@
-Spoiler 0.8.4
+Spoiler 0.8.5
 =============
 Bestimmte Seitenelemente verstecken.
 
@@ -36,7 +36,7 @@ Unten ist ein Text, der standardmäßig versteckt bleibt. Klicke auf das Symbol 
 
 Dieser Text ist standardmäßig ausgeblendet. Falls du ihn jetzt lesen kannst, hast du das richtige Symbol geklickt. Du kannst beliebigen Inhalt einfügen; Text, Links, Bilder, sogar weitere Abkürzungen sind möglich. 
 
-[spoilerstop text1]
+[spoilerstop]
 
 Hier kann weiterer Inhalt stehen. 
 ```
@@ -51,12 +51,10 @@ Hier ist unser Twitter-Feed. Klicke auf den Link zum Ausblenden.
 
 [spoilerstart twitterfeed "Twitter-Feed zeigen/ausblenden" block]  
 [twitter datendesigner]  
-[spoilerstop twitterfeed]
+[spoilerstop]
 
 Hier ist weiterer Text. 
 ```
-
-In der `[spoilerstop]`-Abkürzung muss unbedingt die richtige Element-ID angegeben werden. 
 
 ## Entwickler
 

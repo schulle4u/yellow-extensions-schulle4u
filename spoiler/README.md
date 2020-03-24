@@ -1,4 +1,4 @@
-Spoiler 0.8.4
+Spoiler 0.8.5
 =============
 Hide certain page elements.
 
@@ -36,7 +36,7 @@ Below is some text which is hidden by default. Click on the symbol to show the c
 
 This text is hidden by default. If you can read this, you successfully clicked the right symbol. You can put whatever you like here; text, links, images, even extension shortcuts are possible. 
 
-[spoilerstop text1]
+[spoilerstop]
 
 More text is here. 
 ```
@@ -51,12 +51,10 @@ This is our twitter feed. Klick on the link to hide it.
 
 [spoilerstart twitterfeed "Show or hide Twitter feed" block]  
 [twitter datendesigner]  
-[spoilerstop twitterfeed]
+[spoilerstop]
 
 Here is some more text. 
 ```
-
-Please remember to always provide the right element ID also in the spoilerstop shortcut. 
 
 ## Developer
 
