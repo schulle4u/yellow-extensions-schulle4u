@@ -19,8 +19,7 @@ class YellowAntispam {
         if ($name=="email" && ($type=="block" || $type=="inline")) {
             list($address, $text) = $this->yellow->toolbox->getTextArgs($text);
             if (empty($text)) $text = $address;
-            $output = "<span class=\"antispam\" data-address=\"".htmlspecialchars(str_rot13($address))."\" data-text=\"".htmlspecialchars(str_rot13($text))."\"></span>";
-            $output .= "<noscript><span style=\"unicode-bidi:bidi-override; direction:rtl;\">".htmlspecialchars(strrev($address))."</span></noscript>";
+            $output = "<span class=\"antispam\" data-address=\"".htmlspecialchars(str_rot13($address))."\" data-text=\"".htmlspecialchars(str_rot13($text))."\" style=\"unicode-bidi:bidi-override; direction:rtl;\">".htmlspecialchars(strrev($address))."</span>";
         }
         return $output;
     }
