@@ -1,4 +1,4 @@
-Antispam 0.8.3
+Antispam 0.8.4
 ==============
 Alternative Verschleierung von E-Mail-Adressen. 
 
@@ -13,19 +13,17 @@ Zum Deinstallieren lösche einfach die [Erweiterungsdateien](extension.ini).
 ## Wie man E-Mail-Adressen verschleiert
 
 Erstelle eine `[email]`-Abkürzung.
- 
+
 Die folgenden Argumente sind verfügbar, mit Ausnahme des ersten Arguments sind alle Angaben optional:
 
 `address` = Zu verschleiernde E-Mail-Adresse, z. B. `name@beispiel.de`  
-`displaytext` = Ein optionaler Text für den E-Mail-Link, anderenfalls wird die Adresse verwendet. 
+`text` = Ein optionaler Text für den E-Mail-Link, anderenfalls wird die Adresse verwendet. 
 
 Diese Erweiterung ermöglicht einen effektiveren Schutz von E-Mail-Adressen als die in Markdown integrierte Verschleierung. Sie verwendet eine Kombination zweier Techniken zur Verschleierung, nämlich  [ROT13](http://de.wikipedia.org/wiki/ROT13) und Rechts-nach-links-Schreibung mittels CSS. Dies funktioniert mit oder ohne Javascript, in jedem Fall wird jedoch ein CSS-fähiger Browser benötigt. Falls Javascript nicht verfügbar oder ausgeschaltet ist, wird auf eine reine CSS-Methode zur Anzeige der E-Mail-Adresse zurückgegriffen. Text-Browser und Bildschirmleser können dann jedoch die Adresse nicht korrekt anzeigen. 
 
-Antispam-Klasse von Roman Ozana (Sphido), ursprünglich veröffentlicht unter den Bedingungen der BSD-3-Clause-Lizenz. Der Code ist jedoch nicht mehr verfügbar. 
-
 ## Entwickler
 
-Steffen Schultz mit Code von Roman Ozana. [Support finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Support finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
