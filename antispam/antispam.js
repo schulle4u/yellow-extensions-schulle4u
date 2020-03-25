@@ -1,3 +1,7 @@
+// Antispam extension, http://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/antispam
+// Copyright (c) 2013-2020 Datenstrom, http://datenstrom.se
+// This file may be used and distributed under the terms of the public license.
+
 var initAntispamFromDOM = function() {
     
     // Perform rot13 transformation
@@ -13,6 +17,8 @@ var initAntispamFromDOM = function() {
         var address = rot13(elements[i].getAttribute("data-address"));
         var text = rot13(elements[i].getAttribute("data-text"));
         if (address && text) {
+            elements[i].removeAttribute("style");
+            elements[i].textContent = "";
             var a = document.createElement("a");
             a.appendChild(document.createTextNode(text));
             a.setAttribute("href", "mailto:"+address);
