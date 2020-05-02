@@ -32,6 +32,10 @@ The following settings can be configured in file `system/settings/system.ini`:
 `AudioUrlPrefix` = URL prefix for audio files  
 `AudioStyle` = CSS class to use for the player  
 
+The following file can be configured:
+
+`system/layouts/audio.html` = layout file for standalone audio player  
+
 ## Example
 
 Embedding an audio track:
@@ -43,6 +47,17 @@ Embedding an audio track:
 You can also embed audio streams. Although the `[audio]` shortcut is able to play them, a simple `[audiostream]` shortcut is provided to avoid rare configuration problems (e.g. if `audioUrlPrefix` is used): 
 
     [audiostream http://stream.powerradio4u.de:8000/p4u.mp3]
+
+Here is a page using a standalone audio player:
+
+```
+---
+Title: Audio
+TitleSlug: audio
+Layout: audio
+---
+[audiostream http://stream.powerradio4u.de:8000/p4u.mp3 autoplay]
+```
 
 ## Developer
 

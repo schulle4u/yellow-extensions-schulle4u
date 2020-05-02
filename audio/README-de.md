@@ -32,6 +32,10 @@ Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vo
 `AudioUrlPrefix` = URL-Präfix für Audiodateien  
 `AudioStyle` = CSS-Klasse für den Player  
 
+Die folgende Datei kann angepasst werden:
+
+`system/layouts/audio.html` = Layout-Datei für den Standalone-Audioplayer  
+
 ## Beispiel
 
 Eine Audiodatei einbetten:
@@ -42,7 +46,18 @@ Eine Audiodatei einbetten:
 
 Du kannst auch Audio-Streams einbetten. Auch wenn die `[audio]`-Abkürzung Streams abspielen kann, existiert die etwas einfachere `[audiostream]`-Abkürzung um seltene Konfigurationsprobleme zu umgehen, z. B. falls  `audioUrlPrefix` verwendet wird: 
 
-    [audiostream http://stream.powerradio4u.de:8000/p4u.mp3]
+    [audiostream http://stream.powerradio4u.de:8000/p4u.mp3 autoplay]
+
+Hier ist eine Seite mit Standalone-Audioplayer:
+
+```
+---
+Title: Audio
+TitleSlug: audio
+Layout: audio
+---
+[audiostream http://stream.powerradio4u.de:8000/p4u.mp3 autoplay]
+```
 
 ## Entwickler
 
