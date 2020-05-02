@@ -4,13 +4,14 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowAudio {
-    const VERSION = "0.8.4";
+    const VERSION = "0.8.5";
     const TYPE = "feature";
     public $yellow;            //access to API
     
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
+        $this->yellow->system->setDefault("audioLocation", "/audio/");
         $this->yellow->system->setDefault("audioDownload", "0");
         $this->yellow->system->setDefault("audioUrlPrefix", "");
         $this->yellow->system->setDefault("audioStyle", "audio");
@@ -36,12 +37,14 @@ class YellowAudio {
             }
             $output .="</div>";
         }
-        if ($name=="audiostream" && $shortcut) {
-            list($url, $style) = $this->yellow->toolbox->getTextArgs($text);
+        if ($name=="audiostream" && ($type=="block" || $type=="inline")) {
+            list($url, $autoplay, $style) = $this->yellow->toolbox->getTextArgs($text);
             $url = $this->yellow->lookup->normaliseUrl("", "", "", $url);
             if (empty($style)) $style = $this->yellow->system->get("audioStyle");
             $output = "<div class=\"".htmlspecialchars($style)."\">";
-            $output .= "<audio src=\"".htmlspecialchars($url)."\" controls=\"controls\" preload=\"none\">HTML5 audio not supported.</audio>";
+            $output .= "<audio src=\"".htmlspecialchars($url)."\" controls=\"controls\" preload=\"none\"";
+            if ($autoplay) $output .= "autoplay=\"".htmlspecialchars($autoplay)."\"";
+            $output .= ">HTML5 audio not supported.</audio>";
             $output .="</div>";
         }
         return $output;
