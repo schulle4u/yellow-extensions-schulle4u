@@ -11,7 +11,6 @@ class YellowAudio {
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
-        $this->yellow->system->setDefault("audioLocation", "/audio/");
         $this->yellow->system->setDefault("audioDownload", "0");
         $this->yellow->system->setDefault("audioUrlPrefix", "");
         $this->yellow->system->setDefault("audioStyle", "audio");
