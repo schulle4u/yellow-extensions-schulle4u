@@ -77,7 +77,7 @@ class YellowCsv {
     // Handle page extra data
     public function onParsePageExtra($page, $name) {
         $output = null;
-        if ($name=="header") {
+        if ($name=="header" && $this->yellow->system->get("csvFilter")) {
             $extensionLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreExtensionLocation");
             $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}csv.js\"></script>\n";
         }
