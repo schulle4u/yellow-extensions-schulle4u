@@ -1,4 +1,4 @@
-Csv 0.8.8
+Csv 0.8.9
 =========
 CSV-Dateileser.
 
