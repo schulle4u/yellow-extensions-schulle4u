@@ -32,8 +32,6 @@ Die folgenden Erweiterungen sind verfügbar:
   Zufällige Seiten eines bestimmten Ortes anzeigen.
 * [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/redirect): 
   Alternative Seitenweiterleitung.
-* [Shariff](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/shariff/README-de.md): 
-  Datenschutzfreundliche Teilen-Schaltflächen.
 * [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler/README-de.md): 
   Bestimmte Seitenelemente verstecken.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker/README-de.md): 

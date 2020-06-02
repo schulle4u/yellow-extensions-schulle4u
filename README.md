@@ -32,8 +32,6 @@ The following extensions are available:
   Display random pages from specified location.
 * [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/redirect): 
   Alternative page redirection.
-* [Shariff](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/shariff): 
-  Privacy-friendly social sharing buttons.
 * [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler): 
   Hide certain page elements.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker): 
