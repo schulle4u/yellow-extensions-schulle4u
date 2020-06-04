@@ -1,10 +1,10 @@
 <?php
 // CSV extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/csv
-// Copyright (c) 2019 Steffen Schultz
+// Copyright (c) 2020 Steffen Schultz
 // This file may be used and distributed under the terms of the public license.
 
 class YellowCsv {
-    const VERSION = "0.8.9";
+    const VERSION = "0.8.11";
     const TYPE = "feature";
     public $yellow;         //access to API
     
@@ -12,7 +12,7 @@ class YellowCsv {
     public function onLoad($yellow) {
         $this->yellow = $yellow;
         $this->yellow->system->setDefault("csvDir", "media/downloads/");
-        $this->yellow->system->setDefault("csvDelimiter", ";");
+        $this->yellow->system->setDefault("csvDelimiter", "auto");
         $this->yellow->system->setDefault("csvFirstRowHeader", "1");
         $this->yellow->system->setDefault("csvFilter", "1");
     }
@@ -21,59 +21,30 @@ class YellowCsv {
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
         if ($name=="csv" && ($type=="block" || $type=="inline")) {
-            list($file, $delimiter, $class) = $this->yellow->toolbox->getTextArgs($text);
-            if (empty($delimiter)) $delimiter = $this->yellow->system->get("csvDelimiter");
-            $delimiter = strreplaceu("\\t", "\t", $delimiter);
-            if (empty($class)) $class = htmlspecialchars($name);
-            $firstRowHeader = $this->yellow->system->get("csvFirstRowHeader");
-            $output = "<div id=\"".htmlspecialchars($name)."\" style=\"overflow-x:auto;\">\n";
-            
-            // get CSV
-            $row = 0;
-            $dir = $this->yellow->system->get("csvDir");
-            if ($handle = @fopen($dir.$file, "r")) {
-                // Prepare Table
-                if ($this->yellow->system->get("csvFilter")) $output .= "<p><input type=\"search\" class=\"light-table-filter\" data-table=\"".htmlspecialchars($class)."\" placeholder=\"Filter\"></p>\n";
-            
-                $output .= "<table class=\"".htmlspecialchars($class)."\">\n";
-                
-                // loop
-                while (($data = fgetcsv($handle, "1000", $delimiter)) !== false) {
-                    $num = count($data);
-                    if (($row == 0) && $firstRowHeader) {
-                        $output .= "<thead><tr>\n";
-                    } else {
-                        $output .= "<tr>\n";
-                    }
-                    for ($c=0; $c < $num; $c++) {
-                        if (strempty($data[$c])) {
-                            $value = "";
-                        } else {
-                            $value = $data[$c];
-                        }
-                        if (($row == 0) && $firstRowHeader) {
-                            $output .= "<th>".$this->yellow->toolbox->normaliseData($value)."</th>\n";
-                        } else {
-                            $output .= "<td>".$this->yellow->toolbox->normaliseData($value)."</td>\n";
-                        }
-                    }
-                    if (($row == 0) && $firstRowHeader) {
-                        $output .= "</tr></thead><tbody>\n";
-                    } else {
-                        $output .= "</tr>\n";
-                    }
-                    $row++;
-
-                }
-                $output .= "</tbody></table>\n";
-                fclose($handle);
+            list($fileName, $class) = $this->yellow->toolbox->getTextArgs($text);
+            $fileName = $this->yellow->toolbox->normaliseTokens($this->yellow->system->get("csvDir").$fileName);
+            $fileData = $this->yellow->toolbox->readFile($fileName);
+            if (!empty($fileData)) {
+                $output = "<div class=\"".htmlspecialchars($name)."\" style=\"overflow-x:auto;\">\n";
+                $output .= $this->getCsvHtml($fileData, $class);
+                $output .= "</div>\n";
             } else {
-                $this->yellow->page->error(500, "File '$file' does not exist!");
+                $this->yellow->page->error(500, "CSV '$fileName' does not exist!");
             }
-            $output .= "</div>\n";
+        }
+        if (substru($name, 0, 3)=="csv" && $type=="code") {
+            list($language, $class, $id) = $this->getCsvInformation($name);
+            if ($language=="csv" && !empty($text)) {
+                $output = "<div class=\"".htmlspecialchars($language)."\"";
+                if (!empty($id)) $output .= " id=\"".htmlspecialchars($id)."\"";
+                $output .= " style=\"overflow-x:auto;\">\n";
+                $output .= $this->getCsvHtml($text, $class);
+                $output .= "</div>\n";
+            }
         }
         return $output;
     }
+    
     // Handle page extra data
     public function onParsePageExtra($page, $name) {
         $output = null;
@@ -83,5 +54,68 @@ class YellowCsv {
         }
         return $output;
     }
-
+    
+    // Return CSV data, HTML encoded
+    public function getCsvHtml($fileData, $class) {
+        $output = "";
+        $class = trim("csv-table $class");
+        if ($this->yellow->system->get("csvFilter")) {
+            $output .= "<p><input type=\"search\" class=\"light-table-filter\" data-table=\"csv-table\" placeholder=\"Filter\"></p>\n";
+        }
+        $output .= "<table class=\"".htmlspecialchars($class)."\">\n";
+        $row = $this->yellow->system->get("csvFirstRowHeader") ? 0 : 1;
+        $delimiter = $this->getCsvDelimiter($fileData);
+        foreach ($this->yellow->toolbox->getTextLines($fileData) as $line) {
+            $data = str_getcsv($line, $delimiter);
+            if ($row==0) {
+                $output .= "<thead><tr>\n";
+            } else {
+                $output .= "<tr>\n";
+            }
+            for ($column=0; $column<count($data); ++$column) {
+                $value = trim($data[$column]);
+                if ($row==0) {
+                    $output .= "<th>".$value."</th>\n";
+                } else {
+                    $output .= "<td>".$value."</td>\n";
+                }
+            }
+            if ($row==0) {
+                $output .= "</tr></thead><tbody>\n";
+            } else {
+                $output .= "</tr>\n";
+            }
+            ++$row;
+        }
+        $output .= "</tbody></table>\n";
+        return $this->yellow->toolbox->normaliseData($output, "html");
+    }
+    
+    // Return CSV delimiter
+    public function getCsvDelimiter($fileData) {
+        $delimiter = $this->yellow->system->get("csvDelimiter");
+        if ($delimiter=="auto") {
+            $line = substru($fileData, 0, strposu($fileData, "\n"));
+            $delimiterData = array(","=>0, ";"=>0, "|"=>0, "\t"=>0);
+            foreach ($delimiterData as $key=>$value) {
+                $delimiterData[$key] = substr_count($line, $key);
+            }
+            arsort($delimiterData);
+            $delimiter = array_keys($delimiterData)[0];
+        } else {
+            $delimiter = strreplaceu("\\t", "\t", $delimiter);
+        }
+        return $delimiter;
+    }
+    
+    // Return CSV information
+    public function getCsvInformation($name) {
+        $language = $class = $id = "";
+        foreach (explode(" ", $name) as $token) {
+            if (substru($token, 0, 3)=="csv" && empty($language)) $language = $token;
+            if (substru($token, 0, 1)==".") $class = $class." ".substru($token, 1);
+            if (substru($token, 0, 1)=="#") $id = substru($token, 1);
+        }
+        return array($language, $class, $id);
+    }
 }
