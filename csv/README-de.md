@@ -16,11 +16,10 @@ Erstelle eine `[csv]`-Abkürzung.
 
 Die folgenden Argumente sind verfügbar, mit Ausnahme des ersten Arguments sind alle Angaben optional:
 
-`File` = Name der CSV-Datei.   
-`Delimiter` = Spaltentrenner für die CSV-Daten (Standard: Semikolon `;`).   
+`FileName` = Name der CSV-Datei.   
 `Class` = Klasse für die HTML-Tabelle
 
-Diese Erweiterung lädt eine CSV-Datei und gibt sie als HTML-Tabelle aus. Für umfangreiche Datensätze stehen ein Zeilenfilter sowie Spaltensortierung zur Verfügung. 
+Diese Erweiterung lädt eine CSV-Datei und gibt sie als HTML-Tabelle aus. Für umfangreiche Datensätze stehen ein Zeilenfilter sowie Spaltensortierung zur Verfügung. Des Weiteren können CSV-Daten mittels eines Code-Blocks in markdown geladen werden. 
 
 Die Javascript-Komponente der Erweiterung verwendet Light-table-filter von [Chris Coyier](https://codepen.io/chriscoyier/pen/tIuBL) sowie die [Sort-table-Klasse von Tyler Uebele](https://github.com/stationer/SortTable) freigegeben unter den bedingungen der MIT-Lizenz. 
 
@@ -29,7 +28,7 @@ Die Javascript-Komponente der Erweiterung verwendet Light-table-filter von [Chri
 Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vorgenommen werden:
 
 `CsvDir` = Verzeichnis für CSV-Dateien (Standard: `media/downloads/`).  
-`CsvDelimiter` = Standard-Spaltentrenner.   
+`CsvDelimiter` = Spaltentrenner (Standard: auto).   
 `CsvFirstRowHeader` = Benutze die erste Zeile der CSV-Datei als Spaltenüberschrift (Standard: true).  
 `CsvFilter` = Zeigt ein Suchfeld zum Filtern der Tabellenzeilen an (Standard: true).
 
@@ -39,13 +38,27 @@ Grundsätzliche Verwendung:
 
     [csv tapes.csv]
 
-Benutzerdefinierter Spaltentrenner und Stil: 
+Benutzerdefinierte Klasse: 
 
-    [csv tapes.csv \t MyTapes]
+    [csv tapes.csv MyTapes]
 
 Spaltensortierung einschalten: 
 
-    [csv tapes.csv , "MyTapes js-sort-table"]
+    [csv tapes.csv "MyTapes js-sort-table"]
+
+Verwende einen Markdown-Code-Block zum Anzeigen von CSV-Daten: 
+
+```
+``` csv {.js-sort-table}
+Code,English Name,French Name
+AD,Andorra,Andorre
+AE,United Arab Emirates,Emirats arabes unis
+AF,Afghanistan,Afghanistan
+AG,Antigua and Barbuda,Antigua-et-Barbuda
+AI,Anguilla,Anguilla
+AL,Albania,Albanie
+```
+```
 
 ## Entwickler
 

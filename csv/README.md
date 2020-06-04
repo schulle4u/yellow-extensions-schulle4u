@@ -16,11 +16,10 @@ Create a `[csv]` shortcut.
 
 The following arguments are available, all but the first argument are optional:
 
-`File` = Name of the csv file.   
-`Delimiter` = The column delimiter for the CSV file (Default: semicolon `;`).   
+`FileName` = Name of the csv file.   
 `Class` = HTML table class
 
-This extension loads a CSV file and outputs a HTML table. For large tables you can enable a row filter and column sorting. 
+This extension loads a CSV file and outputs a HTML table. For large tables you can enable a row filter and column sorting. You can also load CSV data as code block in Markdown. 
 
 Javascript component includes Light-table-filter by [Chris Coyier](https://codepen.io/chriscoyier/pen/tIuBL), and [Sort-table class by Tyler Uebele](https://github.com/stationer/SortTable) released under the terms of the MIT license. 
 
@@ -29,7 +28,7 @@ Javascript component includes Light-table-filter by [Chris Coyier](https://codep
 The following settings can be configured in file `system/settings/system.ini`:
 
 `CsvDir` = Directory for CSV files (default: `media/downloads/`).  
-`CsvDelimiter` = Default column delimiter.   
+`CsvDelimiter` = Column delimiter (default: auto).   
 `CsvFirstRowHeader` = Use first line of CSV file as table header (Default: true).  
 `CsvFilter` = Displays a search box to filter table rows (default: true).
 
@@ -39,13 +38,27 @@ Basic usage:
 
     [csv tapes.csv]
 
-Use custom delimiter and style: 
+Use custom class: 
 
-    [csv tapes.csv \t MyTapes]
+    [csv tapes.csv MyTapes]
 
 Enable column sorting: 
 
-    [csv tapes.csv , "MyTapes js-sort-table"]
+    [csv tapes.csv "MyTapes js-sort-table"]
+
+Use a Markdown code block to display CSV data: 
+
+```
+``` csv {.js-sort-table}
+Code,English Name,French Name
+AD,Andorra,Andorre
+AE,United Arab Emirates,Emirats arabes unis
+AF,Afghanistan,Afghanistan
+AG,Antigua and Barbuda,Antigua-et-Barbuda
+AI,Anguilla,Anguilla
+AL,Albania,Albanie
+```
+```
 
 ## Developer
 
