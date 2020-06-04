@@ -48,18 +48,15 @@ Enable column sorting:
 
 Use a Markdown code block to display CSV data: 
 
-```
-``` csv {.js-sort-table}
-Code,English Name,French Name
-AD,Andorra,Andorre
-AE,United Arab Emirates,Emirats arabes unis
-AF,Afghanistan,Afghanistan
-AG,Antigua and Barbuda,Antigua-et-Barbuda
-AI,Anguilla,Anguilla
-AL,Albania,Albanie
-```
-
-```
+    ``` csv {.js-sort-table}
+    Code,English Name,French Name
+    AD,Andorra,Andorre
+    AE,United Arab Emirates,Emirats arabes unis
+    AF,Afghanistan,Afghanistan
+    AG,Antigua and Barbuda,Antigua-et-Barbuda
+    AI,Anguilla,Anguilla
+    AL,Albania,Albanie
+    ```
 
 
 ## Developer

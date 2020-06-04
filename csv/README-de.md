@@ -48,18 +48,15 @@ Spaltensortierung einschalten:
 
 Verwende einen Markdown-Code-Block zum Anzeigen von CSV-Daten: 
 
-```
-``` csv {.js-sort-table}
-Code,English Name,French Name
-AD,Andorra,Andorre
-AE,United Arab Emirates,Emirats arabes unis
-AF,Afghanistan,Afghanistan
-AG,Antigua and Barbuda,Antigua-et-Barbuda
-AI,Anguilla,Anguilla
-AL,Albania,Albanie
-```
-
-```
+    ``` csv {.js-sort-table}
+    Code,English Name,French Name
+    AD,Andorra,Andorre
+    AE,United Arab Emirates,Emirats arabes unis
+    AF,Afghanistan,Afghanistan
+    AG,Antigua and Barbuda,Antigua-et-Barbuda
+    AI,Anguilla,Anguilla
+    AL,Albania,Albanie
+    ```
 
 
 ## Entwickler
