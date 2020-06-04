@@ -1,5 +1,5 @@
-Csv 0.8.9
-=========
+Csv 0.8.11
+==========
 CSV-Dateileser.
 
 ## Wie man diese Erweiterung installiert
