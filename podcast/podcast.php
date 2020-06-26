@@ -5,7 +5,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowPodcast {
-    const VERSION = "0.8.6";
+    const VERSION = "0.8.7";
     const TYPE = "feature";
     public $yellow;            //access to API
     
@@ -31,18 +31,18 @@ class YellowPodcast {
         if ($name=="podcast") {
             $pages = $this->yellow->content->index(false, false);
             $pagesFilter = array();
-            if ($_REQUEST["tag"]) {
-                $pages->filter("tag", $_REQUEST["tag"]);
+            if ($page->isRequest("tag")) {
+                $pages->filter("tag", $page->getRequest("tag"));
                 array_push($pagesFilter, $pages->getFilter());
             }
-            if ($_REQUEST["author"]) {
-                $pages->filter("author", $_REQUEST["author"]);
+            if ($page->isRequest("author")) {
+                $pages->filter("author", $page->getRequest("author"));
                 array_push($pagesFilter, $pages->getFilter());
             }
             $podcastFilter = $this->yellow->system->get("podcastFilterLayout");
             if (!empty($podcastFilter)) $pages->filter("layout", $podcastFilter);
             $chronologicalOrder = ($this->yellow->system->get("podcastFilterLayout")!="blog");
-            if ($this->isRequestXml()) {
+            if ($this->isRequestXml($page)) {
                 $pages->sort($chronologicalOrder ? "modified" : "published", false);
                 $pages->limit($this->yellow->system->get("podcastPaginationLimit"));
                 $title = !empty($pagesFilter) ? implode(' ', $pagesFilter)." - ".$this->yellow->page->get("sitename") : $this->yellow->page->get("sitename");
@@ -81,24 +81,23 @@ class YellowPodcast {
                     $output .= "<itunes:category text=\"".$this->yellow->system->get("podcastCategory")."\" />\r\n";
                 }
                 $output .= "<language>".$this->yellow->page->getHtml("language")."</language>\r\n";
-                foreach ($pages as $page) {
-                    $timestamp = strtotime($page->get($chronologicalOrder ? "modified" : "published"));
-                    $content = $this->yellow->toolbox->createTextDescription($page->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getUrl()."\">".$this->yellow->text->getHtml("blogMore")."</a>");
+                foreach ($pages as $pagePodcast) {
+                    $timestamp = strtotime($pagePodcast->get($chronologicalOrder ? "modified" : "published"));
+                    $content = $this->yellow->toolbox->createTextDescription($pagePodcast->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getUrl()."\">".$this->yellow->text->getHtml("blogMore")."</a>");
                     $output .= "<item>\r\n";
-                    $output .= "<title>".$page->getHtml("title")."</title>\r\n";
-                    $output .= "<link>".$page->getUrl()."</link>\r\n";
+                    $output .= "<title>".$pagePodcast->getHtml("title")."</title>\r\n";
+                    $output .= "<link>".$pagePodcast->getUrl()."</link>\r\n";
                     $output .= "<pubDate>".date(DATE_RSS, $timestamp)."</pubDate>\r\n";
-                    $output .= "<guid isPermaLink=\"false\">".$page->getUrl()."?".$timestamp."</guid>\r\n";
-                    $output .= "<dc:creator>".$page->getHtml("author")."</dc:creator>\r\n";
-                    $output .= "<description>".$page->getHtml("description")."</description>\r\n";
+                    $output .= "<guid isPermaLink=\"false\">".$pagePodcast->getUrl()."?".$timestamp."</guid>\r\n";
+                    $output .= "<dc:creator>".$pagePodcast->getHtml("author")."</dc:creator>\r\n";
+                    $output .= "<description>".$pagePodcast->getHtml("description")."</description>\r\n";
                     $output .= "<content:encoded><![CDATA[".$content."]]></content:encoded>\r\n";
-                    
-                    if ($page->isExisting("mediafile")) $output .= "<enclosure url=\"".$this->parseUrl($page->getHtml("mediafile"))."\" length=\"0\" type=\"".$this->yellow->system->get("podcastMimeType")."\" />\r\n";
-                    if ($page->isExisting("duration")) $output .= "<itunes:duration>".$page->getHtml("duration")."</itunes:duration>\r\n";
-                    $output .= "<itunes:subtitle>".$page->getHtml("description")."</itunes:subtitle>\r\n";
+                    if ($pagePodcast->isExisting("mediafile")) $output .= "<enclosure url=\"".$this->parseUrl($pagePodcast->getHtml("mediafile"))."\" length=\"0\" type=\"".$this->yellow->system->get("podcastMimeType")."\" />\r\n";
+                    if ($pagePodcast->isExisting("duration")) $output .= "<itunes:duration>".$pagePodcast->getHtml("duration")."</itunes:duration>\r\n";
+                    $output .= "<itunes:subtitle>".$pagePodcast->getHtml("description")."</itunes:subtitle>\r\n";
                     $output .= "<itunes:summary><![CDATA[".$content."]]></itunes:summary>\r\n";
-                    if ($page->isExisting("tag")) $output .= "<itunes:keywords>".$page->getHtml("tag")."</itunes:keywords>\r\n";
-                    $output .= "<itunes:author>".$page->getHtml("author")."</itunes:author>\r\n";
+                    if ($pagePodcast->isExisting("tag")) $output .= "<itunes:keywords>".$pagePodcast->getHtml("tag")."</itunes:keywords>\r\n";
+                    $output .= "<itunes:author>".$pagePodcast->getHtml("author")."</itunes:author>\r\n";
                     $output .= "</item>\r\n";
                 }
                 $output .= "</channel>\r\n";
@@ -109,9 +108,10 @@ class YellowPodcast {
                 $pages->pagination($this->yellow->system->get("podcastPaginationLimit"));
                 if (!$pages->getPaginationNumber()) $this->yellow->page->error(404);
                 if (!empty($pagesFilter)) {
-                    $title = implode(' ', $pagesFilter);
-                    $this->yellow->page->set("titleHeader", $title." - ".$this->yellow->page->get("sitename"));
-                    $this->yellow->page->set("titleContent", $this->yellow->page->get("title").": ".$title);
+                    $text = implode(' ', $pagesFilter);
+                    $this->yellow->page->set("titleHeader", $text." - ".$this->yellow->page->get("sitename"));
+                    $this->yellow->page->set("titleContent", $this->yellow->page->get("title").": ".$text);
+                    $this->yellow->page->set("title", $this->yellow->page->get("title").": ".$text);
                 }
                 $this->yellow->page->set("podcastChronologicalOrder", $chronologicalOrder);
                 $this->yellow->page->setPages($pages);
@@ -127,17 +127,16 @@ class YellowPodcast {
             $pagination = "page";            
             $tag = $_REQUEST["tag"];
             $locationPodcast = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("podcastLocation");
-            if ($tag) $locationPodcast .= $this->yellow->toolbox->normaliseArgs("tag:$tag", true);
-            $locationPodcast .= $this->yellow->toolbox->normaliseArgs("$pagination:".$this->yellow->system->get("podcastFileXml"), false);
+            if ($tag) $locationPodcast .= $this->yellow->toolbox->normaliseArguments("tag:$tag", true);
+            $locationPodcast .= $this->yellow->toolbox->normaliseArguments("$pagination:".$this->yellow->system->get("podcastFileXml"), false);
             $output = "<link rel=\"alternate\" type=\"application/rss+xml\" href=\"$locationPodcast\" />\n";
         }
         return $output;
     }
     
     // Check if XML requested
-    public function isRequestXml() {
-        $pagination = "page";
-        return $_REQUEST[$pagination]==$this->yellow->system->get("podcastFileXml");
+    public function isRequestXml($page) {
+        return $page->getRequest("page")==$this->yellow->system->get("podcastFileXml");
     }
     
     // Parse URL
