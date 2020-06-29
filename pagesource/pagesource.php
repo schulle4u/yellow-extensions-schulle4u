@@ -16,7 +16,7 @@ class YellowPagesource {
     
     // Handle page layout
     public function onParsePageLayout($page, $name) {
-        if ($_POST["status"]=="source") {
+        if ($this->getPostRequest("status")=="source") {
             $this->yellow->page->setHeader("Last-Modified", $this->yellow->toolbox->getHttpDateFormatted(time()));
             $this->yellow->page->setHeader("Cache-Control", "no-cache, must-revalidate");
             $this->yellow->page->setHeader("Content-Type", "text/plain; charset=utf-8");
@@ -48,6 +48,11 @@ class YellowPagesource {
             $output .= "</div>\n";
         }
         return $output;
+    }
+    
+    // Return post request argument
+    public function getPostRequest($key) {
+        return isset($_POST[$key]) ? $_POST[$key] : "";
     }
     
 }
