@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowIcecast {
-    const VERSION = "0.8.2";
+    const VERSION = "0.8.3";
     const TYPE = "feature";
     public $yellow;         //access to API
     
@@ -20,7 +20,7 @@ class YellowIcecast {
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
         if ($name=="icecast" && ($type=="inline")) {
-            list($info, $server, $port, $mount) = $this->yellow->toolbox->getTextArgs($text);
+            list($info, $server, $port, $mount) = $this->yellow->toolbox->getTextArguments($text);
             if(empty($info)) $info = "title";
             if(empty($server)) $server = $this->yellow->system->get("icecastServer");
             if(empty($port)) $port = $this->yellow->system->get("icecastPort");

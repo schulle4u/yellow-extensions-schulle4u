@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowRandom {
-    const VERSION = "0.8.3";
+    const VERSION = "0.8.4";
     const TYPE = "feature";
     public $yellow;            //access to API
     
@@ -18,23 +18,23 @@ class YellowRandom {
 
     // Handle page content of shortcut
     public function onParseContentShortcut($page, $name, $text, $type) {
-        $output = NULL;
+        $output = null;
         if ($name=="random" && ($type=="block" || $type=="inline")) {
-            list($location, $pagesMax, $mode) = $this->yellow->toolbox->getTextArgs($text);
+            list($location, $pagesMax, $mode) = $this->yellow->toolbox->getTextArguments($text);
             if (empty($location)) $location = $this->yellow->system->get("randomLocation");
             if (strempty($pagesMax)) $pagesMax = $this->yellow->system->get("randomPagesMax");
             if (strempty($mode)) $mode = $this->yellow->system->get("randomMode");
             $this->yellow->page->setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
             $output .= "<div class=\"".$name."\">\n";
-            if ($mode == "list" || $mode == "1") $output .= "<ul>\n";
+            if ($mode == "list") $output .= "<ul>\n";
             $parent = $this->yellow->content->find($location);
             $pages = $parent ? $parent->getChildren(true) : $this->yellow->content->clean();
             foreach ($pages->shuffle()->limit($pagesMax) as $page) {
-                if ($mode == "full" || $mode == "0") {
+                if ($mode == "full") {
                     $output .= "<h2>".$page->getHtml("title")."</h2>\n";
                     $output .= $page->getContent();
                 }
-                if ($mode == "list" || $mode == "1") {
+                if ($mode == "list") {
                     $output .= "<li><a href=\"".$page->getLocation(true)."\">".$page->getHtml("title")."</a></li>\n";
                 }
                 if ($mode == "teaser") {
@@ -42,7 +42,7 @@ class YellowRandom {
                     $output .= $this->yellow->toolbox->createTextDescription($page->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->text->getHtml("blogMore")."</a>");
                 }
             }
-            if ($mode == "list" || $mode == "1") $output .= "</ul>\n";
+            if ($mode == "list") $output .= "</ul>\n";
             
             $output .= "</div>\n";
         }

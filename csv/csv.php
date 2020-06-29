@@ -4,14 +4,14 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowCsv {
-    const VERSION = "0.8.11";
+    const VERSION = "0.8.12";
     const TYPE = "feature";
     public $yellow;         //access to API
     
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
-        $this->yellow->system->setDefault("csvDir", "media/downloads/");
+        $this->yellow->system->setDefault("csvDirectory", "media/downloads/");
         $this->yellow->system->setDefault("csvDelimiter", "auto");
         $this->yellow->system->setDefault("csvFirstRowHeader", "1");
         $this->yellow->system->setDefault("csvFilter", "1");
@@ -21,8 +21,8 @@ class YellowCsv {
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
         if ($name=="csv" && ($type=="block" || $type=="inline")) {
-            list($fileName, $class) = $this->yellow->toolbox->getTextArgs($text);
-            $fileName = $this->yellow->toolbox->normaliseTokens($this->yellow->system->get("csvDir").$fileName);
+            list($fileName, $class) = $this->yellow->toolbox->getTextArguments($text);
+            $fileName = $this->yellow->toolbox->normaliseTokens($this->yellow->system->get("csvDirectory").$fileName);
             $fileData = $this->yellow->toolbox->readFile($fileName);
             if (!empty($fileData)) {
                 $output = "<div class=\"".htmlspecialchars($name)."\" style=\"overflow-x:auto;\">\n";

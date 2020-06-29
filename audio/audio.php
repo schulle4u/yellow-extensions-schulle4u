@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowAudio {
-    const VERSION = "0.8.5";
+    const VERSION = "0.8.6";
     const TYPE = "feature";
     public $yellow;            //access to API
     
@@ -18,9 +18,9 @@ class YellowAudio {
     
     // Handle page content of shortcut
     public function onParseContentShortcut($page, $name, $text, $type) {
-        $output = NULL;
+        $output = null;
         if ($name=="audio" && ($type=="block" || $type=="inline")) {
-            list($url, $download, $style) = $this->yellow->toolbox->getTextArgs($text);
+            list($url, $download, $style) = $this->yellow->toolbox->getTextArguments($text);
             $url = $this->yellow->system->get("audioUrlPrefix").$url;
             if (!preg_match("/^\w+:/", $url)) {
                 $url = $this->yellow->system->get("coreServerBase").$url;
@@ -37,7 +37,7 @@ class YellowAudio {
             $output .="</div>";
         }
         if ($name=="audiostream" && ($type=="block" || $type=="inline")) {
-            list($url, $autoplay, $style) = $this->yellow->toolbox->getTextArgs($text);
+            list($url, $autoplay, $style) = $this->yellow->toolbox->getTextArguments($text);
             $url = $this->yellow->lookup->normaliseUrl("", "", "", $url);
             if (empty($style)) $style = $this->yellow->system->get("audioStyle");
             $output = "<div class=\"".htmlspecialchars($style)."\">";

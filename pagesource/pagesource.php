@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowPagesource {
-    const VERSION = "0.8.4";
+    const VERSION = "0.8.5";
     const TYPE = "feature";
     public $yellow;         //access to API
     
@@ -38,7 +38,7 @@ class YellowPagesource {
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
         if ($name=="pagesource" && ($type=="block" || $type=="inline")) {
-            list($style) = $this->yellow->toolbox->getTextArgs($text);
+            list($style) = $this->yellow->toolbox->getTextArguments($text);
             if (empty($style)) $style = $this->yellow->system->get("pagesourceStyle");
             $output = "<div class=\"".htmlspecialchars($style)."\">\n";
             $output .= "<form class=\"pagesource-form\" action=\"".$this->yellow->page->getLocation(true)."\" method=\"post\" target=\"_blank\">\n";

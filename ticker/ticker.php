@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowTicker {
-    const VERSION = "0.8.5";
+    const VERSION = "0.8.6";
     const TYPE = "feature";
     public $yellow;            //access to API
     
@@ -22,9 +22,9 @@ class YellowTicker {
     
     // Handle page content of shortcut
     public function onParseContentShortcut($page, $name, $text, $type) {
-        $output = NULL;
+        $output = null;
         if ($name=="ticker" && ($type=="block" || $type=="inline")) {
-            list($rssurl,$numentries,$style) = $this->yellow->toolbox->getTextArgs($text);
+            list($rssurl,$numentries,$style) = $this->yellow->toolbox->getTextArguments($text);
             if (empty($style)) $style = $this->yellow->system->get("tickerStyle");
             if (strempty($numentries)) $numentries = $this->yellow->system->get("tickerNumentries");
             $n=1;

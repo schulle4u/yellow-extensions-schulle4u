@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowRadioboss {
-    const VERSION = "0.8.7";
+    const VERSION = "0.8.8";
     const TYPE = "feature";
     public $yellow;            //access to API
     public $outputFooter;      //generated output for footer
@@ -33,7 +33,7 @@ class YellowRadioboss {
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
         if ($name=="radioboss" && ($type=="block" || $type=="inline")) {
-            list($widget, $arguments, $style, $server, $port, $port2, $id, $mount) = $this->yellow->toolbox->getTextArgs($text);
+            list($widget, $arguments, $style, $server, $port, $port2, $id, $mount) = $this->yellow->toolbox->getTextArguments($text);
             if (empty($widget)) $widget = "page";
             if (empty($style)) $style = $this->yellow->system->get("radiobossStyle");
             if (empty($server)) $server = $this->yellow->system->get("radiobossServer");

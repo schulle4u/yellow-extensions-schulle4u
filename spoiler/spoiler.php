@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowSpoiler {
-    const VERSION = "0.8.5";
+    const VERSION = "0.8.6";
     const TYPE = "feature";
     public $yellow;            //access to API
     
@@ -17,7 +17,7 @@ class YellowSpoiler {
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
         if ($name=="spoilerstart" && ($type=="block" || $type=="inline")) {
-            list($id, $label, $display) = $this->yellow->toolbox->getTextArgs($text);
+            list($id, $label, $display) = $this->yellow->toolbox->getTextArguments($text);
             if (empty($id)) $id = "spoiler";
             if (empty($label)) $label = "…";
             if (empty($display)) $display = "none";

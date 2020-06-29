@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowAbout {
-    const VERSION = "0.8.4";
+    const VERSION = "0.8.5";
     const TYPE = "feature";
     public $yellow;            //access to API
     
@@ -17,9 +17,9 @@ class YellowAbout {
 
     // Handle page content of shortcut
     public function onParseContentShortcut($page, $name, $text, $type) {
-        $output = NULL;
+        $output = null;
         if ($name=="about" && ($type=="block" || $type=="inline")) {
-            list($author, $style) = $this->yellow->toolbox->getTextArgs($text);
+            list($author, $style) = $this->yellow->toolbox->getTextArguments($text);
             if(empty($style)) $style  = $this->yellow->system->get("aboutStyle");
             $output .= "<div class=\"".htmlspecialchars($style)."\">\n";
             $location = $this->yellow->system->get("aboutLocation");

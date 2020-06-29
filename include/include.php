@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowInclude {
-    const VERSION = "0.8.3";
+    const VERSION = "0.8.4";
     const TYPE = "feature";
     public $yellow;            //access to API
     
@@ -15,9 +15,9 @@ class YellowInclude {
 
     // Handle page content of shortcut
     public function onParseContentShortcut($page, $name, $text, $type) {
-        $output = NULL;
+        $output = null;
         if ($name=="include" && ($type=="block" || $type=="inline")) {
-            list($location, $mode) = $this->yellow->toolbox->getTextArgs($text);
+            list($location, $mode) = $this->yellow->toolbox->getTextArguments($text);
             if (empty($mode)) $mode = "full";
             $output .= "<div class=\"".$name."\">\n";
             $page = $this->yellow->content->find($location);

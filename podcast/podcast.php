@@ -125,7 +125,7 @@ class YellowPodcast {
         $output = NULL;
         if ($name=="header") {
             $pagination = "page";            
-            $tag = $_REQUEST["tag"];
+            if ($page->isRequest("tag") $tag = $page->getRequest("tag");
             $locationPodcast = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("podcastLocation");
             if ($tag) $locationPodcast .= $this->yellow->toolbox->normaliseArguments("tag:$tag", true);
             $locationPodcast .= $this->yellow->toolbox->normaliseArguments("$pagination:".$this->yellow->system->get("podcastFileXml"), false);
