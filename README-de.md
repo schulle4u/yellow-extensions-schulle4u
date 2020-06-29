@@ -36,8 +36,6 @@ Die folgenden Erweiterungen sind verfügbar:
   Bestimmte Seitenelemente verstecken.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker/README-de.md): 
   RSS-Feed-Leser.
-* [TuneIn](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/tunein/README-de.md): 
-  TuneIn-Radio-Player einbetten.
 
 Beiträge zum [offiziellen Erweiterungsverzeichnis](https://github.com/datenstrom/yellow-extensions):
 

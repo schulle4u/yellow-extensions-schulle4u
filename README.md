@@ -36,8 +36,6 @@ The following extensions are available:
   Hide certain page elements.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker): 
   RSS feed parser.
-* [TuneIn](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/tunein): 
-  Embed TuneIn Radio player.
 
 Contributions to [the official extension repository](https://github.com/datenstrom/yellow-extensions):
 
