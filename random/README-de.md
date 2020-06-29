@@ -1,5 +1,5 @@
-Random 0.8.3
-======================
+Random 0.8.4
+============
 Zufällige Seiten eines bestimmten Ortes anzeigen.
 
 ## Wie man diese Erweiterung installiert

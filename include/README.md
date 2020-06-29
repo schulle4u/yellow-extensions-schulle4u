@@ -1,4 +1,4 @@
-Include 0.8.3
+Include 0.8.4
 =============
 Includes page content from other pages. 
 

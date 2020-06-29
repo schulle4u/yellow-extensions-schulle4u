@@ -1,5 +1,5 @@
-Random 0.8.3
-======================
+Random 0.8.4
+============
 Display random pages from specified location.
 
 ## How to install extension

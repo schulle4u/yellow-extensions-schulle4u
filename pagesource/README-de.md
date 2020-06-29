@@ -1,4 +1,4 @@
-Pagesource 0.8.4
+Pagesource 0.8.5
 ================
 Seiten als Markdown-Quelltext anzeigen.
 

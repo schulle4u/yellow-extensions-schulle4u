@@ -1,4 +1,4 @@
-About 0.8.3
+About 0.8.5
 ===========
 Autorenprofil für Blogseiten. 
 

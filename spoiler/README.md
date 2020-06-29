@@ -1,4 +1,4 @@
-Spoiler 0.8.5
+Spoiler 0.8.6
 =============
 Hide certain page elements.
 

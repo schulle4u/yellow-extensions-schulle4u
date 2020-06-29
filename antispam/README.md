@@ -1,4 +1,4 @@
-Antispam 0.8.4
+Antispam 0.8.5
 ==============
 Alternative email address obfuscator. 
 
