@@ -27,7 +27,7 @@ Die Javascript-Komponente der Erweiterung verwendet Light-table-filter von [Chri
 
 Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vorgenommen werden:
 
-`CsvDir` = Verzeichnis für CSV-Dateien (Standard: `media/downloads/`).  
+`CsvDirectory` = Verzeichnis für CSV-Dateien (Standard: `media/downloads/`).  
 `CsvDelimiter` = Spaltentrenner (Standard: auto).   
 `CsvFirstRowHeader` = Benutze die erste Zeile der CSV-Datei als Spaltenüberschrift (Standard: true).  
 `CsvFilter` = Zeigt ein Suchfeld zum Filtern der Tabellenzeilen an (Standard: true).
@@ -46,7 +46,7 @@ Spaltensortierung einschalten:
 
     [csv tapes.csv "MyTapes js-sort-table"]
 
-Verwende einen Markdown-Code-Block zum Anzeigen von CSV-Daten: 
+Einen Markdown-Code-Block zum Anzeigen von CSV-Daten benutzen: 
 
     ``` csv {.js-sort-table}
     Code,English Name,French Name

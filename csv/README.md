@@ -27,7 +27,7 @@ Javascript component includes Light-table-filter by [Chris Coyier](https://codep
 
 The following settings can be configured in file `system/settings/system.ini`:
 
-`CsvDir` = Directory for CSV files (default: `media/downloads/`).  
+`CsvDirectory` = Directory for CSV files (default: `media/downloads/`).  
 `CsvDelimiter` = Column delimiter (default: auto).   
 `CsvFirstRowHeader` = Use first line of CSV file as table header (Default: true).  
 `CsvFilter` = Displays a search box to filter table rows (default: true).
