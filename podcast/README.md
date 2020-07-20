@@ -15,7 +15,7 @@ To uninstall delete the [extension files](extension.ini).
 
 The podcast feed is available on your website as `http://website/podcast/` and `http://website/podcast/page:podcast.xml`. It's a feed for the entire website, only visible pages are included. To make a blog podcast feed open file `system/settings/system.ini` and change `PodcastFilterLayout: blog`. It is also possible to filter podcasts by tag or author, use an URL like `http://website/podcast/tag:series1/page:podcast.xml` You can add a link to the podcast somewhere on your website. 
 
-Based on the original [feed extension](https://github.com/datenstrom/yellow-extensions/tree/master/features/feed).
+Based on the original [feed extension](https://github.com/datenstrom/yellow-extensions/tree/master/source/feed).
 
 ## Settings
 
@@ -72,6 +72,6 @@ This is the article for your podcast episode.[--more--] It is recommended to use
 Datenstrom with modifications by Steffen Schultz. [Get support](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
-<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
-<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
+<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
+<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
 </p>

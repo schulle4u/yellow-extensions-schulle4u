@@ -39,9 +39,9 @@ The following extensions are available:
 
 Contributions to [the official extension repository](https://github.com/datenstrom/yellow-extensions):
 
-* [Meta](https://github.com/datenstrom/yellow-extensions/tree/master/features/meta): 
+* [Meta](https://github.com/datenstrom/yellow-extensions/tree/master/source/meta): 
   Meta data for social media sites.
-* [Twitter](https://github.com/datenstrom/yellow-extensions/tree/master/features/twitter): 
+* [Twitter](https://github.com/datenstrom/yellow-extensions/tree/master/source/twitter): 
   Embed Twitter messages.
 
 ## Made with Datenstrom Yellow
@@ -58,6 +58,6 @@ See my extensions in action:
 More extensions and an API for developers is available. [Learn more](https://datenstrom.se/yellow/help/).
 
 <p>
-<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
-<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
+<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
+<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
 </p>

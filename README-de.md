@@ -39,9 +39,9 @@ Die folgenden Erweiterungen sind verfügbar:
 
 Beiträge zum [offiziellen Erweiterungsverzeichnis](https://github.com/datenstrom/yellow-extensions):
 
-* [Meta](https://github.com/datenstrom/yellow-extensions/tree/master/features/meta): 
+* [Meta](https://github.com/datenstrom/yellow-extensions/tree/master/source/meta): 
   Metadaten für Social-Media-Netzwerke.
-* [Twitter](https://github.com/datenstrom/yellow-extensions/tree/master/features/twitter): 
+* [Twitter](https://github.com/datenstrom/yellow-extensions/tree/master/source/twitter): 
   Twitter-Nachrichten einbetten.
 
 ## Erstellt mit Datenstrom Yellow
@@ -58,6 +58,6 @@ Auf folgenden Projekten kannst du meine Erweiterungen in Aktion erleben:
 Mehr Erweiterungen und eine Entwickler-API sind verfügbar. [Lies mehr](https://datenstrom.se/de/yellow/help/).
 
 <p>
-<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
-<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/features/help/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
+<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
+<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
 </p>
