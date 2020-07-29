@@ -4,8 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowAbout {
-    const VERSION = "0.8.5";
-    const TYPE = "feature";
+    const VERSION = "0.8.6";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -32,7 +31,7 @@ class YellowAbout {
             $page = $this->yellow->content->find($author);
             if ($page) {
                 $output .= "<h3>".$page->getHtml("title")."</h3>\n";
-                $output .= $this->yellow->toolbox->createTextDescription($page->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->text->getHtml("blogMore")."</a>");
+                $output .= $this->yellow->toolbox->createTextDescription($page->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->language->getTextHtml("blogMore")."</a>");
             }
             $output .= "</div>\n";
         }

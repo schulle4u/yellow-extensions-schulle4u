@@ -4,8 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowPrivate {
-    const VERSION = "0.8.6";
-    const TYPE = "feature";
+    const VERSION = "0.8.7";
     public $yellow;         //access to API
     
     // Handle initialisation
@@ -26,8 +25,8 @@ class YellowPrivate {
                 $this->yellow->page->setHeader("Cache-Control", "no-cache, must-revalidate");
             } else {
                 $pageError = "<form class=\"private-form\" action=\"".$this->yellow->page->getLocation(true)."\" method=\"post\">\n";
-                $pageError .= "<p class=\"private-password\"><label for=\"password\">".$this->yellow->text->getHtml("editLoginPassword")."</label><br /><input type=\"password\" class=\"form-control\" name=\"password\" id=\"password\" /></p>\n";
-                $pageError .= "<input type=\"submit\" value=\"".$this->yellow->text->getHtml("EditLoginButton")."\" class=\"btn login-btn\" />\n";
+                $pageError .= "<p class=\"private-password\"><label for=\"password\">".$this->yellow->language->getTextHtml("editLoginPassword")."</label><br /><input type=\"password\" class=\"form-control\" name=\"password\" id=\"password\" /></p>\n";
+                $pageError .= "<input type=\"submit\" value=\"".$this->yellow->language->getTextHtml("EditLoginButton")."\" class=\"btn login-btn\" />\n";
                 $pageError .= "</form>\n";
                 $this->yellow->page->error("401", $pageError);
             }

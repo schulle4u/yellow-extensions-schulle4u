@@ -4,8 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowSpoiler {
-    const VERSION = "0.8.6";
-    const TYPE = "feature";
+    const VERSION = "0.8.7";
     public $yellow;            //access to API
     
     // Handle initialisation

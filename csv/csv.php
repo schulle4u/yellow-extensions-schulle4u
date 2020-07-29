@@ -4,8 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowCsv {
-    const VERSION = "0.8.12";
-    const TYPE = "feature";
+    const VERSION = "0.8.13";
     public $yellow;         //access to API
     
     // Handle initialisation

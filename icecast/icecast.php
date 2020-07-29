@@ -5,7 +5,6 @@
 
 class YellowIcecast {
     const VERSION = "0.8.3";
-    const TYPE = "feature";
     public $yellow;         //access to API
     
     // Handle initialisation

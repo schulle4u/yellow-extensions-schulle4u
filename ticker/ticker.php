@@ -4,8 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowTicker {
-    const VERSION = "0.8.6";
-    const TYPE = "feature";
+    const VERSION = "0.8.7";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -54,8 +53,8 @@ class YellowTicker {
                 foreach ($feed->get_items() as $item) {
                     $output .= "<li>";
                     $output .= "<a href = \"".$item->get_permalink()."\">".$item->get_title()."</a>";
-                    if ($show_date) $output .= " - ".$item->get_date($this->yellow->text->getHtml("CoreDateFormatLong"));
-                    if ($show_description) $output .= "<br />".$item->get_description()." <a href=\"".$item->get_permalink()."\">".$this->yellow->text->getHtml("blogMore")."</a>";
+                    if ($show_date) $output .= " - ".$item->get_date($this->yellow->language->getTextHtml("CoreDateFormatLong"));
+                    if ($show_description) $output .= "<br />".$item->get_description()." <a href=\"".$item->get_permalink()."\">".$this->yellow->language->getTextHtml("blogMore")."</a>";
                     $output .= "</li>\n";
                     if ($n>=$numentries) { break; }
                     $n++;
@@ -65,8 +64,8 @@ class YellowTicker {
                     foreach ($rss->channel->item as $item) {
                         $output .= "<li>";
                         $output .= "<a href = \"".$item->link."\">".$item->title."</a>";
-                        if ($show_date) $output .= " - ".date($this->yellow->text->getHtml("CoreDateFormatLong"),strtotime($item->pubDate));
-                        if ($show_description) $output .= "<br />".$item->description." <a href=\"{$item->link}\">".$this->yellow->text->getHtml("blogMore")."</a>";
+                        if ($show_date) $output .= " - ".date($this->yellow->language->getTextHtml("CoreDateFormatLong"),strtotime($item->pubDate));
+                        if ($show_description) $output .= "<br />".$item->description." <a href=\"{$item->link}\">".$this->yellow->language->getTextHtml("blogMore")."</a>";
                         $output .= "</li>\n";
                         if ($n>=$numentries) { break; }
                         $n++;

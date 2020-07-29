@@ -4,8 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowMotd {
-    const VERSION = "0.8.3";
-    const TYPE = "feature";
+    const VERSION = "0.8.4";
     public $yellow;            //access to API
     
     // Handle initialisation

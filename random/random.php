@@ -4,8 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowRandom {
-    const VERSION = "0.8.4";
-    const TYPE = "feature";
+    const VERSION = "0.8.5";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -39,7 +38,7 @@ class YellowRandom {
                 }
                 if ($mode == "teaser") {
                     $output .= "<h2><a href=\"".$page->getLocation(true)."\">".$page->getHtml("title")."</a></h2>\n";
-                    $output .= $this->yellow->toolbox->createTextDescription($page->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->text->getHtml("blogMore")."</a>");
+                    $output .= $this->yellow->toolbox->createTextDescription($page->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->language->getTextHtml("blogMore")."</a>");
                 }
             }
             if ($mode == "list") $output .= "</ul>\n";

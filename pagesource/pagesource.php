@@ -4,8 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowPagesource {
-    const VERSION = "0.8.5";
-    const TYPE = "feature";
+    const VERSION = "0.8.6";
     public $yellow;         //access to API
     
     // Handle initialisation
@@ -43,7 +42,7 @@ class YellowPagesource {
             $output = "<div class=\"".htmlspecialchars($style)."\">\n";
             $output .= "<form class=\"pagesource-form\" action=\"".$this->yellow->page->getLocation(true)."\" method=\"post\" target=\"_blank\">\n";
             $output .= "<input type=\"hidden\" name=\"status\" value=\"source\" />\n";
-            $output .= "<input type=\"submit\" value=\"".$this->yellow->text->getHtml("EditToolbarPre")."\" class=\"btn source-btn\" />\n";
+            $output .= "<input type=\"submit\" value=\"".$this->yellow->language->getTextHtml("EditToolbarPre")."\" class=\"btn source-btn\" />\n";
             $output .= "</form>\n";
             $output .= "</div>\n";
         }
