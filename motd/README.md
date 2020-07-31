@@ -1,5 +1,5 @@
-Motd 0.8.3
-========================
+Motd 0.8.4
+==========
 Message of the day.
 
 ## How to install extension

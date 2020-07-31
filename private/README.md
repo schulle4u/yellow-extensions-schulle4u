@@ -1,4 +1,4 @@
-Private 0.8.6
+Private 0.8.7
 =============
 Support for password-protected pages.
 

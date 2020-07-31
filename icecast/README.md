@@ -1,4 +1,4 @@
-Icecast 0.8.2
+Icecast 0.8.3
 =============
 Icecast statistics.
 

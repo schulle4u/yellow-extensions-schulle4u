@@ -1,4 +1,4 @@
-Audio 0.8.6
+Audio 0.8.7
 ===========
 HTML5-Audio-Player.
 

@@ -1,4 +1,4 @@
-Spoiler 0.8.6
+Spoiler 0.8.7
 =============
 Bestimmte Seitenelemente verstecken.
 

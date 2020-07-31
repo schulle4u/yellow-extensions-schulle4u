@@ -1,4 +1,4 @@
-Random 0.8.4
+Random 0.8.5
 ============
 Zufällige Seiten eines bestimmten Ortes anzeigen.
 

@@ -1,4 +1,4 @@
-Antispam 0.8.5
+Antispam 0.8.6
 ==============
 Alternative Verschleierung von E-Mail-Adressen. 
 

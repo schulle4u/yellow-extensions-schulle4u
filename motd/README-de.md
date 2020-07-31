@@ -1,5 +1,5 @@
-Motd 0.8.3
-========================
+Motd 0.8.4
+==========
 Nachricht des Tages.
 
 ## Wie man diese Erweiterung installiert

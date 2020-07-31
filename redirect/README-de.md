@@ -1,4 +1,4 @@
-Redirect 0.8.2
+Redirect 0.8.3
 ==============
 Alternative Seitenweiterleitung.
 
