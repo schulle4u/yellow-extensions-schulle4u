@@ -102,7 +102,7 @@ class YellowCsv {
             arsort($delimiterData);
             $delimiter = array_keys($delimiterData)[0];
         } else {
-            $delimiter = strreplaceu("\\t", "\t", $delimiter);
+            $delimiter = str_replace("\\t", "\t", $delimiter);
         }
         return $delimiter;
     }
