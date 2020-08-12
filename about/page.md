@@ -1,5 +1,6 @@
 ---
-Title: About Datenstrom Yellow
+Title: About
+TitleContent: About Datenstrom Yellow
 ---
 For people who make websites. [--more--]
 

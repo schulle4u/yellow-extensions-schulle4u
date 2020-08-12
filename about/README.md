@@ -1,4 +1,4 @@
-About 0.8.6
+About 0.8.7
 ===========
 Author profile for blog pages. 
 
