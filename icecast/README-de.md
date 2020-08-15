@@ -5,7 +5,7 @@ Icecast-Statistiken.
 ## Wie man diese Erweiterung installiert
 
 1. [Datenstrom Yellow herunterladen und installieren](https://github.com/datenstrom/yellow/).
-2. [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/icecast.zip). Falls du Safari verwendest, rechtsklicke und wähle 'Verknüpfte Datei laden unter'.
+2. [Erweiterung herunterladen](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/master/zip/icecast.zip). Falls du Safari verwendest, rechtsklicke und wähle 'Verknüpfte Datei laden unter'.
 3. Kopiere `icecast.zip` in dein `system/extensions`-Verzeichnis.
 
 Zum Deinstallieren lösche einfach die [Erweiterungsdateien](extension.ini).
