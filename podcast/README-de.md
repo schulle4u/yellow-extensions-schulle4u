@@ -5,7 +5,7 @@ Web-Feed optimiert für die Podcast-Veröffentlichung.
 ## Wie man diese Erweiterung installiert
 
 1. [Datenstrom Yellow herunterladen und installieren](https://github.com/datenstrom/yellow/).
-2. [Erweiterung herunterladen](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/master/zip/podcast.zip). Falls du Safari verwendest, rechtsklicke und wähle 'Verknüpfte Datei laden unter'.
+2. [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/podcast.zip). Falls du Safari verwendest, rechtsklicke und wähle 'Verknüpfte Datei laden unter'.
 3. Kopiere `podcast.zip` in dein `system/extensions`-Verzeichnis.
 4. Optional: [Audio-Erweiterung](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/audio) herunterladen und installieren. 
 
