@@ -1,11 +1,11 @@
 <?php
 // Podcast extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast
-// Based on the yellow Feed extension, https://github.com/datenstrom/yellow-extensions/tree/master/features/feed
+// Based on the yellow Feed extension, https://github.com/datenstrom/yellow-extensions/tree/master/source/feed
 // Copyright (c) 2013-2018 Datenstrom, https://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
 
 class YellowPodcast {
-    const VERSION = "0.8.8";
+    const VERSION = "0.8.9";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -113,7 +113,7 @@ class YellowPodcast {
                     $this->yellow->page->set("title", $this->yellow->page->get("title").": ".$text);
                 }
                 $this->yellow->page->set("podcastChronologicalOrder", $chronologicalOrder);
-                $this->yellow->page->setPages($pages);
+                $this->yellow->page->setPages("podcast", $pages);
                 $this->yellow->page->setLastModified($pages->getModified());
             }
         }
