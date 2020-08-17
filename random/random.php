@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowRandom {
-    const VERSION = "0.8.5";
+    const VERSION = "0.8.6";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -27,7 +27,7 @@ class YellowRandom {
             $output .= "<div class=\"".$name."\">\n";
             if ($mode == "list") $output .= "<ul>\n";
             $parent = $this->yellow->content->find($location);
-            $pages = $parent ? $parent->getChildren(true) : $this->yellow->content->clean();
+            $pages = $parent ? $parent->getChildren(false) : $this->yellow->content->clean();
             foreach ($pages->shuffle()->limit($pagesMax) as $page) {
                 if ($mode == "full") {
                     $output .= "<h2>".$page->getHtml("title")."</h2>\n";
