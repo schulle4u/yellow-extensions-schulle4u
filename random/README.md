@@ -1,4 +1,4 @@
-Random 0.8.5
+Random 0.8.6
 ============
 Display random pages from specified location.
 
