@@ -12,6 +12,8 @@ The following extensions are available:
   Alternative email address obfuscator.
 * [Audio](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/audio): 
   HTML5 audio player.
+* [Codefile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/codefile): 
+  Download code blocks as text file.
 * [Csv](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/csv): 
   CSV file parser.
 * [Icecast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/icecast): 

@@ -12,6 +12,8 @@ Die folgenden Erweiterungen sind verfügbar:
   Alternative Verschleierung von E-Mail-Adressen.
 * [Audio](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/audio/README-de.md): 
   HTML5-Audio-Player.
+* [Codefile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/codefile): 
+  Code-Blöcke als Textdatei herunterladen.
 * [Csv](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/csv/README-de.md): 
   CSV-Dateileser.
 * [Icecast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/icecast/README-de.md): 

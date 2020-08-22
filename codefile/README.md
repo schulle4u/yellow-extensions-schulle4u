@@ -10,7 +10,7 @@ The following optional argument is available:
  
 `Id` = Id of the code block (default: `codefile`).  
 
-This extension can be used to download code blocks as text file, useful to provide a file download for ready-to-use code examples. The Javascript component is based on a tutorial from [GeeksForGeeks](https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/). 
+This extension can be used to download code blocks as text file, useful to provide a file download for ready-to-use code examples. Please use fenced code blocks from MarkdownExtra, indented blocks and code between backticks are not supported. The Javascript component is based on a tutorial from [GeeksForGeeks](https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/). 
 
 ## Examples
 
@@ -27,7 +27,7 @@ Here is a page with downloadable code block.
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. 
     ```
 
-    [codefile codefile]
+    [codefile]
 
 
 ## Installation
@@ -37,3 +37,8 @@ Here is a page with downloadable code block.
 ## Developer
 
 Steffen Schultz. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+
+<p>
+<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
+<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
+</p>
