@@ -1,0 +1,9 @@
+# Codefile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/codefile
+
+Language: en
+CodefileDescription: Download code blocks as text file.
+CodefileButton: Download source code
+
+Language: de
+CodefileDescription: Code-Blöcke als Textdatei herunterladen.
+CodefileButton: Quellcode herunterladen

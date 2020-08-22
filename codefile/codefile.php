@@ -16,7 +16,7 @@ class YellowCodefile {
         if ($name=="codefile" && ($type=="block" || $type=="inline")) {
             list($id) = $this->yellow->toolbox->getTextArguments($text);
             if (empty($id)) $id = "codefile";
-            $output = "<div class=\"codefile\"><button id=\"codefile-btn\" data-codefile-id=\"".htmlspecialchars($id)."\" value=\"Download\">Download</button></div>";
+            $output = "<div class=\"codefile\"><button id=\"codefile-btn\" data-codefile-id=\"".htmlspecialchars($id)."\" value=\"Download\">".$this->yellow->language->getTextHtml("codefileButton")."</button></div>";
         }
         return $output;
     }
