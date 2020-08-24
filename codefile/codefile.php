@@ -14,9 +14,10 @@ class YellowCodefile {
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
         if ($name=="codefile" && ($type=="block" || $type=="inline")) {
-            list($id) = $this->yellow->toolbox->getTextArguments($text);
+            list($id, $filename) = $this->yellow->toolbox->getTextArguments($text);
             if (empty($id)) $id = "codefile";
-            $output = "<div class=\"codefile\"><p><button id=\"codefile-btn\" data-codefile-id=\"".htmlspecialchars($id)."\" value=\"Download\">".$this->yellow->language->getTextHtml("codefileButton")."</button></p></div>";
+            if (empty($filename)) $filename = $id."-download.txt";
+            $output = "<div class=\"codefile\"><p><button id=\"codefile-btn\" data-codefile-id=\"".htmlspecialchars($id)."\" data-codefile-filename=\"".htmlspecialchars($filename)."\" value=\"Download\">".$this->yellow->language->getTextHtml("codefileButton")."</button></p></div>";
         }
         return $output;
     }

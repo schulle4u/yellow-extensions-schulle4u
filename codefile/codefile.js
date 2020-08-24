@@ -17,6 +17,6 @@ function download(file, code, id) {
 document.getElementById("codefile-btn").addEventListener("click", function() {
     var id = document.getElementById("codefile-btn").getAttribute("data-codefile-id");
     var code = document.getElementById(id).textContent;
-    var filename = id + "-download.txt";
+    var filename = document.getElementById("codefile-btn").getAttribute("data-codefile-filename");
     download(filename, code, id);
 }, false);
