@@ -5,7 +5,7 @@
 function download(file, code, id) {
     var element = document.createElement('a');
     element.setAttribute('href',
-    'data:text/plain;charset=utf-8, '
+    'data:text/plain;charset=utf-8,'
     + encodeURIComponent(code));
     element.setAttribute('download', file);
     document.body.appendChild(element);
