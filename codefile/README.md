@@ -1,4 +1,4 @@
-Codefile 0.8.15
+Codefile 0.8.16
 ===============
 Download code blocks as text file.
 
@@ -6,9 +6,10 @@ Download code blocks as text file.
 
 Use special markdown attributes to Prepare your code block with an ID and create a `[codefile]` shortcut. 
 
-The following optional argument is available:
+The following arguments are available, all arguments are optional:
  
 `Id` = Id of the code block (default: `codefile`).  
+`Filename` = Filename of the saved code block (default: `id-download.txt`).  
 
 This extension can be used to download code blocks as text file, useful to provide a file download for ready-to-use code examples. Please use fenced code blocks from MarkdownExtra, indented blocks and code between backticks are not supported. The Javascript component is based on a tutorial from [GeeksForGeeks](https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/). 
 
