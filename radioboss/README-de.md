@@ -2,14 +2,6 @@ Radioboss 0.8.9
 ===============
 Widgets für RadioBoss Cloud.
 
-## Wie man diese Erweiterung installiert
-
-1. [Datenstrom Yellow herunterladen und installieren](https://github.com/datenstrom/yellow/).
-2. [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/radioboss.zip). Falls du Safari verwendest, rechtsklicke und wähle 'Verknüpfte Datei laden unter'.
-3. Kopiere `radioboss.zip` in dein `system/extensions`-Verzeichnis.
-
-Zum Deinstallieren lösche einfach die [Erweiterungsdateien](extension.ini).
-
 ## Wie man RadioBoss-Widgets einbettet
 
 Erstelle eine `[radioboss]`-Abkürzung. 
@@ -39,22 +31,7 @@ Die Erweiterung verwendet [RadioBoss Cloud](https://www.radioboss.fm/radioboss-c
 
 *Hinweis*: RadioBoss Cloud befindet sich in stetiger Weiterentwicklung, daher können sich auch die Funktionen der Erweiterung von Zeit zu Zeit verändern. Einige Widgets sind nicht mit allen Browsern kompatibel, und werden es voraussichtlich auch nie sein. Besonders der Internet Explorer hat Probleme mit den verwendeten Javascript-Komponenten.  
 
-## Einstellungen
-
-Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vorgenommen werden:
-
-`RadiobossServer` = Hostname der Cloud-Instanz ohne einleitendes `https://` (Beispiel: `c2.radioboss.fm`).  
-`RadiobossPort` = Streaming-Port (Beispiel: `8010`).  
-`RadiobossPort2` = Zweiter Streaming-Port, wird für sichere Verbindungen verwendet. Wenn nicht angegeben, setzt er sich aus Streaming-Port mit einer führenden 1 zusammen (Beispiel: `18010`).  
-`RadiobossId` = Momentan sind dies die beiden letzten Ziffern des Streaming-Ports (Beispiel: `10`).  
-`RadiobossMount` = Einhängepunkt deines Streams ohne führenden Schrägstrich (Beispiel: `stream`). 
-`RadiobossListeners` = Zeige Höreranzahl im Nowplaying-Widget (Standard: `0`).  
-`RadiobossTrackCount` = Anzahl zuletzt gespielter Titel (1 - 20, Standard: 10).  
-`RadiobossStyle` = Zu verwendende CSS-Klasse, z. B. left, center, right. 
-
-Die Server-Konfiguration erhältst du im Reiter Information, nachdem du dich bei deiner RadioBoss Cloud angemeldet hast. 
-
-## Beispiel
+## Beispiele
 
 Hier ist eine Beispielseite mit allen verfügbaren Widgets. 
 
@@ -97,9 +74,28 @@ Normaler Web-Player:
 [radioboss nowplaying - - c2.radioboss.fm 8017 18017 17 stream]
 ```
 
+## Einstellungen
+
+Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vorgenommen werden:
+
+`RadiobossServer` = Hostname der Cloud-Instanz ohne einleitendes `https://` (Beispiel: `c2.radioboss.fm`).  
+`RadiobossPort` = Streaming-Port (Beispiel: `8010`).  
+`RadiobossPort2` = Zweiter Streaming-Port, wird für sichere Verbindungen verwendet. Wenn nicht angegeben, setzt er sich aus Streaming-Port mit einer führenden 1 zusammen (Beispiel: `18010`).  
+`RadiobossId` = Momentan sind dies die beiden letzten Ziffern des Streaming-Ports (Beispiel: `10`).  
+`RadiobossMount` = Einhängepunkt deines Streams ohne führenden Schrägstrich (Beispiel: `stream`). 
+`RadiobossListeners` = Zeige Höreranzahl im Nowplaying-Widget (Standard: `0`).  
+`RadiobossTrackCount` = Anzahl zuletzt gespielter Titel (1 - 20, Standard: 10).  
+`RadiobossStyle` = Zu verwendende CSS-Klasse, z. B. left, center, right. 
+
+Die Server-Konfiguration erhältst du im Reiter Information, nachdem du dich bei deiner RadioBoss Cloud angemeldet hast. 
+
+## Installation
+
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/radioboss.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
+
 ## Entwickler
 
-Steffen Schultz mit Code von DJSoft.net. [Support finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz mit Code von DJSoft.net. [Hilfe finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;

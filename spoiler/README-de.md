@@ -2,14 +2,6 @@ Spoiler 0.8.7
 =============
 Bestimmte Seitenelemente verstecken.
 
-## Wie man diese Erweiterung installiert
-
-1. [Datenstrom Yellow herunterladen und installieren](https://github.com/datenstrom/yellow/).
-2. [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/spoiler.zip). Falls du Safari verwendest, rechtsklicke und wähle 'Verknüpfte Datei laden unter'.
-3. Kopiere `spoiler.zip` in dein `system/extensions`-Verzeichnis.
-
-Zum Deinstallieren lösche einfach die [Erweiterungsdateien](extension.ini).
-
 ## Wie man Seiteninhalte versteckt
 
 Erstelle eine `[spoilerstart]`-Abkürzung, füge die zu versteckenden Inhalte ein und schließe mit einer `[spoilerstop]`-Abkürzung den Spoiler.
@@ -22,7 +14,7 @@ Die folgenden Argumente sind verfügbar, alle Angaben sind optional:
 
 *Hinweis*: Versteckte Elemente werden nicht entfernt, sondern mittels Javascript versteckt. 
 
-## Beispiel
+## Beispiele
 
 Einen Textblock verstecken. 
 
@@ -56,9 +48,13 @@ Hier ist unser Twitter-Feed. Klicke auf den Link zum Ausblenden.
 Hier ist weiterer Text. 
 ```
 
+## Installation
+
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/spoiler.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
+
 ## Entwickler
 
-Steffen Schultz. [Support finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Hilfe finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;

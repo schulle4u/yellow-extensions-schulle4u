@@ -2,14 +2,6 @@ Csv 0.8.13
 ==========
 CSV-Dateileser.
 
-## Wie man diese Erweiterung installiert
-
-1. [Datenstrom Yellow herunterladen und installieren](https://github.com/datenstrom/yellow/).
-2. [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/csv.zip). Falls du Safari verwendest, rechtsklicke und wähle 'Verknüpfte Datei laden unter'.
-3. Kopiere `csv.zip` in dein `system/extensions`-Verzeichnis.
-
-Zum Deinstallieren lösche einfach die [Erweiterungsdateien](extension.ini).
-
 ## Wie man eine CSV-Datei anzeigt
 
 Erstelle eine `[csv]`-Abkürzung. 
@@ -23,16 +15,7 @@ Diese Erweiterung lädt eine CSV-Datei und gibt sie als HTML-Tabelle aus. Für u
 
 Die Javascript-Komponente der Erweiterung verwendet Light-table-filter von [Chris Coyier](https://codepen.io/chriscoyier/pen/tIuBL) sowie die [Sort-table-Klasse von Tyler Uebele](https://github.com/stationer/SortTable) freigegeben unter den bedingungen der MIT-Lizenz. 
 
-## Einstellungen
-
-Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vorgenommen werden:
-
-`CsvDirectory` = Verzeichnis für CSV-Dateien (Standard: `media/downloads/`).  
-`CsvDelimiter` = Spaltentrenner (Standard: auto).   
-`CsvFirstRowHeader` = Benutze die erste Zeile der CSV-Datei als Spaltenüberschrift (Standard: true).  
-`CsvFilter` = Zeigt ein Suchfeld zum Filtern der Tabellenzeilen an (Standard: true).
-
-## Beispiel
+## Beispiele
 
 Grundsätzliche Verwendung:
 
@@ -58,10 +41,22 @@ Einen Markdown-Code-Block zum Anzeigen von CSV-Daten benutzen:
     AL,Albania,Albanie
     ```
 
+## Einstellungen
+
+Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vorgenommen werden:
+
+`CsvDirectory` = Verzeichnis für CSV-Dateien (Standard: `media/downloads/`).  
+`CsvDelimiter` = Spaltentrenner (Standard: auto).   
+`CsvFirstRowHeader` = Benutze die erste Zeile der CSV-Datei als Spaltenüberschrift (Standard: true).  
+`CsvFilter` = Zeigt ein Suchfeld zum Filtern der Tabellenzeilen an (Standard: true).
+
+## Installation
+
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/csv.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
 
 ## Entwickler
 
-Steffen Schultz. [Support finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Hilfe finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;

@@ -2,14 +2,6 @@ Random 0.8.6
 ============
 Zufällige Seiten eines bestimmten Ortes anzeigen.
 
-## Wie man diese Erweiterung installiert
-
-1. [Datenstrom Yellow herunterladen und installieren](https://github.com/datenstrom/yellow/).
-2. [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/random.zip). Falls du Safari verwendest, rechtsklicke und wähle 'Verknüpfte Datei laden unter'.
-3. Kopiere `random.zip` in dein `system/extensions`-Verzeichnis.
-
-Zum Deinstallieren lösche einfach die [Erweiterungsdateien](extension.ini).
-
 ## Wie man zufällige Seiten anzeigt
 
 Erstelle eine `[random]`-Abkürzung. 
@@ -23,7 +15,7 @@ Die folgenden Argumente sind verfügbar, mit Ausnahme des ersten Arguments sind 
 In den Modi `full` und `teaser` werden Seitentitel und Inhalt in die aktuelle Seite eingebettet. Hiermit können beispielsweise zufällige Zitate, Seitenvorschauen oder Bilder angezeigt werden.  
 Der `List`-Modus erstellt eine Liste zufälliger Seiten, die sich gut in eine Blog-Sidebar einbauen lässt. 
 
-## Beispiel
+## Beispiele
 
 Wählt eine zufällige Seite aus einer Zitatesammlung und zeigt deren Inhalt an. 
 
@@ -33,9 +25,13 @@ Listet 5 zufällige Blogbeiträge auf.
 
 `[random /blog/ 5 list]`
 
+## Installation
+
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/random.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
+
 ## Entwickler
 
-Steffen Schultz. [Support finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Hilfe finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;

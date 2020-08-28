@@ -2,14 +2,6 @@ Csv 0.8.13
 ==========
 CSV file parser.
 
-## How to install extension
-
-1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/csv.zip). If you are using Safari, right click and select 'Download file as'.
-3. Copy `csv.zip` into your `system/extensions` folder.
-
-To uninstall delete the [extension files](extension.ini).
-
 ## How to display a CSV file
 
 Create a `[csv]` shortcut. 
@@ -23,16 +15,7 @@ This extension loads a CSV file and outputs a HTML table. For large tables you c
 
 Javascript component includes Light-table-filter by [Chris Coyier](https://codepen.io/chriscoyier/pen/tIuBL), and [Sort-table class by Tyler Uebele](https://github.com/stationer/SortTable) released under the terms of the MIT license. 
 
-## Settings
-
-The following settings can be configured in file `system/settings/system.ini`:
-
-`CsvDirectory` = Directory for CSV files (default: `media/downloads/`).  
-`CsvDelimiter` = Column delimiter (default: auto).   
-`CsvFirstRowHeader` = Use first line of CSV file as table header (Default: true).  
-`CsvFilter` = Displays a search box to filter table rows (default: true).
-
-## Example
+## Examples
 
 Basic usage:
 
@@ -59,9 +42,22 @@ Use a Markdown code block to display CSV data:
     ```
 
 
+## Settings
+
+The following settings can be configured in file `system/settings/system.ini`:
+
+`CsvDirectory` = Directory for CSV files (default: `media/downloads/`).  
+`CsvDelimiter` = Column delimiter (default: auto).   
+`CsvFirstRowHeader` = Use first line of CSV file as table header (Default: true).  
+`CsvFilter` = Displays a search box to filter table rows (default: true).
+
+## Installation
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/csv.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+
 ## Developer
 
-Steffen Schultz. [Get support](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;

@@ -2,14 +2,6 @@ Random 0.8.6
 ============
 Display random pages from specified location.
 
-## How to install extension
-
-1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/random.zip). If you are using Safari, right click and select 'Download file as'.
-3. Copy `random.zip` into your `system/extensions` folder.
-
-To uninstall delete the [extension files](extension.ini).
-
 ## How to display random pages
 
 Create a `[random]` shortcut. 
@@ -23,7 +15,7 @@ The following arguments are available, all but the first argument are optional:
 In full and teaser mode the page title and content are embedded into the current page. This can be useful to display e.g. random quotes, teasers or pictures.  
 The list mode creates a clickable list of random pages, useful e.g. in a blog sidebar. 
 
-## Example
+## Examples
 
 Selects a random page from a collection of quotes and displays the content. 
 
@@ -33,9 +25,13 @@ Lists 5 randomly selected blog posts.
 
 `[random /blog/ 5 list]`
 
+## Installation
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/random.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+
 ## Developer
 
-Steffen Schultz. [Get support](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;

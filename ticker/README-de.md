@@ -2,14 +2,6 @@ Ticker 0.8.7
 ============
 RSS-Feed-Leser.
 
-## Wie man diese Erweiterung installiert
-
-1. [Datenstrom Yellow herunterladen und installieren](https://github.com/datenstrom/yellow/).
-2. [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/ticker.zip). Falls du Safari verwendest, rechtsklicke und wähle 'Verknüpfte Datei laden unter'.
-3. Kopiere `ticker.zip` in dein `system/extensions`-Verzeichnis.
-
-Zum Deinstallieren lösche einfach die [Erweiterungsdateien](extension.ini).
-
 ## Wie man RSS-Feeds anzeigt
 
 Erstelle eine `[ticker]`-Abkürzung.
@@ -19,6 +11,14 @@ Die folgenden Argumente sind verfügbar, mit Ausnahme des ersten Arguments sind 
 `RssUrl` = URL des RSS-Feeds  
 `NumEntries` = Anzahl anzuzeigender Einträge  
 `Style` = Zu verwendende CSS-Klasse  
+
+## Beispiele
+
+Zeigt die neuesten Einträge eines RSS-Feeds:
+
+    [ticker http://example.com/feed.xml]
+    [ticker http://example.com/feed.xml 5]
+    [ticker http://example.com/feed.xml 10]
 
 ## Einstellungen
 
@@ -30,19 +30,13 @@ Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vo
 
 Diese Erweiterung liest Standard-RSS-Feeds. Um auch Atom-Feeds zu lesen, ändere `TickerAdvancedParser: 1` in deiner `system/settings/system.ini`. Hierdurch wird [SimplePie parser 1.5](http://simplepie.org/) von Ryan Parman, Geoffrey Sneddon, Ryan McCue und Beitragende verwendet, freigegeben unter den Bedingungen der [BSD-Lizenz](http://www.opensource.org/licenses/BSD-3-Clause). SimplePie erlaubt des Weiteren das Caching von Feed-Inhalten. Bei Problemen prüfe bitte die Zugriffsrechte des Verzeichnisses `/cache`. 
 
-Inspiriert durch Code von [Webdesign Weisshart](https://webdesign.weisshart.de/rss2html.php)
+## Installation
 
-## Beispiel
-
-Zeigt die neuesten Einträge eines RSS-Feeds:
-
-    [ticker http://example.com/feed.xml]
-    [ticker http://example.com/feed.xml 5]
-    [ticker http://example.com/feed.xml 10]
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/ticker.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
 
 ## Entwickler
 
-Steffen Schultz. [Support finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Hilfe finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;

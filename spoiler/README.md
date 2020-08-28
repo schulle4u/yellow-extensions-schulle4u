@@ -2,14 +2,6 @@ Spoiler 0.8.7
 =============
 Hide certain page elements.
 
-## How to install extension
-
-1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/spoiler.zip). If you are using Safari, right click and select 'Download file as'.
-3. Copy `spoiler.zip` into your `system/extensions` folder.
-
-To uninstall delete the [extension files](extension.ini).
-
 ## How to hide page elements
 
 Create a `[spoilerstart]` shortcut, write down what should be hidden and use the `[spoilerstop]` shortcut to close the spoiler.
@@ -22,7 +14,7 @@ The following arguments are available, all arguments are optional:
 
 *Note*: Hidden elements are not removed, they are just made invisible until the visitor clicks the link to show them. 
 
-## Example
+## Examples
 
 Hiding a block of text. 
 
@@ -56,9 +48,13 @@ This is our twitter feed. Klick on the link to hide it.
 Here is some more text. 
 ```
 
+## Installation
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/spoiler.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+
 ## Developer
 
-Steffen Schultz. [Get spport](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;

@@ -2,19 +2,11 @@ Motd 0.8.4
 ==========
 Message of the day.
 
-## How to install extension
-
-1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/motd.zip). If you are using Safari, right click and select 'Download file as'.
-3. Copy `motd.zip` into your `system/extensions` folder.
-
-To uninstall delete the [extension files](extension.ini).
-
 ## How to create a message of the day
 
 In your page metadata, create a message for each weekday (motd1 to motd7), and put a `[motd]` shortcut where the message should be displayed. 
 
-## Example
+## Examples
 
 Here is an example content file. 
 
@@ -37,9 +29,13 @@ Page text goes here as usual.
 
 ````
 
+## Installation
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/motd.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+
 ## Developer
 
-Steffen Schultz. [Get support](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;

@@ -2,14 +2,6 @@ Radioboss 0.8.9
 ===============
 Widgets for RadioBoss Cloud.
 
-## How to install extension
-
-1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/radioboss.zip). If you are using Safari, right click and select 'Download file as'.
-3. Copy `radioboss.zip` into your `system/extensions` folder.
-
-To uninstall delete the [extension files](extension.ini).
-
 ## How to embed RadioBoss widgets
 
 Create a `[radioboss]` shortcut. 
@@ -39,22 +31,7 @@ The extension uses [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/),
 
 *Note*: RadioBoss Cloud is still under development, therefore things may change also in this extension. Some of the widgets are not compatible with all browsers, and most likely never will be. Especially IE is known to have issues with the involved JS.  
 
-## Settings
-
-The following settings can be configured in file `system/settings/system.ini`: 
-
-`RadiobossServer` = The hostname of used cloud instance without leading `https://` (example: `c2.radioboss.fm`).  
-`RadiobossPort` = Streaming port (example: `8010`).  
-`RadiobossPort2` = Second streaming port, used for secure connections. If not specified, first port with a leading 1 will be used, (example: `18010`).  
-`RadiobossId` = Currently this are the last two digits of your port number (example: `10`).  
-`RadiobossMount` = The mountpoint of your stream without leading slash (example: `stream`).  
-`RadiobossListeners` = Show listener count in nowplaying widget (default: `0`).  
-`RadiobossTrackCount` = Number of recently played songs (1 - 20, default: 10).  
-`RadiobossStyle` = Default CSS class to use, e.g. left, center, right. 
-
-To obtain your server configuration, log into your RadioBoss cloud account and click on the information tab. 
-
-## Example
+## Examples
 
 Here is an example page with all available widgets. 
 
@@ -97,9 +74,28 @@ Normal web player:
 [radioboss nowplaying - - c2.radioboss.fm 8017 18017 17 stream]
 ```
 
+## Settings
+
+The following settings can be configured in file `system/settings/system.ini`: 
+
+`RadiobossServer` = The hostname of used cloud instance without leading `https://` (example: `c2.radioboss.fm`).  
+`RadiobossPort` = Streaming port (example: `8010`).  
+`RadiobossPort2` = Second streaming port, used for secure connections. If not specified, first port with a leading 1 will be used, (example: `18010`).  
+`RadiobossId` = Currently this are the last two digits of your port number (example: `10`).  
+`RadiobossMount` = The mountpoint of your stream without leading slash (example: `stream`).  
+`RadiobossListeners` = Show listener count in nowplaying widget (default: `0`).  
+`RadiobossTrackCount` = Number of recently played songs (1 - 20, default: 10).  
+`RadiobossStyle` = Default CSS class to use, e.g. left, center, right. 
+
+To obtain your server configuration, log into your RadioBoss cloud account and click on the information tab. 
+
+## Installation
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/radioboss.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+
 ## Developer
 
-Steffen Schultz featuring DJSoft.net. [Get support](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz featuring DJSoft.net. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
