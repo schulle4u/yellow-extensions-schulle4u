@@ -13,8 +13,6 @@ Die folgenden Argumente sind verfügbar, mit Ausnahme des ersten Arguments sind 
 
 Diese Erweiterung lädt eine CSV-Datei und gibt sie als HTML-Tabelle aus. Für umfangreiche Datensätze stehen ein Zeilenfilter sowie Spaltensortierung zur Verfügung. Des Weiteren können CSV-Daten mittels eines Code-Blocks in markdown geladen werden. 
 
-Die Javascript-Komponente der Erweiterung verwendet Light-table-filter von [Chris Coyier](https://codepen.io/chriscoyier/pen/tIuBL) sowie die [Sort-table-Klasse von Tyler Uebele](https://github.com/stationer/SortTable) freigegeben unter den bedingungen der MIT-Lizenz. 
-
 ## Beispiele
 
 Grundsätzliche Verwendung:
@@ -53,6 +51,8 @@ Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vo
 ## Installation
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/csv.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
+
+Die Javascript-Komponente der Erweiterung verwendet Light-table-filter von [Chris Coyier](https://codepen.io/chriscoyier/pen/tIuBL) sowie die [Sort-table-Klasse von Tyler Uebele](https://github.com/stationer/SortTable) freigegeben unter den bedingungen der MIT-Lizenz. 
 
 ## Entwickler
 

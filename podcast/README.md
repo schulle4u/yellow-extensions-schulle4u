@@ -6,8 +6,6 @@ Web feed optimized for podcast publishing.
 
 The podcast feed is available on your website as `http://website/podcast/` and `http://website/podcast/page:podcast.xml`. It's a feed for the entire website, only visible pages are included. To make a blog podcast feed open file `system/settings/system.ini` and change `PodcastFilterLayout: blog`. It is also possible to filter podcasts by tag or author, use an URL like `http://website/podcast/tag:series1/page:podcast.xml` You can add a link to the podcast somewhere on your website. 
 
-Based on the original [feed extension](https://github.com/datenstrom/yellow-extensions/tree/master/source/feed).
-
 ## Examples
 
 Define some general metadata for your podcast in `content/podcast/page.md`. 
@@ -61,6 +59,8 @@ Additionally, the following page metadata can be specified:
 ## Installation
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/podcast.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+
+Based on the original [feed extension](https://github.com/datenstrom/yellow-extensions/tree/master/source/feed).
 
 ## Developer
 

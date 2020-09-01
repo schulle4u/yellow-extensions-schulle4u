@@ -13,8 +13,6 @@ The following arguments are available, all but the first argument are optional:
 
 This extension loads a CSV file and outputs a HTML table. For large tables you can enable a row filter and column sorting. You can also load CSV data as code block in Markdown. 
 
-Javascript component includes Light-table-filter by [Chris Coyier](https://codepen.io/chriscoyier/pen/tIuBL), and [Sort-table class by Tyler Uebele](https://github.com/stationer/SortTable) released under the terms of the MIT license. 
-
 ## Examples
 
 Basic usage:
@@ -54,6 +52,8 @@ The following settings can be configured in file `system/settings/system.ini`:
 ## Installation
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/csv.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+
+Javascript component includes Light-table-filter by [Chris Coyier](https://codepen.io/chriscoyier/pen/tIuBL), and [Sort-table class by Tyler Uebele](https://github.com/stationer/SortTable) released under the terms of the MIT license. 
 
 ## Developer
 

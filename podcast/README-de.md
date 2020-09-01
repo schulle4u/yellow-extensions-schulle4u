@@ -6,8 +6,6 @@ Web-Feed optimiert für die Podcast-Veröffentlichung.
 
 Der Podcast-Feed ist auf deiner Website verfügbar als `http://website/podcast/` und `http://website/podcast/page:podcast.xml`. Es ist ein Feed für die gesamte Website, nur sichtbare Seiten sind enthalten. Um einen Blog-Podcast-Feed zu erstellen, öffne die Datei `system/settings/system.ini` und ändere `PodcastFilterLayout: blog`. Der Feed kann auch nach Tag oder Autor gefiltert werden, verwende hierzu eine URL wie etwa `http://website/podcast/tag:serie1/page:podcast.xml` Du kannst einen Link zum Podcast irgendwo auf der Website platzieren. 
 
-Diese Erweiterung basiert auf der originalen [Feed-Erweiterung](https://github.com/datenstrom/yellow-extensions/tree/master/source/feed).
-
 ## Beispiele
 
 Definiere einige allgemeine Metadaten für deinen Podcast in der Datei `content/podcast/page.md`. 
@@ -62,6 +60,8 @@ Des Weiteren können folgende Seiten-Metadaten angegeben werden:
 ## Installation
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/podcast.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
+
+Diese Erweiterung basiert auf der originalen [Feed-Erweiterung](https://github.com/datenstrom/yellow-extensions/tree/master/source/feed).
 
 ## Entwickler
 

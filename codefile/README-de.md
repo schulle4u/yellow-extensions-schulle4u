@@ -11,7 +11,7 @@ Die folgenden Argumente sind verfügbar, alle Argumente sind optional:
 `Id` = ID des Code-Blocks (Standard: `codefile`).  
 `Filename` = Dateiname des zu speichernden Code-Blocks (Standard: `id-download.txt`).  
 
-Diese Erweiterung erlaubt das Herunterladen von Code-Blöcken als Textdatei, um etwa fertige Code-Beispiele anzubieten, die sofort einsatzfähig sind. Bitte verwende hierfür die eingerahmten Code-Blöcke, eingerückter Code oder Code zwischen Akzentzeichen wird nicht unterstützt. Die Javascript-Komponente basiert auf einem Tutorial von [GeeksForGeeks](https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/). 
+Diese Erweiterung erlaubt das Herunterladen von Code-Blöcken als Textdatei, um etwa fertige Code-Beispiele anzubieten, die sofort einsatzfähig sind. Bitte verwende hierfür die eingerahmten Code-Blöcke, eingerückter Code oder Code zwischen Akzentzeichen wird nicht unterstützt. 
 
 ## Beispiele
 
@@ -34,6 +34,8 @@ Hier ist eine Seite mit herunterladbarem Code-Block.
 ## Installation
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/codefile.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
+
+Die Javascript-Komponente basiert auf einem Tutorial von [GeeksForGeeks](https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/). 
 
 ## Entwickler
 

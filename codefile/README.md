@@ -11,7 +11,7 @@ The following arguments are available, all arguments are optional:
 `Id` = Id of the code block (default: `codefile`).  
 `Filename` = Filename of the saved code block (default: `id-download.txt`).  
 
-This extension can be used to download code blocks as text file, useful to provide a file download for ready-to-use code examples. Please use fenced code blocks from MarkdownExtra, indented blocks and code between backticks are not supported. The Javascript component is based on a tutorial from [GeeksForGeeks](https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/). 
+This extension can be used to download code blocks as text file, useful to provide a file download for ready-to-use code examples. Please use fenced code blocks from MarkdownExtra, indented blocks and code between backticks are not supported. 
 
 ## Examples
 
@@ -34,6 +34,8 @@ Here is a page with downloadable code block.
 ## Installation
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/codefile.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+
+The Javascript component is based on a tutorial from [GeeksForGeeks](https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/). 
 
 ## Developer
 
