@@ -17,13 +17,17 @@ The list mode creates a clickable list of random pages, useful e.g. in a blog si
 
 ## Examples
 
-Selects a random page from a collection of quotes and displays the content. 
+Selects a random page from a collection of quotes and displays the content:
 
-`[random /quotes/ 1 full]`
+    [random /quotes/ 1 full]
 
-Lists 5 randomly selected blog posts. 
+Lists 5 randomly selected blog posts:
 
-`[random /blog/ 5 list]`
+    [random /blog/ 5 list]
+
+Show a random page in teaser mode: 
+
+    [random /products/ 1 teaser]
 
 ## Installation
 

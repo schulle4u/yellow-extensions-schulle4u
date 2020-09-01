@@ -17,13 +17,17 @@ Der `List`-Modus erstellt eine Liste zufälliger Seiten, die sich gut in eine Bl
 
 ## Beispiele
 
-Wählt eine zufällige Seite aus einer Zitatesammlung und zeigt deren Inhalt an. 
+Wählt eine zufällige Seite aus einer Zitatesammlung und zeigt deren Inhalt an:
 
-`[random /quotes/ 1 full]`
+    [random /quotes/ 1 full]
 
-Listet 5 zufällige Blogbeiträge auf. 
+Listet 5 zufällige Blogbeiträge auf: 
 
-`[random /blog/ 5 list]`
+    [random /blog/ 5 list]
+
+Zeigt eine zufällige Seite als Anreißertext an: 
+
+    [random /products/ 1 teaser]
 
 ## Installation
 

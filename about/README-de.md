@@ -15,7 +15,7 @@ Die folgenden Argumente sind verfügbar, alle Angaben sind optional:
 
 Falls die [Blog-Erweiterung](https://github.com/datenstrom/yellow-extensions/tree/master/source/blog) installiert ist, werden Autor-Informationen automatisch unter jeder Blogseite platziert. Verwende `Profile: author` in deinen seiteneinstellungen, um ein anderes Profil anzugeben. 
 
-## Beispiel
+## Beispiele
 
 Bearbeite die Datei `content/about/page.md` wie eine normale Seite und notiere einige Dinge über dich. Für umfangreiche Profilseiten solltest du einen Seitenumbruch verwenden. Du kannst für jeden deiner Autoren eine Profilseite im selben Verzeichnis anlegen. 
 
@@ -27,6 +27,12 @@ Für Menschen die Webseiten machen. [--more--]
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna pizza. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ```
+
+Individuelle Profilseiten anzeigen:
+
+    [about deinname]
+    [about weiterername]
+
 
 ## Einstellungen
 

@@ -30,6 +30,10 @@ Here is a page with downloadable code block.
 
     [codefile]
 
+Use a custom ID and file name:
+
+    [codefile code-example]
+    [codefile code-example example.php]
 
 ## Installation
 

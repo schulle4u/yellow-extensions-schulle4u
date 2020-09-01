@@ -15,7 +15,7 @@ The following arguments are available, all arguments are optional:
 
 If the [blog extension](https://github.com/datenstrom/yellow-extensions/tree/master/source/blog) is installed, author notes will automatically be inserted after each article. Use `Profile: author` in your page settings to specify a different profile. 
 
-## Example
+## Examples
 
 Edit the file `content/about/page.md` like you would do with a normal page. Write down a few notes about you. If you want an extended profile page, it is recommended to use a page break. You can create profile pages for every site author in the same directory. 
 
@@ -27,6 +27,12 @@ For people who make websites. [--more--]
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna pizza. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ```
+
+Display individual author profiles:
+
+    [about yourname]
+    [about someone]
+
 
 ## Settings
 

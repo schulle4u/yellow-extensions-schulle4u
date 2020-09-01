@@ -30,6 +30,10 @@ Hier ist eine Seite mit herunterladbarem Code-Block.
 
     [codefile]
 
+Verwende eine benutzerdefinierte ID und Dateinamen:
+
+    [codefile code-example]
+    [codefile code-example example.php]
 
 ## Installation
 
