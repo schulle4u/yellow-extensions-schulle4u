@@ -2,7 +2,7 @@
 // Codefile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/codefile
 
 class YellowCodefile {
-    const VERSION = "0.8.16";
+    const VERSION = "0.8.17";
     public $yellow;         // access to API
     
     // Handle initialisation
