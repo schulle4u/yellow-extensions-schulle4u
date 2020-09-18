@@ -2,6 +2,8 @@ Csv 0.8.13
 ==========
 CSV file parser.
 
+<p align="center"><img src="csv-screenshot.png?raw=true" alt="Screenshot"></p>
+
 ## How to display a CSV file
 
 Create a `[csv]` shortcut. 

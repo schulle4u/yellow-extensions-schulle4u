@@ -2,6 +2,8 @@ Codefile 0.8.17
 ===============
 Code-Blöcke als Textdatei herunterladen.
 
+<p align="center"><img src="codefile-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
+
 ## Wie man einen Code-Block herunterlädt
 
 Verwende Spezial-Attribute, um den gewünschten Code-Block mit einer ID zu versehen, und erstelle eine `[codefile]`-Abkürzung.

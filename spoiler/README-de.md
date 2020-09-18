@@ -2,6 +2,8 @@ Spoiler 0.8.7
 =============
 Bestimmte Seitenelemente verstecken.
 
+<p align="center"><img src="spoiler-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
+
 ## Wie man Seiteninhalte versteckt
 
 Erstelle eine `[spoilerstart]`-Abkürzung, füge die zu versteckenden Inhalte ein und schließe mit einer `[spoilerstop]`-Abkürzung den Spoiler.

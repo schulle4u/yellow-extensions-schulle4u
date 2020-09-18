@@ -2,6 +2,8 @@ Pagesource 0.8.6
 ================
 Display page as markdown source.
 
+<p align="center"><img src="pagesource-screenshot.png?raw=true" alt="Screenshot"></p>
+
 ## How to display page source
 
 Create a `[pagesource]` shortcut. 

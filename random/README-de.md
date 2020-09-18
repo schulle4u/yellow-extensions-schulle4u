@@ -2,6 +2,8 @@ Random 0.8.6
 ============
 Zufällige Seiten eines bestimmten Ortes anzeigen.
 
+<p align="center"><img src="random-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
+
 ## Wie man zufällige Seiten anzeigt
 
 Erstelle eine `[random]`-Abkürzung. 

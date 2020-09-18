@@ -2,6 +2,8 @@ Redirect 0.8.3
 ==============
 Alternative Seitenweiterleitung.
 
+<p align="center"><img src="redirect-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
+
 ## Wie man eine Weiterleitung erstellt
 
 Verwende die folgenden Seiten-Einstellungen: 

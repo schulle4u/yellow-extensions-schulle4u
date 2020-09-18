@@ -2,6 +2,8 @@ Csv 0.8.13
 ==========
 CSV-Dateileser.
 
+<p align="center"><img src="csv-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
+
 ## Wie man eine CSV-Datei anzeigt
 
 Erstelle eine `[csv]`-Abkürzung. 

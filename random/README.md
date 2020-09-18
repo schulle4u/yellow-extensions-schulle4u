@@ -2,6 +2,8 @@ Random 0.8.6
 ============
 Display random pages from specified location.
 
+<p align="center"><img src="random-screenshot.png?raw=true" alt="Screenshot"></p>
+
 ## How to display random pages
 
 Create a `[random]` shortcut. 

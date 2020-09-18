@@ -2,6 +2,8 @@ Redirect 0.8.3
 ==============
 Alternative page redirection.
 
+<p align="center"><img src="redirect-screenshot.png?raw=true" alt="Screenshot"></p>
+
 ## How to redirect to another location
 
 Use the following page settings to redirect your visitors:

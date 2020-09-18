@@ -2,6 +2,8 @@ Motd 0.8.4
 ==========
 Nachricht des Tages.
 
+<p align="center"><img src="motd-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
+
 ## Wie man eine Nachricht des Tages erstellt
 
 Erstelle in deinen Seiten-Metadaten eine Nachricht für jeden Wochentag mittels der Einstellungen motd1 bis Motd7. Anschließend erstelle eine `[motd]`-Abkürzung, wo die Nachricht angezeigt werden soll. 

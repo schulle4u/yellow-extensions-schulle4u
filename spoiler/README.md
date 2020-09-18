@@ -2,6 +2,8 @@ Spoiler 0.8.7
 =============
 Hide certain page elements.
 
+<p align="center"><img src="spoiler-screenshot.png?raw=true" alt="Screenshot"></p>
+
 ## How to hide page elements
 
 Create a `[spoilerstart]` shortcut, write down what should be hidden and use the `[spoilerstop]` shortcut to close the spoiler.

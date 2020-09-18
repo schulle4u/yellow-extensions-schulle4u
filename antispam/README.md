@@ -2,6 +2,8 @@ Antispam 0.8.6
 ==============
 Alternative email address obfuscator. 
 
+<p align="center"><img src="antispam-screenshot.png?raw=true" alt="Screenshot"></p>
+
 ## How to obfuscate email addresses
 
 Create an `[email]` shortcut.

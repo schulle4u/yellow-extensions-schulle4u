@@ -2,6 +2,8 @@ Codefile 0.8.17
 ===============
 Download code blocks as text file.
 
+<p align="center"><img src="codefile-screenshot.png?raw=true" alt="Screenshot"></p>
+
 ## How to download a code block
 
 Use special markdown attributes to Prepare your code block with an ID and create a `[codefile]` shortcut. 

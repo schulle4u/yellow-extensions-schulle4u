@@ -2,6 +2,8 @@ Motd 0.8.4
 ==========
 Message of the day.
 
+<p align="center"><img src="motd-screenshot.png?raw=true" alt="Screenshot"></p>
+
 ## How to create a message of the day
 
 In your page metadata, create a message for each weekday (motd1 to motd7), and put a `[motd]` shortcut where the message should be displayed. 
