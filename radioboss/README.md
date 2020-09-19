@@ -2,6 +2,8 @@ Radioboss 0.8.9
 ===============
 Widgets for RadioBoss Cloud.
 
+<p align="center"><img src="radioboss-screenshot.png?raw=true" alt="Screenshot"></p>
+
 ## How to embed RadioBoss widgets
 
 Create a `[radioboss]` shortcut. 

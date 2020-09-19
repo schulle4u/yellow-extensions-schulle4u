@@ -2,6 +2,8 @@ Radioboss 0.8.9
 ===============
 Widgets für RadioBoss Cloud.
 
+<p align="center"><img src="radioboss-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
+
 ## Wie man RadioBoss-Widgets einbettet
 
 Erstelle eine `[radioboss]`-Abkürzung. 
