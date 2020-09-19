@@ -2,6 +2,8 @@ Ticker 0.8.7
 ============
 RSS feed parser.
 
+<p align="center"><img src="ticker-screenshot.png?raw=true" alt="Screenshot"></p>
+
 ## How to display RSS feeds
 
 Create a `[ticker]` shortcut.

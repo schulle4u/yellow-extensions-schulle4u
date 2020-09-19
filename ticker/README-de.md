@@ -2,6 +2,8 @@ Ticker 0.8.7
 ============
 RSS-Feed-Leser.
 
+<p align="center"><img src="ticker-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
+
 ## Wie man RSS-Feeds anzeigt
 
 Erstelle eine `[ticker]`-Abkürzung.
