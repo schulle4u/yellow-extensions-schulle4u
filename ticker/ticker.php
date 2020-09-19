@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowTicker {
-    const VERSION = "0.8.7";
+    const VERSION = "0.8.8";
     public $yellow;            //access to API
     
     // Handle initialisation

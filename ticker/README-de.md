@@ -1,4 +1,4 @@
-Ticker 0.8.7
+Ticker 0.8.8
 ============
 RSS-Feed-Leser.
 
