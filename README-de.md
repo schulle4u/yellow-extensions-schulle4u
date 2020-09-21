@@ -1,9 +1,5 @@
 # Datenstrom Yellow - Erweiterungen von Steffen Schultz
 
-1. [Lade alle Erweiterungen herunter und entpacke sie](https://github.com/schulle4u/yellow-extensions-schulle4u/archive/master.zip).  
-2. Kopiere individuelle Zip-Dateien auf deinen Server.  
-3. Öffne deine Website in einem Browser.
-
 Die folgenden Erweiterungen sind verfügbar:
 
 * [About](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/about/README-de.md): 

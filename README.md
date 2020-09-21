@@ -1,9 +1,5 @@
 # Datenstrom Yellow extensions by Steffen Schultz
 
-1. [Download all extensions and unzip them](https://github.com/schulle4u/yellow-extensions-schulle4u/archive/master.zip).  
-2. Copy individual zip files to your web server.  
-3. Open your website in a web browser.
-
 The following extensions are available: 
 
 * [About](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/about): 
