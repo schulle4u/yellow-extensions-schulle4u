@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowTicker {
-    const VERSION = "0.8.8";
+    const VERSION = "0.8.9";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -40,8 +40,8 @@ class YellowTicker {
                 $feed->set_feed_url($rssurl);
                 
                 // Cache location
-                if (!is_dir($this->yellow->system->get("coreCacheDir"))) @mkdir($this->yellow->system->get("coreCacheDir"), 0777, true);
-                $feed->set_cache_location($this->yellow->system->get("coreCacheDir"));
+                if (!is_dir($this->yellow->system->get("coreCacheDirectory"))) @mkdir($this->yellow->system->get("coreCacheDirectory"), 0777, true);
+                $feed->set_cache_location($this->yellow->system->get("coreCacheDirectory"));
                 
                 // Run SimplePie.
                 $feed->init();

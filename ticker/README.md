@@ -1,4 +1,4 @@
-Ticker 0.8.8
+Ticker 0.8.9
 ============
 RSS feed parser.
 
