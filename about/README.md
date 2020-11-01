@@ -36,7 +36,7 @@ Display individual author profiles:
 
 ## Settings
 
-The following settings can be configured in file `system/settings/system.ini`:
+The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
 `AboutLocation` = The location for author profiles (default: `/about/`).   
 `AboutStyle` = Default profile style. 

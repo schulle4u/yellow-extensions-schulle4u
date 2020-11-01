@@ -78,7 +78,7 @@ Normal web player:
 
 ## Settings
 
-The following settings can be configured in file `system/settings/system.ini`: 
+The following settings can be configured in file `system/extensions/yellow-system.ini`: 
 
 `RadiobossServer` = The hostname of used cloud instance without leading `https://` (example: `c2.radioboss.fm`).  
 `RadiobossPort` = Streaming port (example: `8010`).  

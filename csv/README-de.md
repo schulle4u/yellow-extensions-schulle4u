@@ -43,7 +43,7 @@ Einen Markdown-Code-Block zum Anzeigen von CSV-Daten benutzen:
 
 ## Einstellungen
 
-Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vorgenommen werden:
+Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
 `CsvDirectory` = Verzeichnis für CSV-Dateien (Standard: `media/downloads/`).  
 `CsvDelimiter` = Spaltentrenner (Standard: auto).   

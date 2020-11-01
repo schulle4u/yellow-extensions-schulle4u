@@ -30,7 +30,7 @@ Redirecting in [redirect] seconds. If you are not being redirected automatically
 
 ## Settings
 
-The following settings can be configured in file `system/settings/system.ini`:
+The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
 `RedirectTime` = How many seconds to wait before redirecting (default: 5).
 

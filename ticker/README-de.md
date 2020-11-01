@@ -14,7 +14,7 @@ Die folgenden Argumente sind verfügbar, mit Ausnahme des ersten Arguments sind 
 `NumEntries` = Anzahl anzuzeigender Einträge  
 `Style` = Zu verwendende CSS-Klasse  
 
-Diese Erweiterung liest Standard-RSS-Feeds. Um auch Atom-Feeds zu lesen, ändere `TickerAdvancedParser: 1` in deiner `system/settings/system.ini`, um stattdessen den erweiterten SimplePie-Parser zu verwenden. SimplePie erlaubt des Weiteren das Caching von Feed-Inhalten. Bei Problemen prüfe bitte die Zugriffsrechte des Verzeichnisses `/cache`. 
+Diese Erweiterung liest Standard-RSS-Feeds. Um auch Atom-Feeds zu lesen, ändere `TickerAdvancedParser: 1` in deiner `system/extensions/yellow-system.ini`, um stattdessen den erweiterten SimplePie-Parser zu verwenden. SimplePie erlaubt des Weiteren das Caching von Feed-Inhalten. Bei Problemen prüfe bitte die Zugriffsrechte des Verzeichnisses `/cache`. 
 
 ## Beispiele
 
@@ -26,7 +26,7 @@ Zeigt die neuesten Einträge eines RSS-Feeds:
 
 ## Einstellungen
 
-Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vorgenommen werden: 
+Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden: 
 
 `TickerShowDate` = Datumsangabe neben Feed-Einträgen (Standard: 1).  
 `TickerShowDescription` = Beschreibungen der Einträge anzeigen (Standard: 1).  

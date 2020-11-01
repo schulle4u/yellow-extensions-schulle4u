@@ -32,7 +32,7 @@ Einen anderen Server verwenden:
 
 ## Einstellungen
 
-Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vorgenommen werden:
+Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
 `IcecastServer` = Hostname oder IP deines Servers.  
 `IcecastPort` = Port der Icecast-Instanz.  
