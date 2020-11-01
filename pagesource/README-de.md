@@ -23,7 +23,7 @@ Einbettung eines Quelltext-Buttons:
 
 ## Einstellungen
 
-Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vorgenommen werden:
+Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
 `PagesourceStyle` = Standard-Stil des Quelltext-Buttons
 

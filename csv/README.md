@@ -44,7 +44,7 @@ Use a Markdown code block to display CSV data:
 
 ## Settings
 
-The following settings can be configured in file `system/settings/system.ini`:
+The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
 `CsvDirectory` = Directory for CSV files (default: `media/downloads/`).  
 `CsvDelimiter` = Column delimiter (default: auto).   

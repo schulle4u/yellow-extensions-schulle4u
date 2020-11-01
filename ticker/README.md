@@ -14,7 +14,7 @@ The following arguments are available, all but the first argument are optional:
 `NumEntries` = number of entries to display  
 `Style` = CSS class to use  
 
-By default this extension supports standard RSS feeds only. If you want to parse RSS or Atom feeds, change `TickerAdvancedParser: 1` in your `system/settings/system.ini` to use the advanced SimplePie feed parser. SimplePie will give you caching capabilities as well. When there are problems, please check permissions of your `/cache` folder. 
+By default this extension supports standard RSS feeds only. If you want to parse RSS or Atom feeds, change `TickerAdvancedParser: 1` in your `system/extensions/yellow-system.ini` to use the advanced SimplePie feed parser. SimplePie will give you caching capabilities as well. When there are problems, please check permissions of your `/cache` folder. 
 
 ## Examples
 
@@ -26,7 +26,7 @@ Showing the latest items from a RSS feed:
 
 ## Settings
 
-The following settings can be configured in file `system/settings/system.ini`: 
+The following settings can be configured in file `system/extensions/yellow-system.ini`: 
 
 `TickerShowDate` = Wether to display the date for feed entries, 1 or 0 (on by default).  
 `TickerShowDescription` = Wether to show item descriptions, 1 or 0 (on by default).  

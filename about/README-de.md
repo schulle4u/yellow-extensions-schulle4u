@@ -36,7 +36,7 @@ Individuelle Profilseiten anzeigen:
 
 ## Einstellungen
 
-Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vorgenommen werden:
+Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
 `AboutLocation` = Ort für Autorenprofile (Standard: `/about/`).   
 `AboutStyle` = Standard-Stil für Profile. 

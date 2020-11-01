@@ -30,7 +30,7 @@ Weiterleitung in [refresh] Sekunden. Falls du nicht automatisch weitergeleitet w
 
 ## Einstellungen
 
-Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vorgenommen werden:
+Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
 `RedirectTime` = Zeit in Sekunden bis zur Weiterleitung (Standard: 5).
 

@@ -41,7 +41,7 @@ Layout: audio
 
 ## Einstellungen
 
-Die folgenden Einstellungen können in der Datei `system/settings/system.ini` vorgenommen werden:
+Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
 `AudioDownload` = Zeige einen Download-Link für Audiodateien, 1 oder 0  
 `AudioUrlPrefix` = URL-Präfix für Audiodateien  
