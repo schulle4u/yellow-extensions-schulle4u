@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowPrivate {
-    const VERSION = "0.8.7";
+    const VERSION = "0.8.8";
     public $yellow;         //access to API
     
     // Handle initialisation
@@ -24,11 +24,12 @@ class YellowPrivate {
                 $this->yellow->page->setHeader("Last-Modified", $this->yellow->toolbox->getHttpDateFormatted(time()));
                 $this->yellow->page->setHeader("Cache-Control", "no-cache, must-revalidate");
             } else {
-                $pageError = "<form class=\"private-form\" action=\"".$this->yellow->page->getLocation(true)."\" method=\"post\">\n";
+                $pageError = $this->yellow->language->getText("privatePageError")."<br/>\n";
+                $pageError .= "<form class=\"private-form\" action=\"".$this->yellow->page->getLocation(true)."\" method=\"post\">\n";
                 $pageError .= "<p class=\"private-password\"><label for=\"password\">".$this->yellow->language->getTextHtml("editLoginPassword")."</label><br /><input type=\"password\" class=\"form-control\" name=\"password\" id=\"password\" /></p>\n";
                 $pageError .= "<input type=\"submit\" value=\"".$this->yellow->language->getTextHtml("EditLoginButton")."\" class=\"btn login-btn\" />\n";
                 $pageError .= "</form>\n";
-                $this->yellow->page->error("401", $pageError);
+                $this->yellow->page->error("420", $pageError);
             }
         }
     }
