@@ -1,5 +1,6 @@
 ---
 Title: About
+TitleSlug: About
 ---
 For people who make small websites. [--more--]
 
