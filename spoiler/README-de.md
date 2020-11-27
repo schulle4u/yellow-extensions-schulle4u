@@ -24,7 +24,7 @@ Einen Textblock verstecken.
 ---
 Title: Spoiler-beispiel
 ---
-Unten ist ein Text, der standardmäßig versteckt bleibt. Klicke auf das Symbol zum Einblenden. 
+Klicke auf das Symbol zum Einblenden. 
 
 [spoilerstart text1]  
 

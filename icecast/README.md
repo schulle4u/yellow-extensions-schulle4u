@@ -13,7 +13,7 @@ The following arguments are available, all arguments are optional:
 `Port` = Port of the Icecast instance.  
 `Mount` = Mountpoint for the listener stream. 
 
-This extension provides a basic statistic module for Icecast. It uses the information from `status-json.xsl`, therefore Icecast => version 2.4.0 is required. Since this plugin doesn't use Javascript, no realtime statistics are possible. 
+This extension provides a basic statistic module for Icecast. It uses the information from `status-json.xsl`, therefore Icecast => version 2.4.0 is required. Since this extension doesn't use Javascript, no realtime statistics are possible. 
 
 ## Examples
 

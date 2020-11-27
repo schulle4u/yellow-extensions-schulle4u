@@ -24,7 +24,7 @@ Hiding a block of text.
 ---
 Title: Spoiler example
 ---
-Below is some text which is hidden by default. Click on the symbol to show the content. 
+Click on the symbol to show the hidden text. 
 
 [spoilerstart text1]  
 
@@ -41,7 +41,7 @@ Or if you want to give your visitors the possibility to hide your twitter feed f
 ---
 Title: Twitter
 ---
-This is our twitter feed. Klick on the link to hide it. 
+This is our twitter feed. Click on the link to hide it. 
 
 [spoilerstart twitterfeed "Show or hide Twitter feed" block]  
 [twitter datendesigner]  

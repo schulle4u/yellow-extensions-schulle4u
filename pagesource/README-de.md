@@ -1,6 +1,6 @@
 Pagesource 0.8.6
 ================
-Seiten als Markdown-Quelltext anzeigen.
+Markdown-Quelltext auf Seiten anzeigen.
 
 <p align="center"><img src="pagesource-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
