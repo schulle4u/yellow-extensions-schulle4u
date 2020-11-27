@@ -19,7 +19,7 @@ Die folgenden Erweiterungen sind verfügbar:
 * [MOTD](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/motd/README-de.md): 
   Nachricht des Tages.
 * [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/pagesource): 
-  Markdown-Quelltext einer Seite ansehen.
+  Markdown-Quelltext auf Seiten anzeigen.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast/README-de.md): 
   Web-Feed optimiert für die Podcast-Veröffentlichung.
 * [Private](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/private/README-de.md): 
@@ -27,7 +27,7 @@ Die folgenden Erweiterungen sind verfügbar:
 * [Radioboss](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/radioboss/README-de.md): 
   Widgets für RadioBoss Cloud.
 * [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/random/README-de.md): 
-  Zufällige Seiten eines bestimmten Ortes anzeigen.
+  Zufällige Seiten anzeigen.
 * [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/redirect): 
   Alternative Seitenweiterleitung.
 * [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler/README-de.md): 

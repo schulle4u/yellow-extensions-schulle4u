@@ -1,10 +1,8 @@
 <?php
 // Pagesource extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/pagesource
-// Copyright (c) 2019 Steffen Schultz
-// This file may be used and distributed under the terms of the public license.
 
 class YellowPagesource {
-    const VERSION = "0.8.6";
+    const VERSION = "0.8.7";
     public $yellow;         //access to API
     
     // Handle initialisation
@@ -24,7 +22,6 @@ class YellowPagesource {
             $output = $title."\r\n";
             $output .= str_pad("=", $titleLenght, "=")."\r\n";
             $output .= $this->yellow->page->getContent(true)."\r\n";
-            if ($page = $this->yellow->content->shared("footer")) $this->yellow->page->setPage("footer", $page);
             if ($this->yellow->page->isPage("footer")) {
                 $output .= "---------------------------------------\r\n";
                 $output .= $this->yellow->page->getPage("footer")->getContent(true);
@@ -53,5 +50,4 @@ class YellowPagesource {
     public function getPostRequest($key) {
         return isset($_POST[$key]) ? $_POST[$key] : "";
     }
-    
 }

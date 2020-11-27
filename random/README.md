@@ -1,6 +1,6 @@
 Random 0.8.6
 ============
-Display random pages from specified location.
+Display random pages.
 
 <p align="center"><img src="random-screenshot.png?raw=true" alt="Screenshot"></p>
 
