@@ -6,7 +6,7 @@ Nachricht des Tages.
 
 ## Wie man eine Nachricht des Tages erstellt
 
-Erstelle in deinen Seiten-Metadaten eine Nachricht für jeden Wochentag mittels der Einstellungen motd1 bis Motd7. Anschließend erstelle eine `[motd]`-Abkürzung, wo die Nachricht angezeigt werden soll. 
+Erstelle in deinen Seiteneinstellungen eine Nachricht für jeden Wochentag mittels der Einstellungen `Motd1` bis` Motd7`. Anschließend erstelle eine `[motd]`-Abkürzung, wo die Nachricht angezeigt werden soll. 
 
 ## Beispiele
 
@@ -14,21 +14,16 @@ Hier ist eine Beispielseite.
 
 ````
 ---
-Title: Seitentitel
-motd1: Heute ist Montag
-motd2: Dienstag, die Woche ist noch immer viel zu lang
+Title: Nachricht des Tages
+Motd1: Heute ist Montag
+Motd2: Dienstag, die Woche ist noch immer viel zu lang
 Motd3: Mittwoch, es ist Licht am Horizont
-motd4: Donnerstag, man nennt ihn auch den kleinen Freitag
+Motd4: Donnerstag, man nennt ihn auch den kleinen Freitag
 Motd5: Freitag, endlich Wochenende!
 Motd6: Welche Pläne hast du für die Samstagnacht?
-motd7: Immer wieder sonntags
+Motd7: Immer wieder sonntags
 ---
-Hier ist der übliche Seitentext. 
-
-## Unsere wahnsinnig kreative Nachricht des Tages
-
 [motd]
-
 ````
 
 ## Installation

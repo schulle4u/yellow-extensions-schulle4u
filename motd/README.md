@@ -6,7 +6,7 @@ Message of the day.
 
 ## How to create a message of the day
 
-In your page metadata, create a message for each weekday (motd1 to motd7), and put a `[motd]` shortcut where the message should be displayed. 
+In your page settings create a message for each weekday with help of the settings `Motd1` to `Motd7`. Then create a `[motd]` shortcut where the message should be displayed. 
 
 ## Examples
 
@@ -14,21 +14,16 @@ Here is an example content file.
 
 ````
 ---
-Title: Page title
-motd1: Today is monday
-motd2: Tuesday, the week is still way to long
+Title: Message of the day
+Motd1: Today is monday
+Motd2: Tuesday, the week is still way to long
 Motd3: Wednesday, theres light on the horizon!
-motd4: Thursday, also called the little friday
+Motd4: Thursday, also called the little friday
 Motd5: Friday, the weekend is finally here!
 Motd6: What are your plans for saturday night?
-motd7: Sunday, lazy sunday
+Motd7: Sunday, lazy sunday
 ---
-Page text goes here as usual. 
-
-## Our totally awesome message of the day
-
 [motd]
-
 ````
 
 ## Installation

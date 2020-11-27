@@ -2,6 +2,8 @@ Podcast 0.8.9
 =============
 Web-Feed optimiert für die Podcast-Veröffentlichung.
 
+<p align="center"><img src="podcast-screenshot.png?raw=true" width="795" height="836" alt="Bildschirmfoto"></p>
+
 ## Wie man den Podcast verwendet
 
 Der Podcast-Feed ist auf deiner Website verfügbar als `http://website/podcast/` und `http://website/podcast/page:podcast.xml`. Es ist ein Feed für die gesamte Website, nur sichtbare Seiten sind enthalten. Um einen Blog-Podcast-Feed zu erstellen, öffne die Datei `system/extensions/yellow-system.ini` und ändere `PodcastFilterLayout: blog`. Der Feed kann auch nach Tag oder Autor gefiltert werden, verwende hierzu eine URL wie etwa `http://website/podcast/tag:serie1/page:podcast.xml` Du kannst einen Link zum Podcast irgendwo auf der Website platzieren. 
