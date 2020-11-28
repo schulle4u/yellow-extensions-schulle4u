@@ -1,6 +1,8 @@
 # Datenstrom Yellow - Erweiterungen von Steffen Schultz
 
-Die folgenden Erweiterungen sind verfügbar:
+Weitere Funktionen für Datenstrom Yellow.
+
+## Funktionen
 
 * [About](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/about/README-de.md): 
   Autorenprofil für Blogseiten.
@@ -16,6 +18,8 @@ Die folgenden Erweiterungen sind verfügbar:
   Icecast-Statistiken.
 * [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/include/README-de.md): 
   Bindet den Inhalt anderer Seiten in die aktuelle Seite ein.
+* [Meta](https://github.com/datenstrom/yellow-extensions/tree/master/source/meta): 
+  Metadaten für Social-Media-Netzwerke. Weiterentwicklung bei Datenstrom.
 * [MOTD](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/motd/README-de.md): 
   Nachricht des Tages.
 * [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/pagesource): 
@@ -34,17 +38,10 @@ Die folgenden Erweiterungen sind verfügbar:
   Bestimmte Seitenelemente verstecken.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker/README-de.md): 
   RSS-Feed-Leser.
-
-Beiträge zum [offiziellen Erweiterungsverzeichnis](https://github.com/datenstrom/yellow-extensions):
-
-* [Meta](https://github.com/datenstrom/yellow-extensions/tree/master/source/meta): 
-  Metadaten für Social-Media-Netzwerke.
 * [Twitter](https://github.com/datenstrom/yellow-extensions/tree/master/source/twitter): 
-  Twitter-Nachrichten einbetten.
+  Twitter-Nachrichten einbetten. Weiterentwicklung bei Datenstrom.
 
-## Erstellt mit Datenstrom Yellow
-
-Auf folgenden Projekten kannst du meine Erweiterungen in Aktion erleben:
+## Showcase
 
 * [Powerradio4u](https://powerradio4u.de): 
   Ein Webradio mit Fokus auf Creative-Commons-Kultur.

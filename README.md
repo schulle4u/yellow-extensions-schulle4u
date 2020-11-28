@@ -1,6 +1,8 @@
 # Datenstrom Yellow extensions by Steffen Schultz
 
-The following extensions are available: 
+More features for Datenstrom Yellow.
+
+## Features
 
 * [About](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/about): 
   Author profile for blog pages.
@@ -16,6 +18,8 @@ The following extensions are available:
   Icecast statistics.
 * [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/include): 
   Includes page content from other pages.
+* [Meta](https://github.com/datenstrom/yellow-extensions/tree/master/source/meta): 
+  Meta data for social media sites. Development continues at Datenstrom.
 * [MOTD](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/motd): 
   Message of the day.
 * [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/pagesource): 
@@ -34,17 +38,10 @@ The following extensions are available:
   Hide certain page elements.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker): 
   RSS feed parser.
-
-Contributions to [the official extension repository](https://github.com/datenstrom/yellow-extensions):
-
-* [Meta](https://github.com/datenstrom/yellow-extensions/tree/master/source/meta): 
-  Meta data for social media sites.
 * [Twitter](https://github.com/datenstrom/yellow-extensions/tree/master/source/twitter): 
-  Embed Twitter messages.
+  Embed Twitter messages. Development continues at Datenstrom.
 
-## Made with Datenstrom Yellow
-
-See my extensions in action:
+## Showcase
 
 * [Powerradio4u](https://powerradio4u.de): 
   An internet radio station dedicated to creative commons culture.
