@@ -1,6 +1,6 @@
 Random 0.8.6
 ============
-Zufällige Seiten eines bestimmten Ortes anzeigen.
+Zufällige Seiten anzeigen.
 
 <p align="center"><img src="random-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
