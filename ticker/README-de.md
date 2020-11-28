@@ -1,5 +1,5 @@
-Ticker 0.8.9
-============
+Ticker 0.8.10
+=============
 RSS-Feed-Leser.
 
 <p align="center"><img src="ticker-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
