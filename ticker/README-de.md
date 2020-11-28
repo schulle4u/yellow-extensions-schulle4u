@@ -7,14 +7,14 @@ RSS-Feed-Leser.
 ## Wie man RSS-Feeds anzeigt
 
 Erstelle eine `[ticker]`-Abkürzung.
- 
+
 Die folgenden Argumente sind verfügbar, mit Ausnahme des ersten Arguments sind alle Angaben optional:
 
 `RssUrl` = URL des RSS-Feeds  
 `NumEntries` = Anzahl anzuzeigender Einträge  
 `Style` = Zu verwendende CSS-Klasse  
 
-Diese Erweiterung liest Standard-RSS-Feeds. Um auch Atom-Feeds zu lesen, ändere `TickerAdvancedParser: 1` in deiner `system/extensions/yellow-system.ini`, um stattdessen den erweiterten SimplePie-Parser zu verwenden. SimplePie erlaubt des Weiteren das Caching von Feed-Inhalten. Bei Problemen prüfe bitte die Zugriffsrechte des Verzeichnisses `/cache`. 
+Diese Erweiterung liest alle gängigen RSS- und Atom-Feeds. Für ein Schnelleres Laden der Einträge wird Caching unterstützt. 
 
 ## Beispiele
 
@@ -30,7 +30,6 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 `TickerShowDate` = Datumsangabe neben Feed-Einträgen (Standard: 1).  
 `TickerShowDescription` = Beschreibungen der Einträge anzeigen (Standard: 1).  
-`TickerAdvancedParser` = Verwende SimplePie anstelle der PHP-Funktion  `simplexml_load_file` (siehe unten für weitere informationen) (Standard: 0).  
 
 ## Installation
 
