@@ -14,14 +14,14 @@ Weitere Funktionen für Datenstrom Yellow.
   Code-Blöcke als Textdatei herunterladen.
 * [Csv](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/csv/README-de.md): 
   CSV-Dateileser.
+* [Daily](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/daily/README-de.md): 
+  Tägliche Seiten anzeigen.
 * [Icecast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/icecast/README-de.md): 
   Icecast-Statistiken.
 * [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/include/README-de.md): 
   Bindet den Inhalt anderer Seiten in die aktuelle Seite ein.
 * [Meta](https://github.com/datenstrom/yellow-extensions/tree/master/source/meta): 
   Metadaten für Social-Media-Netzwerke. Weiterentwicklung bei Datenstrom.
-* [MOTD](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/motd/README-de.md): 
-  Nachricht des Tages.
 * [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/pagesource): 
   Markdown-Quelltext auf Seiten anzeigen.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast/README-de.md): 

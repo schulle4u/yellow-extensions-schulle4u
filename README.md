@@ -14,14 +14,14 @@ More features for Datenstrom Yellow.
   Download code blocks as text file.
 * [Csv](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/csv): 
   CSV file parser.
+* [Daily](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/daily): 
+  Show daily pages.
 * [Icecast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/icecast): 
   Icecast statistics.
 * [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/include): 
   Includes page content from other pages.
 * [Meta](https://github.com/datenstrom/yellow-extensions/tree/master/source/meta): 
   Meta data for social media sites. Development continues at Datenstrom.
-* [MOTD](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/motd): 
-  Message of the day.
 * [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/pagesource): 
   Display Markdown source on pages.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast): 
