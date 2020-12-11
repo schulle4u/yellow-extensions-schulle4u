@@ -1,6 +1,6 @@
 Daily 0.8.5
 ===========
-Zeige tägliche Seiten an.
+Tägliche Seiten anzeigen.
 
 
 ## Wie man tägliche Seiten anzeigt
