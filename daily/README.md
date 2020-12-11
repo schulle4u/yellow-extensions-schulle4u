@@ -7,11 +7,20 @@ Show daily pages.
 
 Create a `[daily]` shortcut. On the pages you wish to show as daily pages, define a `Daily` entry in your page settings. Use the numeric representation for the day of the week, e. g. 1 for monday, 2 for tuesday. 
 
+The following optional arguments are available: 
+
+`day` = numeric value for the day of the week (default: current day).  
+`format` = show pages as list or teaser (default: teaser).
+
 ## Examples
 
 Showing all pages for the current weekday: 
 
     [daily]
+
+Showing pages for saturday as list: 
+
+    [daily 6 list]
 
 Here is an example content file. 
 

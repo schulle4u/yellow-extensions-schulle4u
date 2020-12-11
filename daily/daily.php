@@ -14,9 +14,11 @@ class YellowDaily {
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
         if ($name=="daily" && ($type=="block" || $type=="inline")) {
+            list($day, $format) = $this->yellow->toolbox->getTextArguments($text);
             $this->yellow->page->setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
             $output .= "<div class=\"".htmlspecialchars($name)."\">\n";
-            $day = date("N");
+            if (strempty($day)) $day  = date("N");
+            if (empty($format)) $format = "teaser";
             switch($day) {
                 case 1: $pages = $this->yellow->content->index(false)->filter("daily", "1"); break;
                 case 2: $pages = $this->yellow->content->index(false)->filter("daily", "2"); break;
@@ -27,10 +29,16 @@ class YellowDaily {
                 case 7: $pages = $this->yellow->content->index(false)->filter("daily", "7"); break;
             }
             $this->yellow->page->setLastModified($pages->getModified());
+            if ($format == "list") $output .= "<ul>\n";
             foreach ($pages as $page) {
-                $output .= "<h2><a href=\"".$page->getLocation(true)."\">".$page->getHtml("title")."</a></h2>\n";
-                $output .= $this->yellow->toolbox->createTextDescription($page->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->language->getTextHtml("blogMore")."</a>");
+                if ($format == "list") {
+                    $output .= "<li><a href=\"".$page->getLocation(true)."\">".$page->getHtml("title")."</a></li>\n";
+                } else {
+                    $output .= "<h2><a href=\"".$page->getLocation(true)."\">".$page->getHtml("title")."</a></h2>\n";
+                    $output .= $this->yellow->toolbox->createTextDescription($page->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->language->getTextHtml("blogMore")."</a>");
+                }
             }
+            if ($format == "list") $output .= "</ul>\n";
             $output .="</div>\n";
         }
         return $output;

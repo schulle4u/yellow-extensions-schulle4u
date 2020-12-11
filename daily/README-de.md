@@ -7,11 +7,20 @@ Zeige tägliche Seiten an.
 
 Erstelle eine `[daily]`-Abkürzung. Definiere eine `Daily`-Einstellung in den Seiten, die als tägliche Seiten angezeigt werden sollen. Verwende hierzu die numerischen Werte für jeden Wochentag, z. B. 1 für Montag, 2 für Dienstag. 
 
+Die folgenden optionalen Argumente sind verfügbar: 
+
+`day` = Numerischer Wochentag (Standard: aktueller Tag).  
+`format` = Seiten als Liste oder Anreißer darstellen (list oder teaser, Standard: teaser).
+
 ## Beispiele
 
 Seiten für den aktuellen Wochentag anzeigen: 
 
     [daily]
+
+Seiten für Samstag als Liste anzeigen:
+
+    [daily 6 list]
 
 Hier ist eine Beispielseite. 
 
