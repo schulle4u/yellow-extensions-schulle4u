@@ -2,6 +2,7 @@ Daily 0.8.5
 ===========
 Tägliche Seiten anzeigen.
 
+<p align="center"><img src="daily-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
 ## Wie man tägliche Seiten anzeigt
 

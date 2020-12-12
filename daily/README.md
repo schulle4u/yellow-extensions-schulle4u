@@ -2,6 +2,7 @@ Daily 0.8.5
 ===========
 Show daily pages.
 
+<p align="center"><img src="daily-screenshot.png?raw=true" alt="Screenshot"></p>
 
 ## How to show daily pages
 
