@@ -1,4 +1,4 @@
-Random 0.8.6
+Random 0.8.7
 ============
 Display random pages.
 
