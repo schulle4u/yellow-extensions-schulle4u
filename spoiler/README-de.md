@@ -44,7 +44,7 @@ Title: Twitter
 Hier ist unser Twitter-Feed. Klicke auf den Link zum Ausblenden. 
 
 [spoilerstart twitterfeed "Twitter-Feed zeigen/ausblenden" block]  
-[twitter datendesigner]  
+[twitter datendeveloper]  
 [spoilerstop]
 
 Hier ist weiterer Text. 
