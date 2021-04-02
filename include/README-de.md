@@ -10,7 +10,7 @@ Erstelle eine `[include]`-Abkürzung.
 
 Die folgenden Argumente sind verfügbar, mit Ausnahme des ersten Arguments sind alle Angaben optional:
 
-`location` = Ort des einzubindenden Seiteninhalts (Beispiel: `/about/`).  
+`location` = Ort des einzubindenden Seiteninhalts relativ zur Yellow-Basis-URL (Beispiel: `/about/`).  
 `mode` = Anzeigemodus (full oder teaser, Standard: full)
 
 Diese Erweiterung kann genutzt werden, um beispielsweise Anreißertexte (Teaser) in Seitenübersichten zu erstellen. Der `Teaser`-Modus sucht nach einem `[--more--]`-Tag um einen Seitenumbruch zu generieren, während im `Full`-Modus der vollständige Seiteninhalt eingebunden wird. 
@@ -31,6 +31,11 @@ Wir arbeiten hart, aber wir lieben es. Lies hier mehr über unsere Team-Mitglied
 
 [include /about/somebody-else teaser]
 ```
+
+Eine Blogseite einbinden: 
+
+    [include /blog/made-for-people]
+
 
 ## Installation
 
