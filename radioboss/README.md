@@ -29,9 +29,7 @@ The following widgets are available:
 `links` = Show a list of streaming links.  
 `page` = Displays a link to the auto-generated stream page of RadioBoss Cloud. 
 
-The extension uses [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/), a cloud-based radio automation service developed by [DJSoft.net](https://www.djsoft.net). 
-
-*Note*: RadioBoss Cloud is still under development, therefore things may change also in this extension. Some of the widgets are not compatible with all browsers, and most likely never will be. Especially IE is known to have issues with the involved JS.  
+*Note*: [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/) is still under development, therefore things may change also in this extension. Some of the widgets are not compatible with all browsers, and most likely never will be. Especially IE is known to have issues with the involved JS.  
 
 ## Examples
 
@@ -95,9 +93,11 @@ To obtain your server configuration, log into your RadioBoss cloud account and c
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/radioboss.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
+This extension uses [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/) by DJSoft. The service provider collects personal data and uses cookies.
+
 ## Developer
 
-Steffen Schultz featuring DJSoft.net. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;

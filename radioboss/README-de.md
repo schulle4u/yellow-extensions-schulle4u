@@ -29,9 +29,7 @@ Die folgenden Widgets stehen zur Verfügung:
 `links` = Zeigt eine Liste der Streaming-Links.  
 `page` = Zeigt einen Link zur automatisch erstellten Stream-Seite von RadioBoss Cloud an. 
 
-Die Erweiterung verwendet [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/), eine Cloud-basierte Radio-Automationslösung von [DJSoft.net](https://www.djsoft.net). 
-
-*Hinweis*: RadioBoss Cloud befindet sich in stetiger Weiterentwicklung, daher können sich auch die Funktionen der Erweiterung von Zeit zu Zeit verändern. Einige Widgets sind nicht mit allen Browsern kompatibel, und werden es voraussichtlich auch nie sein. Besonders der Internet Explorer hat Probleme mit den verwendeten Javascript-Komponenten.  
+*Hinweis*: [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/) befindet sich in stetiger Weiterentwicklung, daher können sich auch die Funktionen der Erweiterung von Zeit zu Zeit verändern. Einige Widgets sind nicht mit allen Browsern kompatibel, und werden es voraussichtlich auch nie sein. Besonders der Internet Explorer hat Probleme mit den verwendeten Javascript-Komponenten.  
 
 ## Beispiele
 
@@ -95,9 +93,11 @@ Die Server-Konfiguration erhältst du im Reiter Information, nachdem du dich bei
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/radioboss.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
 
+Diese Erweiterung verwendet [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/) von DJSoft. Der Dienstanbieter sammelt personenbezogene Daten und benutzt Cookies.
+
 ## Entwickler
 
-Steffen Schultz mit Code von DJSoft.net. [Hilfe finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Hilfe finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
 
 <p>
 <a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
