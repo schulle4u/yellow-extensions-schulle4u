@@ -4,7 +4,7 @@
 // This file may be used and distributed under the terms of the public license.
 
 class YellowAudio {
-    const VERSION = "0.8.7";
+    const VERSION = "0.8.8";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -20,9 +20,14 @@ class YellowAudio {
         $output = null;
         if ($name=="audio" && ($type=="block" || $type=="inline")) {
             list($url, $download, $style) = $this->yellow->toolbox->getTextArguments($text);
-            $url = $this->yellow->system->get("audioUrlPrefix").$url;
             if (!preg_match("/^\w+:/", $url)) {
-                $url = $this->yellow->system->get("coreServerBase").$url;
+                $url = $this->yellow->system->get("audioUrlPrefix").$url;
+            }
+            if (!preg_match("/^\w+:/", $url)) {
+                $url = $this->yellow->lookup->normaliseUrl(
+                    $this->yellow->system->get("coreServerScheme"),
+                    $this->yellow->system->get("coreServerAddress"),
+                    $this->yellow->system->get("coreServerBase"), $url);
             } else {
                 $url = $this->yellow->lookup->normaliseUrl("", "", "", $url);
             }
@@ -36,14 +41,7 @@ class YellowAudio {
             $output .="</div>";
         }
         if ($name=="audiostream" && ($type=="block" || $type=="inline")) {
-            list($url, $autoplay, $style) = $this->yellow->toolbox->getTextArguments($text);
-            $url = $this->yellow->lookup->normaliseUrl("", "", "", $url);
-            if (empty($style)) $style = $this->yellow->system->get("audioStyle");
-            $output = "<div class=\"".htmlspecialchars($style)."\">";
-            $output .= "<audio src=\"".htmlspecialchars($url)."\" controls=\"controls\" preload=\"none\"";
-            if ($autoplay) $output .= "autoplay=\"".htmlspecialchars($autoplay)."\"";
-            $output .= ">HTML5 audio not supported.</audio>";
-            $output .="</div>";
+            $page->error(500, "Audiostream is obsolete, it has been replaced by audio shortcut!");
         }
         return $output;
     }

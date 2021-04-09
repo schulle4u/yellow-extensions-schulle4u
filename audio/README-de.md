@@ -1,4 +1,4 @@
-Audio 0.8.7
+Audio 0.8.8
 ===========
 HTML5-Audio-Player.
 
@@ -24,10 +24,6 @@ Eine Audiodatei einbetten:
     [audio /media/downloads/episode-47.mp3 - player2]
     [audio http://wolke.robbenradio.de/podcasts/rt033_yellow.mp3 1]
 
-Du kannst auch Audio-Streams einbetten. Auch wenn die `[audio]`-Abkürzung Streams abspielen kann, existiert die etwas einfachere `[audiostream]`-Abkürzung um seltene Konfigurationsprobleme zu umgehen, z. B. falls  `audioUrlPrefix` verwendet wird: 
-
-    [audiostream http://stream.powerradio4u.de:8000/p4u.mp3 autoplay]
-
 Hier ist eine Seite mit Standalone-Audioplayer:
 
 ```
@@ -36,7 +32,7 @@ Title: Audio
 TitleSlug: audio
 Layout: audio
 ---
-[audiostream http://stream.powerradio4u.de:8000/p4u.mp3 autoplay]
+[audio http://stream.powerradio4u.de:8000/p4u.mp3 autoplay]
 ```
 
 ## Einstellungen
