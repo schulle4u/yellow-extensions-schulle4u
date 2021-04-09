@@ -1,4 +1,4 @@
-Audio 0.8.7
+Audio 0.8.8
 ===========
 HTML5 audio player.
 
@@ -24,10 +24,6 @@ Embedding an audio track:
     [audio /media/downloads/episode-47.mp3 - player2]
     [audio http://wolke.robbenradio.de/podcasts/rt033_yellow.mp3 1]
 
-You can also embed audio streams. Although the `[audio]` shortcut is able to play them, a simple `[audiostream]` shortcut is provided to avoid rare configuration problems (e.g. if `audioUrlPrefix` is used): 
-
-    [audiostream http://stream.powerradio4u.de:8000/p4u.mp3]
-
 Here is a page using a standalone audio player:
 
 ```
@@ -36,7 +32,7 @@ Title: Audio
 TitleSlug: audio
 Layout: audio
 ---
-[audiostream http://stream.powerradio4u.de:8000/p4u.mp3 autoplay]
+[audio http://stream.powerradio4u.de:8000/p4u.mp3 autoplay]
 ```
 
 ## Settings
