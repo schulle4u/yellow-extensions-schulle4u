@@ -1,7 +1,5 @@
 <?php
 // Audio extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/audio
-// Copyright (c) 2013-2015 Datenstrom, https://datenstrom.se
-// This file may be used and distributed under the terms of the public license.
 
 class YellowAudio {
     const VERSION = "0.8.8";
@@ -35,13 +33,11 @@ class YellowAudio {
             if (empty($style)) $style = $this->yellow->system->get("audioStyle");
             $output = "<div class=\"".htmlspecialchars($style)."\" role=\"region\" aria-label=\"".htmlspecialchars($style)."\">";
             $output .= "<audio src=\"".htmlspecialchars($url)."\" controls=\"controls\" preload=\"none\">HTML5 audio not supported.</audio>";
-            if ($download) {
-                $output .= "<p><a href=\"".htmlspecialchars($url)."\">Download</a></p>";
-            }
+            if ($download) $output .= "<p><a href=\"".htmlspecialchars($url)."\">Download</a></p>";
             $output .="</div>";
         }
         if ($name=="audiostream" && ($type=="block" || $type=="inline")) {
-            $page->error(500, "Audiostream is obsolete, it has been replaced by audio shortcut!");
+            $page->error(500, "The audiostream shortcut is now obsolete. Please use the audio shortcut to embed an audio stream!");
         }
         return $output;
     }

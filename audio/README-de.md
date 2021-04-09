@@ -40,7 +40,7 @@ Layout: audio
 Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
 `AudioDownload` = Zeige einen Download-Link für Audiodateien, 1 oder 0  
-`AudioUrlPrefix` = URL-Präfix für Audiodateien  
+`AudioUrlPrefix` = URL-Präfix für Audiodateien (z. B. für Dateien, die auf einem CDN ausgelagert sind)  
 `AudioStyle` = CSS-Klasse für den Player  
 
 Die folgende Datei kann angepasst werden:

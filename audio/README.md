@@ -32,7 +32,7 @@ Title: Audio
 TitleSlug: audio
 Layout: audio
 ---
-[audio http://stream.powerradio4u.de:8000/p4u.mp3 autoplay]
+[audio http://stream.powerradio4u.de:8000/p4u.mp3]
 ```
 
 ## Settings
@@ -40,7 +40,7 @@ Layout: audio
 The following settings can be configured in file `system/extensions/yellow-system.ini`: 
 
 `AudioDownload` = show download link for audio files, 1 or 0  
-`AudioUrlPrefix` = URL prefix for audio files  
+`AudioUrlPrefix` = URL prefix for audio files (useful for hosting files on a CDN)  
 `AudioStyle` = CSS class to use for the player  
 
 The following file can be configured:
