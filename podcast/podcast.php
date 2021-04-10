@@ -1,8 +1,6 @@
 <?php
 // Podcast extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast
 // Based on the yellow Feed extension, https://github.com/datenstrom/yellow-extensions/tree/master/source/feed
-// Copyright (c) 2013-2018 Datenstrom, https://datenstrom.se
-// This file may be used and distributed under the terms of the public license.
 
 class YellowPodcast {
     const VERSION = "0.8.9";

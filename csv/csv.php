@@ -1,7 +1,5 @@
 <?php
 // CSV extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/csv
-// Copyright (c) 2020 Steffen Schultz
-// This file may be used and distributed under the terms of the public license.
 
 class YellowCsv {
     const VERSION = "0.8.13";

@@ -1,7 +1,5 @@
 <?php
 // Icecast extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/icecast
-// Copyright (c) 2019 Steffen Schultz
-// This file may be used and distributed under the terms of the public license.
 
 class YellowIcecast {
     const VERSION = "0.8.3";

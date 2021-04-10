@@ -1,7 +1,5 @@
 <?php
 // About extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/about
-// Copyright (c) 2018 Steffen Schultz
-// This file may be used and distributed under the terms of the public license.
 
 class YellowAbout {
     const VERSION = "0.8.7";

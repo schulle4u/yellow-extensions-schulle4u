@@ -1,7 +1,5 @@
 <?php
 // Antispam extension, http://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/antispam
-// Copyright (c) 2013-2020 Datenstrom, http://datenstrom.se
-// This file may be used and distributed under the terms of the public license.
 
 class YellowAntispam {
     const VERSION = "0.8.6";

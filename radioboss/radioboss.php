@@ -1,7 +1,5 @@
 <?php
 // Radioboss extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/radioboss 
-// Copyright (c) 2013-2020 Datenstrom, https://datenstrom.se 
-// This file may be used and distributed under the terms of the public license.
 
 class YellowRadioboss {
     const VERSION = "0.8.9";
