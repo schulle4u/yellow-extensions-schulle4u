@@ -1,4 +1,4 @@
-<div role="navigation"><p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p></div>
+<p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
 # Datenstrom Yellow extensions by Steffen Schultz
 
