@@ -1,3 +1,5 @@
+<nav><p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p></nav>
+
 # Datenstrom Yellow extensions by Steffen Schultz
 
 More features for Datenstrom Yellow.
@@ -51,8 +53,3 @@ More features for Datenstrom Yellow.
   Podcast episodes containing tech reviews, tutorials, and radio sounds.
 
 More extensions and an API for developers is available. [Learn more](https://datenstrom.se/yellow/help/).
-
-<p>
-<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
-<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
-</p>

@@ -1,3 +1,5 @@
+<nav><p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p></nav>
+
 # Datenstrom Yellow - Erweiterungen von Steffen Schultz
 
 Weitere Funktionen für Datenstrom Yellow.
@@ -51,8 +53,3 @@ Weitere Funktionen für Datenstrom Yellow.
   Podcast-Episoden zu den Themen Technik, Radio und Geräusche.
 
 Mehr Erweiterungen und eine Entwickler-API sind verfügbar. [Lies mehr](https://datenstrom.se/de/yellow/help/).
-
-<p>
-<a href="README-de.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-de.png" width="15" height="15" alt="Deutsch">&nbsp; Deutsch</a>&nbsp;
-<a href="README.md"><img src="https://raw.githubusercontent.com/datenstrom/yellow-extensions/master/source/help/language-en.png" width="15" height="15" alt="English">&nbsp; English</a>&nbsp;
-</p>
