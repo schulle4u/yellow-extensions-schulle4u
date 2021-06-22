@@ -1,5 +1,5 @@
 <?php
-// Soundcloud extension, https://github.com/datenstrom/yellow-extensions/tree/master/source/soundcloud
+// Soundcloud extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/soundcloud
 
 class YellowSoundcloud {
     const VERSION = "0.8.4";

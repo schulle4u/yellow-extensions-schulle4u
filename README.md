@@ -36,12 +36,14 @@ More features for Datenstrom Yellow.
   Display random pages.
 * [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/redirect): 
   Alternative page redirection.
+* [Soundcloud](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/soundcloud): 
+  Embed Soundcloud audio tracks.
 * [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler): 
   Hide certain page elements.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker): 
   RSS feed parser.
-* [Twitter](https://github.com/datenstrom/yellow-extensions/tree/master/source/twitter): 
-  Embed Twitter messages. Development continues at Datenstrom.
+* [Twitter](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/twitter): 
+  Embed Twitter messages.
 
 ## Showcase
 

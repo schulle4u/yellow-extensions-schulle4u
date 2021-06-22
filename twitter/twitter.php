@@ -1,5 +1,5 @@
 <?php
-// Twitter extension, https://github.com/datenstrom/yellow-extensions/tree/master/source/twitter
+// Twitter extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/twitter
 
 class YellowTwitter {
     const VERSION = "0.8.6";

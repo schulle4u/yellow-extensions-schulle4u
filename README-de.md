@@ -36,12 +36,14 @@ Weitere Funktionen für Datenstrom Yellow.
   Zufällige Seiten anzeigen.
 * [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/redirect): 
   Alternative Seitenweiterleitung.
+* [Soundcloud](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/soundcloud/README-de.md): 
+  Soundcloud-Audio einbinden.
 * [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler/README-de.md): 
   Bestimmte Seitenelemente verstecken.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker/README-de.md): 
   RSS-Feed-Leser.
-* [Twitter](https://github.com/datenstrom/yellow-extensions/tree/master/source/twitter): 
-  Twitter-Nachrichten einbetten. Weiterentwicklung bei Datenstrom.
+* [Twitter](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/twitter): 
+  Twitter-Nachrichten einbetten.
 
 ## Showcase
 
