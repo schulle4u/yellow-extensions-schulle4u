@@ -42,7 +42,7 @@ Weitere Funktionen für Datenstrom Yellow.
   Bestimmte Seitenelemente verstecken.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker/README-de.md): 
   RSS-Feed-Leser.
-* [Twitter](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/twitter): 
+* [Twitter](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/twitter/README-de.md): 
   Twitter-Nachrichten einbetten.
 
 ## Showcase
