@@ -23,7 +23,13 @@ This extension embeds a basic audio player using the HTML5 `<audio>` tag, which 
 Embedding an audio track:
 
     [audio /media/downloads/demo.mp3]
-    [audio /media/downloads/episode-47.mp3 - player2]
+
+Embedding an audio track, different style:
+
+    [audio /media/downloads/episode-47.mp3 - right]
+
+Embedding a track from an external URL and allow downloading:
+
     [audio http://wolke.robbenradio.de/podcasts/rt033_yellow.mp3 1]
 
 Here is a page using a standalone audio player:

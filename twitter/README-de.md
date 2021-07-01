@@ -20,15 +20,21 @@ Die folgenden Argumente sind verfügbar, alle bis auf das erste Argument sind op
 
 ## Beispiele
 
-Nachricht einbinden:
+Tweet einbinden:
 
     [twitter 1169078881963261953]
+
+Tweet einbinden (Theme und Stil anpassen):
+
     [twitter 1169078881963261953 dark]
     [twitter 1169078881963261953 light right]
 
-Verlauf einbinden:
+Zeitleiste einbinden:
 
     [twitter dog_feelings]
+
+Zeitleiste einbinden (Theme und Abmessungen anpassen):
+
     [twitter dog_feelings/likes]
     [twitter dog_feelings/likes light - 250 250]
 

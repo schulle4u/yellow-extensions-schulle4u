@@ -23,7 +23,13 @@ Diese Erweiterung stellt einen einfachen Audio-Player zur Verfügung, welcher da
 Eine Audiodatei einbetten:
 
     [audio /media/downloads/demo.mp3]
-    [audio /media/downloads/episode-47.mp3 - player2]
+
+Eine Audiodatei einbetten, Stil anpassen:
+
+    [audio /media/downloads/episode-47.mp3 - right]
+
+Audiodatei von einer externen URL abrufen und Downloads erlauben: 
+
     [audio http://wolke.robbenradio.de/podcasts/rt033_yellow.mp3 1]
 
 Hier ist eine Seite mit Standalone-Audioplayer:

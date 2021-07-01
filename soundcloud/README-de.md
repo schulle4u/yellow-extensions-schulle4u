@@ -22,6 +22,9 @@ Die folgenden Argumente sind verfügbar, alle bis auf das erste Argument sind op
 Audiospur einbinden:
 
     [soundcloud 101175715]
+
+Audiospur einbinden, Stil und Abmessungen anpassen:
+
     [soundcloud 101175715 left 200 166]
     [soundcloud 101175715 right 200 166]
 

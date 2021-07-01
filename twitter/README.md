@@ -23,12 +23,18 @@ The following arguments are available, all but the first argument are optional:
 Embedding a tweet:
 
     [twitter 1169078881963261953]
+
+Embedding a tweet, different theme and style:
+
     [twitter 1169078881963261953 dark]
     [twitter 1169078881963261953 light right]
 
 Embedding a timeline:
 
     [twitter dog_feelings]
+
+Embedding a timeline, different theme and dimensions:
+
     [twitter dog_feelings/likes]
     [twitter dog_feelings/likes light - 250 250]
 

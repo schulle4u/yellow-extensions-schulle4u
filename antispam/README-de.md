@@ -19,9 +19,12 @@ Diese Erweiterung ermöglicht einen effektiveren Schutz von E-Mail-Adressen als 
 
 ## Beispiele
 
-E-Mail-Adressen verschleiern:
+Allgemeine Verwendung:
 
     [email example@example.com]
+
+Linktext anpassen, schließe mehrere Wörter in Anführungszeichen ein: 
+
     [email example@example.com Kontakt]
     [email example@example.com "Schreibe uns eine E-Mail"]
 

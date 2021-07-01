@@ -18,9 +18,12 @@ Mit dieser Erweiterung kann man jeder beliebigen Seite einen Quelltext-Button hi
 
 ## Beispiele
 
-Einbettung eines Quelltext-Buttons:
+Einbetten eines Quelltext-Buttons:
 
     [pagesource]
+
+Einbetten eines Quelltext-Buttons, Stil anpassen:
+
     [pagesource right]
 
 ## Einstellungen

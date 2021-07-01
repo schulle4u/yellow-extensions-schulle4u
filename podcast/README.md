@@ -13,6 +13,7 @@ The podcast feed is available on your website as `http://website/podcast/` and `
 ## Examples
 
 Define some general metadata for your podcast in `content/podcast/page.md`. 
+
 ```
 ---
 Title: My podcast

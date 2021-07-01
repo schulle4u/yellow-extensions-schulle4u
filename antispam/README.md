@@ -19,9 +19,12 @@ This extension provides a more effective alternative to the built-in email prote
 
 ## Examples
 
-Obfuscate email addresses:
+General usage:
 
     [email example@example.com]
+
+Custom link text, use quotes for multiple words: 
+
     [email example@example.com contact]
     [email example@example.com "Write an email"]
 

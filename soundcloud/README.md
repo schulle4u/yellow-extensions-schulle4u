@@ -22,6 +22,9 @@ The following arguments are available, all but the first argument are optional:
 Embedding an audio track:
 
     [soundcloud 101175715]
+
+Embedding an audio track, different styles and dimensions:
+
     [soundcloud 101175715 left 200 166]
     [soundcloud 101175715 right 200 166]
 

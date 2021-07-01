@@ -21,6 +21,9 @@ This extension adds a "Source code" button to each page you would like to allow 
 Embedding a "Source code" button:
 
     [pagesource]
+
+Embedding a "Source code" button, different style:
+
     [pagesource right]
 
 ## Settings
