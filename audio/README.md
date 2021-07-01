@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-Audio 0.8.8
+Audio 0.8.9
 ===========
 HTML5 audio player.
 
