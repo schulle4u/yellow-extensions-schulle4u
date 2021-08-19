@@ -1,7 +1,7 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-Spoiler 0.8.7
-=============
+# Spoiler 0.8.7
+
 Bestimmte Seitenelemente verstecken.
 
 <p align="center"><img src="spoiler-screenshot.png?raw=true" alt="Bildschirmfoto"></p>

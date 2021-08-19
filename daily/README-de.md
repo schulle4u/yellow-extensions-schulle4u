@@ -1,7 +1,7 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-Daily 0.8.5
-===========
+# Daily 0.8.5
+
 Tägliche Seiten anzeigen.
 
 <p align="center"><img src="daily-screenshot.png?raw=true" alt="Bildschirmfoto"></p>

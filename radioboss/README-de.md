@@ -1,7 +1,7 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-Radioboss 0.8.9
-===============
+# Radioboss 0.8.9
+
 Widgets für RadioBoss Cloud.
 
 <p align="center"><img src="radioboss-screenshot.png?raw=true" alt="Bildschirmfoto"></p>

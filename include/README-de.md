@@ -1,7 +1,7 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-Include 0.8.5
-=============
+# Include 0.8.5
+
 Bindet den Inhalt anderer Seiten in die aktuelle Seite ein. 
 
 <p align="center"><img src="include-screenshot.png?raw=true" alt="Bildschirmfoto"></p>

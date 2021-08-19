@@ -1,7 +1,7 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-Soundcloud 0.8.4
-================
+# Soundcloud 0.8.4
+
 Soundcloud-Audio einbinden.
 
 <p align="center"><img src="soundcloud-screenshot.png?raw=true" width="795" height="836" alt="Bildschirmfoto"></p>

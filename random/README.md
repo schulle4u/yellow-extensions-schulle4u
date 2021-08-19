@@ -1,7 +1,7 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-Random 0.8.7
-============
+# Random 0.8.7
+
 Display random pages.
 
 <p align="center"><img src="random-screenshot.png?raw=true" alt="Screenshot"></p>

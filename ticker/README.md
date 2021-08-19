@@ -1,7 +1,7 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-Ticker 0.8.10
-=============
+# Ticker 0.8.10
+
 RSS feed parser.
 
 <p align="center"><img src="ticker-screenshot.png?raw=true" alt="Screenshot"></p>

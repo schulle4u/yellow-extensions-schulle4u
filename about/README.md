@@ -1,7 +1,7 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-About 0.8.7
-===========
+# About 0.8.7
+
 Author profile for blog pages. 
 
 <p align="center"><img src="about-screenshot.png?raw=true" alt="Screenshot"></p>

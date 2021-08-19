@@ -1,7 +1,7 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-Include 0.8.5
-=============
+# Include 0.8.5
+
 Includes page content from other pages. 
 
 <p align="center"><img src="include-screenshot.png?raw=true" alt="Screenshot"></p>

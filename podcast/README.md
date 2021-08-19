@@ -1,7 +1,7 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-Podcast 0.8.9
-=============
+# Podcast 0.8.9
+
 Web feed optimized for podcast publishing.
 
 <p align="center"><img src="podcast-screenshot.png?raw=true" width="795" height="836" alt="Screenshot"></p>

@@ -1,7 +1,7 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-Pagesource 0.8.7
-================
+# Pagesource 0.8.7
+
 Markdown-Quelltext auf Seiten anzeigen.
 
 <p align="center"><img src="pagesource-screenshot.png?raw=true" alt="Bildschirmfoto"></p>

@@ -1,7 +1,7 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-Audio 0.8.9
-===========
+# Audio 0.8.9
+
 HTML5-Audio-Player.
 
 <p align="center"><img src="audio-screenshot.png?raw=true" alt="Bildschirmfoto"></p>

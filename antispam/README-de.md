@@ -1,7 +1,7 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-Antispam 0.8.6
-==============
+# Antispam 0.8.6
+
 Alternative Verschleierung von E-Mail-Adressen. 
 
 <p align="center"><img src="antispam-screenshot.png?raw=true" alt="Bildschirmfoto"></p>

@@ -1,7 +1,7 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-Csv 0.8.14
-==========
+# Csv 0.8.14
+
 CSV file parser.
 
 <p align="center"><img src="csv-screenshot.png?raw=true" alt="Screenshot"></p>
