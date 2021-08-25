@@ -1,0 +1,16 @@
+# Radioboss extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/radioboss 
+
+Language: en
+RadiobossDescription: Widgets for RadioBoss Cloud.
+RadiobossListeners: Listeners
+RadiobossNexttrack: Next track
+
+Language: de
+RadiobossDescription: Widgets für RadioBoss Cloud.
+RadiobossListeners: Zuhörer
+RadiobossNexttrack: Nächster Titel
+
+Language: fr
+RadiobossDescription: Widgets pour RadioBoss Cloud.
+RadiobossListeners: Audience
+RadiobossNexttrack: Titre suivant

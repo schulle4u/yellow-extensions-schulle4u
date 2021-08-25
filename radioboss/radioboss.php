@@ -57,8 +57,8 @@ class YellowRadioboss {
             }
             if ($widget == "nowplaying") {
                 $output .= "<div id=\"rbcloud_nowplaying".htmlspecialchars($wid)."\"></div>\n";
-                if ($listeners) $output .= "<div>Listeners: <span id=\"rbcloud_listeners".htmlspecialchars($wid)."\">...</span></div>\n";
-                if ($nexttrack) $output .= "<div>Next track: <span id=\"rbcloud_nexttrack".htmlspecialchars($wid)."\">...</span></div>\n";
+                if ($listeners) $output .= "<div>".$this->yellow->language->getText("radiobossListeners").": <span id=\"rbcloud_listeners".htmlspecialchars($wid)."\">...</span></div>\n";
+                if ($nexttrack) $output .= "<div>".$this->yellow->language->getText("radiobossNexttrack").": <span id=\"rbcloud_nexttrack".htmlspecialchars($wid)."\">...</span></div>\n";
                 $this->outputFooter .= "<script src=\"https://".htmlspecialchars($server)."/w/nowplaying.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid).(empty($listeners) ? "&amp;nl=1" : "")."\"></script>\n";
             }
             if ($widget == "cover") {
