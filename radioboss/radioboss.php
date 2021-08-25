@@ -2,7 +2,7 @@
 // Radioboss extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/radioboss 
 
 class YellowRadioboss {
-    const VERSION = "0.8.9";
+    const VERSION = "0.8.10";
     public $yellow;            //access to API
     public $outputFooter;      //generated output for footer
     
@@ -15,6 +15,7 @@ class YellowRadioboss {
         $this->yellow->system->setDefault("radiobossMount", "stream"); // file name Without slash
         $this->yellow->system->setDefault("radiobossId", ""); // Currently this are the last two digits of the port number
         $this->yellow->system->setDefault("radiobossListeners", "0");
+        $this->yellow->system->setDefault("radiobossNexttrack", "0");
         $this->yellow->system->setDefault("radiobossTrackCount", "10");
         $this->yellow->system->setDefault("radiobossStyle", "radioboss");
     }
@@ -39,6 +40,7 @@ class YellowRadioboss {
             if (empty($id)) $id = $this->yellow->system->get("radiobossId");
             if (empty($mount)) $mount = $this->yellow->system->get("radiobossMount");
             $listeners = $this->yellow->system->get("radiobossListeners");
+            $nexttrack = $this->yellow->system->get("radiobossNexttrack");
             $wid = mt_rand(100, 9999);
             $output .= "<div class=\"".htmlspecialchars($style)."\">\n";
             if ($widget == "miniplayer") {
@@ -56,6 +58,7 @@ class YellowRadioboss {
             if ($widget == "nowplaying") {
                 $output .= "<div id=\"rbcloud_nowplaying".htmlspecialchars($wid)."\"></div>\n";
                 if ($listeners) $output .= "<div>Listeners: <span id=\"rbcloud_listeners".htmlspecialchars($wid)."\">...</span></div>\n";
+                if ($nexttrack) $output .= "<div>Next track: <span id=\"rbcloud_nexttrack".htmlspecialchars($wid)."\">...</span></div>\n";
                 $this->outputFooter .= "<script src=\"https://".htmlspecialchars($server)."/w/nowplaying.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid).(empty($listeners) ? "&amp;nl=1" : "")."\"></script>\n";
             }
             if ($widget == "cover") {
