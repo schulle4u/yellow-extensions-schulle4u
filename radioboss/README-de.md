@@ -86,6 +86,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 `RadiobossId` = Momentan sind dies die beiden letzten Ziffern des Streaming-Ports (Beispiel: `10`).  
 `RadiobossMount` = Einhängepunkt deines Streams ohne führenden Schrägstrich (Beispiel: `stream`). 
 `RadiobossListeners` = Zeige Höreranzahl im Nowplaying-Widget (Standard: `0`).  
+`RadiobossNexttrack` = Zeige den nächsten Titel im Nowplaying-Widget (Standard: `0`).  
 `RadiobossTrackCount` = Anzahl zuletzt gespielter Titel (1 - 20, Standard: 10).  
 `RadiobossStyle` = Zu verwendende CSS-Klasse, z. B. left, center, right. 
 
