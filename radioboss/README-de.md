@@ -18,7 +18,7 @@ Die folgenden Argumente sind verfügbar, bis auf das erste Argument sind alle An
 `server` = Hostname der Cloud-Instanz ohne einleitendes `https://` (Beispiel: `c2.radioboss.fm`).  
 `port` = Streaming-Port (Beispiel: `8010`).  
 `port2` = Zweiter Streaming-Port, wird für sichere Verbindungen verwendet. Wenn nicht angegeben, setzt er sich aus Streaming-Port mit einer führenden 1 zusammen (Beispiel: `18010`).  
-`id` = Momentan sind dies die beiden letzten Ziffern des Streaming-Ports (Beispiel: `10`).  
+`id` = Momentan sind dies die letzten zwei oder drei Ziffern des Streaming-Ports (Beispiel: `10`).  
 `mount` = Einhängepunkt deines Streams ohne führenden Schrägstrich (Beispiel: `stream`). 
 
 Die folgenden Widgets stehen zur Verfügung: 
@@ -83,7 +83,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 `RadiobossServer` = Hostname der Cloud-Instanz ohne einleitendes `https://` (Beispiel: `c2.radioboss.fm`).  
 `RadiobossPort` = Streaming-Port (Beispiel: `8010`).  
 `RadiobossPort2` = Zweiter Streaming-Port, wird für sichere Verbindungen verwendet. Wenn nicht angegeben, setzt er sich aus Streaming-Port mit einer führenden 1 zusammen (Beispiel: `18010`).  
-`RadiobossId` = Momentan sind dies die beiden letzten Ziffern des Streaming-Ports (Beispiel: `10`).  
+`RadiobossId` = Momentan sind dies die letzten zwei oder drei Ziffern des Streaming-Ports (Beispiel: `10`).  
 `RadiobossMount` = Einhängepunkt deines Streams ohne führenden Schrägstrich (Beispiel: `stream`). 
 `RadiobossListeners` = Zeige Höreranzahl im Nowplaying-Widget (Standard: `0`).  
 `RadiobossNexttrack` = Zeige den nächsten Titel im Nowplaying-Widget (Standard: `0`).  

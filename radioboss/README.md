@@ -18,7 +18,7 @@ The following arguments are available, all but the first argument are optional:
 `server` = The hostname of used cloud instance without leading `https://` (example: `c2.radioboss.fm`).  
 `port` = Streaming port (example: `8010`).  
 `port2` = Second streaming port, used for secure connections. If not specified, first port with a leading 1 will be used, (example: `18010`).  
-`id` = Currently this are the last two digits of your port number (example: `10`).  
+`id` = Currently this are the last two or three digits of your port number (example: `10`).  
 `mount` = The mountpoint of your stream without leading slash (example: `stream`). 
 
 The following widgets are available: 
@@ -83,7 +83,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 `RadiobossServer` = The hostname of used cloud instance without leading `https://` (example: `c2.radioboss.fm`).  
 `RadiobossPort` = Streaming port (example: `8010`).  
 `RadiobossPort2` = Second streaming port, used for secure connections. If not specified, first port with a leading 1 will be used, (example: `18010`).  
-`RadiobossId` = Currently this are the last two digits of your port number (example: `10`).  
+`RadiobossId` = Currently this are the last two or three digits of your port number (example: `10`).  
 `RadiobossMount` = The mountpoint of your stream without leading slash (example: `stream`).  
 `RadiobossListeners` = Show listener count in nowplaying widget (default: `0`).  
 `RadiobossNexttrack` = Show upcoming track in nowplaying widget (default: `0`).  
