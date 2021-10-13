@@ -18,8 +18,6 @@ More features for Datenstrom Yellow.
   CSV file parser.
 * [Daily](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/daily): 
   Show daily pages.
-* [Icecast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/icecast): 
-  Icecast statistics.
 * [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/include): 
   Includes page content from other pages.
 * [Meta](https://github.com/datenstrom/yellow-extensions/tree/master/source/meta): 
