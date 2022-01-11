@@ -101,7 +101,7 @@ class YellowPodcast {
                 $output .= "</rss>\r\n";
                 $this->yellow->page->setOutput($output);
             } else {
-                $pages->sort($chronologicalOrder ? "modified" : "published");
+                $pages->sort($chronologicalOrder ? "modified" : "published", false);
                 $pages->paginate($this->yellow->system->get("podcastPaginationLimit"));
                 if (!empty($pagesFilter)) {
                     $text = implode(' ', $pagesFilter);
