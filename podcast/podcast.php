@@ -3,7 +3,7 @@
 // Based on the yellow Feed extension, https://github.com/datenstrom/yellow-extensions/tree/master/source/feed
 
 class YellowPodcast {
-    const VERSION = "0.8.10";
+    const VERSION = "0.8.11";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -41,7 +41,9 @@ class YellowPodcast {
             $chronologicalOrder = ($this->yellow->system->get("podcastFilterLayout")!="blog");
             if ($this->isRequestXml($page)) {
                 $pages->sort($chronologicalOrder ? "modified" : "published", false);
-                $pages->limit($this->yellow->system->get("podcastPaginationLimit"));
+                $entriesMax = $this->yellow->system->get("podcastPaginationLimit");
+                if ($entriesMax==0 || $entriesMax>100) $entriesMax = 100;
+                $pages->limit($entriesMax);
                 $title = !empty($pagesFilter) ? implode(' ', $pagesFilter)." - ".$this->yellow->page->get("sitename") : $this->yellow->page->get("sitename");
                 $this->yellow->page->setLastModified($pages->getModified());
                 $this->yellow->page->setHeader("Content-Type", "application/rss+xml; charset=utf-8");
@@ -102,7 +104,6 @@ class YellowPodcast {
                 $this->yellow->page->setOutput($output);
             } else {
                 $pages->sort($chronologicalOrder ? "modified" : "published", false);
-                $pages->paginate($this->yellow->system->get("podcastPaginationLimit"));
                 if (!empty($pagesFilter)) {
                     $text = implode(' ', $pagesFilter);
                     $this->yellow->page->set("titleHeader", $text." - ".$this->yellow->page->get("sitename"));

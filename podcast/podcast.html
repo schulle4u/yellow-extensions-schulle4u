@@ -4,7 +4,7 @@
 <h1><?php echo $this->yellow->page->getHtml("titleContent") ?></h1>
 <ul>
 <?php $section = $sectionNew = "" ?>
-<?php foreach($this->yellow->page->getPages("podcast") as $page): ?>
+<?php foreach ($this->yellow->page->getPages("podcast")->paginate($this->yellow->system->get("podcastPaginationLimit")) as $page): ?>
 <?php if ($this->yellow->page->get("podcastChronologicalOrder")): ?>
 <?php $sectionNew = $page->getDateHtml("modified") ?>
 <?php else: ?>
