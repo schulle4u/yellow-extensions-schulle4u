@@ -1,3 +1,6 @@
+// SimpleCSS extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/simplecss
+
+@import "simplecss-custom.css";
 /* Set the global variables for everything. Change these to use your own fonts and colours. */
 :root {
   /* Set sans-serif & mono fonts */
