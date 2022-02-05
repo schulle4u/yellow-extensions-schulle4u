@@ -1,4 +1,4 @@
-# SimpleCSS 0.8.15
+# Simplecss 0.8.15
 
 A classless theme for Datenstrom Yellow.
 
