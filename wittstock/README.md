@@ -1,10 +1,10 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Simplecss 0.8.15
+# Wittstock 0.8.15
 
-Simplecss is a classless theme for Datenstrom Yellow.
+Wittstock is a classless theme for Datenstrom Yellow.
 
-<p align="center"><img src="simplecss-screenshot.png?raw=true" width="795" height="836" alt="Screenshot"></p>
+<p align="center"><img src="wittstock-screenshot.png?raw=true" width="795" height="836" alt="Screenshot"></p>
 
 ## How to customise a theme
 
@@ -12,11 +12,11 @@ All theme files are stored in your `system/themes` folder. All layout files are 
 
 ## Known issues
 
-Some Yellow-related CSS definitions are currently not included (e. g. warnings and notices). You can add them in `simplecss-custom.css` if you need these classes. 
+Some Yellow-related CSS definitions are currently not included (e. g. warnings and notices). You can add them in `wittstock-custom.css` if you need these classes. 
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/simplecss.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/wittstock.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
 This theme uses [Simple.css](https://simplecss.org/) by Kev Quirk, released under the MIT license. 
 

@@ -1,0 +1,21 @@
+# Wittstock extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/wittstock
+
+Language: en
+WittstockDescription: Wittstock is a classless theme for Datenstrom Yellow.
+WittstockNavigationLabel: Main menu
+WittstockPaginationLabel: Pagination
+
+Language: de
+WittstockDescription: Wittstock ist ein klassenloses Theme für Datenstrom Yellow.
+WittstockNavigationLabel: Hauptmenü
+WittstockPaginationLabel: Seitenwechsel
+
+Language: fr
+WittstockDescription: Wittstock est un thème sans classe pour Datenstrom Yellow.
+WittstockNavigationLabel: Menu principal
+WittstockPaginationLabel: Saut de page
+
+Language: sv
+WittstockDescription: Wittstock är ett klasslöst tema för Datenstrom Yellow.
+WittstockNavigationLabel: Huvudmenyn
+WittstockPaginationLabel: Byt sida

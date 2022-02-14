@@ -45,8 +45,8 @@ More features for Datenstrom Yellow.
 
 ## Themes
 
-* [Simplecss](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/simplecss): 
-  Simplecss is a classless theme for Datenstrom Yellow.
+* [Wittstock](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/wittstock): 
+  Wittstock is a classless theme for Datenstrom Yellow.
 
 ## Showcase
 
