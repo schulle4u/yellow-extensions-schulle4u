@@ -18,7 +18,7 @@ Einige der von Yellow verwendeten CSS-Definitionen sind derzeit nicht enthalten 
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/wittstock.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
 
-Dieses Theme benutzt [Simple.css](https://simplecss.org/) von Kev Quirk, freigegeben unter der MIT-Lizenz. 
+Dieses Theme benutzt [Simple.css v2.0.0](https://github.com/kevquirk/simple.css) von Kev Quirk, freigegeben unter der MIT-Lizenz. 
 
 ## Designer
 
