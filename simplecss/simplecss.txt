@@ -1,16 +1,21 @@
 # SimpleCSS extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/simplecss
 
 Language: en
-SimplecssDescription: A classless theme for Datenstrom Yellow.
+SimplecssDescription: Simplecss is a classless theme for Datenstrom Yellow.
 SimplecssNavigationLabel: Main menu
 SimplecssPaginationLabel: Pagination
 
 Language: de
-SimplecssDescription: Ein klassenloses Theme für Datenstrom Yellow.
+SimplecssDescription: Simplecss ist ein klassenloses Theme für Datenstrom Yellow.
 SimplecssNavigationLabel: Hauptmenü
 SimplecssPaginationLabel: Seitenwechsel
 
 Language: fr
-SimplecssDescription: Un thème sans classe pour Datenstrom Yellow.
+SimplecssDescription: Simplecss est un thème sans classe pour Datenstrom Yellow.
 SimplecssNavigationLabel: Menu principal
 SimplecssPaginationLabel: Saut de page
+
+Language: sv
+SimplecssDescription: Simplecss är ett klasslöst tema för Datenstrom Yellow.
+SimplecssNavigationLabel: Huvudmenyn
+SimplecssPaginationLabel: Byt sida

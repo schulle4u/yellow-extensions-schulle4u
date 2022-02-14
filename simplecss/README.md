@@ -1,12 +1,18 @@
+<p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
+
 # Simplecss 0.8.15
 
-A classless theme for Datenstrom Yellow.
+Simplecss is a classless theme for Datenstrom Yellow.
 
 <p align="center"><img src="simplecss-screenshot.png?raw=true" width="795" height="836" alt="Screenshot"></p>
 
 ## How to customise a theme
 
 All theme files are stored in your `system/themes` folder. All layout files are stored in your `system/layouts` folder. You can edit these files. Your changes will not be overwritten when the website is updated.
+
+## Known issues
+
+Some Yellow-related CSS definitions are currently not included (e. g. warnings and notices). You can add them in `simplecss-custom.css` if you need these classes. 
 
 ## Installation
 
