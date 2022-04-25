@@ -3,7 +3,7 @@
 // Based on the yellow Feed extension, https://github.com/datenstrom/yellow-extensions/tree/master/source/feed
 
 class YellowPodcast {
-    const VERSION = "0.8.11";
+    const VERSION = "0.8.14";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -36,8 +36,16 @@ class YellowPodcast {
                 $pages->filter("author", $page->getRequest("author"));
                 array_push($pagesFilter, $pages->getFilter());
             }
-            $podcastFilter = $this->yellow->system->get("podcastFilterLayout");
-            if (!empty($podcastFilter)) $pages->filter("layout", $podcastFilter);
+            if ($page->isRequest("language")) {
+                $pages->filter("language", $page->getRequest("language"));
+                array_push($pagesFilter, $pages->getFilter());
+            }
+            if ($page->isRequest("folder")) {
+                $pages->match("#".$page->getRequest("folder")."#i", false);
+                array_push($pagesFilter, ucfirst($page->getRequest("folder")));
+            }
+            $podcastFilterLayout = $this->yellow->system->get("podcastFilterLayout");
+            if ($podcastFilterLayout!="none") $pages->filter("layout", $podcastFilterLayout);
             $chronologicalOrder = ($this->yellow->system->get("podcastFilterLayout")!="blog");
             if ($this->isRequestXml($page)) {
                 $pages->sort($chronologicalOrder ? "modified" : "published", false);
@@ -119,13 +127,10 @@ class YellowPodcast {
     
     // Handle page extra data
     public function onParsePageExtra($page, $name) {
-        $output = NULL;
+        $output = null;
         if ($name=="header") {
-            $pagination = "page";
-            $tag = $page->getRequest("tag");
             $locationPodcast = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("podcastLocation");
-            if ($tag) $locationPodcast .= $this->yellow->toolbox->normaliseArguments("tag:$tag", true);
-            $locationPodcast .= $this->yellow->toolbox->normaliseArguments("$pagination:".$this->yellow->system->get("podcastFileXml"), false);
+            $locationPodcast .= $this->yellow->toolbox->normaliseArguments("page:".$this->yellow->system->get("podcastFileXml"), false);
             $output = "<link rel=\"alternate\" type=\"application/rss+xml\" href=\"$locationPodcast\" />\n";
         }
         return $output;
