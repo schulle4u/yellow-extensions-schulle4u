@@ -2,7 +2,7 @@
 
 # Datenstrom Yellow - Erweiterungen von Steffen Schultz
 
-Weitere Funktionen für Datenstrom Yellow.
+Weitere Funktionen für Datenstrom Yellow. https://datenstrom.se/de/yellow/
 
 ## Funktionen
 
@@ -25,11 +25,11 @@ Weitere Funktionen für Datenstrom Yellow.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker/README-de.md) - RSS-Feed-Leser.
 * [Twitter](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/twitter/README-de.md) - Twitter-Nachrichten einbetten.
 
-## Themes
+## Themen
 
 * [Wittstock](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/wittstock/README-de.md) - Wittstock ist ein klassenloses Theme für Datenstrom Yellow.
 
-## Showcase
+## Showcases
 
 * [Powerradio4u](https://powerradio4u.de) - Ein Webradio mit Fokus auf Creative-Commons-Kultur.
 * [Robbenradio](https://robbenradio.de) - Meine persönliche Website.

@@ -2,7 +2,7 @@
 
 # Datenstrom Yellow extensions by Steffen Schultz
 
-More features for Datenstrom Yellow.
+More features for Datenstrom Yellow. https://datenstrom.se/yellow/
 
 ## Features
 
@@ -29,7 +29,7 @@ More features for Datenstrom Yellow.
 
 * [Wittstock](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/wittstock) - Wittstock is a classless theme for Datenstrom Yellow.
 
-## Showcase
+## Showcases
 
 * [Powerradio4u](https://powerradio4u.de) - An internet radio station dedicated to creative commons culture.
 * [Robbenradio](https://robbenradio.de) - My personal website.
