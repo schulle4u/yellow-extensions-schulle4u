@@ -8,7 +8,7 @@ Unterstützung für passwortgeschützte Seiten.
 
 ## Wie man private Seiten erstellt
 
-Setze `Status: private` und `Password` in den [Seiteneinstellungen](https://github.com/datenstrom/yellow-extensions/tree/master/source/core#settings-page) ganz oben auf der Seite. Die Seite ist dann nicht mehr sichtbar und man muss das Kennwort eingeben um auf den Inhalt zuzugreifen. Man kann die Seite weiterhin im [Webbrowser](https://github.com/datenstrom/yellow-extensions/tree/master/source/edit) und im Dateisystem bearbeiten.
+Setze `Status: private` und `Password` in den [Seiteneinstellungen](https://github.com/datenstrom/yellow-extensions/tree/master/source/core#settings-page) ganz oben auf der Seite. Die Seite ist dann nicht mehr sichtbar und man muss das Kennwort eingeben um auf den Inhalt zuzugreifen. Man kann die Seite weiterhin im [Webbrowser](https://github.com/datenstrom/yellow-extensions/tree/master/source/edit) und auf deinem [Computer](https://github.com/datenstrom/yellow-extensions/tree/master/source/core/README-de.md) bearbeiten.
 
 ## Wie man private Seiten findet
 
@@ -27,7 +27,7 @@ Password: password
 Diese Seite ist privat. Füge hier weitere Informationen hinzu.
 ```
 
-Inhaltsdatei mit privatem Status im Wiki: 
+Inhaltsdatei mit privatem Status fürs Wiki: 
 
 ```
 ---
@@ -38,6 +38,40 @@ Status: private
 Password: password
 ---
 Diese Seite ist privat. Füge hier weitere Informationen hinzu.
+```
+
+Inhaltsdatei mit privatem Status fürs Blog: 
+
+```
+---
+Title: Blog-Seite
+Published: 2013-04-07
+Author: Datenstrom
+Layout: blog
+Tag: Beispiel
+Status: private
+Password: password
+---
+Diese Seite ist privat. Füge hier weitere Informationen hinzu.
+```
+
+Layoutdatei um alle privaten Seiten anzuzeigen:
+
+```
+<?php $this->yellow->layout("header") ?>
+<div class="content">
+<div class="main" role="main">
+<h1><?php echo $this->yellow->page->getHtml("titleContent") ?></h1>
+<?php $pages = $this->yellow->content->index(true, true)->filter("status", "private") ?>
+<?php $this->yellow->page->setLastModified($pages->getModified()) ?>
+<ul>
+<?php foreach ($pages as $page): ?>
+<li><?php echo $page->getHtml("title") ?></li>
+<?php endforeach ?>
+</ul>
+</div>
+</div>
+<?php $this->yellow->layout("footer") ?>
 ```
 
 ## Installation
