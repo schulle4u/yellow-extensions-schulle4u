@@ -2,7 +2,7 @@
 
 # Datenstrom Yellow - Erweiterungen von Steffen Schultz
 
-Weitere Funktionen für Datenstrom Yellow. https://datenstrom.se/yellow/
+Weitere Funktionen für Datenstrom Yellow. https://datenstrom.se/de/yellow/
 
 ## Funktionen
 
