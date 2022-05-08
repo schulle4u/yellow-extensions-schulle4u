@@ -2,7 +2,7 @@
 // Private extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/private
 
 class YellowPrivate {
-    const VERSION = "0.8.10";
+    const VERSION = "0.8.11";
     public $yellow;         //access to API
     
     // Handle initialisation
@@ -11,7 +11,7 @@ class YellowPrivate {
     }
 
     // Handle page meta data
-    public function onParseMeta($page) {
+    public function onParseMetaData($page) {
         if ($page->get("status")=="private") $page->visible = false;
     }
     
