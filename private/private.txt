@@ -5,13 +5,13 @@ PrivateDescription: Support for password-protected pages.
 PrivatePageError: Please enter the password.
 
 Language: de
-PrivateDescription: Unterstützung für passwortgeschützte Seiten.
+PrivateDescription: UnterstÃ¼tzung fÃ¼r passwortgeschÃ¼tzte Seiten.
 PrivatePageError: Bitte gib das Kennwort ein.
 
 Language: fr
-PrivateDescription: Prise en charge des pages protégées par un mot de passe.
+PrivateDescription: Prise en charge des pages protÃ©gÃ©es par un mot de passe.
 PrivatePageError: Veuillez entrer le mot de passe.
 
 Language: sv
-PrivateDescription: Stöd för lösenordsskyddade sidor.
-PrivatePageError: Ange ditt lösenord.
+PrivateDescription: StÃ¶d fÃ¶r lÃ¶senordsskyddade sidor.
+PrivatePageError: Ange ditt lÃ¶senord.
