@@ -10,7 +10,7 @@
 <?php foreach ($this->yellow->page->getPages("search")->paginate($this->yellow->system->get("searchPaginationLimit")) as $page): ?>
 <div class="entry">
 <div class="entry-title"><h2><a href="<?php echo $page->getLocation(true) ?>"><?php echo $page->getHtml("title") ?></a></h2></div>
-<div class="entry-content"><?php echo htmlspecialchars($this->yellow->toolbox->createTextDescription($page->getContent(false, 4096), $this->yellow->system->get("searchPageLength"))) ?></div>
+<div class="entry-content"><?php echo htmlspecialchars($this->yellow->toolbox->createTextDescription($page->getContent(), $this->yellow->system->get("searchPageLength"))) ?></div>
 <div class="entry-location"><a href="<?php echo $page->getLocation(true) ?>"><?php echo $page->getUrl() ?></a></div>
 </div>
 <?php endforeach ?>
