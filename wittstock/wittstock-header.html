@@ -10,6 +10,7 @@
 <?php echo $this->yellow->page->getExtra("header") ?>
 </head>
 <body>
+<div class="<?php echo "page layout-".$this->yellow->page->getHtml("layout") ?>">
 <header>
 <h1><a href="<?php echo $this->yellow->page->getBase(true)."/" ?>"><i class="sitename-logo"></i><?php echo $this->yellow->page->getHtml("sitename") ?></a></h1>
 <?php echo $this->yellow->page->getPage("header")->getContent() ?>
