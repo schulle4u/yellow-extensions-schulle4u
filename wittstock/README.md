@@ -18,7 +18,7 @@ Some Yellow-related CSS definitions are currently not included (e. g. warnings a
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/wittstock.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
-This extension uses [Simple.css 2.0.0](https://github.com/kevquirk/simple.css) by Kev Quirk. 
+This extension uses [Simple.css 2.1.0](https://github.com/kevquirk/simple.css) by Kev Quirk. 
 
 ## Designer
 
