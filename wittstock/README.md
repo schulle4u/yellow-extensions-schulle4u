@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Wittstock 0.8.18
+# Wittstock 0.8.19
 
 Wittstock is a classless theme for Datenstrom Yellow.
 
@@ -12,7 +12,7 @@ All theme files are stored in your `system/themes` folder. All layout files are 
 
 ## Known issues
 
-Some Yellow-related CSS definitions are currently not included (e. g. warnings and notices). You can add them in `wittstock-custom.css` if you need these classes. 
+Some Yellow-related CSS definitions are currently not included (e. g. warnings and notices). You can add them in `wittstock.css` if you need these classes. 
 
 ## Installation
 

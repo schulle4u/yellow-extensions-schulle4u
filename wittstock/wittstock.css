@@ -545,3 +545,17 @@ pre code {
   margin: 0;
   padding: 0;
 }
+
+/* Yellow-related stuff */
+.task-list-item {
+    list-style-type: none;
+}
+.task-list-item input {
+    margin: 0 0.2em 0.25em -1.75em;
+    vertical-align: middle;
+}
+.toc {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

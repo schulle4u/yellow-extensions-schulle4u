@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Wittstock 0.8.18
+# Wittstock 0.8.19
 
 Wittstock ist ein klassenloses Theme für Datenstrom Yellow.
 
@@ -12,7 +12,7 @@ Alle Themendateien befinden sich im `system/themes`-Verzeichnis. Alle Layoutdate
 
 ## Bekannte Probleme
 
-Einige der von Yellow verwendeten CSS-Definitionen sind derzeit nicht enthalten (z. B. Warnungen und Hinweise). Sie können jedoch in der Datei `wittstock-custom.css` hinterlegt werden, solltest du sie benötigen. 
+Einige der von Yellow verwendeten CSS-Definitionen sind derzeit nicht enthalten (z. B. Warnungen und Hinweise). Sie können jedoch in der Datei `wittstock.css` hinterlegt werden, solltest du sie benötigen. 
 
 ## Installation
 
