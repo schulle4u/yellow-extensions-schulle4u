@@ -11,6 +11,9 @@
   /* Default (light) theme */
   --bg: #fff;
   --accent-bg: #f5f7ff;
+  --notice1-bg: #fffbf0;
+  --notice2-bg: #fdf0f0;
+  --notice3-bg: #f0f8fe;
   --text: #212121;
   --text-light: #585858;
   --border: #d8dae1;
@@ -26,6 +29,9 @@
   :root {
     --bg: #212121;
     --accent-bg: #2b2b2b;
+    --notice1-bg: #7f5f00;
+    --notice2-bg: #6b0000;
+    --notice3-bg: #00006b;
     --text: #dcdcdc;
     --text-light: #ababab;
     --border: #666;
@@ -558,4 +564,25 @@ pre code {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+.notice1 {
+    margin: 1em 0;
+    padding: 10px 1em;
+    background-color: var(--notice1-bg);
+    border-left: 0.35rem solid var(--accent);
+}
+.notice2 {
+    margin: 1em 0;
+    padding: 10px 1em;
+    background-color: var(--notice2-bg);
+    border-left: 0.35rem solid var(--accent);
+}
+.notice3,
+.notice4,
+.notice5,
+.notice6 {
+    margin: 1em 0;
+    padding: 10px 1em;
+    background-color: var(--notice3-bg);
+    border-left: 0.35rem solid var(--accent);
 }
