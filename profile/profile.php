@@ -17,7 +17,7 @@ class YellowProfile {
         $output = null;
         if ($name=="profile" && ($type=="block" || $type=="inline")) {
             list($author, $style) = $this->yellow->toolbox->getTextArguments($text);
-            if(empty($style)) $style  = $this->yellow->system->get("aboutStyle");
+            if(empty($style)) $style  = $this->yellow->system->get("profileStyle");
             $output .= "<div class=\"".htmlspecialchars($style)."\">\n";
             $location = $this->yellow->system->get("profileLocation");
             if($this->yellow->page->isExisting ("profile")) $profile = $this->yellow->page->get("profile");
