@@ -1,5 +1,6 @@
 ---
 Title: Author profile
+TitleSlug: profile
 ---
 For people who make small websites. [--more--]
 

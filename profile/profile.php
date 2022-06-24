@@ -20,7 +20,7 @@ class YellowProfile {
             if(empty($style)) $style  = $this->yellow->system->get("aboutStyle");
             $output .= "<div class=\"".htmlspecialchars($style)."\">\n";
             $location = $this->yellow->system->get("profileLocation");
-            if($this->yellow->page->isExisting ("profile")) $profile = $this->yellow->page->getHtml("profile");
+            if($this->yellow->page->isExisting ("profile")) $profile = $this->yellow->page->get("profile");
             if(empty($profile)) {
                 $author = $location;
             } else {
@@ -39,7 +39,7 @@ class YellowProfile {
     // Handle page extra data
     public function onParsePageExtra($page, $name) {
         $output = null;
-        if ($name=="links") {
+        if ($name=="profiles") {
             $output = $this->onParseContentShortcut($page, "profile", "", "block");
         }
         return $output;
