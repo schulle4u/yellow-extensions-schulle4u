@@ -1,25 +1,25 @@
 <?php
-// About extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/about
+// Profile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/profile
 
-class YellowAbout {
-    const VERSION = "0.8.7";
+class YellowProfile {
+    const VERSION = "0.8.8";
     public $yellow;            // access to API
     
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
-        $this->yellow->system->setDefault("aboutLocation", "/about/");
-        $this->yellow->system->setDefault("aboutStyle", "about");
+        $this->yellow->system->setDefault("profileLocation", "/profile/");
+        $this->yellow->system->setDefault("profileStyle", "profile");
     }
 
     // Handle page content of shortcut
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
-        if ($name=="about" && ($type=="block" || $type=="inline")) {
+        if ($name=="profile" && ($type=="block" || $type=="inline")) {
             list($author, $style) = $this->yellow->toolbox->getTextArguments($text);
             if(empty($style)) $style  = $this->yellow->system->get("aboutStyle");
             $output .= "<div class=\"".htmlspecialchars($style)."\">\n";
-            $location = $this->yellow->system->get("aboutLocation");
+            $location = $this->yellow->system->get("profileLocation");
             if($this->yellow->page->isExisting ("profile")) $profile = $this->yellow->page->getHtml("profile");
             if(empty($profile)) {
                 $author = $location;
@@ -40,7 +40,7 @@ class YellowAbout {
     public function onParsePageExtra($page, $name) {
         $output = null;
         if ($name=="links") {
-            $output = $this->onParseContentShortcut($page, "about", "", "block");
+            $output = $this->onParseContentShortcut($page, "profile", "", "block");
         }
         return $output;
     }

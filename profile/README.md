@@ -1,14 +1,14 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# About 0.8.7
+# Profile 0.8.7
 
 Author profile for blog pages. 
 
-<p align="center"><img src="about-screenshot.png?raw=true" alt="Screenshot"></p>
+<p align="center"><img src="profile-screenshot.png?raw=true" alt="Screenshot"></p>
 
 ## How to create author profiles
 
-Create a `[about]` shortcut. 
+Create a `[profile]` shortcut. 
 
 The following arguments are available, all arguments are optional:
 
@@ -19,11 +19,11 @@ If the [blog extension](https://github.com/datenstrom/yellow-extensions/tree/mas
 
 ## Examples
 
-Edit the file `content/about/page.md` like you would do with a normal page. Write down a few notes about you. If you want an extended profile page, it is recommended to use a page break. You can create profile pages for every site author in the same directory. 
+Edit the file `content/profile/page.md` like you would do with a normal page. Write down a few notes about you. If you want an extended profile page, it is recommended to use a page break. You can create profile pages for every site author in the same directory. 
 
 ```
 ---
-Title: About
+Title: Author profile
 ---
 For people who make small websites. [--more--]
 
@@ -38,20 +38,20 @@ This website is made with [Datenstrom Yellow](https://datenstrom.se/yellow/).
 
 Display individual author profiles:
 
-    [about yourname]
-    [about someone]
+    [profile yourname]
+    [profile someone]
 
 
 ## Settings
 
 The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
-`AboutLocation` = The location for author profiles (default: `/about/`).   
-`AboutStyle` = Default profile style. 
+`ProfileLocation` = The location for author profiles (default: `/profile/`).   
+`ProfileStyle` = Default profile style. 
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/about.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/profile.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
 ## Developer
 

@@ -6,7 +6,6 @@ Weitere Funktionen für Datenstrom Yellow. https://datenstrom.se/de/yellow/
 
 ## Funktionen
 
-* [About](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/about/README-de.md) - Autorenprofil für Blogseiten.
 * [Antispam](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/antispam/README-de.md) - Alternative Verschleierung von E-Mail-Adressen.
 * [Audio](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/audio/README-de.md) - HTML5-Audio-Player.
 * [Codefile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/codefile) - Code-Blöcke als Textdatei herunterladen.
@@ -17,6 +16,7 @@ Weitere Funktionen für Datenstrom Yellow. https://datenstrom.se/de/yellow/
 * [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/pagesource) - Markdown-Quelltext auf Seiten anzeigen.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast/README-de.md) - Web-Feed optimiert für die Podcast-Veröffentlichung.
 * [Private](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/private/README-de.md) - Unterstützung für passwortgeschützte Seiten.
+* [Profile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/profile/README-de.md) - Autorenprofil für Blogseiten.
 * [Radioboss](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/radioboss/README-de.md) - Widgets für RadioBoss Cloud.
 * [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/random/README-de.md) - Zufällige Seiten anzeigen.
 * [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/redirect) - Alternative Seitenweiterleitung.

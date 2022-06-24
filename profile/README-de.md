@@ -1,14 +1,14 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# About 0.8.7
+# Profile 0.8.7
 
 Autorenprofil für Blogseiten. 
 
-<p align="center"><img src="about-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
+<p align="center"><img src="profile-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
 ## Wie man Autorenprofile erstellt
 
-Erstelle eine `{abut]`-Abkürzung. 
+Erstelle eine `{profile]`-Abkürzung. 
 
 Die folgenden Argumente sind verfügbar, alle Angaben sind optional:
 
@@ -19,11 +19,11 @@ Falls die [Blog-Erweiterung](https://github.com/datenstrom/yellow-extensions/tre
 
 ## Beispiele
 
-Bearbeite die Datei `content/about/page.md` wie eine normale Seite und notiere einige Dinge über dich. Für umfangreiche Profilseiten solltest du einen Seitenumbruch verwenden. Du kannst für jeden deiner Autoren eine Profilseite im selben Verzeichnis anlegen. 
+Bearbeite die Datei `content/profile/page.md` wie eine normale Seite und notiere einige Dinge über dich. Für umfangreiche Profilseiten solltest du einen Seitenumbruch verwenden. Du kannst für jeden deiner Autoren eine Profilseite im selben Verzeichnis anlegen. 
 
 ```
 ---
-Title: Über
+Title: Autorenprofil
 ---
 Für Menschen die kleine Webseiten machen. [--more--]
 
@@ -38,20 +38,20 @@ Diese Webseite ist erstellt mit [Datenstrom Yellow](https://datenstrom.se/de/yel
 
 Individuelle Profilseiten anzeigen:
 
-    [about deinname]
-    [about weiterername]
+    [profile deinname]
+    [profile weiterername]
 
 
 ## Einstellungen
 
 Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
-`AboutLocation` = Ort für Autorenprofile (Standard: `/about/`).   
-`AboutStyle` = Standard-Stil für Profile. 
+`ProfileLocation` = Ort für Autorenprofile (Standard: `/profile/`).   
+`ProfileStyle` = Standard-Stil für Profile. 
 
 ## Installation
 
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/about.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/profile.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
 
 ## Entwickler
 
