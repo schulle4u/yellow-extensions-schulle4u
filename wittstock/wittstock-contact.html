@@ -1,6 +1,6 @@
 <?php $this->yellow->layout("header") ?>
 <main>
-<h1><?php echo $this->yellow->page->getHtml("titleContent") ?></h1>
+<h2><?php echo $this->yellow->page->getHtml("titleContent") ?></h2>
 <?php if ($this->yellow->page->get("status")!="done"): ?>
 <p class="<?php echo $this->yellow->page->getHtml("status") ?>"><?php echo $this->yellow->language->getTextHtml("contactStatus".ucfirst($this->yellow->page->get("status"))) ?></p>
 <form class="contact-form" action="<?php echo $this->yellow->page->getLocation(true) ?>" method="post">

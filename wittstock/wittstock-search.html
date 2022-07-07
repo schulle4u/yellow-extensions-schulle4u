@@ -1,6 +1,6 @@
 <?php $this->yellow->layout("header") ?>
 <main>
-<h1><?php echo $this->yellow->page->getHtml("titleContent") ?></h1>
+<h2><?php echo $this->yellow->page->getHtml("titleContent") ?></h2>
 <form class="search-form" action="<?php echo $this->yellow->page->getLocation(true) ?>" method="post">
 <input class="form-control" type="text" name="query" value="<?php echo $this->yellow->page->getRequestHtml("query") ?>"<?php echo $this->yellow->page->get("status")=="none" ? " autofocus=\"autofocus\"" : "" ?> />
 <input class="btn search-btn" type="submit" value="<?php echo $this->yellow->language->getTextHtml("searchButton") ?>" />

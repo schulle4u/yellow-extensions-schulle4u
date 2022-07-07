@@ -1,6 +1,6 @@
 <?php $this->yellow->layout("header") ?>
 <main>
-<h1><?php echo $this->yellow->page->getHtml("titleContent") ?></h1>
+<h2><?php echo $this->yellow->page->getHtml("titleContent") ?></h2>
 <ul>
 <?php $section = $sectionNew = "" ?>
 <?php foreach ($this->yellow->page->getPages("feed")->paginate($this->yellow->system->get("feedPaginationLimit")) as $page): ?>
