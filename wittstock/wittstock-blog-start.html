@@ -5,9 +5,6 @@
 <?php endif ?>
 <?php foreach ($this->yellow->page->getPages("blog")->paginate($this->yellow->system->get("blogPaginationLimit")) as $page): ?>
 <?php $page->set("entryClass", "entry") ?>
-<?php if ($page->isExisting("tag")): ?>
-<?php foreach (preg_split("/\s*,\s*/", $page->get("tag")) as $tag) { $page->set("entryClass", $page->get("entryClass")." tag-".$this->yellow->toolbox->normaliseArguments($tag, false)); } ?>
-<?php endif ?>
 <article class="<?php echo $page->getHtml("entryClass") ?>">
 <header>
 <h2><a href="<?php echo $page->getLocation(true) ?>"><?php echo $page->getHtml("title") ?></a></h2>
