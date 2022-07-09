@@ -11,7 +11,9 @@
 </article>
 <?php echo $this->yellow->page->getExtra("links") ?>
 <?php if ($this->yellow->page->isExisting("tag")): ?>
+<div class="entry-tags">
 <p><?php echo $this->yellow->language->getTextHtml("blogTag") ?> <?php $tagCounter = 0; foreach (preg_split("/\s*,\s*/", $this->yellow->page->get("tag")) as $tag) { if (++$tagCounter>1) echo ", "; echo "<a href=\"".$this->yellow->page->getPage("blogStart")->getLocation(true).$this->yellow->toolbox->normaliseArguments("tag:$tag")."\">".htmlspecialchars($tag)."</a>"; } ?></p>
+</div>
 <?php endif ?>
 <?php echo $this->yellow->page->getExtra("comments") ?>
 </main>

@@ -9,7 +9,9 @@
 <?php echo $this->yellow->page->getContent() ?>
 </article>
 <?php if ($this->yellow->page->isExisting("tag")): ?>
+<div class="entry-tags">
 <p><?php echo $this->yellow->language->getTextHtml("wikiTag") ?> <?php $tagCounter = 0; foreach (preg_split("/\s*,\s*/", $this->yellow->page->get("tag")) as $tag) { if (++$tagCounter>1) echo ", "; echo "<a href=\"".$this->yellow->page->getPage("wikiStart")->getLocation(true).$this->yellow->toolbox->normaliseArguments("tag:$tag")."\">".htmlspecialchars($tag)."</a>"; } ?></p>
+</div>
 <?php endif ?>
 </main>
 <?php $this->yellow->layout("footer") ?>
