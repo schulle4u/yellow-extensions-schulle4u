@@ -2,7 +2,7 @@
 // Profile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/profile
 
 class YellowProfile {
-    const VERSION = "0.8.8";
+    const VERSION = "0.8.9";
     public $yellow;            // access to API
     
     // Handle initialisation
@@ -28,8 +28,8 @@ class YellowProfile {
             }
             $page = $this->yellow->content->find($author);
             if ($page) {
-                $output .= "<h3>".$page->getHtml("titleContent")."</h3>\n";
-                $output .= $this->yellow->toolbox->createTextDescription($page->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->language->getTextHtml("blogMore")."</a>");
+                $output .= "<h2>".$page->getHtml("titleContent")."</h2>\n";
+                $output .= $this->yellow->toolbox->createTextDescription($page->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->language->getTextHtml("blogMore")."</a>\n");
             }
             $output .= "</div>\n";
         }
