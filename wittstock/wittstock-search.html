@@ -1,18 +1,16 @@
 <?php $this->yellow->layout("header") ?>
 <main>
 <h2><?php echo $this->yellow->page->getHtml("titleContent") ?></h2>
-<form class="search-form" action="<?php echo $this->yellow->page->getLocation(true) ?>" method="post">
-<input class="form-control" type="text" name="query" value="<?php echo $this->yellow->page->getRequestHtml("query") ?>"<?php echo $this->yellow->page->get("status")=="none" ? " autofocus=\"autofocus\"" : "" ?> />
+<form class="search-form" role="search" action="<?php echo $this->yellow->page->getLocation(true) ?>" method="post">
+<p><label for="query"><?php echo $this->yellow->language->getTextHtml("searchButton") ?></label>: <input class="form-control" type="search" name="query" id="query" value="<?php echo $this->yellow->page->getRequestHtml("query") ?>"<?php echo $this->yellow->page->get("status")=="none" ? " autofocus=\"autofocus\"" : "" ?> /></p>
 <input class="btn search-btn" type="submit" value="<?php echo $this->yellow->language->getTextHtml("searchButton") ?>" />
 <input type="hidden" name="clean-url" />
 </form>
 <?php if (count($this->yellow->page->getPages("search"))): ?>
 <?php foreach ($this->yellow->page->getPages("search")->paginate($this->yellow->system->get("searchPaginationLimit")) as $page): ?>
-<div class="entry">
-<div class="entry-title"><h2><a href="<?php echo $page->getLocation(true) ?>"><?php echo $page->getHtml("title") ?></a></h2></div>
-<div class="entry-content"><?php echo htmlspecialchars($this->yellow->toolbox->createTextDescription($page->getContent(), $this->yellow->system->get("searchPageLength"))) ?></div>
-<div class="entry-location"><a href="<?php echo $page->getLocation(true) ?>"><?php echo $page->getUrl() ?></a></div>
-</div>
+<h2><a href="<?php echo $page->getLocation(true) ?>"><?php echo $page->getHtml("title") ?></a></h2>
+<p><?php echo htmlspecialchars($this->yellow->toolbox->createTextDescription($page->getContent(), $this->yellow->system->get("searchPageLength"))) ?></p>
+<p><a href="<?php echo $page->getLocation(true) ?>"><?php echo $page->getUrl() ?></a></p>
 <?php endforeach ?>
 <?php elseif ($this->yellow->page->get("status")!="none"): ?>
 <p><?php echo $this->yellow->language->getTextHtml("searchResults".ucfirst($this->yellow->page->get("status"))) ?><p>
