@@ -5,7 +5,7 @@
 Zeigt die geschätzte Lesezeit für den Seiteninhalt an.
 
 
-## Wie man die geschätzte Lesedauer anzeigt
+## Wie man die geschätzte Lesezeit anzeigt
 
 Erstelle eine `[readtime]`-Abkürzung. Das folgende optionale Argument ist verfügbar: 
 

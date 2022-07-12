@@ -17,7 +17,7 @@ class YellowReadtime {
         if ($name=="readtime" && ($type=="inline")) {
             list($wordsPerMinute) = $this->yellow->toolbox->getTextArguments($text);
             if (empty($wordsPerMinute) || (!is_numeric($wordsPerMinute))) $wordsPerMinute = $this->yellow->system->get("readtimeWordsPerMinute");
-            $content = $page->getContent(true);
+            $content = strip_tags($page->getContent(true));
             $wordCount = $this->yellow->toolbox->getTextWords($content);
             $output .= "<span class=\"".htmlspecialchars($name)."\">".ceil($wordCount / $wordsPerMinute)."</span>";
         }
