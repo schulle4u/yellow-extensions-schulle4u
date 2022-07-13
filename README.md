@@ -19,6 +19,7 @@ More features for Datenstrom Yellow. https://datenstrom.se/yellow/
 * [Profile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/profile) - Author profile for blog pages.
 * [Radioboss](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/radioboss) - Widgets for RadioBoss Cloud.
 * [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/random) - Display random pages.
+* [Readtime](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/readtime) - Show estimated reading time for page content.
 * [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/redirect) - Alternative page redirection.
 * [Soundcloud](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/soundcloud) - Embed Soundcloud audio tracks.
 * [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler) - Hide certain page elements.
