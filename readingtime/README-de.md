@@ -1,13 +1,13 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Readtime 0.8.20
+# Readingtime 0.8.20
 
 Zeigt die geschätzte Lesezeit für den Seiteninhalt an.
 
 
 ## Wie man die geschätzte Lesezeit anzeigt
 
-Erstelle eine `[readtime]`-Abkürzung. Das folgende optionale Argument ist verfügbar: 
+Erstelle eine `[readingtime]`-Abkürzung. Das folgende optionale Argument ist verfügbar: 
 
 `WordsPerMinute` = Die Anzahl Wörter pro Minute, die zur Berechnung der Lesezeit verwendet wird (Standard: 250).
 
@@ -17,21 +17,21 @@ Mit dieser Inline-Abkürzung kann den Besuchern deiner Webseite eine ungefähre 
 
 Allgemeine Verwendung: 
 
-    Geschätzte Lesezeit: [readtime] Minuten.
+    Geschätzte Lesezeit: [readingtime] Minuten.
 
 Berechne die Lesezeit mit mehr Wörtern pro Minute: 
 
-    Geschätzte lesezeit: [readtime 400] Minuten.
+    Geschätzte lesezeit: [readingtime 400] Minuten.
 
 ## Einstellungen
 
 Die folgende Einstellung kann in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
-`ReadtimeWordsPerMinute` = Die Anzahl Wörter pro Minute, die zur Berechnung der Lesezeit verwendet wird (Standard: 250).
+`ReadingtimeWordsPerMinute` = Die Anzahl Wörter pro Minute, die zur Berechnung der Lesezeit verwendet wird (Standard: 250).
 
 ## Installation
 
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/readtime.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/readingtime.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
 
 ## Entwickler
 

@@ -1,22 +1,22 @@
 <?php
-// Readtime extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/readtime
+// Readingtime extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/readingtime
 
-class YellowReadtime {
+class YellowReadingtime {
     const VERSION = "0.8.20";
     public $yellow;         // access to API
     
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
-        $this->yellow->system->setDefault("readtimeWordsPerMinute", "250");
+        $this->yellow->system->setDefault("readingtimeWordsPerMinute", "250");
     }
     
     // Handle page content of shortcut
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
-        if ($name=="readtime" && ($type=="inline")) {
+        if ($name=="readingtime" && ($type=="inline")) {
             list($wordsPerMinute) = $this->yellow->toolbox->getTextArguments($text);
-            if (empty($wordsPerMinute) || (!is_numeric($wordsPerMinute))) $wordsPerMinute = $this->yellow->system->get("readtimeWordsPerMinute");
+            if (empty($wordsPerMinute) || (!is_numeric($wordsPerMinute))) $wordsPerMinute = $this->yellow->system->get("readingtimeWordsPerMinute");
             $content = strip_tags($page->getContent(true));
             $wordCount = $this->yellow->toolbox->getTextWords($content);
             $output .= "<span class=\"".htmlspecialchars($name)."\">".ceil($wordCount / $wordsPerMinute)."</span>";
