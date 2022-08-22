@@ -4,6 +4,7 @@
 
 Show estimated reading time for page content.
 
+<p align="center"><img src="readingtime-screenshot.png?raw=true" width="795" height="836" alt="Screenshot"></p>
 
 ## How to show estimated reading time
 
