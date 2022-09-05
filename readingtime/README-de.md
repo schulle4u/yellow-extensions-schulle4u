@@ -4,7 +4,7 @@
 
 Zeigt die geschätzte Lesezeit für den Seiteninhalt an.
 
-<p align="center"><img src="readingtime-screenshot.png?raw=true" width="795" height="836" alt="Bildschirmfoto"></p>
+<p align="center"><img src="readingtime-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
 ## Wie man die geschätzte Lesezeit anzeigt
 

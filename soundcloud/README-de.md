@@ -4,7 +4,7 @@
 
 Soundcloud-Audio einbinden.
 
-<p align="center"><img src="soundcloud-screenshot.png?raw=true" width="795" height="836" alt="Bildschirmfoto"></p>
+<p align="center"><img src="soundcloud-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
 ## Wie binde ich eine Audiospur ein?
 

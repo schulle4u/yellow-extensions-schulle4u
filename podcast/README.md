@@ -4,7 +4,7 @@
 
 Web feed optimized for podcast publishing.
 
-<p align="center"><img src="podcast-screenshot.png?raw=true" width="795" height="836" alt="Screenshot"></p>
+<p align="center"><img src="podcast-screenshot.png?raw=true" alt="Screenshot"></p>
 
 ## How to use the podcast
 

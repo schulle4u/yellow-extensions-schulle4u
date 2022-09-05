@@ -4,7 +4,7 @@
 
 Twitter-Nachrichten einbinden.
 
-<p align="center"><img src="twitter-screenshot.png?raw=true" width="795" height="836" alt="Bildschirmfoto"></p>
+<p align="center"><img src="twitter-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
 ## Wie man eine Nachricht einbindet
 

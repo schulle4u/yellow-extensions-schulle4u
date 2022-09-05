@@ -4,7 +4,7 @@
 
 Web-Feed optimiert für die Podcast-Veröffentlichung.
 
-<p align="center"><img src="podcast-screenshot.png?raw=true" width="795" height="836" alt="Bildschirmfoto"></p>
+<p align="center"><img src="podcast-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
 ## Wie man den Podcast verwendet
 

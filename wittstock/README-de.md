@@ -4,7 +4,7 @@
 
 Wittstock ist ein klassenloses Theme für Datenstrom Yellow.
 
-<p align="center"><img src="wittstock-screenshot.png?raw=true" width="795" height="836" alt="Bildschirmfoto"></p>
+<p align="center"><img src="wittstock-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
 ## Wie man ein Thema anpasst
 
