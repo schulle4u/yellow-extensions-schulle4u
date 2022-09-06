@@ -14,7 +14,7 @@ All theme files are stored in your `system/themes` folder. All layout files are 
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/wittstock.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
-This extension uses [Simple.css 2.1.0](https://github.com/kevquirk/simple.css) by Kev Quirk. 
+This extension uses [Simple.css 2.1.1](https://github.com/kevquirk/simple.css) by Kev Quirk. 
 
 ## Designer
 

@@ -14,7 +14,7 @@ Alle Themendateien befinden sich im `system/themes`-Verzeichnis. Alle Layoutdate
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/zip/wittstock.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
 
-Diese Erweiterung benutzt [Simple.css 2.1.0](https://github.com/kevquirk/simple.css) von Kev Quirk. 
+Diese Erweiterung benutzt [Simple.css 2.1.1](https://github.com/kevquirk/simple.css) von Kev Quirk. 
 
 ## Designer
 
