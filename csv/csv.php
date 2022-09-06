@@ -2,7 +2,7 @@
 // CSV extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/csv
 
 class YellowCsv {
-    const VERSION = "0.8.14";
+    const VERSION = "0.8.15";
     public $yellow;         //access to API
     
     // Handle initialisation
@@ -78,13 +78,13 @@ class YellowCsv {
                 }
             }
             if ($row==0) {
-                $output .= "</tr></thead><tbody>\n";
+                $output .= "</tr></thead>\n";
             } else {
                 $output .= "</tr>\n";
             }
             ++$row;
         }
-        $output .= "</tbody></table>\n";
+        $output .= "</table>\n";
         return $this->yellow->toolbox->normaliseData($output, "html");
     }
     
