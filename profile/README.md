@@ -51,7 +51,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/profile.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/downloads/profile.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
 ## Developer
 

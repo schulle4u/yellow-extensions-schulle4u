@@ -50,7 +50,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/twitter.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/downloads/twitter.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
 This extension uses [Twitter](https://www.twitter.com). The service provider collects personal data and uses cookies.
 

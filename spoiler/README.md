@@ -54,7 +54,7 @@ Here is some more text.
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/spoiler.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/downloads/spoiler.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
 ## Developer
 

@@ -36,7 +36,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/zip/soundcloud.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/downloads/soundcloud.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
 This extension uses [Soundcloud](https://soundcloud.com). The service provider collects personal data and uses cookies.
 
