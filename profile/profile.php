@@ -1,5 +1,5 @@
 <?php
-// Profile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/profile
+// Profile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/profile
 
 class YellowProfile {
     const VERSION = "0.8.9";

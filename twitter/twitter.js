@@ -1,4 +1,4 @@
-// Twitter extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/twitter
+// Twitter extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/twitter
 
 function TwitterMessage(element, options) {
     this.element = element;

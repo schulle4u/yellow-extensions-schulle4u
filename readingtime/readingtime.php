@@ -1,5 +1,5 @@
 <?php
-// Readingtime extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/readingtime
+// Readingtime extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/readingtime
 
 class YellowReadingtime {
     const VERSION = "0.8.20";

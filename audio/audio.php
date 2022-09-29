@@ -1,5 +1,5 @@
 <?php
-// Audio extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/audio
+// Audio extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/audio
 
 class YellowAudio {
     const VERSION = "0.8.9";

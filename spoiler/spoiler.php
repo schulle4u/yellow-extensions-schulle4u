@@ -1,5 +1,5 @@
 <?php
-// Spoiler extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler
+// Spoiler extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/spoiler
 
 class YellowSpoiler {
     const VERSION = "0.8.7";

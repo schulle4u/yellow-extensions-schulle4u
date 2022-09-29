@@ -1,5 +1,5 @@
 <?php
-// Include extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/include
+// Include extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/include
 
 class YellowInclude {
     const VERSION = "0.8.5";

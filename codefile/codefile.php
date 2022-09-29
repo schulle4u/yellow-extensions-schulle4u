@@ -1,5 +1,5 @@
 <?php
-// Codefile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/codefile
+// Codefile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/codefile
 
 class YellowCodefile {
     const VERSION = "0.8.18";

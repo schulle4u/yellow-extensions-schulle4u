@@ -1,5 +1,5 @@
 <?php
-// Redirect extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/redirect
+// Redirect extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/redirect
 
 class YellowRedirect {
     const VERSION = "0.8.3";

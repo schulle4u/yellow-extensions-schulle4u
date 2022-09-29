@@ -1,5 +1,5 @@
 <?php
-// Pagesource extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/pagesource
+// Pagesource extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/pagesource
 
 class YellowPagesource {
     const VERSION = "0.8.7";

@@ -1,5 +1,5 @@
 <?php
-// daily extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/daily
+// daily extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/daily
 
 class YellowDaily {
     const VERSION = "0.8.5";

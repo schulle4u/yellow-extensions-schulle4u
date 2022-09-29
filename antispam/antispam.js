@@ -1,4 +1,4 @@
-// Antispam extension, http://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/antispam
+// Antispam extension, http://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/antispam
 
 var initAntispamFromDOM = function() {
     

@@ -1,5 +1,5 @@
 <?php
-// Private extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/private
+// Private extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/private
 
 class YellowPrivate {
     const VERSION = "0.8.11";

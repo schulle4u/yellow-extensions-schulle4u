@@ -1,4 +1,4 @@
-// CSV extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/csv
+// CSV extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/csv
 // Light-table-filter by Chris Coyier, https://codepen.io/chriscoyier/pen/tIuBL
 
 'use strict';

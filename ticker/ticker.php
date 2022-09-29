@@ -1,5 +1,5 @@
 <?php
-// Ticker extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/ticker
+// Ticker extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/ticker
 
 class YellowTicker {
     const VERSION = "0.8.10";

@@ -1,5 +1,5 @@
 <?php
-// Radioboss extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/radioboss 
+// Radioboss extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/radioboss 
 
 class YellowRadioboss {
     const VERSION = "0.8.10";

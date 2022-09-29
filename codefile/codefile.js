@@ -1,4 +1,4 @@
-// Codefile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/codefile
+// Codefile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/codefile
 
 // Create an invisible element
 // Based on a tutorial from https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/

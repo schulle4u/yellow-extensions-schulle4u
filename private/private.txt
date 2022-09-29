@@ -1,4 +1,4 @@
-# Private extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/private
+# Private extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/private
 
 Language: en
 PrivateDescription: Support for password-protected pages.

@@ -1,4 +1,4 @@
-// Spoiler extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/spoiler
+// Spoiler extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/spoiler
 
 var initSpoilerFromDOM = function() {
     

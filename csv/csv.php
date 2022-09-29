@@ -1,5 +1,5 @@
 <?php
-// CSV extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/csv
+// CSV extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/csv
 
 class YellowCsv {
     const VERSION = "0.8.15";

@@ -1,5 +1,5 @@
 <?php
-// Random extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/random
+// Random extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/random
 
 class YellowRandom {
     const VERSION = "0.8.7";

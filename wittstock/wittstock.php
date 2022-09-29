@@ -1,5 +1,5 @@
 <?php
-// Wittstock extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/wittstock
+// Wittstock extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/wittstock
 
 class YellowWittstock {
     const VERSION = "0.8.21";

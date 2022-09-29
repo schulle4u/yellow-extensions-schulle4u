@@ -1,4 +1,4 @@
-# Radioboss extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/radioboss 
+# Radioboss extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/radioboss 
 
 Language: en
 RadiobossDescription: Widgets for RadioBoss Cloud.
