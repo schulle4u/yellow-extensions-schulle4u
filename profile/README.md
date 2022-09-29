@@ -15,7 +15,7 @@ The following arguments are available, all arguments are optional:
 `author` = name of page author.   
 `style` = profile style. 
 
-If the [blog extension](https://github.com/datenstrom/yellow-extensions/tree/master/source/blog) is installed, author notes will automatically be inserted after each article. Use `Profile: author` in your page settings to specify a different profile. 
+If the [blog extension](https://github.com/datenstrom/yellow-extensions/tree/main/source/blog) is installed, author notes will automatically be inserted after each article. Use `Profile: author` in your page settings to specify a different profile. 
 
 ## Examples
 
@@ -51,7 +51,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/downloads/profile.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/profile.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
 ## Developer
 

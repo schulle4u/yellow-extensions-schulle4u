@@ -15,7 +15,7 @@ Die folgenden Argumente sind verfügbar, alle Angaben sind optional:
 `author` = Name des Seiten-Autors.   
 `style` = Stil des Profils. 
 
-Falls die [Blog-Erweiterung](https://github.com/datenstrom/yellow-extensions/tree/master/source/blog) installiert ist, werden Autor-Informationen automatisch unter jeder Blogseite platziert. Verwende `Profile: author` in deinen seiteneinstellungen, um ein anderes Profil anzugeben. 
+Falls die [Blog-Erweiterung](https://github.com/datenstrom/yellow-extensions/tree/main/source/blog) installiert ist, werden Autor-Informationen automatisch unter jeder Blogseite platziert. Verwende `Profile: author` in deinen seiteneinstellungen, um ein anderes Profil anzugeben. 
 
 ## Beispiele
 
@@ -51,7 +51,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 ## Installation
 
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/downloads/profile.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/profile.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
 
 ## Entwickler
 

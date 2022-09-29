@@ -35,7 +35,7 @@ Show a random page in teaser mode:
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/downloads/random.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/random.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
 ## Developer
 

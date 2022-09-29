@@ -31,7 +31,7 @@ Custom link text, use quotes for multiple words:
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/downloads/antispam.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/antispam.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
 ## Developer
 

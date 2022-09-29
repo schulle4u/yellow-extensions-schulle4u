@@ -15,7 +15,7 @@ Verwende die folgenden Seiten-Einstellungen:
 
 Erstelle optional eine `[redirect]`-Abkürzung, um einen Countdown für Besucher anzuzeigen. 
 
-Diese Erweiterung stellt eine alternative Weiterleitungsfunktion auf andere Seiten oder URLs zur Verfügung. Im Gegensatz zu Datenstrom Yellows [eingebauter Weiterleitung](https://github.com/datenstrom/yellow-extensions/tree/master/source/core/README-de.md) können Besucher vor der Weiterleitung erfahren, wohin sie weitergeleitet werden. 
+Diese Erweiterung stellt eine alternative Weiterleitungsfunktion auf andere Seiten oder URLs zur Verfügung. Im Gegensatz zu Datenstrom Yellows [eingebauter Weiterleitung](https://github.com/datenstrom/yellow-extensions/tree/main/source/core/README-de.md) können Besucher vor der Weiterleitung erfahren, wohin sie weitergeleitet werden. 
 
 ## Beispiele
 
@@ -38,7 +38,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 ## Installation
 
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/downloads/redirect.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/redirect.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
 
 ## Entwickler
 

@@ -8,11 +8,11 @@ Support for password-protected pages.
 
 ## How to make a private page
 
-Set `Status: private` and `Password` in the [page settings](https://github.com/datenstrom/yellow-extensions/tree/master/source/core#user-content-settings-page) at the top of a page. The page will no longer be visible and you need to enter the password to access the content. You can continue to edit the page in the [web browser](https://github.com/datenstrom/yellow-extensions/tree/master/source/edit) and on your [computer](https://github.com/datenstrom/yellow-extensions/tree/master/source/core).
+Set `Status: private` and `Password` in the [page settings](https://github.com/datenstrom/yellow-extensions/tree/main/source/core#user-content-settings-page) at the top of a page. The page will no longer be visible and you need to enter the password to access the content. You can continue to edit the page in the [web browser](https://github.com/datenstrom/yellow-extensions/tree/main/source/edit) and on your [computer](https://github.com/datenstrom/yellow-extensions/tree/main/source/core).
 
 ## How to find private pages
 
-You can use the [search extension](https://github.com/datenstrom/yellow-extensions/tree/master/source/search). Once you're logged in with your user account, you can search for `status:private`. This allows you to find all private pages. 
+You can use the [search extension](https://github.com/datenstrom/yellow-extensions/tree/main/source/search). Once you're logged in with your user account, you can search for `status:private`. This allows you to find all private pages. 
 
 ## Examples
 
@@ -76,7 +76,7 @@ Layout file for showing all private pages:
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/master/downloads/private.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/private.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
 ## Developer
 

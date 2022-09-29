@@ -63,9 +63,9 @@ Des Weiteren können folgende Seiten-Metadaten angegeben werden:
 
 ## Installation
 
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/downloads/podcast.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/podcast.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
 
-Diese Erweiterung basiert auf der originalen [Feed-Erweiterung](https://github.com/datenstrom/yellow-extensions/tree/master/source/feed).
+Diese Erweiterung basiert auf der originalen [Feed-Erweiterung](https://github.com/datenstrom/yellow-extensions/tree/main/source/feed).
 
 ## Entwickler
 

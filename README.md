@@ -12,7 +12,7 @@ More features for Datenstrom Yellow. https://datenstrom.se/yellow/
 * [Csv](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/csv) - CSV file parser.
 * [Daily](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/daily) - Show daily pages.
 * [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/include) - Includes page content from other pages.
-* [Meta](https://github.com/datenstrom/yellow-extensions/tree/master/source/meta) - Meta data for social media sites. Development continues at Datenstrom.
+* [Meta](https://github.com/datenstrom/yellow-extensions/tree/main/source/meta) - Meta data for social media sites. Development continues at Datenstrom.
 * [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/pagesource) - Display Markdown source on pages.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/podcast) - Web feed optimized for podcast publishing.
 * [Private](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/master/private) - Support for password-protected pages.
