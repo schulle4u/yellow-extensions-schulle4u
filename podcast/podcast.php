@@ -1,6 +1,6 @@
 <?php
 // Podcast extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/podcast
-// Based on the yellow Feed extension, https://github.com/datenstrom/yellow-extensions/tree/main/source/feed
+// Based on the yellow Feed extension, https://github.com/annaesvensson/yellow-feed
 
 class YellowPodcast {
     const VERSION = "0.8.14";
