@@ -15,7 +15,7 @@ Die folgenden Argumente sind verfügbar, alle Angaben sind optional:
 `author` = Name des Seiten-Autors.   
 `style` = Stil des Profils. 
 
-Falls die [Blog-Erweiterung](https://github.com/datenstrom/yellow-extensions/tree/main/source/blog) installiert ist, werden Autor-Informationen automatisch unter jeder Blogseite platziert. Verwende `Profile: author` in deinen seiteneinstellungen, um ein anderes Profil anzugeben. 
+Falls die [Blog-Erweiterung](https://github.com/annaesvensson/yellow-blog/tree/main/README-de.md) installiert ist, werden Autor-Informationen automatisch unter jeder Blogseite platziert. Verwende `Profile: author` in deinen seiteneinstellungen, um ein anderes Profil anzugeben. 
 
 ## Beispiele
 

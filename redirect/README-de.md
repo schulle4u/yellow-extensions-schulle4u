@@ -15,7 +15,7 @@ Verwende die folgenden Seiten-Einstellungen:
 
 Erstelle optional eine `[redirect]`-Abkürzung, um einen Countdown für Besucher anzuzeigen. 
 
-Diese Erweiterung stellt eine alternative Weiterleitungsfunktion auf andere Seiten oder URLs zur Verfügung. Im Gegensatz zu Datenstrom Yellows [eingebauter Weiterleitung](https://github.com/datenstrom/yellow-extensions/tree/main/source/core/README-de.md) können Besucher vor der Weiterleitung erfahren, wohin sie weitergeleitet werden. 
+Diese Erweiterung stellt eine alternative Weiterleitungsfunktion auf andere Seiten oder URLs zur Verfügung. Im Gegensatz zu Datenstrom Yellows [eingebauter Weiterleitung](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md) können Besucher vor der Weiterleitung erfahren, wohin sie weitergeleitet werden. 
 
 ## Beispiele
 

@@ -8,11 +8,11 @@ Support for password-protected pages.
 
 ## How to make a private page
 
-Set `Status: private` and `Password` in the [page settings](https://github.com/datenstrom/yellow-extensions/tree/main/source/core#user-content-settings-page) at the top of a page. The page will no longer be visible and you need to enter the password to access the content. You can continue to edit the page in the [web browser](https://github.com/datenstrom/yellow-extensions/tree/main/source/edit) and on your [computer](https://github.com/datenstrom/yellow-extensions/tree/main/source/core).
+Set `Status: private` and `Password` in the [page settings](https://github.com/annaesvensson/yellow-core#user-content-settings-page) at the top of a page. The page will no longer be visible and you need to enter the password to access the content. You can continue to edit the page in the [web browser](https://github.com/annaesvensson/yellow-edit) and on your [computer](https://github.com/annaesvensson/yellow-core).
 
 ## How to find private pages
 
-You can use the [search extension](https://github.com/datenstrom/yellow-extensions/tree/main/source/search). Once you're logged in with your user account, you can search for `status:private`. This allows you to find all private pages. 
+You can use the [search extension](https://github.com/annaesvensson/yellow-search). Once you're logged in with your user account, you can search for `status:private`. This allows you to find all private pages. 
 
 ## Examples
 
