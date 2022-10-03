@@ -15,7 +15,7 @@ Use the following page settings to redirect your visitors:
 
 To optionally show a countdown for visitors, create a `[redirect]` shortcut. 
 
-This extension provides an alternative page redirection method using meta refresh. Unlike Datenstrom Yellow's [builtin redirection](https://github.com/datenstrom/yellow-extensions/tree/main/source/core), this extension allows you to inform your visitors where they are going to be redirected. 
+This extension provides an alternative page redirection method using meta refresh. Unlike Datenstrom Yellow's [builtin redirection](https://github.com/annaesvensson/yellow-core), this extension allows you to inform your visitors where they are going to be redirected. 
 
 ## Examples
 

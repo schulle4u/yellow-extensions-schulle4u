@@ -8,11 +8,11 @@ Unterstützung für passwortgeschützte Seiten.
 
 ## Wie man private Seiten erstellt
 
-Setze `Status: private` und `Password` in den [Seiteneinstellungen](https://github.com/datenstrom/yellow-extensions/tree/main/source/core/README-de.md#user-content-einstellungen-seite) ganz oben auf der Seite. Die Seite ist dann nicht mehr sichtbar und man muss das Kennwort eingeben um auf den Inhalt zuzugreifen. Man kann die Seite weiterhin im [Webbrowser](https://github.com/datenstrom/yellow-extensions/tree/main/source/edit/README-de.md) und auf deinem [Computer](https://github.com/datenstrom/yellow-extensions/tree/main/source/core/README-de.md) bearbeiten.
+Setze `Status: private` und `Password` in den [Seiteneinstellungen](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md#user-content-einstellungen-seite) ganz oben auf der Seite. Die Seite ist dann nicht mehr sichtbar und man muss das Kennwort eingeben um auf den Inhalt zuzugreifen. Man kann die Seite weiterhin im [Webbrowser](https://github.com/annaesvensson/yellow-edit/tree/main/README-de.md) und auf deinem [Computer](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md) bearbeiten.
 
 ## Wie man private Seiten findet
 
-Du kannst die [Search-Erweiterung](https://github.com/datenstrom/yellow-extensions/tree/main/source/search/README-de.md) verwenden. Sobald du mit deinem Benutzerkonto eingeloggt bist, kannst du nach `status:private` suchen. Das ermöglicht dir alle privaten Seiten zu finden.
+Du kannst die [Search-Erweiterung](https://github.com/annaesvensson/yellow-search/tree/main/README-de.md) verwenden. Sobald du mit deinem Benutzerkonto eingeloggt bist, kannst du nach `status:private` suchen. Das ermöglicht dir alle privaten Seiten zu finden.
 
 ## Beispiele
 
