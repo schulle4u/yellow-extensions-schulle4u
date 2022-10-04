@@ -80,4 +80,4 @@ Layout file for showing all private pages:
 
 ## Developer
 
-Steffen Schultz. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Get help](https://datenstrom.se/yellow/help/).

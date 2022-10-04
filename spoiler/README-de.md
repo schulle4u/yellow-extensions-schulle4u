@@ -58,4 +58,4 @@ Hier ist weiterer Text.
 
 ## Entwickler
 
-Steffen Schultz. [Hilfe finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Hilfe finden](https://datenstrom.se/de/yellow/help/).

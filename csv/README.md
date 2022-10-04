@@ -61,4 +61,4 @@ Javascript component includes Light-table-filter by [Chris Coyier](https://codep
 
 ## Developer
 
-Steffen Schultz. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Get help](https://datenstrom.se/yellow/help/).

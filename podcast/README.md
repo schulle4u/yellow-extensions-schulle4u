@@ -69,4 +69,4 @@ Based on the original [feed extension](https://github.com/annaesvensson/yellow-f
 
 ## Developer
 
-Datenstrom with modifications by Steffen Schultz. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Datenstrom with modifications by Steffen Schultz. [Get help](https://datenstrom.se/yellow/help/).

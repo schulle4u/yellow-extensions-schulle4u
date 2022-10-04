@@ -69,4 +69,4 @@ Diese Erweiterung basiert auf der originalen [Feed-Erweiterung](https://github.c
 
 ## Entwickler
 
-Datenstrom, modifiziert von Steffen Schultz. [Hilfe finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Datenstrom, modifiziert von Steffen Schultz. [Hilfe finden](https://datenstrom.se/de/yellow/help/).

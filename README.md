@@ -37,4 +37,4 @@ More features for Datenstrom Yellow. https://datenstrom.se/yellow/
 * [Robbenradio](https://robbenradio.de) - My personal website.
 * [Robbenradio Podcasts](https://podcast.robbenradio.de) - Podcast episodes containing tech reviews, tutorials, and radio sounds.
 
-Do you have questions? [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Do you have questions? [Get help](https://datenstrom.se/yellow/help/).

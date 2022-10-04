@@ -42,4 +42,4 @@ This extension uses [Soundcloud](https://soundcloud.com). The service provider c
 
 ## Developer
 
-Steffen Schultz. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Get help](https://datenstrom.se/yellow/help/).

@@ -56,4 +56,4 @@ This extension uses [Twitter](https://www.twitter.com). The service provider col
 
 ## Developer
 
-Steffen Schultz. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Get help](https://datenstrom.se/yellow/help/).

@@ -53,4 +53,4 @@ Start off the week with our exciting mix of music from all around the world. Tun
 
 ## Developer
 
-Steffen Schultz. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Get help](https://datenstrom.se/yellow/help/).

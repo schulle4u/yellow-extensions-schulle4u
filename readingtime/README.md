@@ -37,4 +37,4 @@ The following setting can be configured in file `system/extensions/yellow-system
 
 ## Developer
 
-Steffen Schultz. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Get help](https://datenstrom.se/yellow/help/).

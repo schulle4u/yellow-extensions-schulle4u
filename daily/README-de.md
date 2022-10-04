@@ -53,4 +53,4 @@ Komm' gut in die Woche mit unserer spannenden Weltmusik-Playlist. Jeden Montag u
 
 ## Entwickler
 
-Steffen Schultz. [Hilfe finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Hilfe finden](https://datenstrom.se/de/yellow/help/).

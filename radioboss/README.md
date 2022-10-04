@@ -100,4 +100,4 @@ This extension uses [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/)
 
 ## Developer
 
-Steffen Schultz. [Get help](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Get help](https://datenstrom.se/yellow/help/).

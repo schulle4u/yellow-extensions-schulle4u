@@ -34,4 +34,4 @@ Linktext anpassen, schließe mehrere Wörter in Anführungszeichen ein:
 
 ## Entwickler
 
-Steffen Schultz. [Hilfe finden](https://github.com/schulle4u/yellow-extensions-schulle4u/issues).
+Steffen Schultz. [Hilfe finden](https://datenstrom.se/de/yellow/help/).
