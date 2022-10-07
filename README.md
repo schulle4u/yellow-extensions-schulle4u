@@ -28,7 +28,7 @@ More features for Datenstrom Yellow. https://datenstrom.se/yellow/
 
 ## Themes
 
-* [Wittstock](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/wittstock) - Wittstock is a classless theme for Datenstrom Yellow.
+* [Wittstock](https://github.com/schulle4u/yellow-wittstock) - Wittstock is a classless theme for Datenstrom Yellow.
 
 ## Showcases
 
