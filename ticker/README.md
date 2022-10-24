@@ -37,7 +37,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/ticker.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
-[SimplePie parser 1.5](http://simplepie.org/) by Ryan Parman, Geoffrey Sneddon, Ryan McCue and contributors. It's licensed under [BSD license](http://www.opensource.org/licenses/BSD-3-Clause). 
+This extension includes [SimplePie 1.5](http://simplepie.org/) by Ryan Parman, Geoffrey Sneddon, Ryan McCue and contributors.
 
 ## Developer
 

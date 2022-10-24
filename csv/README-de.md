@@ -56,7 +56,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/csv.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
 
-Die Javascript-Komponente der Erweiterung verwendet Light-table-filter von [Chris Coyier](https://codepen.io/chriscoyier/pen/tIuBL) sowie die [Sort-table-Klasse von Tyler Uebele](https://github.com/stationer/SortTable) freigegeben unter den bedingungen der MIT-Lizenz. 
+Diese Erweiterung enthält [Light-table-filter](https://codepen.io/chriscoyier/pen/tIuBL) von Chris Coyier sowie [Sort-table class](https://github.com/stationer/SortTable)  von Tyler Uebele.
 
 ## Entwickler
 
