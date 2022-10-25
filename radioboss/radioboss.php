@@ -30,14 +30,14 @@ class YellowRadioboss {
         RadiobossNexttrack: Next track
 
         Language: de
-        RadiobossDescription: Widgets für RadioBoss Cloud.
-        RadiobossListeners: Zuhörer
-        RadiobossNexttrack: Nächster Titel
+        RadiobossDescription: Widgets fÃ¼r RadioBoss Cloud.
+        RadiobossListeners: ZuhÃ¶rer
+        RadiobossNexttrack: NÃ¤chster Titel
 
         Language: sv
-        RadiobossDescription: Widgets för RadioBoss Cloud.
+        RadiobossDescription: Widgets fÃ¶r RadioBoss Cloud.
         RadiobossListeners: Lyssnare
-        RadiobossNexttrack: Nästa låt
+        RadiobossNexttrack: NÃ¤sta lÃ¥t
 END;
     }
     

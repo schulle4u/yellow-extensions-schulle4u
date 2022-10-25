@@ -19,12 +19,12 @@ class YellowCodefile {
         CodefileButton: Download source code
 
         Language: de
-        CodefileDescription: Code-Blöcke als Textdatei herunterladen.
+        CodefileDescription: Code-BlÃ¶cke als Textdatei herunterladen.
         CodefileButton: Quellcode herunterladen
 
         Language: sv
         CodefileDescription: Ladda ner kodblock som textfil.
-        CodefileButton: Ladda ner källkod
+        CodefileButton: Ladda ner kÃ¤llkod
 END;
     }
 

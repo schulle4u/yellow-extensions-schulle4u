@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Private 0.8.11
+# Private 0.8.12
 
 Unterstützung für passwortgeschützte Seiten.
 
