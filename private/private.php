@@ -2,7 +2,7 @@
 // Private extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/private
 
 class YellowPrivate {
-    const VERSION = "0.8.11";
+    const VERSION = "0.8.12";
     public $yellow;         //access to API
     
     // Handle initialisation

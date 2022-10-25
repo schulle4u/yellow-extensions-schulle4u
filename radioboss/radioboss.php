@@ -2,13 +2,14 @@
 // Radioboss extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/radioboss 
 
 class YellowRadioboss {
-    const VERSION = "0.8.10";
+    const VERSION = "0.8.11";
     public $yellow;            //access to API
     public $outputFooter;      //generated output for footer
     
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
+        $this->yellow->language->setDefault($this->getDefault());
         $this->yellow->system->setDefault("radiobossServer", "c2.radioboss.fm"); // only the hostname without https
         $this->yellow->system->setDefault("radiobossPort", ""); // The actual streaming port
         $this->yellow->system->setDefault("radiobossPort2", "1" . $this->yellow->system->get("radiobossPort")); // Second icecast port for encrypted connections
@@ -20,6 +21,26 @@ class YellowRadioboss {
         $this->yellow->system->setDefault("radiobossStyle", "radioboss");
     }
 
+    // Return default language settings
+    public function getDefault() {
+        return <<< 'END'
+        Language: en
+        RadiobossDescription: Widgets for RadioBoss Cloud.
+        RadiobossListeners: Listeners
+        RadiobossNexttrack: Next track
+
+        Language: de
+        RadiobossDescription: Widgets für RadioBoss Cloud.
+        RadiobossListeners: Zuhörer
+        RadiobossNexttrack: Nächster Titel
+
+        Language: sv
+        RadiobossDescription: Widgets för RadioBoss Cloud.
+        RadiobossListeners: Lyssnare
+        RadiobossNexttrack: Nästa låt
+END;
+    }
+    
     // Handle request
     public function onRequest($scheme, $address, $base, $location, $fileName) {
         $statusCode = 0;
