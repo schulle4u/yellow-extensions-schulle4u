@@ -2,32 +2,24 @@
 // Codefile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/codefile
 
 class YellowCodefile {
-    const VERSION = "0.8.20";
+    const VERSION = "0.8.21";
     public $yellow;         // access to API
     
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
-        $this->yellow->language->setDefault($this->getDefault());
+        $this->yellow->language->setDefaults(array(
+            "Language: en",
+            "CodefileDescription: Download code blocks as text file.",
+            "CodefileButton: Download source code",
+            "Language: de",
+            "CodefileDescription: Code-Blöcke als Textdatei herunterladen.",
+            "CodefileButton: Quellcode herunterladen",
+            "Language: sv",
+            "CodefileDescription: Ladda ner kodblock som textfil.",
+            "CodefileButton: Ladda ner källkod"));
     }
     
-    // Return default language settings
-    public function getDefault() {
-        return <<< 'END'
-        Language: en
-        CodefileDescription: Download code blocks as text file.
-        CodefileButton: Download source code
-
-        Language: de
-        CodefileDescription: Code-Blöcke als Textdatei herunterladen.
-        CodefileButton: Quellcode herunterladen
-
-        Language: sv
-        CodefileDescription: Ladda ner kodblock som textfil.
-        CodefileButton: Ladda ner källkod
-END;
-    }
-
     // Handle page content of shortcut
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
