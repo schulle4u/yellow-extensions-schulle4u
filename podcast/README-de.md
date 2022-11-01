@@ -63,7 +63,7 @@ Des Weiteren können folgende Seiten-Metadaten angegeben werden:
 
 ## Installation
 
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/podcast.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/podcast.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 Diese Erweiterung basiert auf der originalen [Feed-Erweiterung](https://github.com/annaesvensson/yellow-feed).
 

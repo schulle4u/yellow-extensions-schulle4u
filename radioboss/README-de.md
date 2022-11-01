@@ -94,7 +94,7 @@ Die Server-Konfiguration erhältst du im Reiter Information, nachdem du dich bei
 
 ## Installation
 
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/radioboss.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/radioboss.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 Diese Erweiterung verwendet [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/) von DJSoft. Der Dienstanbieter sammelt personenbezogene Daten und benutzt Cookies.
 
