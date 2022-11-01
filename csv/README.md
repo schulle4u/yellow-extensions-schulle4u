@@ -55,7 +55,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/csv.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/csv.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 This extension includes [Light-table-filter](https://codepen.io/chriscoyier/pen/tIuBL) by Chris Coyier, and [Sort-table class](https://github.com/stationer/SortTable)  by Tyler Uebele.
 

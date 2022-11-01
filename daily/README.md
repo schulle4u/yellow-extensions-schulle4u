@@ -49,7 +49,7 @@ Start off the week with our exciting mix of music from all around the world. Tun
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/daily.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/daily.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 

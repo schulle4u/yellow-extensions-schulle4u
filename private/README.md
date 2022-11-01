@@ -76,7 +76,7 @@ Layout file for showing all private pages:
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/private.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/private.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 

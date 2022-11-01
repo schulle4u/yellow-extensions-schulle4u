@@ -94,7 +94,7 @@ To obtain your server configuration, log into your RadioBoss cloud account and c
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/radioboss.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/radioboss.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 This extension uses [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/) by DJSoft. The service provider collects personal data and uses cookies.
 

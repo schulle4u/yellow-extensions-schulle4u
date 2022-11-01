@@ -63,7 +63,7 @@ Additionally, the following page metadata can be specified:
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/podcast.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/podcast.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 Based on the original [feed extension](https://github.com/annaesvensson/yellow-feed).
 
