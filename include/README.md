@@ -2,7 +2,7 @@
 
 # Include 0.8.5
 
-Includes page content from other pages. 
+Include page content from other pages. 
 
 <p align="center"><img src="include-screenshot.png?raw=true" alt="Screenshot"></p>
 

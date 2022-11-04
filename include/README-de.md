@@ -2,7 +2,7 @@
 
 # Include 0.8.5
 
-Bindet den Inhalt anderer Seiten in die aktuelle Seite ein. 
+Seiteninhalt von anderen Seiten einbinden.
 
 <p align="center"><img src="include-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
