@@ -16,9 +16,9 @@ class YellowSoundcloud {
         $output = null;
         if ($name=="soundcloud" && ($type=="block" || $type=="inline")) {
             list($id, $style, $width, $height) = $this->yellow->toolbox->getTextArguments($text);
-            if (empty($style)) $style = $this->yellow->system->get("soundcloudStyle");
-            if (empty($width)) $width = "100%";
-            if (empty($height)) $height = "166";
+            if (is_string_empty($style)) $style = $this->yellow->system->get("soundcloudStyle");
+            if (is_string_empty($width)) $width = "100%";
+            if (is_string_empty($height)) $height = "166";
             $output = "<div class=\"".htmlspecialchars($style)."\">";
             $output .= "<iframe src=\"https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F".rawurlencode($id)."\" frameborder=\"0\"";
             $output .= " width=\"".htmlspecialchars($width)."\" height=\"".htmlspecialchars($height)."\"";
