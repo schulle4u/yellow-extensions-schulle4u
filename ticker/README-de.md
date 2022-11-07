@@ -37,7 +37,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/ticker.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
-Diese Erweiterung enthält [SimplePie 1.5](http://simplepie.org/) von Ryan Parman, Geoffrey Sneddon, Ryan McCue und Mitwirkende.
+Diese Erweiterung enthält [SimplePie 1.6](http://simplepie.org/) von Ryan Parman, Geoffrey Sneddon, Ryan McCue und Mitwirkende.
 
 ## Entwickler
 
