@@ -69,7 +69,7 @@ class YellowCsv {
             } else {
                 $output .= "<tr>\n";
             }
-            for ($column=0; $column<is_array_empty($data); ++$column) {
+            for ($column=0; $column<count($data); ++$column) {
                 $value = trim($data[$column]);
                 if ($row==0) {
                     $output .= "<th>".$value."</th>\n";

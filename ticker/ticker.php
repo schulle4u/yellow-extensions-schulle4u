@@ -64,7 +64,6 @@ class YellowTicker {
         return "ticker-".substru(md5($string), 0, 16);
     }
 }
-
 /**
  * SimplePie
  *
@@ -118,13 +117,13 @@ define('SIMPLEPIE_NAME', 'SimplePie');
 /**
  * SimplePie Version
  */
-define('SIMPLEPIE_VERSION', '1.5.5');
+define('SIMPLEPIE_VERSION', '1.6.0');
 
 /**
  * SimplePie Build
  * @todo Hardcode for release (there's no need to have to call SimplePie_Misc::get_build() only every load of simplepie.inc)
  */
-define('SIMPLEPIE_BUILD', '20200919112902');
+define('SIMPLEPIE_BUILD', '20220421110903');
 
 /**
  * SimplePie Website URL
@@ -491,6 +490,13 @@ class SimplePie
 	public $error;
 
 	/**
+	 * @var int HTTP status code
+	 * @see SimplePie::status_code()
+	 * @access private
+	 */
+	public $status_code;
+
+	/**
 	 * @var object Instance of SimplePie_Sanitize (or other class)
 	 * @see SimplePie::set_sanitize_class()
 	 * @access private
@@ -708,6 +714,13 @@ class SimplePie
 	 * @access private
 	 */
 	public $strip_htmltags = array('base', 'blink', 'body', 'doctype', 'embed', 'font', 'form', 'frame', 'frameset', 'html', 'iframe', 'input', 'marquee', 'meta', 'noscript', 'object', 'param', 'script', 'style');
+
+	/**
+	 * @var array Stores the default attributes to be renamed by rename_attributes().
+	 * @see SimplePie::rename_attributes()
+	 * @access private
+	 */
+	public $rename_attributes = array();
 
 	/**
 	 * @var bool Should we throw exceptions, or use the old-style error property?
@@ -975,6 +988,39 @@ class SimplePie
 	}
 
 	/**
+	 * Return the filename (i.e. hash, without path and without extension) of the file to cache a given URL.
+	 * @param string $url The URL of the feed to be cached.
+	 * @return string A filename (i.e. hash, without path and without extension).
+	 */
+	public function get_cache_filename($url)
+	{
+		// Append custom parameters to the URL to avoid cache pollution in case of multiple calls with different parameters.
+		$url .= $this->force_feed ? '#force_feed' : '';
+		$options = array();
+		if ($this->timeout != 10)
+		{
+			$options[CURLOPT_TIMEOUT] = $this->timeout;
+		}
+		if ($this->useragent !== SIMPLEPIE_USERAGENT)
+		{
+			$options[CURLOPT_USERAGENT] = $this->useragent;
+		}
+		if (!empty($this->curl_options))
+		{
+			foreach ($this->curl_options as $k => $v)
+			{
+				$options[$k] = $v;
+			}
+		}
+		if (!empty($options))
+		{
+			ksort($options);
+			$url .= '#' . urlencode(var_export($options, true));
+		}
+		return call_user_func($this->cache_name_function, $url);
+	}
+
+	/**
 	 * Set whether feed items should be sorted into reverse chronological order
 	 *
 	 * @param bool $enable Sort as reverse chronological order.
@@ -1212,6 +1258,7 @@ class SimplePie
 			$this->strip_attributes(false);
 			$this->add_attributes(false);
 			$this->set_image_handler(false);
+			$this->set_https_domains(array());
 		}
 	}
 
@@ -1246,6 +1293,15 @@ class SimplePie
 	public function encode_instead_of_strip($enable = true)
 	{
 		$this->sanitize->encode_instead_of_strip($enable);
+	}
+
+	public function rename_attributes($attribs = '')
+	{
+		if ($attribs === '')
+		{
+			$attribs = $this->rename_attributes;
+		}
+		$this->sanitize->rename_attributes($attribs);
 	}
 
 	public function strip_attributes($attribs = '')
@@ -1312,6 +1368,19 @@ class SimplePie
 	public function set_url_replacements($element_attribute = null)
 	{
 		$this->sanitize->set_url_replacements($element_attribute);
+	}
+
+	/**
+	 * Set the list of domains for which to force HTTPS.
+	 * @see SimplePie_Sanitize::set_https_domains()
+	 * @param array List of HTTPS domains. Example array('biz', 'example.com', 'example.org', 'www.example.net').
+	 */
+	public function set_https_domains($domains = array())
+	{
+		if (is_array($domains))
+		{
+			$this->sanitize->set_https_domains($domains);
+		}
 	}
 
 	/**
@@ -1439,8 +1508,8 @@ class SimplePie
 			// Decide whether to enable caching
 			if ($this->cache && $parsed_feed_url['scheme'] !== '')
 			{
-				$url = $this->feed_url . ($this->force_feed ? '#force_feed' : '');
-				$cache = $this->registry->call('Cache', 'get_handler', array($this->cache_location, call_user_func($this->cache_name_function, $url), 'spc'));
+				$filename = $this->get_cache_filename($this->feed_url);
+				$cache = $this->registry->call('Cache', 'get_handler', array($this->cache_location, $filename, 'spc'));
 			}
 
 			// Fetch the data via SimplePie_File into $this->raw_data
@@ -1580,7 +1649,7 @@ class SimplePie
 	 * Fetch the data via SimplePie_File
 	 *
 	 * If the data is already cached, attempt to fetch it from there instead
-	 * @param SimplePie_Cache|false $cache Cache handler, or false to not load from the cache
+	 * @param SimplePie_Cache_Base|false $cache Cache handler, or false to not load from the cache
 	 * @return array|true Returns true if the data was loaded from the cache, or an array of HTTP headers and sniffed type
 	 */
 	protected function fetch_data(&$cache)
@@ -1643,6 +1712,7 @@ class SimplePie
 						}
 
 						$file = $this->registry->create('File', array($this->feed_url, $this->timeout/10, 5, $headers, $this->useragent, $this->force_fsockopen, $this->curl_options));
+						$this->status_code = $file->status_code;
 
 						if ($file->success)
 						{
@@ -1697,6 +1767,8 @@ class SimplePie
 				$file = $this->registry->create('File', array($this->feed_url, $this->timeout, 5, $headers, $this->useragent, $this->force_fsockopen, $this->curl_options));
 			}
 		}
+		$this->status_code = $file->status_code;
+
 		// If the file connection has an error, set SimplePie::error to that and quit
 		if (!$file->success && !($file->method & SIMPLEPIE_FILE_SOURCE_REMOTE === 0 || ($file->status_code === 200 || $file->status_code > 206 && $file->status_code < 300)))
 		{
@@ -1794,13 +1866,23 @@ class SimplePie
 	}
 
 	/**
-	 * Get the error message for the occured error
+	 * Get the error message for the occurred error
 	 *
 	 * @return string|array Error message, or array of messages for multifeeds
 	 */
 	public function error()
 	{
 		return $this->error;
+	}
+
+	/**
+	 * Get the last HTTP status code
+	 *
+	 * @return int Status code
+	 */
+	public function status_code()
+	{
+		return $this->status_code;
 	}
 
 	/**
@@ -2198,7 +2280,7 @@ class SimplePie
 	 */
 	public function get_base($element = array())
 	{
-		if (!($this->get_type() & SIMPLEPIE_TYPE_RSS_SYNDICATION) && !empty($element['xml_base_explicit']) && isset($element['xml_base']))
+		if (!empty($element['xml_base_explicit']) && isset($element['xml_base']))
 		{
 			return $element['xml_base'];
 		}
@@ -2646,13 +2728,19 @@ class SimplePie
 			}
 		}
 
-		if (isset($this->data['headers']['link']) &&
-		    preg_match('/<([^>]+)>; rel='.preg_quote($rel).'/',
-		               $this->data['headers']['link'], $match))
+		if (isset($this->data['headers']['link']))
 		{
-			return array($match[1]);
+			$link_headers = $this->data['headers']['link'];
+			if (is_string($link_headers)) {
+				$link_headers = array($link_headers);
+			}
+			$matches = preg_filter('/<([^>]+)>; rel='.preg_quote($rel).'/', '$1', $link_headers);
+			if (!empty($matches)) {
+				return $matches;
+			}
 		}
-		else if (isset($this->data['links'][$rel]))
+
+		if (isset($this->data['links'][$rel]))
 		{
 			return $this->data['links'][$rel];
 		}
@@ -3309,6 +3397,8 @@ class SimplePie
 	}
 }
 
+class_alias('SimplePie', 'SimplePie\SimplePie', false);
+
 /**
  * Manages all author-related data
  *
@@ -3416,6 +3506,8 @@ class SimplePie_Author
 	}
 }
 
+class_alias('SimplePie_Author', 'SimplePie\Author', false);
+
 /**
  * Used to create cache objects
  *
@@ -3508,6 +3600,8 @@ class SimplePie_Cache
 	}
 }
 
+class_alias('SimplePie_Cache', 'SimplePie\Cache', false);
+
 /**
  * Base for cache objects
  *
@@ -3578,6 +3672,8 @@ interface SimplePie_Cache_Base
 	 */
 	public function unlink();
 }
+
+class_alias('SimplePie_Cache_Base', 'SimplePie\Cache\Base', false);
 
 /**
  * Base class for database-based caches
@@ -3672,6 +3768,8 @@ abstract class SimplePie_Cache_DB implements SimplePie_Cache_Base
 		return array(serialize($data->data), $items_by_id);
 	}
 }
+
+class_alias('SimplePie_Cache_DB', 'SimplePie\Cache\DB', false);
 
 /**
  * Caches data to the filesystem
@@ -3794,6 +3892,8 @@ class SimplePie_Cache_File implements SimplePie_Cache_Base
 		return false;
 	}
 }
+
+class_alias('SimplePie_Cache_File', 'SimplePie\Cache\File', false);
 
 /**
  * Caches data to memcache
@@ -3933,6 +4033,8 @@ class SimplePie_Cache_Memcache implements SimplePie_Cache_Base
 	}
 }
 
+class_alias('SimplePie_Cache_Memcache', 'SimplePie\Cache\Memcache', false);
+
 /**
  * Caches data to memcached
  *
@@ -4056,6 +4158,8 @@ class SimplePie_Cache_Memcached implements SimplePie_Cache_Base
         return false;
     }
 }
+
+class_alias('SimplePie_Cache_Memcached', 'SimplePie\Cache\Memcached', false);
 
 /**
  * Caches data to a MySQL database
@@ -4294,7 +4398,7 @@ class SimplePie_Cache_MySQL extends SimplePie_Cache_DB
 					$query->bindValue(':data', serialize($data));
 					$query->bindValue(':time', time());
 					$query->bindValue(':feed', $this->id);
-					if ($this->execute())
+					if ($query->execute())
 					{
 						return true;
 					}
@@ -4455,6 +4559,8 @@ class SimplePie_Cache_MySQL extends SimplePie_Cache_DB
 	}
 }
 
+class_alias('SimplePie_Cache_MySQL', 'SimplePie\Cache\MySQL', false);
+
 /**
  * Caches data to redis
  *
@@ -4596,7 +4702,7 @@ class SimplePie_Cache_Redis implements SimplePie_Cache_Base {
         if ($data !== false) {
             $return = $this->cache->set($this->name, $data);
             if ($this->options['expire']) {
-                return $this->cache->expire($this->name, $this->ttl);
+                return $this->cache->expire($this->name, $this->options['expire']);
             }
             return $return;
         }
@@ -4614,6 +4720,8 @@ class SimplePie_Cache_Redis implements SimplePie_Cache_Base {
     }
 
 }
+
+class_alias('SimplePie_Cache_Redis', 'SimplePie\Cache\Redis', false);
 
 /**
  * Handles `<media:text>` captions as defined in Media RSS.
@@ -4770,6 +4878,8 @@ class SimplePie_Caption
 	}
 }
 
+class_alias('SimplePie_Caption', 'SimplePie\Caption', false);
+
 /**
  * Manages all category-related data
  *
@@ -4808,7 +4918,7 @@ class SimplePie_Category
 
 	/**
 	 * Category type
-	 * 
+	 *
 	 * category for <category>
 	 * subject for <dc:subject>
 	 *
@@ -4889,6 +4999,8 @@ class SimplePie_Category
 		return $this->type;
 	}
 }
+
+class_alias('SimplePie_Category', 'SimplePie\Category', false);
 
 /**
  * Content-type sniffing
@@ -4998,7 +5110,7 @@ class SimplePie_Content_Type_Sniffer
 		}
 		elseif (preg_match('/[\x00-\x08\x0E-\x1A\x1C-\x1F]/', $this->file->body))
 		{
-			return 'application/octect-stream';
+			return 'application/octet-stream';
 		}
 
 		return 'text/plain';
@@ -5165,6 +5277,8 @@ class SimplePie_Content_Type_Sniffer
 	}
 }
 
+class_alias('SimplePie_Content_Type_Sniffer', 'SimplePie\Content\Type\Sniffer', false);
+
 /**
  * Manages `<media:copyright>` copyright tags as defined in Media RSS
  *
@@ -5246,6 +5360,8 @@ class SimplePie_Copyright
 		return null;
 	}
 }
+
+class_alias('SimplePie_Copyright', 'SimplePie\Copyright', false);
 
 /**
  * SimplePie class.
@@ -5366,6 +5482,8 @@ class SimplePie_Credit
 		return null;
 	}
 }
+
+class_alias('SimplePie_Credit', 'SimplePie\Credit', false);
 
 /**
  * Decode HTML Entities
@@ -7045,7 +7163,12 @@ class SimplePie_Enclosure
 		// If we encounter an unsupported mime-type, check the file extension and guess intelligently.
 		if (!in_array($type, array_merge($types_flash, $types_fmedia, $types_quicktime, $types_wmedia, $types_mp3)))
 		{
-			switch (strtolower($this->get_extension()))
+			$extension = $this->get_extension();
+			if ($extension === null) {
+				return null;
+			}
+
+			switch (strtolower($extension))
 			{
 				// Audio mime-types
 				case 'aac':
@@ -7196,6 +7319,8 @@ class SimplePie_Enclosure
 	}
 }
 
+class_alias('SimplePie_Enclosure', 'SimplePie\Enclosure', false);
+
 /**
  * General SimplePie exception class
  *
@@ -7204,6 +7329,8 @@ class SimplePie_Enclosure
 class SimplePie_Exception extends Exception
 {
 }
+
+class_alias('SimplePie_Exception', 'SimplePie\Exception', false);
 
 /**
  * Used for fetching remote files and reading local files
@@ -7270,7 +7397,7 @@ class SimplePie_File
 				curl_setopt($fp, CURLOPT_FAILONERROR, 1);
 				curl_setopt($fp, CURLOPT_TIMEOUT, $timeout);
 				curl_setopt($fp, CURLOPT_CONNECTTIMEOUT, $timeout);
-				curl_setopt($fp, CURLOPT_REFERER, $url);
+				curl_setopt($fp, CURLOPT_REFERER, SimplePie_Misc::url_remove_credentials($url));
 				curl_setopt($fp, CURLOPT_USERAGENT, $useragent);
 				curl_setopt($fp, CURLOPT_HTTPHEADER, $headers2);
 				foreach ($curl_options as $curl_param => $curl_value) {
@@ -7283,6 +7410,7 @@ class SimplePie_File
 					curl_setopt($fp, CURLOPT_ENCODING, 'none');
 					$this->headers = curl_exec($fp);
 				}
+				$this->status_code = curl_getinfo($fp, CURLINFO_HTTP_CODE);
 				if (curl_errno($fp))
 				{
 					$this->error = 'cURL error ' . curl_errno($fp) . ': ' . curl_error($fp);
@@ -7462,6 +7590,8 @@ class SimplePie_File
 		}
 	}
 }
+
+class_alias('SimplePie_File', 'SimplePie\File', false);
 
 /**
  * HTTP Response Parser
@@ -7928,15 +8058,19 @@ class SimplePie_HTTP_Parser
 	{
 		$data = explode("\r\n\r\n", $headers, $count);
 		$data = array_pop($data);
-		if (false !== stripos($data, "HTTP/1.0 200 Connection established\r\n\r\n")) {
-			$data = str_ireplace("HTTP/1.0 200 Connection established\r\n\r\n", '', $data);
+		if (false !== stripos($data, "HTTP/1.0 200 Connection established\r\n")) {
+			$exploded = explode("\r\n\r\n", $data, 2);
+			$data = end($exploded);
 		}
-		if (false !== stripos($data, "HTTP/1.1 200 Connection established\r\n\r\n")) {
-			$data = str_ireplace("HTTP/1.1 200 Connection established\r\n\r\n", '', $data);
+		if (false !== stripos($data, "HTTP/1.1 200 Connection established\r\n")) {
+			$exploded = explode("\r\n\r\n", $data, 2);
+			$data = end($exploded);
 		}
 		return $data;
 	}
 }
+
+class_alias('SimplePie_HTTP_Parser', 'SimplePie\HTTP\Parser', false);
 
 /**
  * IRI parser/serialiser/normaliser
@@ -9131,6 +9265,8 @@ class SimplePie_IRI
 		return $iauthority;
 	}
 }
+
+class_alias('SimplePie_IRI', 'SimplePie\IRI', false);
 
 /**
  * Manages all item-related data
@@ -10893,7 +11029,7 @@ class SimplePie_Item
 							}
 							if (isset($content['attribs']['']['fileSize']))
 							{
-								$length = ceil($content['attribs']['']['fileSize']);
+								$length = intval($content['attribs']['']['fileSize']);
 							}
 							if (isset($content['attribs']['']['medium']))
 							{
@@ -11515,7 +11651,7 @@ class SimplePie_Item
 						}
 						if (isset($content['attribs']['']['fileSize']))
 						{
-							$length = ceil($content['attribs']['']['fileSize']);
+							$length = intval($content['attribs']['']['fileSize']);
 						}
 						if (isset($content['attribs']['']['medium']))
 						{
@@ -11880,7 +12016,7 @@ class SimplePie_Item
 					}
 					if (isset($link['attribs']['']['length']))
 					{
-						$length = ceil($link['attribs']['']['length']);
+						$length = intval($link['attribs']['']['length']);
 					}
 					if (isset($link['attribs']['']['title']))
 					{
@@ -11923,7 +12059,7 @@ class SimplePie_Item
 					}
 					if (isset($link['attribs']['']['length']))
 					{
-						$length = ceil($link['attribs']['']['length']);
+						$length = intval($link['attribs']['']['length']);
 					}
 
 					// Since we don't have group or content for these, we'll just pass the '*_parent' variables directly to the constructor
@@ -11952,13 +12088,14 @@ class SimplePie_Item
 					$width = null;
 
 					$url = $this->sanitize($enclosure[0]['attribs']['']['url'], SIMPLEPIE_CONSTRUCT_IRI, $this->get_base($enclosure[0]));
+					$url = $this->feed->sanitize->https_url($url);
 					if (isset($enclosure[0]['attribs']['']['type']))
 					{
 						$type = $this->sanitize($enclosure[0]['attribs']['']['type'], SIMPLEPIE_CONSTRUCT_TEXT);
 					}
 					if (isset($enclosure[0]['attribs']['']['length']))
 					{
-						$length = ceil($enclosure[0]['attribs']['']['length']);
+						$length = intval($enclosure[0]['attribs']['']['length']);
 					}
 
 					// Since we don't have group or content for these, we'll just pass the '*_parent' variables directly to the constructor
@@ -12055,6 +12192,8 @@ class SimplePie_Item
 	}
 }
 
+class_alias('SimplePie_Item', 'SimplePie\Item', false);
+
 /**
  * Used for feed auto-discovery
  *
@@ -12078,6 +12217,7 @@ class SimplePie_Locator
 	var $max_checked_feeds = 10;
 	var $force_fsockopen = false;
 	var $curl_options = array();
+	var $dom;
 	protected $registry;
 
 	public function __construct(SimplePie_File $file, $timeout = 10, $useragent = null, $max_checked_feeds = 10, $force_fsockopen = false, $curl_options = array())
@@ -12089,12 +12229,19 @@ class SimplePie_Locator
 		$this->force_fsockopen = $force_fsockopen;
 		$this->curl_options = $curl_options;
 
-		if (class_exists('DOMDocument'))
+		if (class_exists('DOMDocument') && $this->file->body != '')
 		{
 			$this->dom = new DOMDocument();
 
 			set_error_handler(array('SimplePie_Misc', 'silence_errors'));
-			$this->dom->loadHTML($this->file->body);
+			try
+			{
+				$this->dom->loadHTML($this->file->body);
+			}
+			catch (Throwable $ex)
+			{
+				$this->dom = null;
+			}
 			restore_error_handler();
 		}
 		else
@@ -12436,6 +12583,8 @@ class SimplePie_Locator
 		return null;
 	}
 }
+
+class_alias('SimplePie_Locator', 'SimplePie\Locator', false);
 
 /**
  * Miscellanous utilities
@@ -14656,7 +14805,19 @@ function embed_wmedia(width, height, link) {
 	{
 		// No-op
 	}
+
+	/**
+	 * Sanitize a URL by removing HTTP credentials.
+	 * @param string $url the URL to sanitize.
+	 * @return string the same URL without HTTP credentials.
+	 */
+	public static function url_remove_credentials($url)
+	{
+		return preg_replace('#^(https?://)[^/:@]+:[^/:@]+@#i', '$1', $url);
+	}
 }
+
+class_alias('SimplePie_Misc', 'SimplePie\Misc', false);
 
 /**
  * Class to validate and to work with IPv6 addresses.
@@ -14883,6 +15044,8 @@ class SimplePie_Net_IPv6
 		return self::check_ipv6($ip);
 	}
 }
+
+class_alias('SimplePie_Net_IPv6', 'SimplePie\Net\IPv6', false);
 
 /**
  * Date Parser
@@ -15866,6 +16029,8 @@ class SimplePie_Parse_Date
 	}
 }
 
+class_alias('SimplePie_Parse_Date', 'SimplePie\Parse\Date', false);
+
 /**
  * Parses XML into something sane
  *
@@ -15989,12 +16154,30 @@ class SimplePie_Parser
 			xml_set_element_handler($xml, 'tag_open', 'tag_close');
 
 			// Parse!
-			if (!xml_parse($xml, $data, true))
+			$wrapper = @is_writable(sys_get_temp_dir()) ? 'php://temp' : 'php://memory';
+			if (($stream = fopen($wrapper, 'r+')) &&
+				fwrite($stream, $data) &&
+				rewind($stream))
 			{
-				$this->error_code = xml_get_error_code($xml);
-				$this->error_string = xml_error_string($this->error_code);
+				//Parse by chunks not to use too much memory
+				do
+				{
+					$stream_data = fread($stream, 1048576);
+					if (!xml_parse($xml, $stream_data === false ? '' : $stream_data, feof($stream)))
+					{
+						$this->error_code = xml_get_error_code($xml);
+						$this->error_string = xml_error_string($this->error_code);
+						$return = false;
+						break;
+					}
+				} while (!feof($stream));
+				fclose($stream);
+			}
+			else
+			{
 				$return = false;
 			}
+
 			$this->current_line = xml_get_current_line_number($xml);
 			$this->current_column = xml_get_current_column_number($xml);
 			$this->current_byte = xml_get_current_byte_index($xml);
@@ -16485,6 +16668,8 @@ class SimplePie_Parser
 	}
 }
 
+class_alias('SimplePie_Parser', 'SimplePie\Parser', false);
+
 /**
  * Handles `<media:rating>` or `<itunes:explicit>` tags as defined in Media RSS and iTunes RSS respectively
  *
@@ -16566,6 +16751,8 @@ class SimplePie_Rating
 		return null;
 	}
 }
+
+class_alias('SimplePie_Rating', 'SimplePie\Rating', false);
 
 /**
  * Handles creating objects and calling methods
@@ -16734,7 +16921,8 @@ class SimplePie_Registry
 			{
 				case 'Cache':
 					// For backwards compatibility with old non-static
-					// Cache::create() methods
+					// Cache::create() methods in PHP < 8.0.
+					// No longer supported as of PHP 8.0.
 					if ($method === 'get_handler')
 					{
 						$result = @call_user_func_array(array($class, 'create'), $parameters);
@@ -16748,6 +16936,8 @@ class SimplePie_Registry
 		return $result;
 	}
 }
+
+class_alias('SimplePie_Registry', 'SimplePie\Registry', false);
 
 /**
  * Handles `<media:restriction>` as defined in Media RSS
@@ -16855,6 +17045,8 @@ class SimplePie_Restriction
 	}
 }
 
+class_alias('SimplePie_Restriction', 'SimplePie\Restriction', false);
+
 /**
  * Used for data cleanup and post-processing
  *
@@ -16875,6 +17067,7 @@ class SimplePie_Sanitize
 	var $strip_htmltags = array('base', 'blink', 'body', 'doctype', 'embed', 'font', 'form', 'frame', 'frameset', 'html', 'iframe', 'input', 'marquee', 'meta', 'noscript', 'object', 'param', 'script', 'style');
 	var $encode_instead_of_strip = false;
 	var $strip_attributes = array('bgsound', 'expr', 'id', 'style', 'onclick', 'onerror', 'onfinish', 'onmouseover', 'onmouseout', 'onfocus', 'onblur', 'lowsrc', 'dynsrc');
+	var $rename_attributes = array();
 	var $add_attributes = array('audio' => array('preload' => 'none'), 'iframe' => array('sandbox' => 'allow-scripts allow-same-origin'), 'video' => array('preload' => 'none'));
 	var $strip_comments = false;
 	var $output_encoding = 'UTF-8';
@@ -16885,6 +17078,15 @@ class SimplePie_Sanitize
 	var $useragent = '';
 	var $force_fsockopen = false;
 	var $replace_url_attributes = null;
+	var $registry;
+
+	/**
+	 * List of domains for which to force HTTPS.
+	 * @see SimplePie_Sanitize::set_https_domains()
+	 * Array is a tree split at DNS levels. Example:
+	 * array('biz' => true, 'com' => array('example' => true), 'net' => array('example' => array('www' => true)))
+	 */
+	var $https_domains = array();
 
 	public function __construct()
 	{
@@ -16974,6 +17176,25 @@ class SimplePie_Sanitize
 		$this->encode_instead_of_strip = (bool) $encode;
 	}
 
+	public function rename_attributes($attribs = array())
+	{
+		if ($attribs)
+		{
+			if (is_array($attribs))
+			{
+				$this->rename_attributes = $attribs;
+			}
+			else
+			{
+				$this->rename_attributes = explode(',', $attribs);
+			}
+		}
+		else
+		{
+			$this->rename_attributes = false;
+		}
+	}
+
 	public function strip_attributes($attribs = array('bgsound', 'expr', 'id', 'style', 'onclick', 'onerror', 'onfinish', 'onmouseover', 'onmouseout', 'onfocus', 'onblur', 'lowsrc', 'dynsrc'))
 	{
 		if ($attribs)
@@ -17026,9 +17247,9 @@ class SimplePie_Sanitize
 	 * Set element/attribute key/value pairs of HTML attributes
 	 * containing URLs that need to be resolved relative to the feed
 	 *
-	 * Defaults to |a|@href, |area|@href, |blockquote|@cite, |del|@cite,
-	 * |form|@action, |img|@longdesc, |img|@src, |input|@src, |ins|@cite,
-	 * |q|@cite
+	 * Defaults to |a|@href, |area|@href, |audio|@src, |blockquote|@cite,
+	 * |del|@cite, |form|@action, |img|@longdesc, |img|@src, |input|@src,
+	 * |ins|@cite, |q|@cite, |source|@src, |video|@src
 	 *
 	 * @since 1.0
 	 * @param array|null $element_attribute Element/attribute key/value pairs, null for default
@@ -17040,6 +17261,7 @@ class SimplePie_Sanitize
 			$element_attribute = array(
 				'a' => 'href',
 				'area' => 'href',
+				'audio' => 'src',
 				'blockquote' => 'cite',
 				'del' => 'cite',
 				'form' => 'action',
@@ -17049,10 +17271,77 @@ class SimplePie_Sanitize
 				),
 				'input' => 'src',
 				'ins' => 'cite',
-				'q' => 'cite'
+				'q' => 'cite',
+				'source' => 'src',
+				'video' => array(
+					'poster',
+					'src'
+				)
 			);
 		}
 		$this->replace_url_attributes = (array) $element_attribute;
+	}
+
+	/**
+	 * Set the list of domains for which to force HTTPS.
+	 * @see SimplePie_Misc::https_url()
+	 * Example array('biz', 'example.com', 'example.org', 'www.example.net');
+	 */
+	public function set_https_domains($domains)
+	{
+		$this->https_domains = array();
+		foreach ($domains as $domain)
+		{
+			$domain = trim($domain, ". \t\n\r\0\x0B");
+			$segments = array_reverse(explode('.', $domain));
+			$node =& $this->https_domains;
+			foreach ($segments as $segment)
+			{//Build a tree
+				if ($node === true)
+				{
+					break;
+				}
+				if (!isset($node[$segment]))
+				{
+					$node[$segment] = array();
+				}
+				$node =& $node[$segment];
+			}
+			$node = true;
+		}
+	}
+
+	/**
+	 * Check if the domain is in the list of forced HTTPS.
+	 */
+	protected function is_https_domain($domain)
+	{
+		$domain = trim($domain, '. ');
+		$segments = array_reverse(explode('.', $domain));
+		$node =& $this->https_domains;
+		foreach ($segments as $segment)
+		{//Explore the tree
+			if (isset($node[$segment]))
+			{
+				$node =& $node[$segment];
+			}
+			else
+			{
+				break;
+			}
+		}
+		return $node === true;
+	}
+
+	/**
+	 * Force HTTPS for selected Web sites.
+	 */
+	public function https_url($url)
+	{
+		return (strtolower(substr($url, 0, 7)) === 'http://') &&
+			$this->is_https_domain(parse_url($url, PHP_URL_HOST)) ?
+			substr_replace($url, 's', 4, 0) :	//Add the 's' to HTTPS
+			$url;
 	}
 
 	public function sanitize($data, $type, $base = '')
@@ -17114,6 +17403,14 @@ class SimplePie_Sanitize
 					foreach ($this->strip_htmltags as $tag)
 					{
 						$this->strip_tag($tag, $document, $xpath, $type);
+					}
+				}
+
+				if ($this->rename_attributes)
+				{
+					foreach ($this->rename_attributes as $attrib)
+					{
+						$this->rename_attr($attrib, $xpath);
 					}
 				}
 
@@ -17190,6 +17487,8 @@ class SimplePie_Sanitize
 				{
 					$data = preg_replace('/^<div' . SIMPLEPIE_PCRE_XML_ATTRIBUTE . '>/', '<div>', $data);
 				}
+
+				$data = str_replace('</source>', '', $data);
 			}
 
 			if ($type & SIMPLEPIE_CONSTRUCT_IRI)
@@ -17257,6 +17556,7 @@ class SimplePie_Sanitize
 						$value = $this->registry->call('Misc', 'absolutize_url', array($element->getAttribute($attribute), $this->base));
 						if ($value !== false)
 						{
+							$value = $this->https_url($value);
 							$element->setAttribute($attribute, $value);
 						}
 					}
@@ -17384,6 +17684,17 @@ class SimplePie_Sanitize
 		}
 	}
 
+	protected function rename_attr($attrib, $xpath)
+	{
+		$elements = $xpath->query('//*[@' . $attrib . ']');
+
+		foreach ($elements as $element)
+		{
+			$element->setAttribute('data-sanitized-' . $attrib, $element->getAttribute($attrib));
+			$element->removeAttribute($attrib);
+		}
+	}
+
 	protected function add_attr($tag, $valuePairs, $document)
 	{
 		$elements = $document->getElementsByTagName($tag);
@@ -17396,6 +17707,8 @@ class SimplePie_Sanitize
 		}
 	}
 }
+
+class_alias('SimplePie_Sanitize', 'SimplePie\Sanitize', false);
 
 /**
  * Handles `<atom:source>`
@@ -17932,6 +18245,8 @@ class SimplePie_Source
 	}
 }
 
+class_alias('SimplePie_Source', 'SimplePie\Source', false);
+
 /**
  * Parses the XML Declaration
  *
@@ -18247,6 +18562,8 @@ class SimplePie_XML_Declaration_Parser
 		}
 	}
 }
+
+class_alias('SimplePie_XML_Declaration_Parser', 'SimplePie\XML\Declaration\Parser', false);
 
 /**
  * Decode 'gzip' encoded HTTP data
@@ -18571,3 +18888,4 @@ class SimplePie_gzdecode
 	}
 }
 
+class_alias('SimplePie_gzdecode', 'SimplePie\Gzdecode', false);
