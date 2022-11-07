@@ -2,7 +2,7 @@
 // CSV extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/csv
 
 class YellowCsv {
-    const VERSION = "0.8.15";
+    const VERSION = "0.8.16";
     public $yellow;         //access to API
     
     // Handle initialisation
@@ -21,7 +21,7 @@ class YellowCsv {
             list($fileName, $class) = $this->yellow->toolbox->getTextArguments($text);
             $fileName = $this->yellow->toolbox->normalisePath($this->yellow->system->get("csvDirectory").$fileName);
             $fileData = $this->yellow->toolbox->readFile($fileName);
-            if (!empty($fileData)) {
+            if (!is_string_empty($fileData)) {
                 $output = "<div class=\"".htmlspecialchars($name)."\" style=\"overflow-x:auto;\">\n";
                 $output .= $this->getCsvHtml($fileData, $class);
                 $output .= "</div>\n";
@@ -31,9 +31,9 @@ class YellowCsv {
         }
         if (substru($name, 0, 3)=="csv" && $type=="code") {
             list($language, $class, $id) = $this->getCsvInformation($name);
-            if ($language=="csv" && !empty($text)) {
+            if ($language=="csv" && !is_string_empty($text)) {
                 $output = "<div class=\"".htmlspecialchars($language)."\"";
-                if (!empty($id)) $output .= " id=\"".htmlspecialchars($id)."\"";
+                if (!is_string_empty($id)) $output .= " id=\"".htmlspecialchars($id)."\"";
                 $output .= " style=\"overflow-x:auto;\">\n";
                 $output .= $this->getCsvHtml($text, $class);
                 $output .= "</div>\n";
@@ -69,7 +69,7 @@ class YellowCsv {
             } else {
                 $output .= "<tr>\n";
             }
-            for ($column=0; $column<count($data); ++$column) {
+            for ($column=0; $column<is_array_empty($data); ++$column) {
                 $value = trim($data[$column]);
                 if ($row==0) {
                     $output .= "<th>".$value."</th>\n";
@@ -109,7 +109,7 @@ class YellowCsv {
     public function getCsvInformation($name) {
         $language = $class = $id = "";
         foreach (explode(" ", $name) as $token) {
-            if (substru($token, 0, 3)=="csv" && empty($language)) $language = $token;
+            if (substru($token, 0, 3)=="csv" && is_string_empty($language)) $language = $token;
             if (substru($token, 0, 1)==".") $class = $class." ".substru($token, 1);
             if (substru($token, 0, 1)=="#") $id = substru($token, 1);
         }

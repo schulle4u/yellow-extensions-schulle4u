@@ -2,7 +2,7 @@
 // Redirect extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/redirect
 
 class YellowRedirect {
-    const VERSION = "0.8.3";
+    const VERSION = "0.8.4";
     public $yellow;         //access to API
     
     // Handle initialisation
@@ -16,7 +16,7 @@ class YellowRedirect {
         $output = null;
         if ($name=="redirect" && ($type=="inline")) {
             $redirectTime = $page->getHtml("redirectTime");
-            if (strempty($redirectTime)) $redirectTime = $this->yellow->system->get("redirectTime");
+            if (is_string_empty($redirectTime)) $redirectTime = $this->yellow->system->get("redirectTime");
             $output = "<span id=\"countdown\">".$redirectTime."</span>";
         }
         return $output;
@@ -27,7 +27,7 @@ class YellowRedirect {
         $output = null;
         if ($name == "header" && $page->getHtml("redirectLocation") && $this->yellow->getRequestHandler()=="core") {
             $redirectTime = $page->getHtml("redirectTime");
-            if (strempty($redirectTime)) $redirectTime = $this->yellow->system->get("redirectTime");
+            if (is_string_empty($redirectTime)) $redirectTime = $this->yellow->system->get("redirectTime");
             $redirectLocation = $page->getHtml("redirectLocation");
             if (!preg_match("/^\w+:/", $redirectLocation)) {
                 $redirectLocation = $this->yellow->system->get("coreServerBase").$redirectLocation;

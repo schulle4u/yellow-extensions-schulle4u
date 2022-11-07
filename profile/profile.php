@@ -2,7 +2,7 @@
 // Profile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/profile
 
 class YellowProfile {
-    const VERSION = "0.8.9";
+    const VERSION = "0.8.10";
     public $yellow;            // access to API
     
     // Handle initialisation
@@ -17,11 +17,11 @@ class YellowProfile {
         $output = null;
         if ($name=="profile" && ($type=="block" || $type=="inline")) {
             list($author, $style) = $this->yellow->toolbox->getTextArguments($text);
-            if(empty($style)) $style  = $this->yellow->system->get("profileStyle");
+            if (is_string_empty($style)) $style  = $this->yellow->system->get("profileStyle");
             $output .= "<div class=\"".htmlspecialchars($style)."\">\n";
             $location = $this->yellow->system->get("profileLocation");
             if($this->yellow->page->isExisting ("profile")) $profile = $this->yellow->page->get("profile");
-            if(empty($profile)) {
+            if (is_string_empty($profile)) {
                 $author = $location;
             } else {
                 $author = $location.$profile;

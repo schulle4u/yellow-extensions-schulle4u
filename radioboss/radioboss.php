@@ -2,7 +2,7 @@
 // Radioboss extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/radioboss 
 
 class YellowRadioboss {
-    const VERSION = "0.8.12";
+    const VERSION = "0.8.13";
     public $yellow;            //access to API
     public $outputFooter;      //generated output for footer
     
@@ -65,22 +65,22 @@ END;
         $output = null;
         if ($name=="radioboss" && ($type=="block" || $type=="inline")) {
             list($widget, $arguments, $style, $server, $port, $port2, $id, $mount) = $this->yellow->toolbox->getTextArguments($text);
-            if (empty($widget)) $widget = "page";
-            if (empty($style)) $style = $this->yellow->system->get("radiobossStyle");
-            if (empty($server)) $server = $this->yellow->system->get("radiobossServer");
-            if (empty($port)) $port = $this->yellow->system->get("radiobossPort");
-            if (empty($port2)) $port2 = $this->yellow->system->get("radiobossPort2");
-            if (empty($id)) $id = $this->yellow->system->get("radiobossId");
-            if (empty($mount)) $mount = $this->yellow->system->get("radiobossMount");
+            if (is_string_empty($widget)) $widget = "page";
+            if (is_string_empty($style)) $style = $this->yellow->system->get("radiobossStyle");
+            if (is_string_empty($server)) $server = $this->yellow->system->get("radiobossServer");
+            if (is_string_empty($port)) $port = $this->yellow->system->get("radiobossPort");
+            if (is_string_empty($port2)) $port2 = $this->yellow->system->get("radiobossPort2");
+            if (is_string_empty($id)) $id = $this->yellow->system->get("radiobossId");
+            if (is_string_empty($mount)) $mount = $this->yellow->system->get("radiobossMount");
             $listeners = $this->yellow->system->get("radiobossListeners");
             $nexttrack = $this->yellow->system->get("radiobossNexttrack");
             $wid = mt_rand(100, 9999);
             $output .= "<div class=\"".htmlspecialchars($style)."\">\n";
             if ($widget == "miniplayer") {
                 $argumentData = explode(" ", $arguments);
-                if (strempty($argumentData[0])) $argumentData[0] = "86";
-                if (empty($argumentData[1])) $argumentData[1] = "#111111";
-                if (empty($argumentData[2])) $argumentData[2] = "#b3b3b3";
+                if (is_string_empty($argumentData[0])) $argumentData[0] = "86";
+                if (is_string_empty($argumentData[1])) $argumentData[1] = "#111111";
+                if (is_string_empty($argumentData[2])) $argumentData[2] = "#b3b3b3";
                 $output .= "<div id=\"rbcloud_mplayer".htmlspecialchars($wid)."\"></div>\n";
                 $this->outputFooter .= "<script src=\"https://".htmlspecialchars($server)."/w/mplayer.js?u=https%3A%2F%2F".htmlspecialchars($server)."%3A".htmlspecialchars($port2)."%2F".htmlspecialchars($mount)."&amp;wid=".htmlspecialchars($wid)."&amp;pw=".htmlspecialchars($argumentData[0])."&amp;ca=".rawurlencode($argumentData[1])."&amp;cg=".rawurlencode($argumentData[2])."\"></script>\n";
             }
@@ -92,14 +92,14 @@ END;
                 $output .= "<div id=\"rbcloud_nowplaying".htmlspecialchars($wid)."\"></div>\n";
                 if ($listeners) $output .= "<div>".$this->yellow->language->getText("radiobossListeners").": <span id=\"rbcloud_listeners".htmlspecialchars($wid)."\">...</span></div>\n";
                 if ($nexttrack) $output .= "<div>".$this->yellow->language->getText("radiobossNexttrack").": <span id=\"rbcloud_nexttrack".htmlspecialchars($wid)."\">...</span></div>\n";
-                $this->outputFooter .= "<script src=\"https://".htmlspecialchars($server)."/w/nowplaying.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid).(empty($listeners) ? "&amp;nl=1" : "")."\"></script>\n";
+                $this->outputFooter .= "<script src=\"https://".htmlspecialchars($server)."/w/nowplaying.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid).(is_string_empty($listeners) ? "&amp;nl=1" : "")."\"></script>\n";
             }
             if ($widget == "cover") {
                 $output .= "<img id=\"rbcloud_cover".htmlspecialchars($wid)."\" src=\"https://".htmlspecialchars($server)."/w/artwork/".htmlspecialchars($id).".png\" width=\"150\" height=\"150\" alt=\"Cover Art\">\n";
                 $this->outputFooter .= "<script src=\"https://".htmlspecialchars($server)."/w/cover.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid)."\"></script>\n";
             }
             if ($widget == "recent") {
-                if (empty($arguments)) $arguments = $this->yellow->system->get("radiobossTrackCount");
+                if (is_string_empty($arguments)) $arguments = $this->yellow->system->get("radiobossTrackCount");
                 $output .= "<div id=\"rbcloud_recent".htmlspecialchars($wid)."\" data-cnt=\"".htmlspecialchars($arguments)."\"></div>\n";
                 $this->outputFooter .= "<script src=\"https://".htmlspecialchars($server)."/w/recent.js?u=".htmlspecialchars($id)."&amp;wid=".htmlspecialchars($wid)."\"></script>\n";
             }

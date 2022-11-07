@@ -2,7 +2,7 @@
 // Soundcloud extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/soundcloud
 
 class YellowSoundcloud {
-    const VERSION = "0.8.4";
+    const VERSION = "0.8.5";
     public $yellow;         // access to API
     
     // Handle initialisation

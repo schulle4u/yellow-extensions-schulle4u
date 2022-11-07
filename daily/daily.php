@@ -2,7 +2,7 @@
 // daily extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/daily
 
 class YellowDaily {
-    const VERSION = "0.8.5";
+    const VERSION = "0.8.6";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -17,8 +17,8 @@ class YellowDaily {
             list($day, $format) = $this->yellow->toolbox->getTextArguments($text);
             $this->yellow->page->setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
             $output .= "<div class=\"".htmlspecialchars($name)."\">\n";
-            if (strempty($day)) $day  = date("N");
-            if (empty($format)) $format = "teaser";
+            if (is_string_empty($day)) $day  = date("N");
+            if (is_string_empty($format)) $format = "teaser";
             switch($day) {
                 case 1: $pages = $this->yellow->content->index(false)->filter("daily", "1"); break;
                 case 2: $pages = $this->yellow->content->index(false)->filter("daily", "2"); break;

@@ -3,7 +3,7 @@
 // Based on the yellow Feed extension, https://github.com/annaesvensson/yellow-feed
 
 class YellowPodcast {
-    const VERSION = "0.8.14";
+    const VERSION = "0.8.15";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -52,7 +52,7 @@ class YellowPodcast {
                 $entriesMax = $this->yellow->system->get("podcastPaginationLimit");
                 if ($entriesMax==0 || $entriesMax>100) $entriesMax = 100;
                 $pages->limit($entriesMax);
-                $title = !empty($pagesFilter) ? implode(' ', $pagesFilter)." - ".$this->yellow->page->get("sitename") : $this->yellow->page->get("sitename");
+                $title = !is_array_empty($pagesFilter) ? implode(' ', $pagesFilter)." - ".$this->yellow->page->get("sitename") : $this->yellow->page->get("sitename");
                 $this->yellow->page->setLastModified($pages->getModified());
                 $this->yellow->page->setHeader("Content-Type", "application/rss+xml; charset=utf-8");
                 $output = "<?xml version=\"1.0\" encoding=\"utf-8\"\077>\r\n";
@@ -112,7 +112,7 @@ class YellowPodcast {
                 $this->yellow->page->setOutput($output);
             } else {
                 $pages->sort($chronologicalOrder ? "modified" : "published", false);
-                if (!empty($pagesFilter)) {
+                if (!is_array_empty($pagesFilter)) {
                     $text = implode(' ', $pagesFilter);
                     $this->yellow->page->set("titleHeader", $text." - ".$this->yellow->page->get("sitename"));
                     $this->yellow->page->set("titleContent", $this->yellow->page->get("title").": ".$text);

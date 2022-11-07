@@ -2,7 +2,7 @@
 // Ticker extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/ticker
 
 class YellowTicker {
-    const VERSION = "0.8.10";
+    const VERSION = "0.8.11";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -32,8 +32,8 @@ class YellowTicker {
         $output = null;
         if ($name=="ticker" && ($type=="block" || $type=="inline")) {
             list($rssurl, $numentries, $style) = $this->yellow->toolbox->getTextArguments($text);
-            if (empty($style)) $style = $this->yellow->system->get("tickerStyle");
-            if (strempty($numentries)) $numentries = $this->yellow->system->get("tickerNumentries");
+            if (is_string_empty($style)) $style = $this->yellow->system->get("tickerStyle");
+            if (is_string_empty($numentries)) $numentries = $this->yellow->system->get("tickerNumentries");
             $n = 1;
             $showDate = $this->yellow->system->get("tickerShowDate");
             $showDescription = $this->yellow->system->get("tickerShowDescription");

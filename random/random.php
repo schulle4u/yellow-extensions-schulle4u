@@ -2,7 +2,7 @@
 // Random extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/random
 
 class YellowRandom {
-    const VERSION = "0.8.7";
+    const VERSION = "0.8.8";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -18,13 +18,13 @@ class YellowRandom {
         $output = null;
         if ($name=="random" && ($type=="block" || $type=="inline")) {
             list($location, $pagesMax, $mode) = $this->yellow->toolbox->getTextArguments($text);
-            if (empty($location)) $location = $this->yellow->system->get("randomLocation");
-            if (strempty($pagesMax)) $pagesMax = $this->yellow->system->get("randomPagesMax");
-            if (empty($mode)) $mode = $this->yellow->system->get("randomMode");
+            if (is_string_empty($location)) $location = $this->yellow->system->get("randomLocation");
+            if (is_string_empty($pagesMax)) $pagesMax = $this->yellow->system->get("randomPagesMax");
+            if (is_string_empty($mode)) $mode = $this->yellow->system->get("randomMode");
             $this->yellow->page->setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
             $parent = $this->yellow->content->find($location);
             $pages = $parent ? $parent->getChildren(false) : $this->yellow->content->clean();
-            if (count($pages)) {
+            if (is_array_empty($pages)) {
                 $output .= "<div class=\"".$name."\">\n";
                 if ($mode == "list") $output .= "<ul>\n";
                 foreach ($pages->shuffle()->limit($pagesMax) as $page) {

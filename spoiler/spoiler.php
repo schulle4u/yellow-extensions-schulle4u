@@ -2,7 +2,7 @@
 // Spoiler extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/spoiler
 
 class YellowSpoiler {
-    const VERSION = "0.8.7";
+    const VERSION = "0.8.8";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -15,9 +15,9 @@ class YellowSpoiler {
         $output = null;
         if ($name=="spoilerstart" && ($type=="block" || $type=="inline")) {
             list($id, $label, $display) = $this->yellow->toolbox->getTextArguments($text);
-            if (empty($id)) $id = "spoiler";
-            if (empty($label)) $label = "…";
-            if (empty($display)) $display = "none";
+            if (is_string_empty($id)) $id = "spoiler";
+            if (is_string_empty($label)) $label = "…";
+            if (is_string_empty($display)) $display = "none";
             $output .= "<a href=\"#\" class=\"spoiler-link\" data-spoiler-id=\"".htmlspecialchars($id)."\"";
             if ($display == "none") {
                 $output .= " aria-expanded=\"false\"";

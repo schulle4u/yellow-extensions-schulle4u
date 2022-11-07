@@ -2,7 +2,7 @@
 // Audio extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/audio
 
 class YellowAudio {
-    const VERSION = "0.8.9";
+    const VERSION = "0.8.10";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -29,8 +29,8 @@ class YellowAudio {
             } else {
                 $url = $this->yellow->lookup->normaliseUrl("", "", "", $url);
             }
-            if (strempty($download)) $download = $this->yellow->system->get("audioDownload");
-            if (empty($style)) $style = $this->yellow->system->get("audioStyle");
+            if (is_string_empty($download)) $download = $this->yellow->system->get("audioDownload");
+            if (is_string_empty($style)) $style = $this->yellow->system->get("audioStyle");
             $output = "<div class=\"".htmlspecialchars($style)."\" role=\"region\" aria-label=\"".htmlspecialchars(ucfirst($name))."\">";
             $output .= "<audio src=\"".htmlspecialchars($url)."\" controls=\"controls\" preload=\"none\">HTML5 audio not supported.</audio>";
             if ($download) $output .= "<p><a href=\"".htmlspecialchars($url)."\">Download</a></p>";

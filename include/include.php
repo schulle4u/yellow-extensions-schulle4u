@@ -2,7 +2,7 @@
 // Include extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/include
 
 class YellowInclude {
-    const VERSION = "0.8.5";
+    const VERSION = "0.8.6";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -15,7 +15,7 @@ class YellowInclude {
         $output = null;
         if ($name=="include" && ($type=="block" || $type=="inline")) {
             list($location, $mode) = $this->yellow->toolbox->getTextArguments($text);
-            if (empty($mode)) $mode = "full";
+            if (is_string_empty($mode)) $mode = "full";
             $output .= "<div class=\"".$name."\">\n";
             $page = $this->yellow->content->find($location);
             if ($page) {

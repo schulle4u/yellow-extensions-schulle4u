@@ -2,7 +2,7 @@
 // Antispam extension, http://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/antispam
 
 class YellowAntispam {
-    const VERSION = "0.8.6";
+    const VERSION = "0.8.7";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -15,7 +15,7 @@ class YellowAntispam {
         $output = null;
         if ($name=="email" && ($type=="block" || $type=="inline")) {
             list($address, $text) = $this->yellow->toolbox->getTextArguments($text);
-            if (empty($text)) $text = $address;
+            if (is_string_empty($text)) $text = $address;
             $output = "<span class=\"antispam\" data-address=\"".htmlspecialchars(str_rot13($address))."\" data-text=\"".htmlspecialchars(str_rot13($text))."\" style=\"unicode-bidi:bidi-override; direction:rtl;\">".htmlspecialchars(strrev($address))."</span>";
         }
         return $output;

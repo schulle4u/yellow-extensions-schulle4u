@@ -2,7 +2,7 @@
 // Twitter extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/twitter
 
 class YellowTwitter {
-    const VERSION = "0.8.6";
+    const VERSION = "0.8.7";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -16,29 +16,29 @@ class YellowTwitter {
         $output = null;
         if ($name=="twitter" && ($type=="block" || $type=="inline")) {
             list($id, $theme, $style, $width, $height) = $this->yellow->toolbox->getTextArguments($text);
-            if (empty($theme)) $theme = $this->yellow->system->get("twitterTheme");
+            if (is_string_empty($theme)) $theme = $this->yellow->system->get("twitterTheme");
             $language = $page->get("language");
             if (is_numeric($id)) {
                 $output = "<div class=\"twitter\" data-mode=\"tweet\" data-id=\"".htmlspecialchars($id)."\" data-conversation=\"none\"";
-                if (!empty($width)) $output .=" data-width=\"".htmlspecialchars($width)."\"";
-                if (!empty($height)) $output .=" data-height=\"".htmlspecialchars($height)."\"";
-                if (!empty($style)) $output .=" data-align=\"".htmlspecialchars($style)."\"";
+                if (!is_string_empty($width)) $output .=" data-width=\"".htmlspecialchars($width)."\"";
+                if (!is_string_empty($height)) $output .=" data-height=\"".htmlspecialchars($height)."\"";
+                if (!is_string_empty($style)) $output .=" data-align=\"".htmlspecialchars($style)."\"";
                 $output .= " data-theme=\"".htmlspecialchars($theme)."\" data-lang=\"$language\" data-dnt=\"true\"></div>";
             } else {
                 $output = "<div class=\"twitter\" data-mode=\"timeline\" data-id=\"".htmlspecialchars($id)."\" data-chrome=\"noheader nofooter\"";
-                if (!empty($width)) $output .=" data-width=\"".htmlspecialchars($width)."\"";
-                if (!empty($height)) $output .=" data-height=\"".htmlspecialchars($height)."\"";
-                if (!empty($style)) $output .=" data-align=\"".htmlspecialchars($style)."\"";
+                if (!is_string_empty($width)) $output .=" data-width=\"".htmlspecialchars($width)."\"";
+                if (!is_string_empty($height)) $output .=" data-height=\"".htmlspecialchars($height)."\"";
+                if (!is_string_empty($style)) $output .=" data-align=\"".htmlspecialchars($style)."\"";
                 $output .= " data-theme=\"".htmlspecialchars($theme)."\" data-lang=\"$language\" data-dnt=\"true\"></div>";
             }
         }
         if ($name=="twitterfollow" && ($type=="block" || $type=="inline")) {
             list($id, $dummy, $style) = $this->yellow->toolbox->getTextArguments($text);
             $language = $page->get("language");
-            if (!empty($style)) $output .= "<div class=\"".htmlspecialchars($style)."\">";
+            if (!is_string_empty($style)) $output .= "<div class=\"".htmlspecialchars($style)."\">";
             $output .= "<a class=\"twitter-follow-button\" data-size=\"large\"";
             $output .= " data-lang=\"$language\" data-dnt=\"true\" href=\"https://twitter.com/".rawurlencode($id)."\">@".htmlspecialchars($id)."</a>";
-            if (!empty($style)) $output .= "</div>";
+            if (!is_string_empty($style)) $output .= "</div>";
         }
         return $output;
     }

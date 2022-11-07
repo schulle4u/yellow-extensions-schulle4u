@@ -2,7 +2,7 @@
 // Pagesource extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/pagesource
 
 class YellowPagesource {
-    const VERSION = "0.8.7";
+    const VERSION = "0.8.8";
     public $yellow;         //access to API
     
     // Handle initialisation
@@ -35,7 +35,7 @@ class YellowPagesource {
         $output = null;
         if ($name=="pagesource" && ($type=="block" || $type=="inline")) {
             list($style) = $this->yellow->toolbox->getTextArguments($text);
-            if (empty($style)) $style = $this->yellow->system->get("pagesourceStyle");
+            if (is_string_empty($style)) $style = $this->yellow->system->get("pagesourceStyle");
             $output = "<div class=\"".htmlspecialchars($style)."\">\n";
             $output .= "<form class=\"pagesource-form\" action=\"".$this->yellow->page->getLocation(true)."\" method=\"post\" target=\"_blank\">\n";
             $output .= "<input type=\"hidden\" name=\"status\" value=\"source\" />\n";
