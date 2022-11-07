@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Spoiler 0.8.7
+# Spoiler 0.8.8
 
 Bestimmte Seitenelemente verstecken.
 

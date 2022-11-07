@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Antispam 0.8.6
+# Antispam 0.8.7
 
 Alternative email address obfuscator. 
 

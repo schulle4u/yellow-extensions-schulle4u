@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Redirect 0.8.3
+# Redirect 0.8.4
 
 Alternative page redirection.
 

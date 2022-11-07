@@ -24,7 +24,7 @@ class YellowRandom {
             $this->yellow->page->setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
             $parent = $this->yellow->content->find($location);
             $pages = $parent ? $parent->getChildren(false) : $this->yellow->content->clean();
-            if (is_array_empty($pages)) {
+            if (!is_array_empty($pages)) {
                 $output .= "<div class=\"".$name."\">\n";
                 if ($mode == "list") $output .= "<ul>\n";
                 foreach ($pages->shuffle()->limit($pagesMax) as $page) {

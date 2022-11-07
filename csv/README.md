@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Csv 0.8.15
+# Csv 0.8.16
 
 CSV file parser.
 

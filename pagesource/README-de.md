@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Pagesource 0.8.7
+# Pagesource 0.8.8
 
 Markdown-Quelltext auf Seiten anzeigen.
 
