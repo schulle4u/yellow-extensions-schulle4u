@@ -16,20 +16,20 @@ class YellowProfile {
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
         if ($name=="profile" && ($type=="block" || $type=="inline")) {
-            list($author, $style) = $this->yellow->toolbox->getTextArguments($text);
+            list($location, $style) = $this->yellow->toolbox->getTextArguments($text);
             if (is_string_empty($style)) $style  = $this->yellow->system->get("profileStyle");
             $output .= "<div class=\"".htmlspecialchars($style)."\">\n";
-            $location = $this->yellow->system->get("profileLocation");
-            if($this->yellow->page->isExisting ("profile")) $profile = $this->yellow->page->get("profile");
-            if (is_string_empty($profile)) {
-                $author = $location;
+            if (is_string_empty($location)) {
+                $location = $this->yellow->system->get("profileLocation");
             } else {
-                $author = $location.$profile;
+                $location = $this->yellow->system->get("profileLocation").$location;
             }
-            $page = $this->yellow->content->find($author);
+            $page = $this->yellow->content->find($location);
             if ($page) {
                 $output .= "<h2>".$page->getHtml("titleContent")."</h2>\n";
                 $output .= $this->yellow->toolbox->createTextDescription($page->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->language->getTextHtml("blogMore")."</a>\n");
+            } else {
+                $this->yellow->page->error(500, "Page '$location' does not exist!");
             }
             $output .= "</div>\n";
         }
