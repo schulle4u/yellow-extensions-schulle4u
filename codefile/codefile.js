@@ -1,18 +1,17 @@
 // Codefile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/codefile
 
-// Create an invisible element
-// Based on a tutorial from https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/
+// Download file with a temporary element
 function download(file, code, id) {
-    var element = document.createElement('a');
+    var element = document.createElement("a");
     element.setAttribute('href',
-    'data:text/plain;charset=utf-8,' + encodeURIComponent(code));
-    element.setAttribute('download', file);
+    "data:text/plain;charset=utf-8," + encodeURIComponent(code));
+    element.setAttribute("download", file);
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
 } 
 
-// Start file download. 
+// Initialize button for download
 var btn = document.getElementById("codefile-btn");
 if (btn) {
     document.getElementById("codefile-btn").addEventListener("click", function() {

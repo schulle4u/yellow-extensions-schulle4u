@@ -13,7 +13,7 @@ Erstelle eine `[ticker]`-Abkürzung.
 Die folgenden Argumente sind verfügbar, mit Ausnahme des ersten Arguments sind alle Angaben optional:
 
 `RssUrl` = URL des RSS-Feeds  
-`NumEntries` = Anzahl anzuzeigender Einträge  
+`EntriesMax` = Anzahl anzuzeigender Einträge  
 `Style` = Zu verwendende CSS-Klasse  
 
 Diese Erweiterung liest alle gängigen RSS- und Atom-Feeds. Für ein Schnelleres Laden der Einträge wird Caching unterstützt. 
@@ -30,8 +30,8 @@ Zeigt die neuesten Einträge eines RSS-Feeds:
 
 Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden: 
 
-`TickerShowDate` = Datumsangabe neben Feed-Einträgen (Standard: 1).  
-`TickerShowDescription` = Beschreibungen der Einträge anzeigen (Standard: 1).  
+`TickerShowDate` = Datumsangabe neben Feed-Einträgen, 1 oder 0  
+`TickerShowDescription` = Beschreibungen der Einträge anzeigen, 1 oder 0  
 
 ## Installation
 

@@ -12,8 +12,8 @@ Erstelle eine `[daily]`-Abkürzung. Definiere eine `Daily`-Einstellung in den Se
 
 Die folgenden optionalen Argumente sind verfügbar: 
 
-`day` = Numerischer Wochentag (Standard: aktueller Tag).  
-`format` = Seiten als Liste oder Anreißer darstellen (list oder teaser, Standard: teaser).
+`Day` = Numerischer Wochentag, 1-7  
+`Format` = Seiten als Liste oder Anreißer darstellen, `list` oder `teaser`  
 
 ## Beispiele
 
@@ -25,7 +25,7 @@ Seiten für Samstag als Liste anzeigen:
 
     [daily 6 list]
 
-Hier ist eine Beispielseite. 
+Inhaltsdatei für eine tägliche Seite:
 
 ````
 ---
@@ -36,7 +36,7 @@ Daily: 4
 Um 20:00 Uhr präsentiert euch Steffen wieder die neueste Musik aus der Creative-Commons-Gemeinschaft. Anschließend geht es ab 22:00 Uhr mit Instrumentalmusik durch die Nacht. 
 ````
 
-Du kannst auch mehrere Wochentage angeben: 
+Inhaltsdatei für mehrere Wochentage:
 
 ````
 ---

@@ -10,8 +10,8 @@ Alternative page redirection.
 
 Use the following page settings to redirect your visitors:
 
-`RedirectLocation` = target page or URL (example: `https://datenstrom.se`)  
-`RedirectTime` = How many seconds to wait before redirecting (default: 5).
+`RedirectLocation` = target page or URL, e.g. `https://datenstrom.se`  
+`RedirectTime` = number of seconds to wait before redirecting  
 
 To optionally show a countdown for visitors, create a `[redirect]` shortcut. 
 
@@ -19,7 +19,7 @@ This extension provides an alternative page redirection method using meta refres
 
 ## Examples
 
-Here is an example content file with location redirection: 
+Content file with redirection:
 
 ```
 ---
@@ -34,7 +34,7 @@ Redirecting in [redirect] seconds. If you are not being redirected automatically
 
 The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
-`RedirectTime` = How many seconds to wait before redirecting (default: 5).
+`RedirectTime` = number of seconds to wait before redirecting  
 
 ## Installation
 

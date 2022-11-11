@@ -12,11 +12,11 @@ Create an `[audio]` shortcut.
  
 The following arguments are available, all but the first argument are optional:
 
-`url` = URL for audio file, e.g. OGG or MP3  
-`download` = show download link for audio file, 1 or 0  
-`style` = CSS class to use for the player 
+`Url` = URL of audio file, e.g. OGG or MP3  
+`Download` = show download link for audio file, 1 or 0  
+`Style` = CSS class of player 
 
-This extension embeds a basic audio player using the HTML5 `<audio>` tag, which is supported by most web browsers. 
+This extension embeds a basic audio player using the HTML `<audio>` element, which is supported by most web browsers. 
 
 ## Examples
 
@@ -32,7 +32,7 @@ Embedding a track from an external URL and allow downloading:
 
     [audio http://wolke.robbenradio.de/podcasts/rt033_yellow.mp3 1]
 
-Here is a page using a standalone audio player:
+Content file with a standalone audio player:
 
 ```
 ---
@@ -48,10 +48,10 @@ Layout: audio
 The following settings can be configured in file `system/extensions/yellow-system.ini`: 
 
 `AudioDownload` = show download link for audio files, 1 or 0  
-`AudioUrlPrefix` = URL prefix for audio files (useful for hosting files on a CDN)  
+`AudioUrlPrefix` = URL prefix for audio files on a CDN  
 `AudioStyle` = CSS class to use for the player  
 
-The following file can be configured:
+The following file can be customised:
 
 `system/layouts/audio.html` = layout file for standalone audio player  
 

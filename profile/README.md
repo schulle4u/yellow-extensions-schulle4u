@@ -12,14 +12,16 @@ Create a `[profile]` shortcut.
 
 The following arguments are available, all arguments are optional:
 
-`author` = name of page author.   
-`style` = profile style. 
+`location` = location of author's page   
+`Style` = profile style  
 
 If the [blog extension](https://github.com/annaesvensson/yellow-blog) is installed, author notes will automatically be inserted after each article. Use `Profile: author` in your page settings to specify a different profile. 
 
+Edit the file `content/profile/page.md` like you would do with a normal page. Write down a few notes about you. If you want an extended profile page, it is recommended to use a page break. You can create profile pages for every site author in the same directory. 
+
 ## Examples
 
-Edit the file `content/profile/page.md` like you would do with a normal page. Write down a few notes about you. If you want an extended profile page, it is recommended to use a page break. You can create profile pages for every site author in the same directory. 
+Content file with author profile:
 
 ```
 ---
@@ -41,13 +43,12 @@ Display individual author profiles:
     [profile yourname]
     [profile someone]
 
-
 ## Settings
 
 The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
-`ProfileLocation` = The location for author profiles (default: `/profile/`).   
-`ProfileStyle` = Default profile style. 
+`ProfileLocation` = location for author profiles  
+`ProfileStyle` = default profile style  
 
 ## Installation
 

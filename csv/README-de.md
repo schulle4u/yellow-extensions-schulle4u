@@ -12,8 +12,8 @@ Erstelle eine `[csv]`-Abkürzung.
 
 Die folgenden Argumente sind verfügbar, mit Ausnahme des ersten Arguments sind alle Angaben optional:
 
-`FileName` = Name der CSV-Datei.   
-`Class` = Klasse für die HTML-Tabelle
+`FileName` = Name der CSV-Datei  
+`Class` = Klasse für die HTML-Tabelle  
 
 Diese Erweiterung lädt eine CSV-Datei und gibt sie als HTML-Tabelle aus. Für umfangreiche Datensätze stehen ein Zeilenfilter sowie Spaltensortierung zur Verfügung. Des Weiteren können CSV-Daten mittels eines Code-Blocks in markdown geladen werden. 
 
@@ -47,16 +47,16 @@ Einen Markdown-Code-Block zum Anzeigen von CSV-Daten benutzen:
 
 Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
-`CsvDirectory` = Verzeichnis für CSV-Dateien (Standard: `media/downloads/`).  
-`CsvDelimiter` = Spaltentrenner (Standard: auto).   
-`CsvFirstRowHeader` = Benutze die erste Zeile der CSV-Datei als Spaltenüberschrift (Standard: true).  
-`CsvFilter` = Zeigt ein Suchfeld zum Filtern der Tabellenzeilen an (Standard: true).
+`CsvDirectory` = Verzeichnis für CSV-Dateien  
+`CsvDelimiter` = Spaltentrenner, `auto` für automatische Erkennung  
+`CsvFirstRowHeader` = Benutze die erste Zeile der CSV-Datei als Spaltenüberschrift, 1 oder 0  
+`CsvFilter` = Zeigt ein Suchfeld zum Filtern der Tabellenzeilen an, 1 oder 0  
 
 ## Installation
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/csv.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
-Diese Erweiterung enthält [Light-table-filter](https://codepen.io/chriscoyier/pen/tIuBL) von Chris Coyier sowie [Sort-table class](https://github.com/stationer/SortTable)  von Tyler Uebele.
+Diese Erweiterung enthält [Light-table-filter](https://codepen.io/chriscoyier/pen/tIuBL) von Chris Coyier sowie [Sort-table class](https://github.com/stationer/SortTable) von Tyler Uebele.
 
 ## Entwickler
 

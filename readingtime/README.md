@@ -10,7 +10,7 @@ Show estimated reading time for page content.
 
 Create a `[readingtime]` shortcut. The following optional argument is available: 
 
-`WordsPerMinute` = The amount of words per minute to calculate the estimated reading time (default: 250). 
+`WordsPerMinute` = number of words per minute to calculate the estimated reading time  
 
 This is a basic inline shortcut to show an estimated reading time for your pages, useful in blog and wiki articles to give your visitors an idea how long it may take to read a text. The actual reading time will vary depending on content and reading speed, therefore you can modify the words per minute calculation to suit your audience. 
 
@@ -20,16 +20,15 @@ Basic usage:
 
     Estimated reading time: [readingtime] minutes.
 
-Calculate reading time with more words per minute: 
+Calculate reading time with 400 words per minute:
 
     Estimated reading time: [readingtime 400] minutes.
-
 
 ## Settings
 
 The following setting can be configured in file `system/extensions/yellow-system.ini`:
 
-`ReadingtimeWordsPerMinute` = The amount of words per minute to calculate the estimated reading time (default: 250).
+`ReadingtimeWordsPerMinute` = number of words per minute to calculate the estimated reading time  
 
 ## Installation
 

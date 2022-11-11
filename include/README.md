@@ -12,14 +12,14 @@ Create a `[include]` shortcut.
 
 The following arguments are available, all but the first argument are optional:
 
-`location` = The location for included page content relative to Yellow's root URL (example: `/about/`).  
-`mode` = page display mode (full or teaser, default: full)
+`Location` = location of included page  
+`Mode` = page display mode, `full` or `teaser`  
 
 This extension is useful to e.g. create teasers for page overviews. The `teaser` mode looks for a `[--more--]` tag as page break, while `full` mode includes the complete page content. 
 
 ## Examples
 
-Here is an example page with teasers: 
+Content file with teasers:
 
 ```
 ---

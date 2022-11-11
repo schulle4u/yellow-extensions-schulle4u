@@ -10,9 +10,11 @@ Web-Feed optimiert für die Podcast-Veröffentlichung.
 
 Der Podcast-Feed ist auf deiner Website verfügbar als `http://website/podcast/` und `http://website/podcast/page:podcast.xml`. Es ist ein Feed für die gesamte Website, nur sichtbare Seiten sind enthalten. Um einen Blog-Podcast-Feed zu erstellen, öffne die Datei `system/extensions/yellow-system.ini` und ändere `PodcastFilterLayout: blog`. Der Feed kann auch nach Tag oder Autor gefiltert werden, verwende hierzu eine URL wie etwa `http://website/podcast/tag:serie1/page:podcast.xml` Du kannst einen Link zum Podcast irgendwo auf der Website platzieren. 
 
+Pro Podcast-Episode wird eine `Mediafile`-Einstellung benötigt. Alle weiteren Angaben sind optional, sind jedoch für eine erfolgreiche Auflistung im iTunes-Verzeichnis erforderlich.
+
 ## Beispiele
 
-Definiere einige allgemeine Metadaten für deinen Podcast in der Datei `content/podcast/page.md`. 
+Definiere einige allgemeine Einstellungen für deinen Podcast in der Datei `content/podcast/page.md`: 
 
 ```
 ---
@@ -24,7 +26,7 @@ Tag: Podcast, Audio, Technology
 This page is automatically generated.
 ```
 
-Hier ist eine Blogseite mit Medieninhalten. 
+Blogseite mit Einstellungen für deinen Podcast:
 
 ```
 ---
@@ -45,21 +47,21 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 `PodcastLocation` = Ort des Podcasts  
 `PodcastFileXml` = XML-Dateiname für den RSS-Feed  
-`PodcastFilterLayout` = Podcast-Layout-Filter, Standard ist blog  
+`PodcastFilterLayout` = Podcast-Layout-Filter, z. B. `blog`  
 `PodcastPaginationLimit` = Anzahl Einträge pro Seite  
-`PodcastMimeType` = Mime-Typ der Mediendateien, Standard ist audio/mpeg (mp3)  
-`PodcastImageUrl` = URL zu deinem Podcast-Bild.  
-`PodcastImageWidth` und `PodcastImageHeight` = Bildabmessungen in Pixel.  
-`PodcastExplicit` = Enthält dein Podcast eindeutige Inhalte? Standard ist `no`.  
-`PodcastItunesBlock` = Blockiere das iTunes-Verzeichnis? Standard ist `no`.  
-`PodcastCategory` und `PodcastSubcategory` = iTunes-Kategorienamen. Derzeit werden entweder eine Hauptkategorie oder eine Hauptkategorie und Unterkategorie unterstützt.  
+`PodcastMimeType` = MIME-Typ der eingebundenen Mediendateien  
+`PodcastImageUrl` = URL zu deinem Podcast-Bild  
+`PodcastImageWidth` = Bildbreite in Pixel  
+`PodcastImageHeight` = Bildhöhe in Pixel  
+`PodcastExplicit` = Podcast enthält eindeutige Inhalte, `yes` oder `no`  
+`PodcastItunesBlock` = Blockiere das iTunes-Verzeichnis, `yes` oder `no`  
+`PodcastCategory` = iTunes-Podcast-Kategoriename, z. B. `Music`  
+`PodcastSubcategory` = iTunes-Podcast-Unterkategoriename  
 
-Des Weiteren können folgende Seiten-Metadaten angegeben werden: 
+Die folgenden Einstellungen können ganz oben auf einer Seite vorgenommen werden:
 
-`Mediafile` = URL zur Podcast-Mediendatei.  
-`Duration` = Dauer der Episode im Format HH:MM:SS (von iTunes benötigt).  
-
-*Hinweis*: pro Episode wird lediglich die Angabe einer Mediendatei benötigt. Alle weiteren Angaben sind optional, sind jedoch für eine erfolgreiche Auflistung im iTunes-Verzeichnis erforderlich
+`Mediafile` = URL zur Podcast-Mediendatei  
+`Duration` = Dauer der Episode im Format HH:MM:SS  
 
 ## Installation
 

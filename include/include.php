@@ -28,10 +28,8 @@ class YellowInclude {
             } else {
                 $this->yellow->page->error(500, "Page '$location' does not exist!");
             }
-            
             $output .= "</div>\n";
         }
-        
         return $output;
     }
 }

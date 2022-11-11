@@ -12,8 +12,8 @@ Create a `[csv]` shortcut.
 
 The following arguments are available, all but the first argument are optional:
 
-`FileName` = Name of the csv file.   
-`Class` = HTML table class
+`FileName` = name of the CSV file  
+`Class` = HTML table class  
 
 This extension loads a CSV file and outputs a HTML table. For large tables you can enable a row filter and column sorting. You can also load CSV data as code block in Markdown. 
 
@@ -43,15 +43,14 @@ Use a Markdown code block to display CSV data:
     AL,Albania,Albanie
     ```
 
-
 ## Settings
 
 The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
-`CsvDirectory` = Directory for CSV files (default: `media/downloads/`).  
-`CsvDelimiter` = Column delimiter (default: auto).   
-`CsvFirstRowHeader` = Use first line of CSV file as table header (Default: true).  
-`CsvFilter` = Displays a search box to filter table rows (default: true).
+`CsvDirectory` = directory for CSV files  
+`CsvDelimiter` = column delimiter, `auto` for automatic detection  
+`CsvFirstRowHeader` = use first line of CSV file as table header, 1 or 0  
+`CsvFilter` = displays a search box to filter table rows, 1 or 0  
 
 ## Installation
 

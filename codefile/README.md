@@ -12,14 +12,14 @@ Use special markdown attributes to Prepare your code block with an ID and create
 
 The following arguments are available, all arguments are optional:
  
-`Id` = Id of the code block (default: `codefile`).  
-`Filename` = Filename of the saved code block (default: `id-download.txt`).  
+`Id` = ID of the code block, e.g. `codefile`  
+`FileName` = file name of the downloaded code block  
 
-This extension can be used to download code blocks as text file, useful to provide a file download for ready-to-use code examples. Please use fenced code blocks from MarkdownExtra, indented blocks and code between backticks are not supported. 
+This extension can be used to download code blocks as text file, useful to provide a file download for ready-to-use code examples. Please use fenced code blocks, indented blocks and code between backticks are not supported. 
 
 ## Examples
 
-Here is a page with downloadable code block.
+Content file with downloadable code block:
 
     ---
     Title: Example

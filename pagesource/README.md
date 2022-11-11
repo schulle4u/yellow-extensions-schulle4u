@@ -12,17 +12,17 @@ Create a `[pagesource]` shortcut.
 
 The following arguments are available, all arguments are optional:
 
-`Style` = pagesource style, e.g. left, center, right
+`Style` = button style, e.g. `left`, `center`, `right`  
 
-This extension adds a "Source code" button to each page you would like to allow viewing the page source. The page will be rendered in raw markdown format, excluding page settings. Therefore other extension shortcuts within a page will not be parsed. You can use this extension to provide website visitors a simplified printing view, a content export for plaintext environments, or just to show how easy it is to write beautiful web pages in markdown. 
+This extension adds a button to each page you would like to allow viewing the page source. The page will be rendered in raw markdown format, excluding page settings. Therefore other extension shortcuts within a page will not be parsed. You can use this extension to provide website visitors a simplified printing view, a content export for plaintext environments, or just to show how easy it is to write beautiful web pages in markdown. 
 
 ## Examples
 
-Embedding a "Source code" button:
+Embedding a button:
 
     [pagesource]
 
-Embedding a "Source code" button, different style:
+Embedding a button, different style:
 
     [pagesource right]
 
@@ -30,7 +30,7 @@ Embedding a "Source code" button, different style:
 
 The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
-`PagesourceStyle` = default pagesource style
+`PagesourceStyle` = default button style
 
 ## Installation
 

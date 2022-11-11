@@ -13,7 +13,7 @@ Erstelle eine `[soundcloud]`-Abkürzung.
 Die folgenden Argumente sind verfügbar, alle bis auf das erste Argument sind optional:
 
 `Id` = der letzte Teil eines [Soundcloud](https://soundcloud.com)-Links, z.B. `http://api.soundcloud.com/tracks/101175715`  
-`Style` = Audiospurstil, z.B. `left`, `center`, `right`  
+`Style` = Audiospurstil, z. B. `left`, `center`, `right`  
 `Width` = Audiospurbreite, Pixel oder Prozent  
 `Height` = Audiospurhöhe, Pixel oder Prozent   
 
@@ -32,7 +32,7 @@ Audiospur einbinden, Stil und Abmessungen anpassen:
 
 Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
-`SoundcloudStyle` = Audiospurstil, z.B. `left`, `center`, `right`  
+`SoundcloudStyle` = Audiospurstil, z. B. `left`, `center`, `right`  
 
 ## Installation
 

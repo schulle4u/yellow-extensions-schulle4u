@@ -8,12 +8,12 @@ Show daily pages.
 
 ## How to show daily pages
 
-Create a `[daily]` shortcut. On the pages you wish to show as daily pages, define a `Daily` entry in your page settings. Use the numeric representation for the day of the week, e. g. 1 for monday, 2 for tuesday. 
+Create a `[daily]` shortcut. On the pages you wish to show as daily pages, define a `Daily` entry in your page settings. Use the numeric representation for the day of the week, e.g. 1 for monday, 2 for tuesday. 
 
 The following optional arguments are available: 
 
-`day` = numeric value for the day of the week (default: current day).  
-`format` = show pages as list or teaser (default: teaser).
+`Day` = numeric value for the day of the week, 1-7  
+`Format` = show pages as `list` or `teaser`  
 
 ## Examples
 
@@ -25,7 +25,7 @@ Showing pages for saturday as list:
 
     [daily 6 list]
 
-Here is an example content file. 
+Content file for a daily page:
 
 ````
 ---
@@ -36,7 +36,7 @@ Daily: 4
 Tune in at 8 pm CET for Steffens latest live show, presenting great music from the creative commons community. Instrumental music follows at 10 pm all through the night. 
 ````
 
-You can define multiple day values: 
+Content file for multiple days:
 
 ````
 ---

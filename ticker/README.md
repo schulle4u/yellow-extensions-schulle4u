@@ -13,7 +13,7 @@ Create a `[ticker]` shortcut.
 The following arguments are available, all but the first argument are optional:
 
 `RssUrl` = RSS feed URL  
-`NumEntries` = number of entries to display  
+`EntriesMax` = number of entries to show  
 `Style` = CSS class to use  
 
 This extension reads all commonly used RSS and Atom feeds. Feed caching for better website performance is supported. 
@@ -30,8 +30,8 @@ Showing the latest items from a RSS feed:
 
 The following settings can be configured in file `system/extensions/yellow-system.ini`: 
 
-`TickerShowDate` = Wether to display the date for feed entries, 1 or 0 (on by default).  
-`TickerShowDescription` = Wether to show item descriptions, 1 or 0 (on by default).  
+`TickerShowDate` = Wether to display the date for feed entries, 1 or 0  
+`TickerShowDescription` = Wether to show item descriptions, 1 or 0  
 
 ## Installation
 

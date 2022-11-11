@@ -12,11 +12,11 @@ Erstelle eine `[audio]`-Abkürzung.
  
 Die folgenden Argumente sind verfügbar, mit Ausnahme des ersten Arguments sind alle Angaben optional:
 
-`url` = URL zur Audiodatei, z. B. OGG oder MP3  
-`download` = Zeige einen Download-Link für die Audiodatei, 1 oder 0  
-`style` = CSS-Klasse für den Player 
+`Url` = URL zur Audiodatei, z. B. OGG oder MP3  
+`Download` = Zeige einen Download-Link für die Audiodatei, 1 oder 0  
+`Style` = CSS-Klasse für den Player 
 
-Diese Erweiterung stellt einen einfachen Audio-Player zur Verfügung, welcher das HTML5-Tag `<audio>` verwendet. Es sollte von allen modernen Webbrowsern unterstützt werden. 
+Diese Erweiterung stellt einen einfachen Audio-Player zur Verfügung, welcher das HTML5-Element `<audio>` verwendet. Es sollte von allen modernen Webbrowsern unterstützt werden. 
 
 ## Beispiele
 
@@ -32,7 +32,7 @@ Audiodatei von einer externen URL abrufen und Downloads erlauben:
 
     [audio http://wolke.robbenradio.de/podcasts/rt033_yellow.mp3 1]
 
-Hier ist eine Seite mit Standalone-Audioplayer:
+Inhaltsdatei mit Standalone-Audioplayer:
 
 ```
 ---
@@ -48,7 +48,7 @@ Layout: audio
 Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
 `AudioDownload` = Zeige einen Download-Link für Audiodateien, 1 oder 0  
-`AudioUrlPrefix` = URL-Präfix für Audiodateien (z. B. für Dateien, die auf einem CDN ausgelagert sind)  
+`AudioUrlPrefix` = URL-Präfix für Audiodateien auf einem CDN  
 `AudioStyle` = CSS-Klasse für den Player  
 
 Die folgende Datei kann angepasst werden:

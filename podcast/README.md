@@ -10,9 +10,11 @@ Web feed optimized for podcast publishing.
 
 The podcast feed is available on your website as `http://website/podcast/` and `http://website/podcast/page:podcast.xml`. It's a feed for the entire website, only visible pages are included. To make a blog podcast feed open file `system/extensions/yellow-system.ini` and change `PodcastFilterLayout: blog`. It is also possible to filter podcasts by tag or author, use an URL like `http://website/podcast/tag:series1/page:podcast.xml` You can add a link to the podcast somewhere on your website. 
 
+Per podcast episode a `Mediafile` setting is mandatory. All other settings are optional, but are required for a proper iTunes directory listing.
+
 ## Examples
 
-Define some general metadata for your podcast in `content/podcast/page.md`. 
+Define some general settings for your podcast in file `content/podcast/page.md`: 
 
 ```
 ---
@@ -24,7 +26,7 @@ Tag: Podcast, Audio, Technology
 This page is automatically generated.
 ```
 
-Here is a blog page with included media content. 
+Blog page with settings for your podcast:
 
 ```
 ---
@@ -45,21 +47,21 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 `PodcastLocation` = podcast location  
 `PodcastFileXml` = feed file name for RSS podcast feed  
-`PodcastFilterLayout` = podcast layout filter, default is blog  
+`PodcastFilterLayout` = podcast layout filter, e.g. `blog`  
 `PodcastPaginationLimit` = number of entries to show per page  
-`PodcastMimeType` = mimetype of included files, default is audio/mpeg (mp3)  
-`PodcastImageUrl` = URL to your podcast image.  
-`PodcastImageWidth` and `PodcastImageHeight` = image dimensions in pixel.  
-`PodcastExplicit` = Does your podcast contain explicit content? Default is no.  
-`PodcastItunesBlock` = Block iTunes directory from listing your podcast, default is no.  
-`PodcastCategory` and `PodcastSubcategory` = iTunes podcast category names. Currently only one category or one category and one subcategory is supported.  
+`PodcastMimeType` = MIME type of included media files  
+`PodcastImageUrl` = URL to your podcast image  
+`PodcastImageWidth` = image width in pixel  
+`PodcastImageHeight` = image heigh in pixel  
+`PodcastExplicit` = podcast contains explicit content, `yes` or `no`  
+`PodcastItunesBlock` = block iTunes directory from listing your podcast, `yes` or `no`  
+`PodcastCategory` = iTunes podcast category name, e.g. `Music`  
+`PodcastSubcategory` = iTunes podcast subcategory name  
 
-Additionally, the following page metadata can be specified: 
+The following settings can be configured at the top of a page:
 
-`Mediafile` = URL to the podcast media file.  
-`Duration` = the duration of the episode in the format HH:MM:SS (required for iTunes).  
-
-*Note*: Only a media file is mandatory for the podcast. All other settings are optional, but are required for propper iTunes directory listing. 
+`Mediafile` = URL to the podcast media file  
+`Duration` = the duration of the episode in the format HH:MM:SS  
 
 ## Installation
 

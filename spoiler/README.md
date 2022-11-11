@@ -12,15 +12,15 @@ Create a `[spoilerstart]` shortcut, write down what should be hidden and use the
  
 The following arguments are available, all arguments are optional:
 
-`ID` = an ID for the `<div>` element which includes the spoiler, required for more than one spoiler on the same page.  
-`label` = Custom text for the show/hide link, default is a horizontal ellipsis. Put text in quotes for more than one word.  
-`display` = display type, "block" or "none". Default is "none". 
+`Id` = ID fo the spoiler, required for more than one spoiler on the same page  
+`Label` = custom text for the show/hide link, put text in quotes for more than one word  
+`Display` = display type, `block` or `none`  
 
-*Note*: Hidden elements are not removed, they are just made invisible until the visitor clicks the link to show them. 
+Hidden elements are not removed, they are just made invisible until the visitor clicks the link to show them. 
 
 ## Examples
 
-Hiding a block of text. 
+Content file with hidden block of text:
 
 ```
 ---
@@ -37,7 +37,7 @@ This text is hidden by default. If you can read this, you successfully clicked t
 More text is here. 
 ```
 
-Or if you want to give your visitors the possibility to hide your twitter feed for a less cluttered reading experience: 
+Content file with twitter feed, hiding on click:
 
 ```
 ---

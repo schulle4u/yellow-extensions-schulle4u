@@ -1,9 +1,9 @@
 <?php
 // Podcast extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/podcast
-// Based on the yellow Feed extension, https://github.com/annaesvensson/yellow-feed
+// Based on Feed extension, https://github.com/annaesvensson/yellow-feed
 
 class YellowPodcast {
-    const VERSION = "0.8.15";
+    const VERSION = "0.8.16";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -130,7 +130,7 @@ class YellowPodcast {
         $output = null;
         if ($name=="header") {
             $locationPodcast = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("podcastLocation");
-            $locationPodcast .= $this->yellow->toolbox->normaliseArguments("page:".$this->yellow->system->get("podcastFileXml"), false);
+            $locationPodcast .= $this->yellow->lookup->normaliseArguments("page:".$this->yellow->system->get("podcastFileXml"), false);
             $output = "<link rel=\"alternate\" type=\"application/rss+xml\" href=\"$locationPodcast\" />\n";
         }
         return $output;

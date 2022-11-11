@@ -12,14 +12,14 @@ Verwende Spezial-Attribute, um den gewünschten Code-Block mit einer ID zu verse
 
 Die folgenden Argumente sind verfügbar, alle Argumente sind optional: 
 
-`Id` = ID des Code-Blocks (Standard: `codefile`).  
-`Filename` = Dateiname des zu speichernden Code-Blocks (Standard: `id-download.txt`).  
+`Id` = ID des Code-Blocks, z. B. `codefile`  
+`FileName` = Dateiname des heruntergeladenen Code-Blocks  
 
 Diese Erweiterung erlaubt das Herunterladen von Code-Blöcken als Textdatei, um etwa fertige Code-Beispiele anzubieten, die sofort einsatzfähig sind. Bitte verwende hierfür die eingerahmten Code-Blöcke, eingerückter Code oder Code zwischen Akzentzeichen wird nicht unterstützt. 
 
 ## Beispiele
 
-Hier ist eine Seite mit herunterladbarem Code-Block.
+Inhaltsdatei mit herunterladbarem Code-Block:
 
     ---
     Title: Beispiel

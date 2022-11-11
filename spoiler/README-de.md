@@ -12,15 +12,15 @@ Erstelle eine `[spoilerstart]`-Abkürzung, füge die zu versteckenden Inhalte ei
  
 Die folgenden Argumente sind verfügbar, alle Angaben sind optional:
 
-`ID` = Eine ID für das `<div>`-Element des Spoilers, wird für mehr als einen Spoiler pro Seite benötigt.  
-`label` = Eigener Text für den Link zum Ein- und Ausblenden des spoilers, Standard sind Auslassungspunkte. Umschließe mehrere Wörter mit Anführungszeichen.  
-`display` = Anzeige-Stil, `block` oder `none`. (Standard:`none`). 
+`Id` = Eine ID für den Spoiler, wird für mehr als einen Spoiler pro Seite benötigt  
+`Label` = Eigener Text für den Link zum Ein- und Ausblenden des Spoilers, umschließe mehrere Wörter mit Anführungszeichen  
+`Display` = Anzeige-Stil, `block` oder `none`
 
-*Hinweis*: Versteckte Elemente werden nicht entfernt, sondern mittels Javascript versteckt. 
+Versteckte Elemente werden nicht entfernt, sondern mittels Javascript versteckt. 
 
 ## Beispiele
 
-Einen Textblock verstecken. 
+Inhaltsdatei mit verstecktem Textblock:
 
 ```
 ---
@@ -37,7 +37,7 @@ Dieser Text ist standardmäßig ausgeblendet. Falls du ihn jetzt lesen kannst, h
 Hier kann weiterer Inhalt stehen. 
 ```
 
-Dies erlaubt es deinen Besuchern, den Twitter-Feed für eine bessere Leseerfahrung auszublenden: 
+Inhaltsdatei mit Twitter-Feed, auf Knopfdruck verstecken:
 
 ```
 ---
@@ -46,7 +46,7 @@ Title: Twitter
 Hier ist unser Twitter-Feed. Klicke auf den Link zum Ausblenden. 
 
 [spoilerstart twitterfeed "Twitter-Feed zeigen/ausblenden" block]  
-[twitter datendeveloper]  
+[twitter datenstromnews]  
 [spoilerstop]
 
 Hier ist weiterer Text. 

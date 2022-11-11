@@ -10,7 +10,7 @@ Zeigt die geschätzte Lesezeit für den Seiteninhalt an.
 
 Erstelle eine `[readingtime]`-Abkürzung. Das folgende optionale Argument ist verfügbar: 
 
-`WordsPerMinute` = Die Anzahl Wörter pro Minute, die zur Berechnung der Lesezeit verwendet wird (Standard: 250).
+`WordsPerMinute` = Die Anzahl Wörter pro Minute, die zur Berechnung der Lesezeit verwendet wird  
 
 Mit dieser Inline-Abkürzung kann den Besuchern deiner Webseite eine ungefähre Lesezeit angezeigt werden, was für längere Blog- und Wiki-Artikel eine nette Zusatzinformation ist. Je nach Inhalt und lesegeschwindigkeit wird dieser Wert jedoch abweichen, daher kannst du ihn für dein Publikum entsprechend anpassen. 
 
@@ -20,7 +20,7 @@ Allgemeine Verwendung:
 
     Geschätzte Lesezeit: [readingtime] Minuten.
 
-Berechne die Lesezeit mit mehr Wörtern pro Minute: 
+Berechne die Lesezeit mit 400 Wörtern pro Minute:
 
     Geschätzte lesezeit: [readingtime 400] Minuten.
 
@@ -28,7 +28,7 @@ Berechne die Lesezeit mit mehr Wörtern pro Minute:
 
 Die folgende Einstellung kann in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
-`ReadingtimeWordsPerMinute` = Die Anzahl Wörter pro Minute, die zur Berechnung der Lesezeit verwendet wird (Standard: 250).
+`ReadingtimeWordsPerMinute` = Die Anzahl Wörter pro Minute, die zur Berechnung der Lesezeit verwendet wird  
 
 ## Installation
 

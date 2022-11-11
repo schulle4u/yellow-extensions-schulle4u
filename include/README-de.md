@@ -12,14 +12,14 @@ Erstelle eine `[include]`-Abkürzung.
 
 Die folgenden Argumente sind verfügbar, mit Ausnahme des ersten Arguments sind alle Angaben optional:
 
-`location` = Ort des einzubindenden Seiteninhalts relativ zur Yellow-Basis-URL (Beispiel: `/about/`).  
-`mode` = Anzeigemodus (full oder teaser, Standard: full)
+`Location` = Ort der einzubindenden Seite  
+`Mode` = Anzeigemodus, `full` oder `teaser`  
 
 Diese Erweiterung kann genutzt werden, um beispielsweise Anreißertexte (Teaser) in Seitenübersichten zu erstellen. Der `Teaser`-Modus sucht nach einem `[--more--]`-Tag um einen Seitenumbruch zu generieren, während im `Full`-Modus der vollständige Seiteninhalt eingebunden wird. 
 
 ## Beispiele
 
-Hier ist eine Beispielseite mit Anreißern: 
+Inhaltsdatei mit Anreißern:
 
 ```
 ---

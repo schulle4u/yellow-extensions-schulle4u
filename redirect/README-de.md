@@ -10,8 +10,8 @@ Alternative Seitenweiterleitung.
 
 Verwende die folgenden Seiten-Einstellungen: 
 
-`RedirectLocation` = Ziel für die Weiterleitung (Beispiel: `https://datenstrom.se`).  
-`RedirectTime` = Zeit in Sekunden bis zur Weiterleitung (Standard: 5).
+`RedirectLocation` = Ziel für die Weiterleitung, z. B. `https://datenstrom.se`  
+`RedirectTime` = Anzahl Sekunden bis zur Weiterleitung  
 
 Erstelle optional eine `[redirect]`-Abkürzung, um einen Countdown für Besucher anzuzeigen. 
 
@@ -19,7 +19,7 @@ Diese Erweiterung stellt eine alternative Weiterleitungsfunktion auf andere Seit
 
 ## Beispiele
 
-Hier ist eine Beispielseite mit Weiterleitung: 
+Inhaltsdatei mit Weiterleitung:
 
 ```
 ---
@@ -34,7 +34,7 @@ Weiterleitung in [refresh] Sekunden. Falls du nicht automatisch weitergeleitet w
 
 Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
-`RedirectTime` = Zeit in Sekunden bis zur Weiterleitung (Standard: 5).
+`RedirectTime` = Zeit in Sekunden bis zur Weiterleitung  
 
 ## Installation
 

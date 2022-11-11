@@ -42,5 +42,4 @@ class YellowSpoiler {
         }
         return $output;
     }
-
 }

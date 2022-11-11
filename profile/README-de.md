@@ -12,14 +12,16 @@ Erstelle eine `{profile]`-Abkürzung.
 
 Die folgenden Argumente sind verfügbar, alle Angaben sind optional:
 
-`author` = Name des Seiten-Autors.   
-`style` = Stil des Profils. 
+`Location` = Ort der Profilseite   
+`Style` = Stil des Profils  
 
 Falls die [Blog-Erweiterung](https://github.com/annaesvensson/yellow-blog/tree/main/README-de.md) installiert ist, werden Autor-Informationen automatisch unter jeder Blogseite platziert. Verwende `Profile: author` in deinen seiteneinstellungen, um ein anderes Profil anzugeben. 
 
+Bearbeite die Datei `content/profile/page.md` wie eine normale Seite und notiere einige Dinge über dich. Für umfangreiche Profilseiten solltest du einen Seitenumbruch verwenden. Du kannst für jeden deiner Autoren eine Profilseite im selben Verzeichnis anlegen. 
+
 ## Beispiele
 
-Bearbeite die Datei `content/profile/page.md` wie eine normale Seite und notiere einige Dinge über dich. Für umfangreiche Profilseiten solltest du einen Seitenumbruch verwenden. Du kannst für jeden deiner Autoren eine Profilseite im selben Verzeichnis anlegen. 
+Inhaltsdatei mit Autorenprofil:
 
 ```
 ---
@@ -41,13 +43,12 @@ Individuelle Profilseiten anzeigen:
     [profile deinname]
     [profile weiterername]
 
-
 ## Einstellungen
 
 Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
-`ProfileLocation` = Ort für Autorenprofile (Standard: `/profile/`).   
-`ProfileStyle` = Standard-Stil für Profile. 
+`ProfileLocation` = Ort für Autorenprofile   
+`ProfileStyle` = Standard-Stil für Profile  
 
 ## Installation
 
