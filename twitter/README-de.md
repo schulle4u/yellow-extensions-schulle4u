@@ -13,7 +13,7 @@ Erstelle eine `[twitter]`-Abkürzung.
 Die folgenden Argumente sind verfügbar, alle bis auf das erste Argument sind optional:
  
 `Id` = der letzte Teil eines [Twitter](https://www.twitter.com)-Links, z. B. `https://twitter.com/dog_feelings/status/1169078881963261953`  
-`Theme` = Nachrichtenthema, z. B. `light`, `dark`  
+`Theme` = Nachrichten-Theme, z. B. `light`, `dark`  
 `Style` = Nachrichtenstil, z. B. `left`, `center`, `right`  
 `Width` = Nachrichtenbreite, Pixel oder Prozent  
 `Height` = Nachrichtenhöhe, Pixel oder Prozent  
@@ -46,7 +46,7 @@ Folgen-Schaltfläche einbinden:
 
 Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
-`TwitterTheme` = Nachrichtenthema, z. B. `light`, `dark`  
+`TwitterTheme` = Nachrichten-Theme, z. B. `light`, `dark`  
 
 ## Installation
 
