@@ -12,85 +12,61 @@ Erstelle eine `[radioboss]`-Abkürzung.
 
 Die folgenden Argumente sind verfügbar, bis auf das erste Argument sind alle Angaben optional: 
 
-`widget` = Widget-Typ (siehe unten für eine Liste verfügbarer Widgets).  
-`arguments` = Eine durch Leerzeichen getrennte liste optionaler Widget-Argumente, sofern verfügbar. Umschließe mehrere Argumente mittels Anführungszeichen.  
-`style` = Zu verwendende CSS-Klasse, z. B. left, center, right.  
-`server` = Hostname der Cloud-Instanz ohne einleitendes `https://` (Beispiel: `c2.radioboss.fm`).  
-`port` = Streaming-Port (Beispiel: `8010`).  
-`port2` = Zweiter Streaming-Port, wird für sichere Verbindungen verwendet. Wenn nicht angegeben, setzt er sich aus Streaming-Port mit einer führenden 1 zusammen (Beispiel: `18010`).  
-`id` = Momentan sind dies die letzten zwei oder drei Ziffern des Streaming-Ports (Beispiel: `10`).  
-`mount` = Einhängepunkt deines Streams ohne führenden Schrägstrich (Beispiel: `stream`). 
+`Widget` = Widget-Typ.  
+`Arguments` = Eine durch Leerzeichen getrennte Liste von Widget-Agumenten, falls verfügbar.   
+`Style` = RadioBoss-Stil, z. B. `left`, `center`, `right`.  
+`Server` = die RadioBoss-Server-Instanz, z. B. `c2.radioboss.fm`.  
+`Port` = Streaming-Port, z. B. `8010`.  
+`Port2` = Port für sichere Verbindungen, z. B. `18010`.  
+`Id` = die letzten zwei bis drei Ziffern des Ports, z. B. `10`.  
+`Mount` = der Streaming-Einhängepunkt ohne führenden Schrägstrich, z. B. `stream`. 
 
 Die folgenden Widgets stehen zur Verfügung: 
 
-`miniplayer` = Ein konfigurierbarer Miniplayer. Die zusätzliche Konfiguration erfolgt über den Arguments-Parameter, siehe Beispiel unten.   
-`player` = Ein Web-Player für deinen Stream.  
-`nowplaying` = Zeigt den gerade gespielten Titel an.  
-`cover` = Album-Cover für den aktuellen Titel.  
-`recent` = Zeigt die zuletzt gespielten Titel an.  
-`links` = Zeigt eine Liste der Streaming-Links.  
-`page` = Zeigt einen Link zur automatisch erstellten Stream-Seite von RadioBoss Cloud an. 
+`Miniplayer` = ein Miniplayer für deinen Stream, unterstützt optionale Argumente.  
+`Player` = ein Webplayer für deinen stream.  
+`Nowplaying` = momentan laufender Titel.  
+`Cover` = Album-Cover für aktuellen Titel.  
+`Recent` = zuletzt gespielte Titel, unterstützt optionale Argumente.  
+`Links` = eine Liste der Streaming-Links.  
+`Page` = ein Link zur automatisch erstellten Stream-Seite. 
 
-*Hinweis*: [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/) befindet sich in stetiger Weiterentwicklung, daher können sich auch die Funktionen der Erweiterung von Zeit zu Zeit verändern. Einige Widgets sind nicht mit allen Browsern kompatibel, und werden es voraussichtlich auch nie sein. Besonders der Internet Explorer hat Probleme mit den verwendeten Javascript-Komponenten.  
 
 ## Beispiele
 
-Hier ist eine Beispielseite mit allen verfügbaren Widgets. 
+Miniplayer mit Standardkonfiguration:
 
-```
----
-Title: Was ist los?
-Author: Steffen
----
-## Live hören
+    [radioboss miniplayer]
 
-Miniplayer mit Standardkonfiguration:   
-[radioboss miniplayer]
+Miniplayer mit optionalen Argumenten (Breite in Pixel, Farben für aktive und ausgegraute Schaltflächen):
 
-Miniplayer mit benutzerdefinierter Konfiguration (Breite in Pixel, Farbe des aktiven Buttons, Farbe für ausgegrauten Button):   
-[radioboss miniplayer "86 #111111 #b3b3b3"]
+    [radioboss miniplayer "86 #111111 #b3b3b3"]
 
-Normaler Web-Player:  
-[radioboss player]
+Normaler Webplayer:
 
-## Aktueller Titel
+    [radioboss player]
 
-[radioboss nowplaying]
+Zeige die letzten 20 Titel:
 
-[radioboss cover]
+    [radioboss recent 20]
 
-## Zuletzt gespielt
+Webplayer, anderer Stream:
 
-[radioboss recent 20]
-
-## Wie man uns hören kann
-
-[radioboss links]
-
-## RadioBoss Stream-Seite
-
-[radioboss page]
-
-## Ein weiteres Widget für einen zweiten Stream
-
-[radioboss nowplaying - - c2.radioboss.fm 8017 18017 17 stream]
-```
+    [radioboss player - - c2.radioboss.fm 8017 18017 17 stream]
 
 ## Einstellungen
 
 Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
-`RadiobossServer` = Hostname der Cloud-Instanz ohne einleitendes `https://` (Beispiel: `c2.radioboss.fm`).  
-`RadiobossPort` = Streaming-Port (Beispiel: `8010`).  
-`RadiobossPort2` = Zweiter Streaming-Port, wird für sichere Verbindungen verwendet. Wenn nicht angegeben, setzt er sich aus Streaming-Port mit einer führenden 1 zusammen (Beispiel: `18010`).  
-`RadiobossId` = Momentan sind dies die letzten zwei oder drei Ziffern des Streaming-Ports (Beispiel: `10`).  
-`RadiobossMount` = Einhängepunkt deines Streams ohne führenden Schrägstrich (Beispiel: `stream`). 
-`RadiobossListeners` = Zeige Höreranzahl im Nowplaying-Widget (Standard: `0`).  
-`RadiobossNexttrack` = Zeige den nächsten Titel im Nowplaying-Widget (Standard: `0`).  
-`RadiobossTrackCount` = Anzahl zuletzt gespielter Titel (1 - 20, Standard: 10).  
-`RadiobossStyle` = Zu verwendende CSS-Klasse, z. B. left, center, right. 
-
-Die Server-Konfiguration erhältst du im Reiter Information, nachdem du dich bei deiner RadioBoss Cloud angemeldet hast. 
+`RadiobossServer` = die RadioBoss-Server-Instanz, z. B. `c2.radioboss.fm`.  
+`RadiobossPort` = Streaming-Port, z. B. `8010`.  
+`RadiobossPort2` = Port für sichere Verbindungen, z. B. `18010`.  
+`RadiobossId` = die letzten zwei bis drei Ziffern des Ports, z. B. `10`.  
+`RadiobossMount` = der Streaming-Einhängepunkt ohne führenden Schrägstrich, z. B. `stream`. 
+`RadiobossListeners` = zeige Höreranzahl im Nowplaying-Widget.  
+`RadiobossNexttrack` = zeige den nächsten Titel im Nowplaying-Widget.  
+`RadiobossTrackCount` = Anzahl zuletzt gespielter Titel, maximal 20.  
+`RadiobossStyle` = RadioBoss-Stil, z. B. `left`, `center`, `right`.  
 
 ## Installation
 

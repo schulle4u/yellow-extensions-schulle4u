@@ -12,7 +12,7 @@ Create a `[profile]` shortcut.
 
 The following arguments are available, all arguments are optional:
 
-`location` = location of author's page   
+`Location` = location of author's page   
 `Style` = profile style  
 
 If the [blog extension](https://github.com/annaesvensson/yellow-blog) is installed, author notes will automatically be inserted after each article. Use `Profile: author` in your page settings to specify a different profile. 

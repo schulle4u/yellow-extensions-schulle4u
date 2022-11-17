@@ -12,85 +12,60 @@ Create a `[radioboss]` shortcut.
 
 The following arguments are available, all but the first argument are optional: 
 
-`widget` = type of widget (see below for a list of available widgets).  
-`arguments` = A space-separated list of optional widget arguments if available, enclose multiple aguments in quotes.   
-`style` = CSS class to use, e.g. left, center, right.  
-`server` = The hostname of used cloud instance without leading `https://` (example: `c2.radioboss.fm`).  
-`port` = Streaming port (example: `8010`).  
-`port2` = Second streaming port, used for secure connections. If not specified, first port with a leading 1 will be used, (example: `18010`).  
-`id` = Currently this are the last two or three digits of your port number (example: `10`).  
-`mount` = The mountpoint of your stream without leading slash (example: `stream`). 
+`Widget` = type of widget.  
+`Arguments` = A space-separated list of optional widget arguments if applicable.   
+`Style` = RadioBoss style, e.g. `left`, `center`, `right`.  
+`Server` = the RadioBoss server instance, e.g. `c2.radioboss.fm`.  
+`Port` = Streaming port, e.g. `8010`.  
+`Port2` = Port for secure connectsions, e.g. `18010`.  
+`Id` = the last two or three digits of your port number, e.g. `10`.  
+`Mount` = the stream mount point without leading slash, e.g. `stream`. 
 
 The following widgets are available: 
 
-`miniplayer` = A configurable mini web player for your stream. Configuration options can be applied using the `arguments` parameter, see example below.  
-`player` = A web player for your stream.  
-`nowplaying` = Show currently playing track.  
-`cover` = Display album cover for current track.  
-`recent` = Show recently played tracks.  
-`links` = Show a list of streaming links.  
-`page` = Displays a link to the auto-generated stream page of RadioBoss Cloud. 
-
-*Note*: [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/) is still under development, therefore things may change also in this extension. Some of the widgets are not compatible with all browsers, and most likely never will be. Especially IE is known to have issues with the involved JS.  
+`Miniplayer` = a mini web player for your stream, supports optional arguments.  
+`Player` = a web player for your stream.  
+`Nowplaying` = currently playing track.  
+`Cover` = album cover for current track.  
+`Recent` = recently played tracks, supports optional arguments.  
+`Links` = a list of streaming links.  
+`Page` = a link to the auto-generated stream page. 
 
 ## Examples
 
-Here is an example page with all available widgets. 
+Miniplayer with standard configuration:
 
-```
----
-Title: What's happening?
-Author: Steffen
----
-## Listen live!
+    [radioboss miniplayer]
 
-Miniplayer with standard configuration:   
-[radioboss miniplayer]
+Miniplayer with additional arguments (width in pixels, colors for active and greyed buttons):
 
-Miniplayer with custom configuration (width in pixels, colors for active and greyed buttons):   
-[radioboss miniplayer "86 #111111 #b3b3b3"]
+    [radioboss miniplayer "86 #111111 #b3b3b3"]
 
-Normal web player:  
-[radioboss player]
+Normal web player:
 
-## Current track
+    [radioboss player]
 
-[radioboss nowplaying]
+Show the last 20 tracks:
 
-[radioboss cover]
+    [radioboss recent 20]
 
-## Recently played
+Web player, different stream:
 
-[radioboss recent 20]
-
-## How to listen
-
-[radioboss links]
-
-## RadioBoss stream page
-
-[radioboss page]
-
-## An additional widget for second stream
-
-[radioboss nowplaying - - c2.radioboss.fm 8017 18017 17 stream]
-```
+    [radioboss player - - c2.radioboss.fm 8017 18017 17 stream]
 
 ## Settings
 
 The following settings can be configured in file `system/extensions/yellow-system.ini`: 
 
-`RadiobossServer` = The hostname of used cloud instance without leading `https://` (example: `c2.radioboss.fm`).  
-`RadiobossPort` = Streaming port (example: `8010`).  
-`RadiobossPort2` = Second streaming port, used for secure connections. If not specified, first port with a leading 1 will be used, (example: `18010`).  
-`RadiobossId` = Currently this are the last two or three digits of your port number (example: `10`).  
-`RadiobossMount` = The mountpoint of your stream without leading slash (example: `stream`).  
-`RadiobossListeners` = Show listener count in nowplaying widget (default: `0`).  
-`RadiobossNexttrack` = Show upcoming track in nowplaying widget (default: `0`).  
-`RadiobossTrackCount` = Number of recently played songs (1 - 20, default: 10).  
-`RadiobossStyle` = Default CSS class to use, e.g. left, center, right. 
-
-To obtain your server configuration, log into your RadioBoss cloud account and click on the information tab. 
+`RadiobossServer` = the RadioBoss server instance, e.g. `c2.radioboss.fm`.  
+`RadiobossPort` = Streaming port, e.g. `8010`.  
+`RadiobossPort2` = Port for secure connectsions, e.g. `18010`.  
+`RadiobossId` = the last two or three digits of your port number, e.g. `10`.  
+`RadiobossMount` = the stream mount point without leading slash, e.g. `stream`. 
+`RadiobossListeners` = show listener count in nowplaying widget.  
+`RadiobossNexttrack` = show upcoming track in nowplaying widget.  
+`RadiobossTrackCount` = number of recently played songs, maximum 20.  
+`RadiobossStyle` = RadioBoss style, e.g. `left`, `center`, `right`.  
 
 ## Installation
 
