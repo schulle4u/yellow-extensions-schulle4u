@@ -61,7 +61,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 `RadiobossPort` = Streaming port, e.g. `8010`.  
 `RadiobossPort2` = Port for secure connectsions, e.g. `18010`.  
 `RadiobossId` = the last two or three digits of your port number, e.g. `10`.  
-`RadiobossMount` = the stream mount point without leading slash, e.g. `stream`. 
+`RadiobossMount` = the stream mount point without leading slash, e.g. `stream`.  
 `RadiobossListeners` = show listener count in nowplaying widget.  
 `RadiobossNexttrack` = show upcoming track in nowplaying widget.  
 `RadiobossTrackCount` = number of recently played songs, maximum 20.  
