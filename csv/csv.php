@@ -2,7 +2,7 @@
 // CSV extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/csv
 
 class YellowCsv {
-    const VERSION = "0.8.16";
+    const VERSION = "0.8.17";
     public $yellow;         //access to API
     
     // Handle initialisation
@@ -85,7 +85,7 @@ class YellowCsv {
             ++$row;
         }
         $output .= "</table>\n";
-        return $this->yellow->toolbox->normaliseData($output, "html");
+        return $this->yellow->lookup->normaliseData($output, "html");
     }
     
     // Return CSV delimiter
