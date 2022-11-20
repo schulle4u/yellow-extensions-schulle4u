@@ -2,7 +2,7 @@
 // CSV extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/csv
 
 class YellowCsv {
-    const VERSION = "0.8.17";
+    const VERSION = "0.8.18";
     public $yellow;         //access to API
     
     // Handle initialisation
@@ -19,7 +19,7 @@ class YellowCsv {
         $output = null;
         if ($name=="csv" && ($type=="block" || $type=="inline")) {
             list($fileName, $class) = $this->yellow->toolbox->getTextArguments($text);
-            $fileName = $this->yellow->toolbox->normalisePath($this->yellow->system->get("csvDirectory").$fileName);
+            $fileName = $this->yellow->lookup->normalisePath($this->yellow->system->get("csvDirectory").$fileName);
             $fileData = $this->yellow->toolbox->readFile($fileName);
             if (!is_string_empty($fileData)) {
                 $output = "<div class=\"".htmlspecialchars($name)."\" style=\"overflow-x:auto;\">\n";
