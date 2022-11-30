@@ -63,11 +63,13 @@ Die folgenden Einstellungen können ganz oben auf einer Seite vorgenommen werden
 `Mediafile` = URL zur Podcast-Mediendatei  
 `Duration` = Dauer der Episode im Format HH:MM:SS  
 
+## Danksagung
+
+Diese Erweiterung basiert auf der originalen [Feed-Erweiterung](https://github.com/annaesvensson/yellow-feed) von Anna Svensson. Vielen Dank für deine Arbeit!
+
 ## Installation
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/podcast.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
-
-Diese Erweiterung basiert auf der originalen [Feed-Erweiterung](https://github.com/annaesvensson/yellow-feed).
 
 ## Entwickler
 

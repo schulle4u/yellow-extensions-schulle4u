@@ -32,6 +32,10 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 `PagesourceStyle` = default button style
 
+## Acknowledgements
+
+Thanks to the Datenstrom Yellow community for help and feedback!
+
 ## Installation
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/pagesource.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).

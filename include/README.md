@@ -38,6 +38,9 @@ Including a blog page:
 
     [include /blog/made-for-people]
 
+## Acknowledgements
+
+Thanks to the Datenstrom Yellow community for help and feedback!
 
 ## Installation
 

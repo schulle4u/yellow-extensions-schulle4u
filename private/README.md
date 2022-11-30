@@ -74,6 +74,10 @@ Layout file for showing all private pages:
 <?php $this->yellow->layout("footer") ?>
 ```
 
+## Acknowledgements
+
+Thanks to Kanbeq for the initial idea, and Mark for additional feedback.
+
 ## Installation
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/private.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).

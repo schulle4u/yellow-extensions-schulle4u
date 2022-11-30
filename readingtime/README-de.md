@@ -30,6 +30,10 @@ Die folgende Einstellung kann in der Datei `system/extensions/yellow-system.ini`
 
 `ReadingtimeWordsPerMinute` = Die Anzahl Wörter pro Minute, die zur Berechnung der Lesezeit verwendet wird  
 
+## Danksagung
+
+Vielen Dank an die Datenstrom-Yellow-Gemeinschaft für Hilfe und Feedback!
+
 ## Installation
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/readingtime.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).

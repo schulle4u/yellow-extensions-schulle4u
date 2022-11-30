@@ -47,13 +47,13 @@ Daily: 1, 2
 Start off the week with our exciting mix of music from all around the world. Tune in mondays and tuesdays at 8 pm CET. 
 ````
 
-## Installation
-
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/daily.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
-
 ## Acknowledgements
 
 Thanks to the Datenstrom Yellow community for help and feedback!
+
+## Installation
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/daily.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 

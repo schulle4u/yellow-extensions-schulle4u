@@ -38,6 +38,9 @@ Eine Blogseite einbinden:
 
     [include /blog/made-for-people]
 
+## Danksagung
+
+Vielen Dank an die Datenstrom-Yellow-Gemeinschaft für Hilfe und Feedback!
 
 ## Installation
 

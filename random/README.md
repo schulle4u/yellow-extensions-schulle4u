@@ -32,6 +32,10 @@ Show a random page in teaser mode:
 
     [random /products/ 1 teaser]
 
+## Acknowledgements
+
+Thanks to the Datenstrom Yellow community for help and feedback!
+
 ## Installation
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/random.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).

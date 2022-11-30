@@ -36,6 +36,10 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 `RedirectTime` = number of seconds to wait before redirecting  
 
+## Acknowledgements
+
+Thanks to the Datenstrom Yellow community for help and feedback!
+
 ## Installation
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/redirect.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).

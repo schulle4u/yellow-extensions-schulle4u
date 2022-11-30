@@ -52,13 +52,13 @@ The following settings can be configured in file `system/extensions/yellow-syste
 `CsvFirstRowHeader` = use first line of CSV file as table header, 1 or 0  
 `CsvFilter` = displays a search box to filter table rows, 1 or 0  
 
-## Installation
-
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/csv.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
-
 ## Acknowledgements
 
 This extension includes [Light-table-filter](https://codepen.io/chriscoyier/pen/tIuBL) by Chris Coyier, and [Sort-table class](https://github.com/stationer/SortTable)  by Tyler Uebele, as well as code contributions by Mark. Thanks for your work!
+
+## Installation
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/csv.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 

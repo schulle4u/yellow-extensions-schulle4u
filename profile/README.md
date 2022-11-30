@@ -50,6 +50,10 @@ The following settings can be configured in file `system/extensions/yellow-syste
 `ProfileLocation` = location for author profiles  
 `ProfileStyle` = default profile style  
 
+## Acknowledgements
+
+Thanks to the Datenstrom Yellow community for help and feedback!
+
 ## Installation
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/profile.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).

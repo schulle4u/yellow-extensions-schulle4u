@@ -63,11 +63,13 @@ The following settings can be configured at the top of a page:
 `Mediafile` = URL to the podcast media file  
 `Duration` = the duration of the episode in the format HH:MM:SS  
 
+## Acknowledgements
+
+This extension is based on the original [feed extension](https://github.com/annaesvensson/yellow-feed) by Anna Svensson. Thanks for your work!
+
 ## Installation
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/podcast.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
-
-Based on the original [feed extension](https://github.com/annaesvensson/yellow-feed).
 
 ## Developer
 

@@ -52,13 +52,13 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 `CsvFirstRowHeader` = Benutze die erste Zeile der CSV-Datei als Spaltenüberschrift, 1 oder 0  
 `CsvFilter` = Zeigt ein Suchfeld zum Filtern der Tabellenzeilen an, 1 oder 0  
 
-## Installation
-
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/csv.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
-
 ## Danksagung
 
 Diese Erweiterung enthält [Light-table-filter](https://codepen.io/chriscoyier/pen/tIuBL) von Chris Coyier sowie [Sort-table class](https://github.com/stationer/SortTable) von Tyler Uebele, des Weiteren Code-Beiträge von Mark. Vielen Dank für die Arbeit!
+
+## Installation
+
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/csv.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Entwickler
 
