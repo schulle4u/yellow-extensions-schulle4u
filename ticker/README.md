@@ -33,11 +33,13 @@ The following settings can be configured in file `system/extensions/yellow-syste
 `TickerShowDate` = Wether to display the date for feed entries, 1 or 0  
 `TickerShowDescription` = Wether to show item descriptions, 1 or 0  
 
+## Acknowledgements
+
+This extension includes [SimplePie 1.6](http://simplepie.org/) by Ryan Parman, Geoffrey Sneddon, Ryan McCue and contributors. Thanks for your work!
+
 ## Installation
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/ticker.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
-
-This extension includes [SimplePie 1.6](http://simplepie.org/) by Ryan Parman, Geoffrey Sneddon, Ryan McCue and contributors.
 
 ## Developer
 

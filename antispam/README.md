@@ -28,6 +28,9 @@ Custom link text, use quotes for multiple words:
     [email example@example.com contact]
     [email example@example.com "Write an email"]
 
+## Acknowledgements
+
+Thanks to Mark for code contributions and additional feedback! 
 
 ## Installation
 

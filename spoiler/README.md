@@ -52,6 +52,10 @@ This is our twitter feed. Click on the link to hide it.
 Here is some more text. 
 ```
 
+## Acknowledgements
+
+Thanks to Mark for code contributions and additional feedback! 
+
 ## Installation
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/spoiler.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).

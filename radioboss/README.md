@@ -67,6 +67,10 @@ The following settings can be configured in file `system/extensions/yellow-syste
 `RadiobossTrackCount` = number of recently played songs, maximum 20.  
 `RadiobossStyle` = RadioBoss style, e.g. `left`, `center`, `right`.  
 
+## Acknowledgements
+
+Thanks to Mark for code contributions and additional feedback! 
+
 ## Installation
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/radioboss.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).

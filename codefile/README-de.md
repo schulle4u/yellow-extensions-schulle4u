@@ -43,7 +43,9 @@ Verwende eine benutzerdefinierte ID und Dateinamen:
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/codefile.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
-Die Javascript-Komponente basiert auf einem Tutorial von [GeeksForGeeks](https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/). 
+## Danksagung
+
+Die Javascript-Komponente basiert auf einem Tutorial von [GeeksForGeeks](https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/). Vielen Dank für den Code!
 
 ## Entwickler
 

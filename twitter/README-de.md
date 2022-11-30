@@ -48,6 +48,10 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 `TwitterTheme` = Nachrichten-Theme, z. B. `light`, `dark`  
 
+## Danksagung
+
+Vielen Dank an Datenstrom für die zwischenzeitliche Entwicklung und Wartung dieser Erweiterung!
+
 ## Installation
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/twitter.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).

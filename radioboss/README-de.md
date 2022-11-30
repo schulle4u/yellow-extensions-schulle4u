@@ -68,6 +68,10 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 `RadiobossTrackCount` = Anzahl zuletzt gespielter Titel, maximal 20.  
 `RadiobossStyle` = RadioBoss-Stil, z. B. `left`, `center`, `right`.  
 
+## Danksagung
+
+Vielen Dank an Mark für Code-Beiträge und weiteres Feedback!
+
 ## Installation
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/radioboss.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).

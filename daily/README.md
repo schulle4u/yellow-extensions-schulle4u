@@ -51,6 +51,10 @@ Start off the week with our exciting mix of music from all around the world. Tun
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/daily.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
+## Acknowledgements
+
+Thanks to the Datenstrom Yellow community for help and feedback!
+
 ## Developer
 
 Steffen Schultz. [Get help](https://datenstrom.se/yellow/help/).

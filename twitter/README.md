@@ -48,6 +48,10 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 `TwitterTheme` = message theme, e.g. `light`, `dark`  
 
+## Acknowledgements
+
+Thanks to Datenstrom for intermediately developing and maintaining this extension!
+
 ## Installation
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/twitter.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).

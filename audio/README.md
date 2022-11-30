@@ -55,6 +55,10 @@ The following file can be customised:
 
 `system/layouts/audio.html` = layout file for standalone audio player  
 
+## Acknowledgements
+
+Thanks to Mark for code contributions and additional feedback! 
+
 ## Installation
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/audio.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).

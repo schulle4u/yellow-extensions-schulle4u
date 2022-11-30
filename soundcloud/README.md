@@ -34,6 +34,10 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 `SoundcloudStyle` = audio track style, e.g. `left`, `center`, `right`  
 
+## Acknowledgements
+
+Thanks to Datenstrom for initial development! 
+
 ## Installation
 
 [Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/soundcloud.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).

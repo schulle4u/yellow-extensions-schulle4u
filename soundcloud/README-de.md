@@ -34,6 +34,10 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 `SoundcloudStyle` = Audiospurstil, z. B. `left`, `center`, `right`  
 
+## Danksagung
+
+Vielen Dank an Datenstrom für die anfängliche Entwicklung!
+
 ## Installation
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/soundcloud.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).

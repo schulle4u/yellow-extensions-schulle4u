@@ -28,6 +28,10 @@ Linktext anpassen, schließe mehrere Wörter in Anführungszeichen ein:
     [email example@example.com Kontakt]
     [email example@example.com "Schreibe uns eine E-Mail"]
 
+## Danksagung
+
+Vielen Dank an Mark für Code-Beiträge und weiteres Feedback!
+
 ## Installation
 
 [Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/antispam.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
