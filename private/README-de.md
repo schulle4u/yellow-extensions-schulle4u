@@ -76,7 +76,7 @@ Layoutdatei um alle privaten Seiten anzuzeigen:
 
 ## Danksagung
 
-Vielen Dank an Kanbeq für die ursprüngliche Idee, und Mark für weiteres Feedback.
+Vielen Dank an Kanbeq für die ursprüngliche Idee.
 
 ## Installation
 

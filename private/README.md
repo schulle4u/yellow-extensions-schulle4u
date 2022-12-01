@@ -76,7 +76,7 @@ Layout file for showing all private pages:
 
 ## Acknowledgements
 
-Thanks to Kanbeq for the initial idea, and Mark for additional feedback.
+Thanks to Kanbeq for the initial idea.
 
 ## Installation
 

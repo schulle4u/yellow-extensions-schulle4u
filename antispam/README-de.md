@@ -30,7 +30,7 @@ Linktext anpassen, schließe mehrere Wörter in Anführungszeichen ein:
 
 ## Danksagung
 
-Vielen Dank an Mark für Code-Beiträge und weiteres Feedback!
+Vielen Dank an die Datenstrom-Yellow-Gemeinschaft für Hilfe und Feedback!
 
 ## Installation
 

@@ -57,7 +57,7 @@ Die folgende Datei kann angepasst werden:
 
 ## Danksagung
 
-Vielen Dank an Mark für Code-Beiträge und weiteres Feedback!
+Vielen Dank an die Datenstrom-Yellow-Gemeinschaft für Hilfe und Feedback!
 
 ## Installation
 

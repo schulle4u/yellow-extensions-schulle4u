@@ -30,7 +30,7 @@ Custom link text, use quotes for multiple words:
 
 ## Acknowledgements
 
-Thanks to Mark for code contributions and additional feedback! 
+Thanks to the Datenstrom Yellow community for help and feedback!
 
 ## Installation
 

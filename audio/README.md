@@ -57,7 +57,7 @@ The following file can be customised:
 
 ## Acknowledgements
 
-Thanks to Mark for code contributions and additional feedback! 
+Thanks to the Datenstrom Yellow community for help and feedback!
 
 ## Installation
 

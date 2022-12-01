@@ -69,7 +69,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 ## Acknowledgements
 
-Thanks to Mark for code contributions and additional feedback! 
+Thanks to the Datenstrom Yellow community for help and feedback!
 
 ## Installation
 

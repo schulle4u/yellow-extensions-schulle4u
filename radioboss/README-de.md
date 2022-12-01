@@ -70,7 +70,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 ## Danksagung
 
-Vielen Dank an Mark für Code-Beiträge und weiteres Feedback!
+Vielen Dank an die Datenstrom-Yellow-Gemeinschaft für Hilfe und Feedback!
 
 ## Installation
 
