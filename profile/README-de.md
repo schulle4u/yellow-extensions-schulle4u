@@ -56,7 +56,7 @@ Vielen Dank an die Datenstrom-Yellow-Gemeinschaft für Hilfe und Feedback!
 
 ## Installation
 
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/profile.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+[Erweiterung herunterladen](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/main/downloads/profile.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Entwickler
 

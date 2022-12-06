@@ -56,7 +56,7 @@ Thanks to the Datenstrom Yellow community for help and feedback!
 
 ## Installation
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/profile.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+[Download extension](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/main/downloads/profile.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 
