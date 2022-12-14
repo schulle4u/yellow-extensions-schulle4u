@@ -6,6 +6,10 @@ HTML5 audio player.
 
 <p align="center"><img src="audio-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/audio.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to use the player
 
 Create an `[audio]` shortcut.
@@ -58,10 +62,6 @@ The following file can be customised:
 ## Acknowledgements
 
 Thanks to the Datenstrom Yellow community for help and feedback!
-
-## Installation
-
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/audio.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 

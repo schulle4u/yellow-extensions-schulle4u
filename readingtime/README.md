@@ -6,6 +6,10 @@ Show estimated reading time for page content.
 
 <p align="center"><img src="readingtime-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/readingtime.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to show estimated reading time
 
 Create a `[readingtime]` shortcut. The following optional argument is available: 
@@ -33,10 +37,6 @@ The following setting can be configured in file `system/extensions/yellow-system
 ## Acknowledgements
 
 Thanks to the Datenstrom Yellow community for help and feedback!
-
-## Installation
-
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/readingtime.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 

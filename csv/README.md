@@ -6,6 +6,10 @@ CSV file parser.
 
 <p align="center"><img src="csv-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/csv.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to display a CSV file
 
 Create a `[csv]` shortcut. 
@@ -55,10 +59,6 @@ The following settings can be configured in file `system/extensions/yellow-syste
 ## Acknowledgements
 
 This extension includes [Light-table-filter](https://codepen.io/chriscoyier/pen/tIuBL) by Chris Coyier, and [Sort-table class](https://github.com/stationer/SortTable)  by Tyler Uebele, as well as code contributions by Mark. Thanks for your work!
-
-## Installation
-
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/csv.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 

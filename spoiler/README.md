@@ -6,6 +6,10 @@ Hide certain page elements.
 
 <p align="center"><img src="spoiler-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/spoiler.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to hide page elements
 
 Create a `[spoilerstart]` shortcut, write down what should be hidden and use the `[spoilerstop]` shortcut to close the spoiler.
@@ -55,10 +59,6 @@ Here is some more text.
 ## Acknowledgements
 
 Thanks to the Datenstrom Yellow community for help and feedback!
-
-## Installation
-
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/spoiler.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 

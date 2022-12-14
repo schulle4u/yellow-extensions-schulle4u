@@ -6,6 +6,10 @@ Twitter-Nachrichten einbinden.
 
 <p align="center"><img src="twitter-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
+## Wie man eine Erweiterung installiert
+
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/twitter.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+
 ## Wie man eine Nachricht einbindet
 
 Erstelle eine `[twitter]`-Abkürzung. 
@@ -17,6 +21,8 @@ Die folgenden Argumente sind verfügbar, alle bis auf das erste Argument sind op
 `Style` = Nachrichtenstil, z. B. `left`, `center`, `right`  
 `Width` = Nachrichtenbreite, Pixel oder Prozent  
 `Height` = Nachrichtenhöhe, Pixel oder Prozent  
+
+Du solltest wissen, dass der Dienstanbieter personenbezogene Daten sammelt und Cookies benutzt.
 
 ## Beispiele
 
@@ -52,11 +58,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 Vielen Dank an Datenstrom für die zwischenzeitliche Entwicklung und Wartung dieser Erweiterung!
 
-## Installation
-
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/twitter.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
-
-Diese Erweiterung verwendet [Twitter](https://www.twitter.com). Der Dienstanbieter sammelt personenbezogene Daten und benutzt Cookies.
+Diese Erweiterung verwendet [Twitter](https://www.twitter.com). Vielen Dank für den kostenlosen Dienst.
 
 ## Entwickler
 

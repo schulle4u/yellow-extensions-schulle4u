@@ -6,6 +6,10 @@ Widgets für RadioBoss Cloud.
 
 <p align="center"><img src="radioboss-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
+## Wie man eine Erweiterung installiert
+
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/radioboss.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+
 ## Wie man RadioBoss-Widgets einbettet
 
 Erstelle eine `[radioboss]`-Abkürzung. 
@@ -31,6 +35,7 @@ Die folgenden Widgets stehen zur Verfügung:
 `Links` = eine Liste der Streaming-Links.  
 `Page` = ein Link zur automatisch erstellten Stream-Seite. 
 
+Du solltest wissen, dass der Dienstanbieter personenbezogene Daten sammelt und Cookies benutzt.
 
 ## Beispiele
 
@@ -72,11 +77,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 Vielen Dank an die Datenstrom-Yellow-Gemeinschaft für Hilfe und Feedback!
 
-## Installation
-
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/radioboss.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
-
-Diese Erweiterung verwendet [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/) von DJSoft. Der Dienstanbieter sammelt personenbezogene Daten und benutzt Cookies.
+Diese Erweiterung verwendet [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/) von DJSoft. Vielen Dank für den Dienst.
 
 ## Entwickler
 

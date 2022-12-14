@@ -6,6 +6,10 @@ Include page content from other pages.
 
 <p align="center"><img src="include-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/include.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to include page content
 
 Create a `[include]` shortcut. 
@@ -41,10 +45,6 @@ Including a blog page:
 ## Acknowledgements
 
 Thanks to the Datenstrom Yellow community for help and feedback!
-
-## Installation
-
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/include.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 

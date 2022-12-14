@@ -6,6 +6,10 @@ Alternative Seitenweiterleitung.
 
 <p align="center"><img src="redirect-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
+## Wie man eine Erweiterung installiert
+
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/redirect.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+
 ## Wie man eine Weiterleitung erstellt
 
 Verwende die folgenden Seiten-Einstellungen: 
@@ -39,10 +43,6 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 ## Danksagung
 
 Vielen Dank an die Datenstrom-Yellow-Gemeinschaft für Hilfe und Feedback!
-
-## Installation
-
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/redirect.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Entwickler
 

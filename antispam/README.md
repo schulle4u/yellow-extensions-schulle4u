@@ -6,6 +6,10 @@ Alternative email address obfuscator.
 
 <p align="center"><img src="antispam-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/antispam.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to obfuscate email addresses
 
 Create an `[email]` shortcut.
@@ -31,10 +35,6 @@ Custom link text, use quotes for multiple words:
 ## Acknowledgements
 
 Thanks to the Datenstrom Yellow community for help and feedback!
-
-## Installation
-
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/antispam.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 

@@ -6,6 +6,10 @@ HTML5-Audio-Player.
 
 <p align="center"><img src="audio-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
+## Wie man eine Erweiterung installiert
+
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/audio.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+
 ## Wie man den Player verwendet
 
 Erstelle eine `[audio]`-Abkürzung.
@@ -58,10 +62,6 @@ Die folgende Datei kann angepasst werden:
 ## Danksagung
 
 Vielen Dank an die Datenstrom-Yellow-Gemeinschaft für Hilfe und Feedback!
-
-## Installation
-
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/audio.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Entwickler
 

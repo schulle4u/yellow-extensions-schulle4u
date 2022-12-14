@@ -6,6 +6,10 @@ Embed Twitter messages.
 
 <p align="center"><img src="twitter-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/twitter.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to embed a message
 
 Create a `[twitter]` shortcut. 
@@ -17,6 +21,8 @@ The following arguments are available, all but the first argument are optional:
 `Style` = message style, e.g. `left`, `center`, `right`  
 `Width` = message width, pixel or percent  
 `Height` = message height, pixel or percent  
+
+You should know that the service provider collects personal data and uses cookies.
 
 ## Examples
 
@@ -52,11 +58,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 Thanks to Datenstrom for intermediately developing and maintaining this extension!
 
-## Installation
-
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/twitter.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
-
-This extension uses [Twitter](https://www.twitter.com). The service provider collects personal data and uses cookies.
+This extension uses [Twitter](https://www.twitter.com). Thanks for the free service.
 
 ## Developer
 

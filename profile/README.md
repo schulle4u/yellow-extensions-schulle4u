@@ -6,6 +6,10 @@ Author profile for blog pages.
 
 <p align="center"><img src="profile-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download extension](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/main/downloads/profile.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to create author profiles
 
 Create a `[profile]` shortcut. 
@@ -53,10 +57,6 @@ The following settings can be configured in file `system/extensions/yellow-syste
 ## Acknowledgements
 
 Thanks to the Datenstrom Yellow community for help and feedback!
-
-## Installation
-
-[Download extension](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/main/downloads/profile.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 

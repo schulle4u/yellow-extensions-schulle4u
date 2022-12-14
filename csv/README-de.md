@@ -6,6 +6,10 @@ CSV-Dateileser.
 
 <p align="center"><img src="csv-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
+## Wie man eine Erweiterung installiert
+
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/csv.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+
 ## Wie man eine CSV-Datei anzeigt
 
 Erstelle eine `[csv]`-Abkürzung. 
@@ -55,10 +59,6 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 ## Danksagung
 
 Diese Erweiterung enthält [Light-table-filter](https://codepen.io/chriscoyier/pen/tIuBL) von Chris Coyier sowie [Sort-table class](https://github.com/stationer/SortTable) von Tyler Uebele, des Weiteren Code-Beiträge von Mark. Vielen Dank für die Arbeit!
-
-## Installation
-
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/csv.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Entwickler
 

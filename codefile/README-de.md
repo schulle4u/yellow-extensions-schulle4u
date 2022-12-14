@@ -6,6 +6,10 @@ Code-Blöcke als Textdatei herunterladen.
 
 <p align="center"><img src="codefile-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
+## Wie man eine Erweiterung installiert
+
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/codefile.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+
 ## Wie man einen Code-Block herunterlädt
 
 Verwende Spezial-Attribute, um den gewünschten Code-Block mit einer ID zu versehen, und erstelle eine `[codefile]`-Abkürzung.
@@ -42,10 +46,6 @@ Verwende eine benutzerdefinierte ID und Dateinamen:
 ## Danksagung
 
 Die Javascript-Komponente basiert auf einem Tutorial von [GeeksForGeeks](https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/). Vielen Dank für den Code!
-
-## Installation
-
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/codefile.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Entwickler
 

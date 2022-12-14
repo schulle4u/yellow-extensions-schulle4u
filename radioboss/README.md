@@ -6,6 +6,10 @@ Widgets for RadioBoss Cloud.
 
 <p align="center"><img src="radioboss-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/radioboss.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to embed RadioBoss widgets
 
 Create a `[radioboss]` shortcut. 
@@ -30,6 +34,8 @@ The following widgets are available:
 `Recent` = recently played tracks, supports optional arguments.  
 `Links` = a list of streaming links.  
 `Page` = a link to the auto-generated stream page. 
+
+You should know that the service provider collects personal data and uses cookies.
 
 ## Examples
 
@@ -71,11 +77,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 Thanks to the Datenstrom Yellow community for help and feedback!
 
-## Installation
-
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/radioboss.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
-
-This extension uses [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/) by DJSoft. The service provider collects personal data and uses cookies.
+This extension uses [RadioBoss Cloud](https://www.radioboss.fm/radioboss-cloud/) by DJSoft. Thanks for the service.
 
 ## Developer
 

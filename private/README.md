@@ -6,6 +6,10 @@ Support for password-protected pages.
 
 <p align="center"><img src="private-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/private.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to make a private page
 
 Set `Status: private` and `Password` in the [page settings](https://github.com/annaesvensson/yellow-core#user-content-settings-page) at the top of a page. The page will no longer be visible and you need to enter the password to access the content. You can continue to edit the page in the [web browser](https://github.com/annaesvensson/yellow-edit) and on your [computer](https://github.com/annaesvensson/yellow-core).
@@ -77,10 +81,6 @@ Layout file for showing all private pages:
 ## Acknowledgements
 
 Thanks to Kanbeq for the initial idea.
-
-## Installation
-
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/private.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 

@@ -6,6 +6,10 @@ Unterstützung für passwortgeschützte Seiten.
 
 <p align="center"><img src="private-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
+## Wie man eine Erweiterung installiert
+
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/private.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+
 ## Wie man private Seiten erstellt
 
 Setze `Status: private` und `Password` in den [Seiteneinstellungen](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md#user-content-einstellungen-seite) ganz oben auf der Seite. Die Seite ist dann nicht mehr sichtbar und man muss das Kennwort eingeben um auf den Inhalt zuzugreifen. Man kann die Seite weiterhin im [Webbrowser](https://github.com/annaesvensson/yellow-edit/tree/main/README-de.md) und auf deinem [Computer](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md) bearbeiten.
@@ -77,10 +81,6 @@ Layoutdatei um alle privaten Seiten anzuzeigen:
 ## Danksagung
 
 Vielen Dank an Kanbeq für die ursprüngliche Idee.
-
-## Installation
-
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/private.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Entwickler
 

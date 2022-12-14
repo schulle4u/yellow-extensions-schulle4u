@@ -6,6 +6,10 @@ Soundcloud-Audio einbinden.
 
 <p align="center"><img src="soundcloud-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
+## Wie man eine Erweiterung installiert
+
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/soundcloud.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+
 ## Wie binde ich eine Audiospur ein?
 
 Erstelle eine `[soundcloud]`-Abkürzung. 
@@ -16,6 +20,8 @@ Die folgenden Argumente sind verfügbar, alle bis auf das erste Argument sind op
 `Style` = Audiospurstil, z. B. `left`, `center`, `right`  
 `Width` = Audiospurbreite, Pixel oder Prozent  
 `Height` = Audiospurhöhe, Pixel oder Prozent   
+
+Du solltest wissen, dass der Dienstanbieter personenbezogene Daten sammelt und Cookies benutzt.
 
 ## Beispiele
 
@@ -38,11 +44,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 Vielen Dank an Datenstrom für die anfängliche Entwicklung!
 
-## Installation
-
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/soundcloud.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
-
-Diese Erweiterung verwendet [Soundcloud](https://soundcloud.com). Der Dienstanbieter sammelt personenbezogene Daten und benutzt Cookies.
+Diese Erweiterung verwendet [Soundcloud](https://soundcloud.com). Vielen Dank für den Dienst.
 
 ## Entwickler
 

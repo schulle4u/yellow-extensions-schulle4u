@@ -6,6 +6,10 @@ Download code blocks as text file.
 
 <p align="center"><img src="codefile-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/codefile.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to download a code block
 
 Use special markdown attributes to Prepare your code block with an ID and create a `[codefile]` shortcut. 
@@ -42,10 +46,6 @@ Use a custom ID and file name:
 ## Acknowledgements
 
 The Javascript component is based on a tutorial from [GeeksForGeeks](https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/). Thanks for the code!
-
-## Installation
-
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/codefile.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 

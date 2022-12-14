@@ -6,6 +6,10 @@ Embed Soundcloud audio tracks.
 
 <p align="center"><img src="soundcloud-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/soundcloud.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to embed an audio track
 
 Create a `[soundcloud]` shortcut.
@@ -16,6 +20,8 @@ The following arguments are available, all but the first argument are optional:
 `Style` = audio track style, e.g. `left`, `center`, `right`  
 `Width` = audio track width, pixel or percent  
 `Height` = audio track height, pixel or percent   
+
+You should know that the service provider collects personal data and uses cookies.
 
 ## Examples
 
@@ -38,11 +44,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 Thanks to Datenstrom for initial development! 
 
-## Installation
-
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/soundcloud.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
-
-This extension uses [Soundcloud](https://soundcloud.com). The service provider collects personal data and uses cookies.
+This extension uses [Soundcloud](https://soundcloud.com). Thanks for the service.
 
 ## Developer
 

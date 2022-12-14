@@ -6,6 +6,10 @@ Tägliche Seiten anzeigen.
 
 <p align="center"><img src="daily-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
+## Wie man eine Erweiterung installiert
+
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/daily.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+
 ## Wie man tägliche Seiten anzeigt
 
 Erstelle eine `[daily]`-Abkürzung. Definiere eine `Daily`-Einstellung in den Seiten, die als tägliche Seiten angezeigt werden sollen. Verwende hierzu die numerischen Werte für jeden Wochentag, z. B. 1 für Montag, 2 für Dienstag. 
@@ -50,10 +54,6 @@ Komm' gut in die Woche mit unserer spannenden Weltmusik-Playlist. Jeden Montag u
 ## Danksagung
 
 Vielen Dank an die Datenstrom-Yellow-Gemeinschaft für Hilfe und Feedback!
-
-## Installation
-
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/daily.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Entwickler
 

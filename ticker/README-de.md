@@ -6,6 +6,10 @@ RSS-Feed-Leser.
 
 <p align="center"><img src="ticker-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
+## Wie man eine Erweiterung installiert
+
+[Erweiterung herunterladen](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/main/downloads/ticker.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+
 ## Wie man RSS-Feeds anzeigt
 
 Erstelle eine `[ticker]`-Abkürzung.
@@ -36,10 +40,6 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 ## Danksagung
 
 Diese Erweiterung enthält [SimplePie 1.6](http://simplepie.org/) von Ryan Parman, Geoffrey Sneddon, Ryan McCue und Mitwirkende. Vielen Dank für eure Arbeit!
-
-## Installation
-
-[Erweiterung herunterladen](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/main/downloads/ticker.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Entwickler
 

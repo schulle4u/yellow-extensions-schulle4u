@@ -6,6 +6,10 @@ Show daily pages.
 
 <p align="center"><img src="daily-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/daily.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to show daily pages
 
 Create a `[daily]` shortcut. On the pages you wish to show as daily pages, define a `Daily` entry in your page settings. Use the numeric representation for the day of the week, e.g. 1 for monday, 2 for tuesday. 
@@ -50,10 +54,6 @@ Start off the week with our exciting mix of music from all around the world. Tun
 ## Acknowledgements
 
 Thanks to the Datenstrom Yellow community for help and feedback!
-
-## Installation
-
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/daily.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 

@@ -6,6 +6,10 @@ Bestimmte Seitenelemente verstecken.
 
 <p align="center"><img src="spoiler-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
+## Wie man eine Erweiterung installiert
+
+[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/spoiler.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+
 ## Wie man Seiteninhalte versteckt
 
 Erstelle eine `[spoilerstart]`-Abkürzung, füge die zu versteckenden Inhalte ein und schließe mit einer `[spoilerstop]`-Abkürzung den Spoiler.
@@ -55,10 +59,6 @@ Hier ist weiterer Text.
 ## Danksagung
 
 Vielen Dank an die Datenstrom-Yellow-Gemeinschaft für Hilfe und Feedback!
-
-## Installation
-
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/spoiler.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Entwickler
 

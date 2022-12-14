@@ -6,6 +6,10 @@ RSS feed parser.
 
 <p align="center"><img src="ticker-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download extension](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/main/downloads/ticker.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to display RSS feeds
 
 Create a `[ticker]` shortcut.
@@ -36,10 +40,6 @@ The following settings can be configured in file `system/extensions/yellow-syste
 ## Acknowledgements
 
 This extension includes [SimplePie 1.6](http://simplepie.org/) by Ryan Parman, Geoffrey Sneddon, Ryan McCue and contributors. Thanks for your work!
-
-## Installation
-
-[Download extension](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/main/downloads/ticker.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 
