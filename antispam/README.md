@@ -8,7 +8,7 @@ Alternative email address obfuscator.
 
 ## How to install an extension
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/antispam.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+[Download extension](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/main/downloads/antispam.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## How to obfuscate email addresses
 
