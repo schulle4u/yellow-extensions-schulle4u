@@ -28,7 +28,7 @@ Weitere Funktionen für Datenstrom Yellow. https://datenstrom.se/de/yellow/
 
 ⚠️ = Erweiterung hat momentan den Status experimentell und ist nicht via Datenstrom verfügbar.
 
-## Themen
+## Themes
 
 * [Wittstock](https://github.com/schulle4u/yellow-wittstock/tree/main/README-de.md) - Wittstock ist ein klassenloses Theme für Datenstrom Yellow.
 
