@@ -8,7 +8,7 @@ Show daily pages.
 
 ## How to install an extension
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/daily.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+[Download ZIP file](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/daily.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## How to show daily pages
 

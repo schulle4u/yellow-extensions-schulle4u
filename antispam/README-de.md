@@ -8,7 +8,7 @@ Alternative Verschleierung von E-Mail-Adressen.
 
 ## Wie man eine Erweiterung installiert
 
-[Erweiterung herunterladen](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/main/downloads/antispam.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+[ZIP-Datei herunterladen](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/main/downloads/antispam.zip) und in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Wie man E-Mail-Adressen verschleiert
 

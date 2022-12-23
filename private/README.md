@@ -8,7 +8,7 @@ Support for password-protected pages.
 
 ## How to install an extension
 
-[Download extension](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/private.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+[Download ZIP file](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/private.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## How to make a private page
 
