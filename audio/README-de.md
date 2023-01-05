@@ -36,17 +36,6 @@ Audiodatei von einer externen URL abrufen und Downloads erlauben:
 
     [audio http://wolke.robbenradio.de/podcasts/rt033_yellow.mp3 1]
 
-Inhaltsdatei mit Standalone-Audioplayer:
-
-```
----
-Title: Audio
-TitleSlug: audio
-Layout: audio
----
-[audio http://stream.powerradio4u.de:8000/p4u.mp3 autoplay]
-```
-
 ## Einstellungen
 
 Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
@@ -54,10 +43,6 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 `AudioDownload` = Zeige einen Download-Link für Audiodateien, 1 oder 0  
 `AudioUrlPrefix` = URL-Präfix für Audiodateien auf einem CDN  
 `AudioStyle` = CSS-Klasse für den Player  
-
-Die folgende Datei kann angepasst werden:
-
-`system/layouts/audio.html` = Layout-Datei für den Standalone-Audioplayer  
 
 ## Danksagung
 

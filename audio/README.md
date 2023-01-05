@@ -36,17 +36,6 @@ Embedding a track from an external URL and allow downloading:
 
     [audio http://wolke.robbenradio.de/podcasts/rt033_yellow.mp3 1]
 
-Content file with a standalone audio player:
-
-```
----
-Title: Audio
-TitleSlug: audio
-Layout: audio
----
-[audio http://stream.powerradio4u.de:8000/p4u.mp3]
-```
-
 ## Settings
 
 The following settings can be configured in file `system/extensions/yellow-system.ini`: 
@@ -54,10 +43,6 @@ The following settings can be configured in file `system/extensions/yellow-syste
 `AudioDownload` = show download link for audio files, 1 or 0  
 `AudioUrlPrefix` = URL prefix for audio files on a CDN  
 `AudioStyle` = CSS class to use for the player  
-
-The following file can be customised:
-
-`system/layouts/audio.html` = layout file for standalone audio player  
 
 ## Acknowledgements
 
