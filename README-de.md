@@ -12,6 +12,7 @@ Weitere Funktionen für Datenstrom Yellow. https://datenstrom.se/de/yellow/
 * [Csv](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/csv/README-de.md) - CSV-Dateileser.
 * [Daily](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/daily/README-de.md) - Tägliche Seiten anzeigen.
 * ⚠️ [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/include/README-de.md) - Bindet den Inhalt anderer Seiten in die aktuelle Seite ein.
+* ⚠️ [Lightbox](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/lightbox) - Eine Lightbox für verschiedene Medientypen.
 * [Meta](https://github.com/annaesvensson/yellow-meta/README-de.md) - Metadaten für Social-Media-Netzwerke. Weiterentwicklung bei Datenstrom.
 * ⚠️ [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/pagesource/README-de.md) - Markdown-Quelltext auf Seiten anzeigen.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/podcast/README-de.md) - Web-Feed optimiert für die Podcast-Veröffentlichung.
