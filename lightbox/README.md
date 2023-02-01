@@ -14,8 +14,8 @@ Create a `[lightbox]` shortcut.
  
 The following arguments are available, all arguments are optional:
 
-`mode` = one of the supported lightbox modes, e.g. `image`  
 `src` = a file, URL or ID for the supported lightbox modes.  
+`mode` = one of the supported lightbox modes, e.g. `image`  
 `label` = label for the link to open the lightbox.  
 `group` = the associated group for the media element.  
 `width` and `height` = media dimensions if applicable.
@@ -24,15 +24,15 @@ The following arguments are available, all arguments are optional:
 
 Open an image with lightbox: 
 
-    [lightbox image photo.jpg "Open image" yellow]
+    [lightbox photo.jpg image "Open image" yellow]
 
 Play a youtube video:
 
-    [lightbox youtube fhs55HEl-Gc "Play video"]
+    [lightbox fhs55HEl-Gc youtube "Play video"]
 
 Open another website as iframe:
 
-    [lightbox iframe https://www.wikipedia.org "Open Wikipedia" - 100%]
+    [lightbox https://www.wikipedia.org iframe "Open Wikipedia" - 100%]
 
 Content page with HTML lightbox:
 
@@ -40,7 +40,7 @@ Content page with HTML lightbox:
 ---
 Title: Example
 ---
-[lightbox html selector "Open HTML"]
+[lightbox selector html "Open HTML"]
 
 <div style="display:none;" markdown=1>
 

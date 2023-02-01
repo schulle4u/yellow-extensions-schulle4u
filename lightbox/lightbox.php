@@ -14,7 +14,7 @@ class YellowLightbox {
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
         if ($name=="lightbox" && ($type=="block" || $type=="inline")) {
-            list($mode, $src, $label, $group, $width, $height) = $this->yellow->toolbox->getTextArguments($text);
+            list($src, $mode, $label, $group, $width, $height) = $this->yellow->toolbox->getTextArguments($text);
             if (is_string_empty($mode)) $mode = "image";
             if (is_string_empty($label)) $label = "Open";
             if (is_string_empty($width)) $width = "100%";
