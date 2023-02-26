@@ -30,9 +30,9 @@ class YellowLightbox {
                         $imagePath = $this->yellow->lookup->normaliseUrl("", "", "", $src);
                     }
                     $output .= "<a href=\"".htmlspecialchars($imagePath)."\" class=\"lightbox\" data-group=\"".htmlspecialchars($group)."\">".htmlspecialchars($label)."</a>\n"; break;
-                case "html": $output .= "<a href=\"#".htmlspecialchars($src)."\" data-type=\"html\" class=\"lightbox\">".htmlspecialchars($label)."</a>\n"; break;
-                case "iframe": $output .= "<a href=\"".htmlspecialchars($this->yellow->lookup->normaliseUrl("", "", "", $src))."\" data-type=\"iframe\" data-width=\"".htmlspecialchars($width)."\" data-height=\"".htmlspecialchars($height)."\" class=\"lightbox\">".htmlspecialchars($label)."</a>\n"; break;
-                case "youtube": $output .= "<a href=\"#\" data-type=\"youtube\" data-id=\"".htmlspecialchars($src)."\" data-width=\"".htmlspecialchars($width)."\" data-height=\"".htmlspecialchars($height)."\" class=\"lightbox\">".htmlspecialchars($label)."</a>"; break;
+                case "html": $output .= "<a href=\"#".htmlspecialchars($src)."\" data-type=\"html\" data-group=\"".htmlspecialchars($group)."\" class=\"lightbox\">".htmlspecialchars($label)."</a>\n"; break;
+                case "iframe": $output .= "<a href=\"".htmlspecialchars($this->yellow->lookup->normaliseUrl("", "", "", $src))."\" data-type=\"iframe\" data-group=\"".htmlspecialchars($group)."\" data-width=\"".htmlspecialchars($width)."\" data-height=\"".htmlspecialchars($height)."\" class=\"lightbox\">".htmlspecialchars($label)."</a>\n"; break;
+                case "youtube": $output .= "<a href=\"#\" data-type=\"youtube\" data-id=\"".htmlspecialchars($src)."\" data-group=\"".htmlspecialchars($group)."\" data-width=\"".htmlspecialchars($width)."\" data-height=\"".htmlspecialchars($height)."\" class=\"lightbox\">".htmlspecialchars($label)."</a>"; break;
             }
             $output .= "</div>\n";
         }
@@ -52,9 +52,9 @@ class YellowLightbox {
             $output = "<div id=\"lightboxConfig\"";
             $output .= " data-lightboxNav=\"".htmlspecialchars($this->yellow->system->get("lightboxNav"))."\"";
             $output .= " data-lightboxAutoplay=\"".htmlspecialchars($this->yellow->system->get("lightboxAutoplay"))."\"";
-            $output .= " data-lightboxPreviousLabel=\"".$this->yellow->language->getText("corePaginationPrevious")."\"";
-            $output .= " data-lightboxNextLabel=\"".$this->yellow->language->getText("corePaginationNext")."\"";
-            $output .= " data-lightboxCloseLabel=\"".$this->yellow->language->getText("editCancelButton")."\"";
+            $output .= " data-lightboxPreviousLabel=\"".$this->yellow->language->getTextHtml("corePaginationPrevious")."\"";
+            $output .= " data-lightboxNextLabel=\"".$this->yellow->language->getTextHtml("corePaginationNext")."\"";
+            $output .= " data-lightboxCloseLabel=\"".$this->yellow->language->getTextHtml("editCancelButton")."\"";
             $output .="></div>\n";
         }
         return $output;
