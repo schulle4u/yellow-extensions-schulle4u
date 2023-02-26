@@ -2,12 +2,14 @@
 // Lightbox extension, http://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/lightbox
 
 class YellowLightbox {
-    const VERSION = "0.8.20";
+    const VERSION = "0.8.21";
     public $yellow;         // access to API
     
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
+        $this->yellow->system->setDefault("lightboxNav", "auto");
+        $this->yellow->system->setDefault("lightboxAutoplay", "false");
     }
     
     // Handle page content of shortcut
@@ -45,6 +47,15 @@ class YellowLightbox {
             $output = "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"{$extensionLocation}lightbox-tobii.min.css\" />\n";
             $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}lightbox-tobii.min.js\"></script>\n";
             $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}lightbox.js\"></script>\n";
+        }
+        if ($name=="footer") {
+            $output = "<div id=\"lightboxConfig\"";
+            $output .= " data-lightboxNav=\"".htmlspecialchars($this->yellow->system->get("lightboxNav"))."\"";
+            $output .= " data-lightboxAutoplay=\"".htmlspecialchars($this->yellow->system->get("lightboxAutoplay"))."\"";
+            $output .= " data-lightboxPreviousLabel=\"".$this->yellow->language->getText("corePaginationPrevious")."\"";
+            $output .= " data-lightboxNextLabel=\"".$this->yellow->language->getText("corePaginationNext")."\"";
+            $output .= " data-lightboxCloseLabel=\"".$this->yellow->language->getText("editCancelButton")."\"";
+            $output .="></div>\n";
         }
         return $output;
     }
