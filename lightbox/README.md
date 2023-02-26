@@ -50,6 +50,13 @@ Title: Example
 
 </div>
 ```
+
+## Settings
+
+The following settings can be configured in file `system/extensions/yellow-system.ini`: 
+
+`LightboxNav` = Show navigation buttons in lightbox, true, false or auto  
+`LightboxAutoplay` = Automatically play videos and audios when opening the lightbox, true or false
  
 ## Acknowledgements
 

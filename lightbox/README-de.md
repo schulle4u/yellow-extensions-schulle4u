@@ -51,6 +51,13 @@ Title: Example
 </div>
 ```
 
+## Einstellungen
+
+Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
+
+`LightboxNav` = Zeige Navigationsschaltflächen in der Lightbox, true, false oder auto  
+`LightboxAutoplay` = Videos und Audios beim Öffnen der Lightbox automatisch abspielen, true oder false
+
 ## Danksagung
 
 Diese Erweiterung enthält [Tobii v2.5.0 von Midzer](https://github.com/midzer/tobii). Vielen Dank für die gute Arbeit!!
