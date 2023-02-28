@@ -50,7 +50,7 @@ Title: Twitter
 This is our twitter feed. Click on the link to hide it. 
 
 [spoilerstart twitterfeed "Show or hide Twitter feed" block]  
-[twitter datendeveloper]  
+[twitter schulle4u]  
 [spoilerstop]
 
 Here is some more text. 

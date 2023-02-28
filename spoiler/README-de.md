@@ -50,7 +50,7 @@ Title: Twitter
 Hier ist unser Twitter-Feed. Klicke auf den Link zum Ausblenden. 
 
 [spoilerstart twitterfeed "Twitter-Feed zeigen/ausblenden" block]  
-[twitter datenstromnews]  
+[twitter schulle4u]  
 [spoilerstop]
 
 Hier ist weiterer Text. 
