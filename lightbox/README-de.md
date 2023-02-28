@@ -15,7 +15,7 @@ Erstelle eine `[lightbox]`-Abkürzung.
 Die folgenden Argumente sind verfügbar, alle Argumente sind optional:
 
 `src` = Eine Datei, URL oder ID für die unterstützten Lightbox-Modi.  
-`mode` = Ein unterstützter Lightbox-Modus, z. B. `image`  
+`mode` = Ein unterstützter Lightbox-Modus, `image`, `html`, `iframe` oder `youtube`  
 `label` = Beschriftung für den Link zum Öffnen der Lightbox.  
 `group` = Die Gruppe für das Medien-Element.  
 `width` and `height` = Abmessungen des Elements, falls zutreffend.
