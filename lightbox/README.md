@@ -15,7 +15,7 @@ Create a `[lightbox]` shortcut.
 The following arguments are available, all arguments are optional:
 
 `src` = a file, URL or ID for the supported lightbox modes.  
-`mode` = one of the supported lightbox modes, e.g. `image`  
+`mode` = one of the supported lightbox modes, `image`, `html`, `iframe` or `youtube`  
 `label` = label for the link to open the lightbox.  
 `group` = the associated group for the media element.  
 `width` and `height` = media dimensions if applicable.
@@ -25,6 +25,10 @@ The following arguments are available, all arguments are optional:
 Open an image with lightbox: 
 
     [lightbox photo.jpg image "Open image" yellow]
+
+Create an image link to open in lightbox: 
+
+    [[image photo.jpg Example - 50%]](/media/images/photo.jpg){.lightbox}
 
 Play a youtube video:
 

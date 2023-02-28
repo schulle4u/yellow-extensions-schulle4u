@@ -26,6 +26,10 @@ Ein Bild mit der Lightbox öffnen:
 
     [lightbox photo.jpg image "Open image" yellow]
 
+Einen Bild-Link zum Öffnen der Lightbox erstellen:
+
+    [[image photo.jpg Beispiel - 50%]](/media/images/photo.jpg){.lightbox}
+
 Ein Youtube-Video abspielen:
 
     [lightbox fhs55HEl-Gc youtube "Play video"]
