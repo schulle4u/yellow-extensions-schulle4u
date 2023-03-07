@@ -54,7 +54,7 @@ class YellowLightbox {
             $output .= " data-lightboxAutoplay=\"".htmlspecialchars($this->yellow->system->get("lightboxAutoplay"))."\"";
             $output .= " data-lightboxPreviousLabel=\"".$this->yellow->language->getTextHtml("corePaginationPrevious")."\"";
             $output .= " data-lightboxNextLabel=\"".$this->yellow->language->getTextHtml("corePaginationNext")."\"";
-            $output .= " data-lightboxCloseLabel=\"".$this->yellow->language->getTextHtml("editCancelButton")."\"";
+            $output .= " data-lightboxCloseLabel=\"".$this->yellow->language->getTextHtml("editOkButton")."\"";
             $output .="></div>\n";
         }
         return $output;
