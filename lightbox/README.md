@@ -11,7 +11,7 @@ A lightbox for different media types.
 ## How to use a lightbox
 
 Create a `[lightbox]` shortcut.
- 
+
 The following arguments are available, all arguments are optional:
 
 `src` = a file, URL or ID for the supported lightbox modes.  
@@ -22,7 +22,7 @@ The following arguments are available, all arguments are optional:
 
 ## Examples
 
-Open an image with lightbox: 
+Open an image with lightbox and associate it to the group Yellow: 
 
     [lightbox photo.jpg image "Open image" yellow]
 
@@ -60,7 +60,7 @@ Title: Example
 The following settings can be configured in file `system/extensions/yellow-system.ini`: 
 
 `LightboxNav` = Show navigation buttons in lightbox, true, false or auto  
-`LightboxAutoplay` = Automatically play videos and audios when opening the lightbox, true or false
+`LightboxAutoplay` = Automatically play videos and audios upon opening the lightbox, true or false
  
 ## Acknowledgements
 

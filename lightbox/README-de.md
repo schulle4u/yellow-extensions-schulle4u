@@ -22,7 +22,7 @@ Die folgenden Argumente sind verfügbar, alle Argumente sind optional:
 
 ## Beispiele
 
-Ein Bild mit der Lightbox öffnen: 
+Ein Bild mit der Lightbox öffnen und der Gruppe Yellow zuordnen: 
 
     [lightbox photo.jpg image "Open image" yellow]
 
