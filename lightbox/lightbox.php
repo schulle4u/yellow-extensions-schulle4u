@@ -2,7 +2,7 @@
 // Lightbox extension, http://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/lightbox
 
 class YellowLightbox {
-    const VERSION = "0.8.21";
+    const VERSION = "0.8.22";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -32,7 +32,7 @@ class YellowLightbox {
                     $output .= "<a href=\"".htmlspecialchars($imagePath)."\" class=\"lightbox\" data-group=\"".htmlspecialchars($group)."\">".htmlspecialchars($label)."</a>\n"; break;
                 case "html": $output .= "<a href=\"#".htmlspecialchars($src)."\" data-type=\"html\" data-group=\"".htmlspecialchars($group)."\" class=\"lightbox\">".htmlspecialchars($label)."</a>\n"; break;
                 case "iframe": $output .= "<a href=\"".htmlspecialchars($this->yellow->lookup->normaliseUrl("", "", "", $src))."\" data-type=\"iframe\" data-group=\"".htmlspecialchars($group)."\" data-width=\"".htmlspecialchars($width)."\" data-height=\"".htmlspecialchars($height)."\" class=\"lightbox\">".htmlspecialchars($label)."</a>\n"; break;
-                case "youtube": $output .= "<a href=\"#\" data-type=\"youtube\" data-id=\"".htmlspecialchars($src)."\" data-group=\"".htmlspecialchars($group)."\" data-width=\"".htmlspecialchars($width)."\" data-height=\"".htmlspecialchars($height)."\" class=\"lightbox\">".htmlspecialchars($label)."</a>"; break;
+                case "youtube": $output .= "<a href=\"https://www.youtube.com/watch?v=".rawurlencode($src)."\" data-type=\"youtube\" data-id=\"".htmlspecialchars($src)."\" data-group=\"".htmlspecialchars($group)."\" data-width=\"".htmlspecialchars($width)."\" data-height=\"".htmlspecialchars($height)."\" class=\"lightbox\">".htmlspecialchars($label)."</a>"; break;
             }
             $output .= "</div>\n";
         }
