@@ -2,7 +2,7 @@
 // Profile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/profile
 
 class YellowProfile {
-    const VERSION = "0.8.10";
+    const VERSION = "0.8.11";
     public $yellow;            // access to API
     
     // Handle initialisation
@@ -39,7 +39,7 @@ class YellowProfile {
     // Handle page extra data
     public function onParsePageExtra($page, $name) {
         $output = null;
-        if ($name=="profiles") {
+        if ($name=="profile") {
             $output = $this->onParseContentShortcut($page, "profile", "", "block");
         }
         return $output;
