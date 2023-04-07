@@ -25,7 +25,6 @@ More features for Datenstrom Yellow. https://datenstrom.se/yellow/
 * [Soundcloud](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/soundcloud) - Embed Soundcloud audio tracks.
 * [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/spoiler) - Hide certain page elements.
 * ⚠️ [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/ticker) - RSS feed parser.
-* [Twitter](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/twitter) - Embed Twitter messages.
 
 ⚠️ = extension currently has status experimental and is not available via Datenstrom.
 

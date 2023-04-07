@@ -25,7 +25,6 @@ Weitere Funktionen für Datenstrom Yellow. https://datenstrom.se/de/yellow/
 * [Soundcloud](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/soundcloud/README-de.md) - Soundcloud-Audio einbinden.
 * [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/spoiler/README-de.md) - Bestimmte Seitenelemente verstecken.
 * ⚠️ [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/ticker/README-de.md) - RSS-Feed-Leser.
-* [Twitter](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/twitter/README-de.md) - Twitter-Nachrichten einbetten.
 
 ⚠️ = Erweiterung hat momentan den Status experimentell und ist nicht via Datenstrom verfügbar.
 
