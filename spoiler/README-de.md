@@ -41,21 +41,6 @@ Dieser Text ist standardmäßig ausgeblendet. Falls du ihn jetzt lesen kannst, h
 Hier kann weiterer Inhalt stehen. 
 ```
 
-Inhaltsdatei mit Twitter-Feed, auf Knopfdruck verstecken:
-
-```
----
-Title: Twitter
----
-Hier ist unser Twitter-Feed. Klicke auf den Link zum Ausblenden. 
-
-[spoilerstart twitterfeed "Twitter-Feed zeigen/ausblenden" block]  
-[twitter schulle4u]  
-[spoilerstop]
-
-Hier ist weiterer Text. 
-```
-
 ## Danksagung
 
 Vielen Dank an die Datenstrom-Yellow-Gemeinschaft für Hilfe und Feedback!

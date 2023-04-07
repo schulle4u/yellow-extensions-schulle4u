@@ -41,21 +41,6 @@ This text is hidden by default. If you can read this, you successfully clicked t
 More text is here. 
 ```
 
-Content file with twitter feed, hiding on click:
-
-```
----
-Title: Twitter
----
-This is our twitter feed. Click on the link to hide it. 
-
-[spoilerstart twitterfeed "Show or hide Twitter feed" block]  
-[twitter schulle4u]  
-[spoilerstop]
-
-Here is some more text. 
-```
-
 ## Acknowledgements
 
 Thanks to the Datenstrom Yellow community for help and feedback!
