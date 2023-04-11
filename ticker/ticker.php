@@ -2,7 +2,7 @@
 // Ticker extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/ticker
 
 class YellowTicker {
-    const VERSION = "0.8.11";
+    const VERSION = "0.8.12";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -11,7 +11,7 @@ class YellowTicker {
         $this->yellow->system->setDefault("tickerShowDate", 1);
         $this->yellow->system->setDefault("tickerShowDescription", 1);
         $this->yellow->system->setDefault("tickerStyle", "ticker");
-        $this->yellow->system->setDefault("tickerNumentries", 5);
+        $this->yellow->system->setDefault("tickerShortcutEntries", 5);
     }
     
     // Handle update
@@ -31,9 +31,9 @@ class YellowTicker {
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
         if ($name=="ticker" && ($type=="block" || $type=="inline")) {
-            list($rssurl, $numentries, $style) = $this->yellow->toolbox->getTextArguments($text);
+            list($rssurl, $shortcutEntries, $style) = $this->yellow->toolbox->getTextArguments($text);
             if (is_string_empty($style)) $style = $this->yellow->system->get("tickerStyle");
-            if (is_string_empty($numentries)) $numentries = $this->yellow->system->get("tickerNumentries");
+            if (is_string_empty($shortcutEntries)) $shortcutEntries = $this->yellow->system->get("tickerShortcutEntries");
             $n = 1;
             $showDate = $this->yellow->system->get("tickerShowDate");
             $showDescription = $this->yellow->system->get("tickerShowDescription");
@@ -51,7 +51,7 @@ class YellowTicker {
                 if ($showDate) $output .= " - ".$item->get_date($this->yellow->language->getTextHtml("CoreDateFormatLong"));
                 if ($showDescription) $output .= "<br />".$item->get_description()." <a href=\"".$item->get_permalink()."\">".$this->yellow->language->getTextHtml("blogMore")."</a>";
                 $output .= "</li>\n";
-                if ($n>=$numentries) { break; }
+                if ($n>=$shortcutEntries) { break; }
                 $n++;
             }
             $output .= "</ul></div>\n";

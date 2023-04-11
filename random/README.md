@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Random 0.8.8
+# Random 0.8.9
 
 Display random pages.
 
@@ -17,7 +17,7 @@ Create a `[random]` shortcut.
 The following arguments are available, all but the first argument are optional:
 
 `Location` = location of random pages  
-`PagesMax` = number of random pages to show  
+`ShortcutEntries` = number of random pages to show  
 `Mode` = display mode for random pages, e.g. `full`, `teaser`, `list`   
 
 In `full` and `teaser` mode the page title and content are embedded into the current page. This can be useful to display e.g. random quotes, teasers or pictures. The `list` mode creates a clickable list of random pages, useful e.g. in a blog sidebar. 

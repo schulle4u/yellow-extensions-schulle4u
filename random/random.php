@@ -2,14 +2,14 @@
 // Random extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/random
 
 class YellowRandom {
-    const VERSION = "0.8.8";
+    const VERSION = "0.8.9";
     public $yellow;            //access to API
     
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
         $this->yellow->system->setDefault("randomLocation", "/blog/");
-        $this->yellow->system->setDefault("randomPagesMax", "5");
+        $this->yellow->system->setDefault("randomShortcutEntries", "5");
         $this->yellow->system->setDefault("randomMode", "list");
     }
 
@@ -17,9 +17,9 @@ class YellowRandom {
     public function onParseContentShortcut($page, $name, $text, $type) {
         $output = null;
         if ($name=="random" && ($type=="block" || $type=="inline")) {
-            list($location, $pagesMax, $mode) = $this->yellow->toolbox->getTextArguments($text);
+            list($location, $shortcutEntries, $mode) = $this->yellow->toolbox->getTextArguments($text);
             if (is_string_empty($location)) $location = $this->yellow->system->get("randomLocation");
-            if (is_string_empty($pagesMax)) $pagesMax = $this->yellow->system->get("randomPagesMax");
+            if (is_string_empty($shortcutEntries)) $shortcutEntries  = $this->yellow->system->get("randomShortcutEntries");
             if (is_string_empty($mode)) $mode = $this->yellow->system->get("randomMode");
             $this->yellow->page->setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
             $parent = $this->yellow->content->find($location);
@@ -27,7 +27,7 @@ class YellowRandom {
             if (!is_array_empty($pages)) {
                 $output .= "<div class=\"".$name."\">\n";
                 if ($mode == "list") $output .= "<ul>\n";
-                foreach ($pages->shuffle()->limit($pagesMax) as $page) {
+                foreach ($pages->shuffle()->limit($shortcutEntries) as $page) {
                     if ($mode == "full") {
                         $output .= "<h2>".$page->getHtml("title")."</h2>\n";
                         $output .= $page->getContent();

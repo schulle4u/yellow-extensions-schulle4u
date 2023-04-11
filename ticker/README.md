@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Ticker 0.8.10
+# Ticker 0.8.12
 
 RSS feed parser.
 
@@ -17,7 +17,7 @@ Create a `[ticker]` shortcut.
 The following arguments are available, all but the first argument are optional:
 
 `RssUrl` = RSS feed URL  
-`EntriesMax` = number of entries to show  
+`ShortcutEntries` = number of entries to show  
 `Style` = CSS class to use  
 
 This extension reads all commonly used RSS and Atom feeds. Feed caching for better website performance is supported. 

@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Ticker 0.8.10
+# Ticker 0.8.12
 
 RSS-Feed-Leser.
 
@@ -17,7 +17,7 @@ Erstelle eine `[ticker]`-Abkürzung.
 Die folgenden Argumente sind verfügbar, mit Ausnahme des ersten Arguments sind alle Angaben optional:
 
 `RssUrl` = URL des RSS-Feeds  
-`EntriesMax` = Anzahl anzuzeigender Einträge  
+`ShortcutEntries` = Anzahl anzuzeigender Einträge  
 `Style` = Zu verwendende CSS-Klasse  
 
 Diese Erweiterung liest alle gängigen RSS- und Atom-Feeds. Für ein Schnelleres Laden der Einträge wird Caching unterstützt. 
