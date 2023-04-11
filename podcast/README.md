@@ -12,7 +12,7 @@ Web feed optimized for podcast publishing.
 
 ## How to use the podcast
 
-The podcast feed is available on your website as `http://website/podcast/` and `http://website/podcast/page:podcast.xml`. It's a feed for the entire website, only visible pages are included. To make a blog podcast feed open file `system/extensions/yellow-system.ini` and change `PodcastFilterLayout: blog`. It is also possible to filter podcasts by tag or author, use an URL like `http://website/podcast/tag:series1/page:podcast.xml` You can add a link to the podcast somewhere on your website. 
+The podcast feed is available on your website as `http://website/podcast/` and `http://website/podcast/page:podcast.xml`. It's a feed for the entire website, only visible pages are included. It is also possible to filter podcasts by tag or author, use an URL like `http://website/podcast/tag:series1/page:podcast.xml` You can add a link to the podcast somewhere on your website. 
 
 Per podcast episode a `Mediafile` setting is mandatory. All other settings are optional, but are required for a proper iTunes directory listing.
 
@@ -51,7 +51,6 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 `PodcastLocation` = podcast location  
 `PodcastFileXml` = feed file name for RSS podcast feed  
-`PodcastFilterLayout` = podcast layout filter, e.g. `blog`  
 `PodcastPaginationLimit` = number of entries to show per page  
 `PodcastMimeType` = MIME type of included media files  
 `PodcastImageUrl` = URL to your podcast image  

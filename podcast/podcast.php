@@ -3,7 +3,7 @@
 // Based on Feed extension, https://github.com/annaesvensson/yellow-feed
 
 class YellowPodcast {
-    const VERSION = "0.8.17";
+    const VERSION = "0.8.18";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -11,7 +11,6 @@ class YellowPodcast {
         $this->yellow = $yellow;
         $this->yellow->system->setDefault("podcastLocation", "/podcast/");
         $this->yellow->system->setDefault("podcastFileXml", "podcast.xml");
-        $this->yellow->system->setDefault("podcastFilterLayout", "blog");
         $this->yellow->system->setDefault("podcastPaginationLimit", "30");
         $this->yellow->system->setDefault("podcastMimeType", "audio/mpeg");
         $this->yellow->system->setDefault("podcastImageUrl", "");
@@ -27,6 +26,7 @@ class YellowPodcast {
     public function onParsePageLayout($page, $name) {
         if ($name=="podcast") {
             $pages = $this->yellow->content->index(false, false);
+            $pages->filter("mediafile", "", false);
             $pagesFilter = array();
             if ($page->isRequest("tag")) {
                 $pages->filter("tag", $page->getRequest("tag"));
@@ -44,11 +44,12 @@ class YellowPodcast {
                 $pages->match("#".$page->getRequest("folder")."#i", false);
                 array_push($pagesFilter, ucfirst($page->getRequest("folder")));
             }
-            $podcastFilterLayout = $this->yellow->system->get("podcastFilterLayout");
-            if ($podcastFilterLayout!="none") $pages->filter("layout", $podcastFilterLayout);
-            $chronologicalOrder = ($this->yellow->system->get("podcastFilterLayout")!="blog");
+            foreach ($pages as $pagePodcast) {
+                $podcastScore = $pagePodcast->get($pagePodcast->isExisting("published") ? "published" : "modified");
+                $pagePodcast->set("podcastScore", $podcastScore);
+            }
+            $pages->sort("podcastScore", false);
             if ($this->isRequestXml($page)) {
-                $pages->sort($chronologicalOrder ? "modified" : "published", false);
                 $paginationLimit = $this->yellow->system->get("podcastPaginationLimit");
                 if ($paginationLimit==0 || $paginationLimit>100) $paginationLimit = 100;
                 $pages->limit($paginationLimit);
@@ -111,14 +112,12 @@ class YellowPodcast {
                 $output .= "</rss>\r\n";
                 $this->yellow->page->setOutput($output);
             } else {
-                $pages->sort($chronologicalOrder ? "modified" : "published", false);
                 if (!is_array_empty($pagesFilter)) {
                     $text = implode(' ', $pagesFilter);
                     $this->yellow->page->set("titleHeader", $text." - ".$this->yellow->page->get("sitename"));
                     $this->yellow->page->set("titleContent", $this->yellow->page->get("title").": ".$text);
                     $this->yellow->page->set("title", $this->yellow->page->get("title").": ".$text);
                 }
-                $this->yellow->page->set("podcastChronologicalOrder", $chronologicalOrder);
                 $this->yellow->page->setPages("podcast", $pages);
                 $this->yellow->page->setLastModified($pages->getModified());
             }
