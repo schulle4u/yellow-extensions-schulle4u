@@ -16,7 +16,7 @@ Weitere Funktionen für Datenstrom Yellow. https://datenstrom.se/de/yellow/
 * [Meta](https://github.com/annaesvensson/yellow-meta/README-de.md) - Metadaten für Social-Media-Netzwerke. Weiterentwicklung bei Datenstrom.
 * ⚠️ [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/pagesource/README-de.md) - Markdown-Quelltext auf Seiten anzeigen.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/podcast/README-de.md) - Web-Feed optimiert für die Podcast-Veröffentlichung.
-* [Private](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/private/README-de.md) - Unterstützung für passwortgeschützte Seiten.
+* [Private](https://github.com/schulle4u/yellow-private/tree/main/README-de.md) - Unterstützung für passwortgeschützte Seiten.
 * ⚠️ [Profile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/profile/README-de.md) - Autorenprofil für Blogseiten.
 * [Radioboss](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/radioboss/README-de.md) - Widgets für RadioBoss Cloud.
 * [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/random/README-de.md) - Zufällige Seiten anzeigen.

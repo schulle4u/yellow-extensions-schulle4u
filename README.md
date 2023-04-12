@@ -16,7 +16,7 @@ More features for Datenstrom Yellow. https://datenstrom.se/yellow/
 * [Meta](https://github.com/annaesvensson/yellow-meta) - Meta data for social media sites. Development continues at Datenstrom.
 * ⚠️ [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/pagesource) - Display Markdown source on pages.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/podcast) - Web feed optimized for podcast publishing.
-* [Private](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/private) - Support for password-protected pages.
+* [Private](https://github.com/schulle4u/yellow-private) - Support for password-protected pages.
 * ⚠️ [Profile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/profile) - Author profile for blog pages.
 * [Radioboss](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/radioboss) - Widgets for RadioBoss Cloud.
 * [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/random) - Display random pages.
