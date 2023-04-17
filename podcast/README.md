@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Podcast 0.8.18
+# Podcast 0.8.19
 
 Web feed optimized for podcast publishing.
 
