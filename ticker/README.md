@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Ticker 0.8.12
+# Ticker 0.8.13
 
 RSS feed parser.
 

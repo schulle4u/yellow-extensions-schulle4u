@@ -2,7 +2,7 @@
 // Ticker extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/ticker
 
 class YellowTicker {
-    const VERSION = "0.8.12";
+    const VERSION = "0.8.13";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -23,7 +23,7 @@ class YellowTicker {
                 $expire = $action=="daily" ? ($this->yellow->toolbox->getFileModified($entry) + 60*60*24) : 0;
                 if ($expire<=time() && !$this->yellow->toolbox->deleteFile($entry)) $statusCode = 500;
             }
-            if ($statusCode==500) $this->yellow->log("error", "Can't delete files in directory '$path'!\n");
+            if ($statusCode==500) $this->yellow->toolbox->log("error", "Can't delete files in directory '$path'!\n");
         }
     }
     
