@@ -2,7 +2,7 @@
 // Redirect extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/redirect
 
 class YellowRedirect {
-    const VERSION = "0.8.4";
+    const VERSION = "0.8.5";
     public $yellow;         //access to API
     
     // Handle initialisation
@@ -25,7 +25,7 @@ class YellowRedirect {
     // Handle page extra data
     public function onParsePageExtra($page, $name) {
         $output = null;
-        if ($name == "header" && $page->getHtml("redirectLocation") && $this->yellow->getRequestHandler()=="core") {
+        if ($name == "header" && $page->getHtml("redirectLocation") && $this->yellow->lookup->getRequestHandler()=="core") {
             $redirectTime = $page->getHtml("redirectTime");
             if (is_string_empty($redirectTime)) $redirectTime = $this->yellow->system->get("redirectTime");
             $redirectLocation = $page->getHtml("redirectLocation");
