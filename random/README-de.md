@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Random 0.8.9
+# Random 0.8.10
 
 Zufällige Seiten anzeigen.
 
