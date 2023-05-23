@@ -2,7 +2,7 @@
 // Pagesource extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/pagesource
 
 class YellowPagesource {
-    const VERSION = "0.8.8";
+    const VERSION = "0.8.9";
     public $yellow;         //access to API
     
     // Handle initialisation
@@ -21,10 +21,10 @@ class YellowPagesource {
             $titleLenght = strlenu($title);
             $output = $title."\r\n";
             $output .= str_pad("=", $titleLenght, "=")."\r\n";
-            $output .= $this->yellow->page->getContent(true)."\r\n";
+            $output .= $this->yellow->page->getContentRaw()."\r\n";
             if ($this->yellow->page->isPage("footer")) {
                 $output .= "---------------------------------------\r\n";
-                $output .= $this->yellow->page->getPage("footer")->getContent(true);
+                $output .= $this->yellow->page->getPage("footer")->getContentHtml(true);
             }
             $this->yellow->page->setOutput($output);
         }

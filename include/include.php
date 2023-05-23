@@ -2,7 +2,7 @@
 // Include extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/include
 
 class YellowInclude {
-    const VERSION = "0.8.6";
+    const VERSION = "0.8.7";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -21,9 +21,9 @@ class YellowInclude {
             if ($page) {
                 if ($mode == "teaser") {
                     $output .= "<h2><a href=\"".$page->getLocation(true)."\">".$page->getHtml("title")."</a></h2>\n";
-                    $output .= $this->yellow->toolbox->createTextDescription($page->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->language->getTextHtml("blogMore")."</a>");
+                    $output .= $this->yellow->toolbox->createTextDescription($page->getContentHtml(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->language->getTextHtml("blogMore")."</a>");
                 } else {
-                    $output .= $page->getContent();
+                    $output .= $page->getContentHtml();
                 }
             } else {
                 $this->yellow->page->error(500, "Page '$location' does not exist!");

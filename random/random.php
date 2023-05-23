@@ -2,7 +2,7 @@
 // Random extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/random
 
 class YellowRandom {
-    const VERSION = "0.8.9";
+    const VERSION = "0.8.10";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -30,14 +30,14 @@ class YellowRandom {
                 foreach ($pages->shuffle()->limit($shortcutEntries) as $page) {
                     if ($mode == "full") {
                         $output .= "<h2>".$page->getHtml("title")."</h2>\n";
-                        $output .= $page->getContent();
+                        $output .= $page->getContentHtml();
                     }
                     if ($mode == "list") {
                         $output .= "<li><a href=\"".$page->getLocation(true)."\">".$page->getHtml("title")."</a></li>\n";
                     }
                     if ($mode == "teaser") {
                         $output .= "<h2><a href=\"".$page->getLocation(true)."\">".$page->getHtml("title")."</a></h2>\n";
-                        $output .= $this->yellow->toolbox->createTextDescription($page->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->language->getTextHtml("blogMore")."</a>");
+                        $output .= $this->yellow->toolbox->createTextDescription($page->getContentHtml(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->language->getTextHtml("blogMore")."</a>");
                     }
                 }
                 if ($mode == "list") $output .= "</ul>\n";

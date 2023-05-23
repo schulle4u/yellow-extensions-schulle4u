@@ -2,7 +2,7 @@
 // Readingtime extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/readingtime
 
 class YellowReadingtime {
-    const VERSION = "0.8.21";
+    const VERSION = "0.8.22";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -17,7 +17,7 @@ class YellowReadingtime {
         if ($name=="readingtime" && ($type=="inline")) {
             list($wordsPerMinute) = $this->yellow->toolbox->getTextArguments($text);
             if (is_string_empty($wordsPerMinute) || (!is_numeric($wordsPerMinute))) $wordsPerMinute = $this->yellow->system->get("readingtimeWordsPerMinute");
-            $content = strip_tags($page->getContent(true));
+            $content = strip_tags($page->getContentHtml());
             $wordCount = $this->yellow->toolbox->getTextWords($content);
             $output .= "<span class=\"".htmlspecialchars($name)."\">".ceil($wordCount / $wordsPerMinute)."</span>";
         }

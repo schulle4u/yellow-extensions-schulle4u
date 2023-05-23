@@ -2,7 +2,7 @@
 // daily extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/daily
 
 class YellowDaily {
-    const VERSION = "0.8.6";
+    const VERSION = "0.8.7";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -35,7 +35,7 @@ class YellowDaily {
                     $output .= "<li><a href=\"".$page->getLocation(true)."\">".$page->getHtml("title")."</a></li>\n";
                 } else {
                     $output .= "<h2><a href=\"".$page->getLocation(true)."\">".$page->getHtml("title")."</a></h2>\n";
-                    $output .= $this->yellow->toolbox->createTextDescription($page->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->language->getTextHtml("blogMore")."</a>");
+                    $output .= $this->yellow->toolbox->createTextDescription($page->getContentHtml(), 0, false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->language->getTextHtml("blogMore")."</a>");
                 }
             }
             if ($format == "list") $output .= "</ul>\n";

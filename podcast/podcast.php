@@ -3,7 +3,7 @@
 // Based on Feed extension, https://github.com/annaesvensson/yellow-feed
 
 class YellowPodcast {
-    const VERSION = "0.8.19";
+    const VERSION = "0.8.20";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -91,7 +91,7 @@ class YellowPodcast {
                 $output .= "<language>".$this->yellow->page->getHtml("language")."</language>\r\n";
                 foreach ($pages as $pagePodcast) {
                     $timestamp = strtotime($pagePodcast->get($pagePodcast->isExisting("published") ? "published" : "modified"));
-                    $content = $this->yellow->toolbox->createTextDescription($pagePodcast->getContent(), 0, false, "<!--more-->", " <a href=\"".$page->getUrl()."\">".$this->yellow->language->getTextHtml("blogMore")."</a>");
+                    $content = $this->yellow->toolbox->createTextDescription($pagePodcast->getContentHtml(), 0, false, "<!--more-->", " <a href=\"".$page->getUrl()."\">".$this->yellow->language->getTextHtml("blogMore")."</a>");
                     $output .= "<item>\r\n";
                     $output .= "<title>".$pagePodcast->getHtml("title")."</title>\r\n";
                     $output .= "<link>".$pagePodcast->getUrl()."</link>\r\n";
