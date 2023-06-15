@@ -8,7 +8,7 @@ Bestimmte Seitenelemente verstecken.
 
 ## Wie man eine Erweiterung installiert
 
-[ZIP-Datei herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/spoiler.zip) und in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+[ZIP-Datei herunterladen](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/main/downloads/spoiler.zip) und in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Wie man Seiteninhalte versteckt
 

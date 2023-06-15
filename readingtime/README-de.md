@@ -8,7 +8,7 @@ Zeigt die geschätzte Lesezeit für den Seiteninhalt an.
 
 ## Wie man eine Erweiterung installiert
 
-[ZIP-Datei herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/readingtime.zip) und in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+[ZIP-Datei herunterladen](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/main/downloads/readingtime.zip) und in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Wie man die geschätzte Lesezeit anzeigt
 

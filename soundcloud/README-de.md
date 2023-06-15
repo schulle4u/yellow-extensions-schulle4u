@@ -8,7 +8,7 @@ Soundcloud-Audio einbinden.
 
 ## Wie man eine Erweiterung installiert
 
-[ZIP-Datei herunterladen](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/soundcloud.zip) und in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+[ZIP-Datei herunterladen](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/main/downloads/soundcloud.zip) und in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Wie binde ich eine Audiospur ein?
 

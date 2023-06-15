@@ -8,7 +8,7 @@ Show estimated reading time for page content.
 
 ## How to install an extension
 
-[Download ZIP file](https://github.com/datenstrom/yellow-extensions/raw/main/downloads/readingtime.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+[Download ZIP file](https://github.com/schulle4u/yellow-extensions-schulle4u/raw/main/downloads/readingtime.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## How to show estimated reading time
 
