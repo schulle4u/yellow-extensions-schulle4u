@@ -2,7 +2,7 @@
 // Radioboss extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/radioboss 
 
 class YellowRadioboss {
-    const VERSION = "0.8.13";
+    const VERSION = "0.8.14";
     public $yellow;            //access to API
     public $outputFooter;      //generated output for footer
     
@@ -31,26 +31,6 @@ class YellowRadioboss {
             "RadiobossDescription: Widgets för RadioBoss Cloud.",
             "RadiobossListeners: Lyssnare",
             "RadiobossNexttrack: Nästa låt"));
-    }
-
-    // Return default language settings
-    public function getDefault() {
-        return <<< 'END'
-        Language: en
-        RadiobossDescription: Widgets for RadioBoss Cloud.
-        RadiobossListeners: Listeners
-        RadiobossNexttrack: Next track
-
-        Language: de
-        RadiobossDescription: Widgets für RadioBoss Cloud.
-        RadiobossListeners: Zuhörer
-        RadiobossNexttrack: Nächster Titel
-
-        Language: sv
-        RadiobossDescription: Widgets för RadioBoss Cloud.
-        RadiobossListeners: Lyssnare
-        RadiobossNexttrack: Nästa låt
-END;
     }
     
     // Handle request

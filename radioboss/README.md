@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Radioboss 0.8.13
+# Radioboss 0.8.14
 
 Widgets for RadioBoss Cloud.
 
