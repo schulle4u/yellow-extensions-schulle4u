@@ -41,7 +41,7 @@ class YellowPodcast {
                 array_push($pagesFilter, $pages->getFilter());
             }
             if ($page->isRequest("folder")) {
-                $pages->match("#".$page->getRequest("folder")."#i", false);
+                $pages->match("#/".$page->getRequest("folder")."/#i");
                 array_push($pagesFilter, ucfirst($page->getRequest("folder")));
             }
             foreach ($pages as $pagePodcast) {
