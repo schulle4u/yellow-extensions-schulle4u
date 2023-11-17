@@ -4,7 +4,7 @@
 
 Embed Soundcloud audio tracks.
 
-<p align="center"><img src="soundcloud-screenshot.png?raw=true" alt="Screenshot"></p>
+<p align="center"><img src="SCREENSHOT.png?raw=true" alt="Screenshot"></p>
 
 ## How to install an extension
 

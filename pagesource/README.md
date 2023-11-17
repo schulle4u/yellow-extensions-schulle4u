@@ -4,7 +4,7 @@
 
 Display Markdown source on pages.
 
-<p align="center"><img src="pagesource-screenshot.png?raw=true" alt="Screenshot"></p>
+<p align="center"><img src="SCREENSHOT.png?raw=true" alt="Screenshot"></p>
 
 ## How to install an extension
 

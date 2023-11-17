@@ -4,7 +4,7 @@
 
 Download code blocks as text file.
 
-<p align="center"><img src="codefile-screenshot.png?raw=true" alt="Screenshot"></p>
+<p align="center"><img src="SCREENSHOT.png?raw=true" alt="Screenshot"></p>
 
 ## How to install an extension
 
