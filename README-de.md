@@ -20,7 +20,7 @@ Meine offiziellen sowie experimentellen Erweiterungen für Datenstrom Yellow. ht
 * [Profile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/profile/README-de.md) - Autorenprofil für Blogseiten.
 * [Radioboss](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/radioboss/README-de.md) - Widgets für RadioBoss Cloud.
 * [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/random/README-de.md) - Zufällige Seiten anzeigen.
-* [Readingtime](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/readingtime/README-de.md) - Zeigt die geschätzte Lesezeit für den Seiteninhalt an.
+* [Readingtime](https://github.com/schulle4u/yellow-readingtime) - Zeigt die geschätzte Lesezeit für den Seiteninhalt an.
 * [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/redirect/README-de.md) - Alternative Seitenweiterleitung.
 * [Soundcloud](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/soundcloud/README-de.md) - Soundcloud-Audio einbinden.
 * [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/spoiler/README-de.md) - Bestimmte Seitenelemente verstecken.
