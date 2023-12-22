@@ -4,7 +4,7 @@
 
 Bestimmte Seitenelemente verstecken.
 
-<p align="center"><img src="SCREENSHOT.png?raw=true" alt="Bildschirmfoto"></p>
+<p align="center"><img src="SCREENSHOT.png" alt="Bildschirmfoto"></p>
 
 ## Wie man eine Erweiterung installiert
 
