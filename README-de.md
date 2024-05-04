@@ -2,12 +2,14 @@
 
 # Datenstrom Yellow - Erweiterungen von Steffen Schultz
 
-Meine offiziellen sowie experimentellen Erweiterungen für Datenstrom Yellow. https://datenstrom.se/de/yellow/
+Meine experimentellen Erweiterungen für Datenstrom Yellow. https://datenstrom.se/de/yellow/
+
+Der Code in diesem Repository kann möglicherweise weniger priorisiert sein. Bitte öffne ein Issue und lass es mich wissen, falls etwas nicht funktioniert und weiterhin Interesse an einer Erweiterung besteht. 
 
 ## Funktionen
 
 * [Antispam](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/antispam/README-de.md) - Alternative Verschleierung von E-Mail-Adressen.
-* [Audio](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/audio/README-de.md) - HTML5-Audio-Player.
+* [Audio](https://github.com/schulle4u/yellow-audio/tree/main/README-de.md) - HTML5-Audio-Player.
 * [Codefile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/codefile/README-de.md) - Code-Blöcke als Textdatei herunterladen.
 * [Csv](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/csv/README-de.md) - CSV-Dateileser.
 * [Daily](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/daily/README-de.md) - Tägliche Seiten anzeigen.
@@ -23,7 +25,7 @@ Meine offiziellen sowie experimentellen Erweiterungen für Datenstrom Yellow. ht
 * [Readingtime](https://github.com/schulle4u/yellow-readingtime) - Zeigt die geschätzte Lesezeit für den Seiteninhalt an.
 * [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/redirect/README-de.md) - Alternative Seitenweiterleitung.
 * [Soundcloud](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/soundcloud/README-de.md) - Soundcloud-Audio einbinden.
-* [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/spoiler/README-de.md) - Bestimmte Seitenelemente verstecken.
+* [Spoiler](https://github.com/schulle4u/yellow-spoiler/tree/main/README-de.md) - Bestimmte Seitenelemente verstecken.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/ticker/README-de.md) - RSS-Feed-Leser.
 
 ## Themes

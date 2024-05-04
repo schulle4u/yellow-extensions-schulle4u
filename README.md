@@ -2,13 +2,14 @@
 
 # Datenstrom Yellow extensions by Steffen Schultz
 
-My published and experimental extensions for Datenstrom Yellow. https://datenstrom.se/yellow/
+My experimental extensions for Datenstrom Yellow. https://datenstrom.se/yellow/
 
+Code in this repository could have less priority. Please open an issue if somethings not working and you are interested in one of the extensions. 
 
 ## Features
 
 * [Antispam](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/antispam) - Alternative email address obfuscator.
-* [Audio](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/audio) - HTML5 audio player.
+* [Audio](https://github.com/schulle4u/yellow-audio) - HTML5 audio player.
 * [Codefile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/codefile) - Download code blocks as text file.
 * [Csv](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/csv) - CSV file parser.
 * [Daily](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/daily) - Show daily pages.
@@ -24,7 +25,7 @@ My published and experimental extensions for Datenstrom Yellow. https://datenstr
 * [Readingtime](https://github.com/schulle4u/yellow-readingtime) - Show estimated reading time for page content.
 * [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/redirect) - Alternative page redirection.
 * [Soundcloud](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/soundcloud) - Embed Soundcloud audio tracks.
-* [Spoiler](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/spoiler) - Hide certain page elements.
+* [Spoiler](https://github.com/schulle4u/yellow-spoiler) - Hide certain page elements.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/ticker) - RSS feed parser.
 
 ## Themes
