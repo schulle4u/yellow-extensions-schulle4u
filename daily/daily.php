@@ -2,7 +2,7 @@
 // daily extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/daily
 
 class YellowDaily {
-    const VERSION = "0.8.7";
+    const VERSION = "0.9.1";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -10,8 +10,8 @@ class YellowDaily {
         $this->yellow = $yellow;
     }
 
-    // Handle page content of shortcut
-    public function onParseContentShortcut($page, $name, $text, $type) {
+    // Handle page content element
+    public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
         if ($name=="daily" && ($type=="block" || $type=="inline")) {
             list($day, $format) = $this->yellow->toolbox->getTextArguments($text);
@@ -20,13 +20,13 @@ class YellowDaily {
             if (is_string_empty($day)) $day  = date("N");
             if (is_string_empty($format)) $format = "teaser";
             switch($day) {
-                case 1: $pages = $this->yellow->content->index(false)->filter("daily", "1"); break;
-                case 2: $pages = $this->yellow->content->index(false)->filter("daily", "2"); break;
-                case 3: $pages = $this->yellow->content->index(false)->filter("daily", "3"); break;
-                case 4: $pages = $this->yellow->content->index(false)->filter("daily", "4"); break;
-                case 5: $pages = $this->yellow->content->index(false)->filter("daily", "5"); break;
-                case 6: $pages = $this->yellow->content->index(false)->filter("daily", "6"); break;
-                case 7: $pages = $this->yellow->content->index(false)->filter("daily", "7"); break;
+                case 1: $pages = $this->yellow->content->index()->filter("daily", "1"); break;
+                case 2: $pages = $this->yellow->content->index()->filter("daily", "2"); break;
+                case 3: $pages = $this->yellow->content->index()->filter("daily", "3"); break;
+                case 4: $pages = $this->yellow->content->index()->filter("daily", "4"); break;
+                case 5: $pages = $this->yellow->content->index()->filter("daily", "5"); break;
+                case 6: $pages = $this->yellow->content->index()->filter("daily", "6"); break;
+                case 7: $pages = $this->yellow->content->index()->filter("daily", "7"); break;
             }
             $this->yellow->page->setLastModified($pages->getModified());
             if ($format == "list") $output .= "<ul>\n";

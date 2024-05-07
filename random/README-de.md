@@ -17,7 +17,7 @@ Erstelle eine `[random]`-Abkürzung.
 Die folgenden Argumente sind verfügbar, mit Ausnahme des ersten Arguments sind alle Angaben optional:
 
 `Location` = Ort für zufällige Seiten  
-`ShortcutEntries` = Anzahl der zufälligen Seiten  
+`EntriesMax` = Anzahl der zufälligen Seiten  
 `Mode` = Anzeigemodus für zufällige Seiten, z. B. `full`, `teaser`, `list`  
 
 In den Modi `full` und `teaser` werden Seitentitel und Inhalt in die aktuelle Seite eingebettet. Hiermit können beispielsweise zufällige Zitate, Seitenvorschauen oder Bilder angezeigt werden. Der `List`-Modus erstellt eine Liste zufälliger Seiten, die sich gut in eine Blog-Sidebar einbauen lässt. 

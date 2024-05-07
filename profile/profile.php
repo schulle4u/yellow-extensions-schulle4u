@@ -2,7 +2,7 @@
 // Profile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/profile
 
 class YellowProfile {
-    const VERSION = "0.8.12";
+    const VERSION = "0.9.1";
     public $yellow;            // access to API
     
     // Handle initialisation
@@ -12,8 +12,8 @@ class YellowProfile {
         $this->yellow->system->setDefault("profileStyle", "profile");
     }
 
-    // Handle page content of shortcut
-    public function onParseContentShortcut($page, $name, $text, $type) {
+    // Handle page content element
+    public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
         if ($name=="profile" && ($type=="block" || $type=="inline")) {
             list($location, $style) = $this->yellow->toolbox->getTextArguments($text);
@@ -40,7 +40,7 @@ class YellowProfile {
     public function onParsePageExtra($page, $name) {
         $output = null;
         if ($name=="profile") {
-            $output = $this->onParseContentShortcut($page, "profile", "", "block");
+            $output = $this->onParseContentElement($page, "profile", "", "", "block");
         }
         return $output;
     }

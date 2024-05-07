@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Lightbox 0.8.22
+# Lightbox 0.9.1
 
 Eine Lightbox für verschiedene Medientypen. 
 

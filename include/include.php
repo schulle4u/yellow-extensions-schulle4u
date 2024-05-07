@@ -2,7 +2,7 @@
 // Include extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/include
 
 class YellowInclude {
-    const VERSION = "0.8.7";
+    const VERSION = "0.9.1";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -10,8 +10,8 @@ class YellowInclude {
         $this->yellow = $yellow;
     }
 
-    // Handle page content of shortcut
-    public function onParseContentShortcut($page, $name, $text, $type) {
+    // Handle page content element
+    public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
         if ($name=="include" && ($type=="block" || $type=="inline")) {
             list($location, $mode) = $this->yellow->toolbox->getTextArguments($text);

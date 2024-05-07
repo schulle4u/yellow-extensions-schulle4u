@@ -2,7 +2,7 @@
 // Radioboss extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/radioboss 
 
 class YellowRadioboss {
-    const VERSION = "0.8.14";
+    const VERSION = "0.9.1";
     public $yellow;            //access to API
     public $outputFooter;      //generated output for footer
     
@@ -40,8 +40,8 @@ class YellowRadioboss {
         return $statusCode;
     }
     
-    // Handle page content of shortcut
-    public function onParseContentShortcut($page, $name, $text, $type) {
+    // Handle page content element
+    public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
         if ($name=="radioboss" && ($type=="block" || $type=="inline")) {
             list($widget, $arguments, $style, $server, $port, $port2, $id, $mount) = $this->yellow->toolbox->getTextArguments($text);

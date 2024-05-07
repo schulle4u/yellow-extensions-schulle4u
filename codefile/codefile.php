@@ -2,7 +2,7 @@
 // Codefile extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/codefile
 
 class YellowCodefile {
-    const VERSION = "0.8.22";
+    const VERSION = "0.9.1";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -20,8 +20,8 @@ class YellowCodefile {
             "CodefileButton: Ladda ner källkod"));
     }
     
-    // Handle page content of shortcut
-    public function onParseContentShortcut($page, $name, $text, $type) {
+    // Handle page content element
+    public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
         if ($name=="codefile" && ($type=="block" || $type=="inline")) {
             list($id, $filename) = $this->yellow->toolbox->getTextArguments($text);
@@ -36,8 +36,8 @@ class YellowCodefile {
     public function onParsePageExtra($page, $name) {
         $output = null;
         if ($name=="header") {
-            $extensionLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreExtensionLocation");
-            $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}codefile.js\"></script>\n";
+            $assetLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreAssetLocation");
+            $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$assetLocation}codefile.js\"></script>\n";
         }
         return $output;
     }

@@ -2,7 +2,7 @@
 // Ticker extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/ticker
 
 class YellowTicker {
-    const VERSION = "0.8.13";
+    const VERSION = "0.9.1";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -11,14 +11,14 @@ class YellowTicker {
         $this->yellow->system->setDefault("tickerShowDate", 1);
         $this->yellow->system->setDefault("tickerShowDescription", 1);
         $this->yellow->system->setDefault("tickerStyle", "ticker");
-        $this->yellow->system->setDefault("tickerShortcutEntries", 5);
+        $this->yellow->system->setDefault("tickerEntriesMax", 5);
     }
     
     // Handle update
     public function onUpdate($action) {
         if ($action=="clean" || $action=="daily" || $action=="uninstall") {
             $statusCode = 200;
-            $path = $this->yellow->system->get("coreExtensionDirectory");
+            $path = $this->yellow->system->get("coreWorkerDirectory");
             foreach ($this->yellow->toolbox->getDirectoryEntries($path, "/^ticker-(.*)\.(spc|spi)$/", false, false) as $entry) {
                 $expire = $action=="daily" ? ($this->yellow->toolbox->getFileModified($entry) + 60*60*24) : 0;
                 if ($expire<=time() && !$this->yellow->toolbox->deleteFile($entry)) $statusCode = 500;
@@ -27,13 +27,13 @@ class YellowTicker {
         }
     }
     
-    // Handle page content of shortcut
-    public function onParseContentShortcut($page, $name, $text, $type) {
+    // Handle page content element
+    public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
         if ($name=="ticker" && ($type=="block" || $type=="inline")) {
-            list($rssurl, $shortcutEntries, $style) = $this->yellow->toolbox->getTextArguments($text);
+            list($rssurl, $entriesMax, $style) = $this->yellow->toolbox->getTextArguments($text);
             if (is_string_empty($style)) $style = $this->yellow->system->get("tickerStyle");
-            if (is_string_empty($shortcutEntries)) $shortcutEntries = $this->yellow->system->get("tickerShortcutEntries");
+            if (is_string_empty($entriesMax)) $entriesMax = $this->yellow->system->get("tickerEntriesMax");
             $n = 1;
             $showDate = $this->yellow->system->get("tickerShowDate");
             $showDescription = $this->yellow->system->get("tickerShowDescription");
@@ -41,7 +41,7 @@ class YellowTicker {
             $output .= "<ul>\n";
             $feed = new SimplePie();
             $feed->set_feed_url($rssurl);
-            $feed->set_cache_location("./".$this->yellow->system->get("coreExtensionDirectory"));
+            $feed->set_cache_location("./".$this->yellow->system->get("coreWorkerDirectory"));
             $feed->set_cache_name_function("YellowTicker::getCacheName");
             $feed->init();
             $feed->handle_content_type();
@@ -51,7 +51,7 @@ class YellowTicker {
                 if ($showDate) $output .= " - ".$item->get_date($this->yellow->language->getTextHtml("CoreDateFormatLong"));
                 if ($showDescription) $output .= "<br />".$item->get_description()." <a href=\"".$item->get_permalink()."\">".$this->yellow->language->getTextHtml("blogMore")."</a>";
                 $output .= "</li>\n";
-                if ($n>=$shortcutEntries) { break; }
+                if ($n>=$entriesMax) { break; }
                 $n++;
             }
             $output .= "</ul></div>\n";

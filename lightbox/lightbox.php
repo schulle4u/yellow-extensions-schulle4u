@@ -2,7 +2,7 @@
 // Lightbox extension, http://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/lightbox
 
 class YellowLightbox {
-    const VERSION = "0.8.22";
+    const VERSION = "0.9.1";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -12,8 +12,8 @@ class YellowLightbox {
         $this->yellow->system->setDefault("lightboxAutoplay", "false");
     }
     
-    // Handle page content of shortcut
-    public function onParseContentShortcut($page, $name, $text, $type) {
+    // Handle page content element
+    public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
         if ($name=="lightbox" && ($type=="block" || $type=="inline")) {
             list($src, $mode, $label, $group, $width, $height) = $this->yellow->toolbox->getTextArguments($text);
@@ -43,10 +43,10 @@ class YellowLightbox {
     public function onParsePageExtra($page, $name) {
         $output = null;
         if ($name=="header") {
-            $extensionLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreExtensionLocation");
-            $output = "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"{$extensionLocation}lightbox-tobii.min.css\" />\n";
-            $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}lightbox-tobii.min.js\"></script>\n";
-            $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}lightbox.js\"></script>\n";
+            $assetLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreAssetLocation");
+            $output = "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"{$assetLocation}lightbox-tobii.min.css\" />\n";
+            $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$assetLocation}lightbox-tobii.min.js\"></script>\n";
+            $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$assetLocation}lightbox.js\"></script>\n";
         }
         if ($name=="footer") {
             $output = "<div id=\"lightboxConfig\"";

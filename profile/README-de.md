@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Profile 0.8.12
+# Profile 0.9.1
 
 Autorenprofil für Blogseiten. 
 

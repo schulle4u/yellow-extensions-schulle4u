@@ -2,7 +2,7 @@
 // Redirect extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/redirect
 
 class YellowRedirect {
-    const VERSION = "0.8.5";
+    const VERSION = "0.9.1";
     public $yellow;         //access to API
     
     // Handle initialisation
@@ -11,8 +11,8 @@ class YellowRedirect {
         $this->yellow->system->setDefault("redirectTime", "5");
     }
     
-    // Handle page content of shortcut
-    public function onParseContentShortcut($page, $name, $text, $type) {
+    // Handle page content element
+    public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
         if ($name=="redirect" && ($type=="inline")) {
             $redirectTime = $page->getHtml("redirectTime");

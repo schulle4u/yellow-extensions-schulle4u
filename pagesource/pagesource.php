@@ -2,7 +2,7 @@
 // Pagesource extension, https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/pagesource
 
 class YellowPagesource {
-    const VERSION = "0.8.9";
+    const VERSION = "0.9.1";
     public $yellow;         //access to API
     
     // Handle initialisation
@@ -30,8 +30,8 @@ class YellowPagesource {
         }
     }
 
-    // Handle page content of shortcut
-    public function onParseContentShortcut($page, $name, $text, $type) {
+    // Handle page content element
+    public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
         if ($name=="pagesource" && ($type=="block" || $type=="inline")) {
             list($style) = $this->yellow->toolbox->getTextArguments($text);
