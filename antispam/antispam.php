@@ -2,7 +2,7 @@
 // Antispam extension, http://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/antispam
 
 class YellowAntispam {
-    const VERSION = "0.8.7";
+    const VERSION = "0.9.1";
     public $yellow;            //access to API
     
     // Handle initialisation
@@ -10,8 +10,8 @@ class YellowAntispam {
         $this->yellow = $yellow;
     }
     
-    // Handle page content of shortcut
-    public function onParseContentShortcut($page, $name, $text, $type) {
+    // Handle page content element
+    public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
         if ($name=="email" && ($type=="block" || $type=="inline")) {
             list($address, $text) = $this->yellow->toolbox->getTextArguments($text);
@@ -25,8 +25,8 @@ class YellowAntispam {
     public function onParsePageExtra($page, $name) {
         $output = null;
         if ($name=="header") {
-            $extensionLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreExtensionLocation");
-            $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}antispam.js\"></script>\n";
+            $assetLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreAssetLocation");
+            $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$assetLocation}antispam.js\"></script>\n";
         }
         return $output;
     }
