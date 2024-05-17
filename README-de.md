@@ -11,7 +11,6 @@ Der Code in diesem Repository kann möglicherweise weniger priorisiert sein. Bit
 * [Antispam](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/antispam/README-de.md) - Alternative Verschleierung von E-Mail-Adressen.
 * [Audio](https://github.com/schulle4u/yellow-audio/tree/main/README-de.md) - HTML5-Audio-Player.
 * [Codefile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/codefile/README-de.md) - Code-Blöcke als Textdatei herunterladen.
-* [Csv](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/csv/README-de.md) - CSV-Dateileser.
 * [Daily](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/daily/README-de.md) - Tägliche Seiten anzeigen.
 * [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/include/README-de.md) - Bindet den Inhalt anderer Seiten in die aktuelle Seite ein.
 * [Lightbox](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/lightbox) - Eine Lightbox für verschiedene Medientypen.
@@ -26,6 +25,7 @@ Der Code in diesem Repository kann möglicherweise weniger priorisiert sein. Bit
 * [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/redirect/README-de.md) - Alternative Seitenweiterleitung.
 * [Soundcloud](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/soundcloud/README-de.md) - Soundcloud-Audio einbinden.
 * [Spoiler](https://github.com/schulle4u/yellow-spoiler/tree/main/README-de.md) - Bestimmte Seitenelemente verstecken.
+* [Table](https://github.com/schulle4u/yellow-table/tree/main/README-de.md) - Erstellt Tabellen aus CSV-Daten.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/ticker/README-de.md) - RSS-Feed-Leser.
 
 ## Themes

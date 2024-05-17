@@ -11,7 +11,6 @@ Code in this repository could have less priority. Please open an issue if someth
 * [Antispam](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/antispam) - Alternative email address obfuscator.
 * [Audio](https://github.com/schulle4u/yellow-audio) - HTML5 audio player.
 * [Codefile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/codefile) - Download code blocks as text file.
-* [Csv](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/csv) - CSV file parser.
 * [Daily](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/daily) - Show daily pages.
 * [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/include) - Includes page content from other pages.
 * [Lightbox](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/lightbox) - A lightbox for different media types.
@@ -26,6 +25,7 @@ Code in this repository could have less priority. Please open an issue if someth
 * [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/redirect) - Alternative page redirection.
 * [Soundcloud](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/soundcloud) - Embed Soundcloud audio tracks.
 * [Spoiler](https://github.com/schulle4u/yellow-spoiler) - Hide certain page elements.
+* [Table](https://github.com/schulle4u/yellow-table) - Create tables from CSV data.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/ticker) - RSS feed parser.
 
 ## Themes
