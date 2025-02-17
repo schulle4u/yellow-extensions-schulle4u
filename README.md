@@ -13,7 +13,7 @@ Code in this repository could have less priority. Please open an issue if someth
 * [Codefile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/codefile) - Download code blocks as text file.
 * [Daily](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/daily) - Show daily pages.
 * [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/include) - Includes page content from other pages.
-* [Lightbox](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/lightbox) - A lightbox for different media types.
+* [Lightbox](https://github.com/schulle4u/yellow-lightbox) - A lightbox for different media types.
 * [Meta](https://github.com/annaesvensson/yellow-meta) - Meta data for social media sites. Development continues at Datenstrom.
 * [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/pagesource) - Display Markdown source on pages.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/podcast) - Web feed optimized for podcast publishing.
@@ -23,7 +23,7 @@ Code in this repository could have less priority. Please open an issue if someth
 * [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/random) - Display random pages.
 * [Readingtime](https://github.com/schulle4u/yellow-readingtime) - Show estimated reading time for page content.
 * [Redirect](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/redirect) - Alternative page redirection.
-* [Soundcloud](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/soundcloud) - Embed Soundcloud audio tracks.
+* [Soundcloud](https://github.com/schulle4u/yellow-soundcloud) - Embed Soundcloud audio tracks.
 * [Spoiler](https://github.com/schulle4u/yellow-spoiler) - Hide certain page elements.
 * [Table](https://github.com/schulle4u/yellow-table) - Create tables from CSV data.
 * [Ticker](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/ticker) - RSS feed parser.
