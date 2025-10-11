@@ -12,7 +12,7 @@ Der Code in diesem Repository kann möglicherweise weniger priorisiert sein. Bit
 * [Audio](https://github.com/schulle4u/yellow-audio/tree/main/README-de.md) - HTML5-Audio-Player.
 * [Codefile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/codefile/README-de.md) - Code-Blöcke als Textdatei herunterladen.
 * [Daily](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/daily/README-de.md) - Tägliche Seiten anzeigen.
-* [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/include/README-de.md) - Bindet den Inhalt anderer Seiten in die aktuelle Seite ein.
+* [Include](https://github.com/schulle4u/yellow-include) - Inhalt von geteilten Seiten einbinden.
 * [Lightbox](https://github.com/schulle4u/yellow-lightbox) - Eine Lightbox für verschiedene Medientypen.
 * [Meta](https://github.com/annaesvensson/yellow-meta/README-de.md) - Metadaten für Social-Media-Netzwerke. Weiterentwicklung bei Datenstrom.
 * [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/pagesource/README-de.md) - Markdown-Quelltext auf Seiten anzeigen.

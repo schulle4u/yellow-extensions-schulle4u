@@ -12,7 +12,7 @@ Code in this repository could have less priority. Please open an issue if someth
 * [Audio](https://github.com/schulle4u/yellow-audio) - HTML5 audio player.
 * [Codefile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/codefile) - Download code blocks as text file.
 * [Daily](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/daily) - Show daily pages.
-* [Include](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/include) - Includes page content from other pages.
+* [Include](https://github.com/schulle4u/yellow-include) - Include content from shared pages.
 * [Lightbox](https://github.com/schulle4u/yellow-lightbox) - A lightbox for different media types.
 * [Meta](https://github.com/annaesvensson/yellow-meta) - Meta data for social media sites. Development continues at Datenstrom.
 * [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/pagesource) - Display Markdown source on pages.
