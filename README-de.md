@@ -31,11 +31,4 @@ Der Code in diesem Repository kann möglicherweise weniger priorisiert sein. Bit
 
 * [Wittstock](https://github.com/schulle4u/yellow-wittstock/tree/main/README-de.md) - Wittstock ist ein klassenloses Theme für Datenstrom Yellow.
 
-## Showcases
-
-* [Droidblind](https://droidblind.de) - Eine Webseite mit Informationen für blinde und sehbehinderte Nutzer zum Android-Betriebssystem.
-* [Powerradio4u](https://powerradio4u.de) - Ein Webradio mit Fokus auf Creative-Commons-Kultur.
-* [Robbenradio](https://robbenradio.de) - Meine persönliche Website.
-* [Robbenradio Podcasts](https://podcast.robbenradio.de) - Podcast-Episoden zu den Themen Technik, Radio und Geräusche.
-
 Hast du Fragen? [Hilfe finden](https://datenstrom.se/de/yellow/help/).

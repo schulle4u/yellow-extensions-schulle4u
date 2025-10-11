@@ -31,11 +31,4 @@ Code in this repository could have less priority. Please open an issue if someth
 
 * [Wittstock](https://github.com/schulle4u/yellow-wittstock) - Wittstock is a classless theme for Datenstrom Yellow.
 
-## Showcases
-
-* [Droidblind](https://droidblind.de) - A website containing information for blind and visually impaired users of the android operating system.
-* [Powerradio4u](https://powerradio4u.de) - An internet radio station dedicated to creative commons culture.
-* [Robbenradio](https://robbenradio.de) - My personal website.
-* [Robbenradio Podcasts](https://podcast.robbenradio.de) - Podcast episodes containing tech reviews, tutorials, and radio sounds.
-
 Do you have questions? [Get help](https://datenstrom.se/yellow/help/).
