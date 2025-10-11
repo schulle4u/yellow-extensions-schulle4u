@@ -18,7 +18,6 @@ Code in this repository could have less priority. Please open an issue if someth
 * [Pagesource](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/pagesource) - Display Markdown source on pages.
 * [Podcast](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/podcast) - Web feed optimized for podcast publishing.
 * [Private](https://github.com/schulle4u/yellow-private) - Support for password-protected pages.
-* [Profile](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/profile) - Author profile for blog pages.
 * [Radioboss](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/radioboss) - Widgets for RadioBoss Cloud.
 * [Random](https://github.com/schulle4u/yellow-extensions-schulle4u/tree/main/random) - Display random pages.
 * [Readingtime](https://github.com/schulle4u/yellow-readingtime) - Show estimated reading time for page content.
